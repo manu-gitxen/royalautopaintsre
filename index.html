@@ -267,18 +267,18 @@ var simpleLikes = {"ajaxurl":"#wp-admin/admin-ajax.php","like":"Like","unlike":"
 		<div class="elementor-element elementor-element-a35a1b9 overflow-hidden e-flex e-con-boxed tm-col-stretched-none tm-bg-color-over-image e-con e-child" data-id="a35a1b9" data-element_type="container" data-e-type="container" data-settings="{" background_background":"slideshow","background_slideshow_gallery":[{"id":6838,"url":"https:\="" \="" dev265.kodesolution.com\="" dermisio\="" wp-content\="" uploads\="" 2026\="" 08\="" der-home1.jpg"},{"id":6823,"url":"https:\="" 03\="" blog-5.jpg"}],"background_slideshow_ken_burns":"yes","background_slideshow_loop":"yes","background_slideshow_slide_duration":5000,"background_slideshow_slide_transition":"fade","background_slideshow_transition_duration":500,"background_slideshow_ken_burns_zoom_direction":"in"}"="">
 					
 <div class="elementor-background-slideshow" id="heroBannerSlideshow">
-  <div class="slide-item active" style="background-image: url('images/automotive_hero.png');"></div>
-  <div class="slide-item" style="background-image: url('images/royalpaint_hero_3.jpg');"></div>
+  <div class="slide-item active" style="background-image: url('images/royalpaint_hero_3.jpg');"></div>
   <div class="slide-item" style="background-image: url('images/spray_booth_hero.jpg');"></div>
   <div class="slide-item" style="background-image: url('images/marine_paint_hero.jpg');"></div>
   <div class="slide-item" style="background-image: url('images/wood_paint_hero.jpg');"></div>
+  <div class="slide-item" style="background-image: url('images/Industrial_steel_I-beams_positioned.jpg');"></div>
   <div class="hero-slider-controls">
     <div class="hero-slider-dots">
       <div class="dot active" data-index="0" title="Automotive Refinish"></div>
-      <div class="dot" data-index="1" title="OEM Coatings"></div>
-      <div class="dot" data-index="2" title="Commercial Spray Booths"></div>
-      <div class="dot" data-index="3" title="Marine & Yacht Finishes"></div>
-      <div class="dot" data-index="4" title="Wood Architectural"></div>
+      <div class="dot" data-index="1" title="Commercial Spray Booths"></div>
+      <div class="dot" data-index="2" title="Marine & Yacht Finishes"></div>
+      <div class="dot" data-index="3" title="Wood Finishes"></div>
+      <div class="dot" data-index="4" title="Industrial Protective Coatings"></div>
     </div>
     <div class="hero-slider-arrows">
       <button class="arrow-btn" id="heroPrevBtn" aria-label="Previous Slide">
@@ -372,7 +372,54 @@ var simpleLikes = {"ajaxurl":"#wp-admin/admin-ajax.php","like":"Like","unlike":"
 					</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-365998f e-con-full tm-col-stretched-none e-flex tm-bg-color-over-image e-con e-child" data-id="365998f" data-element_type="container" data-e-type="container" data-settings="{" background_background":"classic"}"="">
+		<div class="elementor-element elementor-element-365998f e-con-full tm-col-stretched-none e-flex tm-bg-color-over-image e-con e-child mini-division-slider" data-id="365998f" data-element_type="container" data-e-type="container">
+					<div class="mini-slider-inner" id="miniSliderInner">
+						<div class="mini-slide active" style="background-image: url('images/royalpaint_hero_3.jpg');">
+							<div class="mini-slide-badge">
+								<span class="mini-step">01/05</span>
+								<span class="mini-name">Automotive Refinish</span>
+							</div>
+						</div>
+						<div class="mini-slide" style="background-image: url('images/spray_booth_hero.jpg');">
+							<div class="mini-slide-badge">
+								<span class="mini-step">02/05</span>
+								<span class="mini-name">Spray Booth Care</span>
+							</div>
+						</div>
+						<div class="mini-slide" style="background-image: url('images/marine_paint_hero.jpg');">
+							<div class="mini-slide-badge">
+								<span class="mini-step">03/05</span>
+								<span class="mini-name">Marine & Yacht</span>
+							</div>
+						</div>
+						<div class="mini-slide" style="background-image: url('images/wood_paint_hero.jpg');">
+							<div class="mini-slide-badge">
+								<span class="mini-step">04/05</span>
+								<span class="mini-name">Wood Finishes</span>
+							</div>
+						</div>
+						<div class="mini-slide" style="background-image: url('images/Industrial_steel_I-beams_positioned.jpg');">
+							<div class="mini-slide-badge">
+								<span class="mini-step">05/05</span>
+								<span class="mini-name">Industrial Coatings</span>
+							</div>
+						</div>
+					</div>
+					<div class="mini-slider-controls">
+						<button type="button" class="mini-arrow-btn" id="miniPrevBtn" aria-label="Previous division">
+							<svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M5 1.5L2.5 4L5 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+						</button>
+						<div class="mini-dots" id="miniDots">
+							<span class="mini-dot active" data-index="0" title="Automotive Refinish"></span>
+							<span class="mini-dot" data-index="1" title="Spray Booth Care"></span>
+							<span class="mini-dot" data-index="2" title="Marine & Yacht"></span>
+							<span class="mini-dot" data-index="3" title="Wood Finishes"></span>
+							<span class="mini-dot" data-index="4" title="Industrial Coatings"></span>
+						</div>
+						<button type="button" class="mini-arrow-btn" id="miniNextBtn" aria-label="Next division">
+							<svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M3 1.5L5.5 4L3 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+						</button>
+					</div>
 				</div>
 				</div>
 				</div>
@@ -2376,24 +2423,40 @@ var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof H
 
 <script id="hero-slider-controller">
 (function() {
-  function initHeroSlider() {
-    const slideshow = document.getElementById('heroBannerSlideshow');
-    if (!slideshow) return;
-    const slides = slideshow.querySelectorAll('.slide-item');
-    const dots = slideshow.querySelectorAll('.dot');
-    const prevBtn = document.getElementById('heroPrevBtn');
-    const nextBtn = document.getElementById('heroNextBtn');
-    if (slides.length === 0) return;
+  function initHeroSliders() {
+    const mainSlideshow = document.getElementById('heroBannerSlideshow');
+    const miniSlider = document.getElementById('miniSliderInner');
+    if (!mainSlideshow) return;
 
+    const mainSlides = mainSlideshow.querySelectorAll('.slide-item');
+    const mainDots = mainSlideshow.querySelectorAll('.dot');
+    const mainPrevBtn = document.getElementById('heroPrevBtn');
+    const mainNextBtn = document.getElementById('heroNextBtn');
+
+    const miniSlides = miniSlider ? miniSlider.querySelectorAll('.mini-slide') : [];
+    const miniDots = document.querySelectorAll('#miniDots .mini-dot');
+    const miniPrevBtn = document.getElementById('miniPrevBtn');
+    const miniNextBtn = document.getElementById('miniNextBtn');
+
+    const total = mainSlides.length;
     let currentIndex = 0;
     let timer = null;
 
     function goToSlide(index) {
-      slides[currentIndex].classList.remove('active');
-      if (dots[currentIndex]) dots[currentIndex].classList.remove('active');
-      currentIndex = (index + slides.length) % slides.length;
-      slides[currentIndex].classList.add('active');
-      if (dots[currentIndex]) dots[currentIndex].classList.add('active');
+      const prev = currentIndex;
+      currentIndex = (index + total) % total;
+
+      // Update Main Slideshow
+      if (mainSlides[prev]) mainSlides[prev].classList.remove('active');
+      if (mainDots[prev]) mainDots[prev].classList.remove('active');
+      if (mainSlides[currentIndex]) mainSlides[currentIndex].classList.add('active');
+      if (mainDots[currentIndex]) mainDots[currentIndex].classList.add('active');
+
+      // Update Mini Slider
+      if (miniSlides[prev]) miniSlides[prev].classList.remove('active');
+      if (miniDots[prev]) miniDots[prev].classList.remove('active');
+      if (miniSlides[currentIndex]) miniSlides[currentIndex].classList.add('active');
+      if (miniDots[currentIndex]) miniDots[currentIndex].classList.add('active');
     }
 
     function nextSlide() {
@@ -2409,24 +2472,57 @@ var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof H
       timer = setInterval(nextSlide, 5000);
     }
 
-    dots.forEach((dot, idx) => {
+    // Main controls listeners
+    mainDots.forEach((dot, idx) => {
       dot.addEventListener('click', () => {
         goToSlide(idx);
         startAutoPlay();
       });
     });
 
-    if (prevBtn) {
-      prevBtn.addEventListener('click', (e) => {
+    if (mainPrevBtn) {
+      mainPrevBtn.addEventListener('click', (e) => {
         e.preventDefault();
         prevSlide();
         startAutoPlay();
       });
     }
 
-    if (nextBtn) {
-      nextBtn.addEventListener('click', (e) => {
+    if (mainNextBtn) {
+      mainNextBtn.addEventListener('click', (e) => {
         e.preventDefault();
+        nextSlide();
+        startAutoPlay();
+      });
+    }
+
+    // Mini slider controls listeners
+    miniDots.forEach((dot, idx) => {
+      dot.addEventListener('click', (e) => {
+        e.stopPropagation();
+        goToSlide(idx);
+        startAutoPlay();
+      });
+    });
+
+    if (miniPrevBtn) {
+      miniPrevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        prevSlide();
+        startAutoPlay();
+      });
+    }
+
+    if (miniNextBtn) {
+      miniNextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        nextSlide();
+        startAutoPlay();
+      });
+    }
+
+    if (miniSlider) {
+      miniSlider.addEventListener('click', () => {
         nextSlide();
         startAutoPlay();
       });
@@ -2436,9 +2532,9 @@ var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof H
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initHeroSlider);
+    document.addEventListener('DOMContentLoaded', initHeroSliders);
   } else {
-    initHeroSlider();
+    initHeroSliders();
   }
 })();
 </script>
