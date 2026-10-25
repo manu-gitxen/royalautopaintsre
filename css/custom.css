@@ -964,3 +964,248 @@
     max-width: 180px !important;
   }
 }
+
+/* --- About Section 3-Image Showcase (Royal Auto Paints Products & Equipment) --- */
+.elementor-element.elementor-element-92a8dd0,
+.elementor-7010 .elementor-element.elementor-element-92a8dd0:not(.elementor-motion-effects-element-type-background),
+.elementor-7010 .elementor-element.elementor-element-92a8dd0 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  background-image: url("../images/Automotive_paint_cans_on_marble.jpg") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  border-radius: 20px !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12) !important;
+}
+
+.elementor-element.elementor-element-c6cb7e5,
+.elementor-7010 .elementor-element.elementor-element-c6cb7e5:not(.elementor-motion-effects-element-type-background),
+.elementor-7010 .elementor-element.elementor-element-c6cb7e5 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  background-image: url("../images/Spray_gun_emitting_mist.jpg") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1) !important;
+}
+
+.elementor-element.elementor-element-330b9e3,
+.elementor-7010 .elementor-element.elementor-element-330b9e3:not(.elementor-motion-effects-element-type-background),
+.elementor-7010 .elementor-element.elementor-element-330b9e3 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  background-image: url("../images/Automotive_color_matching_fan_deck.jpg") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Hide legacy skincare device floating graphic */
+.elementor-7010 .elementor-element.elementor-element-0e20f63 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  display: none !important;
+  background-image: none !important;
+}
+
+/* --- About Section Typography & Accents --- */
+.elementor-element.elementor-element-68facb6 .title-part1 {
+  color: #0A2942 !important;
+  font-weight: 600 !important;
+  line-height: 1.25 !important;
+}
+
+.elementor-element.elementor-element-541d4ca p {
+  color: #4A5568 !important;
+  font-size: 16px !important;
+  line-height: 26px !important;
+}
+
+/* Feature Titles & Descriptions */
+.elementor-element.elementor-element-7b7ed34 .icon-box-title,
+.elementor-element.elementor-element-d5a09d2 .icon-box-title {
+  color: #0A2942 !important;
+  font-weight: 600 !important;
+  font-size: 19px !important;
+  margin-bottom: 6px !important;
+}
+
+.elementor-element.elementor-element-7b7ed34 .content,
+.elementor-element.elementor-element-d5a09d2 .content {
+  color: #64748B !important;
+  font-size: 14px !important;
+  line-height: 22px !important;
+}
+
+/* Animated layer (old cosmetic wand container) hide */
+.elementor-element.elementor-element-4a9e62f {
+  display: none !important;
+}
+
+.elementor-element.elementor-element-016b47c {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+}
+
+.elementor-element.elementor-element-4e2f678 {
+  background: transparent !important;
+  padding: 0 !important;
+  width: auto !important;
+  max-width: 100% !important;
+}
+
+/* Experience Stat Box - Royal Orange Gradient */
+.elementor-element-016b47c .tm-sc-funfact {
+  background: linear-gradient(145deg, #F68C50 0%, #E66E1D 100%) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 28px rgba(246, 140, 80, 0.35) !important;
+  padding: 28px 24px !important;
+  text-align: center !important;
+  min-width: 160px !important;
+}
+
+.elementor-element-016b47c .counter {
+  color: #FFFFFF !important;
+  font-size: 52px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  margin-bottom: 8px !important;
+  display: block !important;
+}
+
+.elementor-element-016b47c .title {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.3px !important;
+  margin: 0 !important;
+  white-space: normal !important;
+}
+
+/* About CTA Button - Royal Blue & Orange */
+.btn-style2 {
+  background: #0A2942 !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  border-radius: 50px !important;
+  height: 56px !important;
+  line-height: 56px !important;
+  white-space: nowrap !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 0 14px 0 32px !important;
+  box-shadow: 0 4px 20px rgba(10, 41, 66, 0.25) !important;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  text-decoration: none !important;
+}
+
+.btn-style2 .theme-btn {
+  white-space: nowrap !important;
+  line-height: normal !important;
+}
+
+.btn-style2:hover {
+  background: linear-gradient(135deg, #F68C50 0%, #E66E1D 100%) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(246, 140, 80, 0.45) !important;
+}
+
+.btn-style2 .theme-btn-arrow-right,
+.btn-style2 .theme-btn-arrow-left {
+  background: #FFFFFF !important;
+  border-radius: 50% !important;
+  transition: all 0.35s ease !important;
+}
+
+.btn-style2 svg path {
+  stroke: #0A2942 !important;
+}
+
+.btn-style2:hover .theme-btn-arrow-right,
+.btn-style2:hover .theme-btn-arrow-left {
+  background: #071C2E !important;
+  transform: rotate(30deg) scale(1.05) !important;
+}
+
+.btn-style2:hover svg path {
+  stroke: #F68C50 !important;
+}
+
+/* About Section CTA & Trust Badge Alignment Fix */
+.elementor-element.elementor-element-0cedd7f {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 32px !important;
+  width: 100% !important;
+  margin-top: 25px !important;
+}
+
+.elementor-element.elementor-element-f5ea593 {
+  width: auto !important;
+  max-width: none !important;
+  flex: 0 0 auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.elementor-element.elementor-element-a9a00cf {
+  width: auto !important;
+  max-width: none !important;
+  flex: 0 1 auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  border-left: none !important;
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 15px !important;
+}
+
+.elementor-element.elementor-element-42a0a43 {
+  width: auto !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.royal-trust-emblem {
+  width: 50px !important;
+  height: 50px !important;
+  min-width: 50px !important;
+  border-radius: 50% !important;
+  border: 2px solid #F68C50 !important;
+  padding: 6px !important;
+  background: #FFFFFF !important;
+  box-shadow: 0 4px 14px rgba(246, 140, 80, 0.22) !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+  box-shadow: 0 4px 14px rgba(246, 140, 80, 0.25) !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+.elementor-element.elementor-element-fee896c {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
+
+.elementor-element.elementor-element-32e82e7 {
+  margin-bottom: 2px !important;
+}
+
+.elementor-element.elementor-element-88210d3 p {
+  margin: 0 !important;
+  line-height: 1.3 !important;
+  color: #0A2942 !important;
+  font-size: 14px !important;
+}
