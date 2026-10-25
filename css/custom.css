@@ -108,7 +108,7 @@
   z-index: 2 !important;
 }
 
-/* Dark Green Gradient Overlay for Aesthetic Skincare Look & Readability */
+/* Royal Auto Paints Deep Oceanic Blue Gradient Overlay */
 .elementor-element.elementor-element-a35a1b9::before {
   content: "" !important;
   position: absolute !important;
@@ -118,7 +118,8 @@
   bottom: 0 !important;
   width: 100% !important;
   height: 100% !important;
-  background: linear-gradient(180deg, rgba(12, 47, 37, 0.25) 0%, rgba(12, 47, 37, 0.65) 50%, rgba(12, 47, 37, 0.92) 100%) !important;
+  background: radial-gradient(circle at 20% 50%, rgba(9, 38, 64, 0.45) 0%, transparent 70%),
+              linear-gradient(180deg, rgba(7, 28, 48, 0.3) 0%, rgba(8, 34, 58, 0.68) 50%, rgba(5, 20, 36, 0.94) 100%) !important;
   z-index: 3 !important;
   pointer-events: none !important;
   border-radius: 30px !important;
@@ -171,30 +172,52 @@
   margin-top: 20px !important;
 }
 
-/* Pill CTA Button */
+/* Pill CTA Button - Royal Blue & Orange Accent */
 .elementor-element.elementor-element-b79d8e7 a.btn-style1 {
   display: inline-flex !important;
   align-items: center !important;
   gap: 12px !important;
   background-color: #ffffff !important;
-  color: #0C2F25 !important;
+  color: #0A2942 !important;
   font-weight: 600 !important;
   font-size: 15px !important;
-  padding: 16px 34px !important;
+  letter-spacing: 0.5px !important;
+  padding: 10px 14px 10px 32px !important;
   border-radius: 50px !important;
   text-decoration: none !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
-  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+}
+
+.elementor-element.elementor-element-b79d8e7 a.btn-style1 .theme-btn-arrow-right,
+.elementor-element.elementor-element-b79d8e7 a.btn-style1 .theme-btn-arrow-left {
+  background-color: #0A3254 !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+  transition: all 0.35s ease !important;
+}
+
+.elementor-element.elementor-element-b79d8e7 a.btn-style1 svg path {
+  stroke: #ffffff !important;
 }
 
 .elementor-element.elementor-element-b79d8e7 a.btn-style1:hover {
-  background-color: #24544B !important;
+  background: linear-gradient(135deg, #F68C50 0%, #E66E1D 100%) !important;
   color: #ffffff !important;
   transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(246, 140, 80, 0.45) !important;
+  border-color: #F68C50 !important;
+}
+
+.elementor-element.elementor-element-b79d8e7 a.btn-style1:hover .theme-btn-arrow-right,
+.elementor-element.elementor-element-b79d8e7 a.btn-style1:hover .theme-btn-arrow-left {
+  background-color: #061929 !important;
+  transform: rotate(30deg) scale(1.05) !important;
 }
 
 .elementor-element.elementor-element-b79d8e7 a.btn-style1:hover svg path {
-  stroke: #ffffff !important;
+  stroke: #F68C50 !important;
 }
 
 .elementor-element.elementor-element-8dad962 {
@@ -337,7 +360,7 @@
   font-size: 10px !important;
   letter-spacing: 1.5px !important;
   text-transform: uppercase !important;
-  color: #E2A85C !important;
+  color: #F68C50 !important;
   font-weight: 700 !important;
   font-family: inherit !important;
 }
@@ -403,8 +426,8 @@
 .mini-dot.active {
   width: 14px !important;
   border-radius: 4px !important;
-  background: #FFFFFF !important;
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8) !important;
+  background: #F68C50 !important;
+  box-shadow: 0 0 8px rgba(246, 140, 80, 0.8) !important;
 }
 
 /* Slider Controls: Dots & Navigation Arrows */
@@ -433,8 +456,10 @@
 }
 
 .hero-slider-dots .dot.active {
-  background: #ffffff !important;
-  width: 44px !important;
+  width: 28px !important;
+  border-radius: 6px !important;
+  background: #F68C50 !important;
+  box-shadow: 0 0 10px rgba(246, 140, 80, 0.7) !important;
 }
 
 .hero-slider-arrows {
@@ -459,8 +484,10 @@
 }
 
 .hero-slider-arrows .arrow-btn:hover {
-  background: #ffffff !important;
-  color: #0C2F25 !important;
+  background: #F68C50 !important;
+  border-color: #F68C50 !important;
+  color: #FFFFFF !important;
+  transform: scale(1.08) !important;
 }
 
 /* Responsive Breakpoints */
@@ -670,7 +697,7 @@
   left: -320px !important;
   width: 300px !important;
   height: 100vh !important;
-  background: #0C2F25 !important;
+  background: #082136 !important;
   z-index: 9999 !important;
   padding: 30px 25px !important;
   box-sizing: border-box !important;
@@ -906,15 +933,15 @@
 }
 
 .luxore-call-pill:hover {
-  background: #FFFFFF !important;
-  color: #0C2F25 !important;
-  border-color: #FFFFFF !important;
+  background: linear-gradient(135deg, #F68C50 0%, #E66E1D 100%) !important;
+  color: #FFFFFF !important;
+  border-color: #F68C50 !important;
+  box-shadow: 0 6px 20px rgba(246, 140, 80, 0.35) !important;
   transform: translateY(-1px) !important;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25) !important;
 }
 
 .luxore-call-pill:hover svg {
-  stroke: #0C2F25 !important;
+  stroke: #FFFFFF !important;
 }
 
 .call-pill-icon {

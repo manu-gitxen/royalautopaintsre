@@ -4,14 +4,14 @@ $URL: https://themeforest.net/user/ThemeMascot
 
 ----------------------------------------- */
 :root {
-  --theme-color1: #24544b;
-  --theme-color1-rgb: 36, 84, 75;
-  --theme-color1-lighter: #357b6e;
-  --theme-color1-darker: #132d28;
-  --theme-color2: #1c4942;
-  --theme-color2-rgb: 28, 73, 66;
-  --theme-color2-lighter: #2c7267;
-  --theme-color2-darker: #0c201d;
+  --theme-color1: #0A3254;
+  --theme-color1-rgb: 10, 50, 84;
+  --theme-color1-lighter: #124d80;
+  --theme-color1-darker: #061e33;
+  --theme-color2: #F68C50;
+  --theme-color2-rgb: 246, 140, 80;
+  --theme-color2-lighter: #ffa16b;
+  --theme-color2-darker: #d46b2f;
   --theme-color3: #f7f0f2;
   --theme-color3-rgb: 247, 240, 242;
   --theme-color3-lighter: white;
