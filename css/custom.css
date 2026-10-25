@@ -150,8 +150,7 @@
 
 .elementor-element.elementor-element-c914c01 .title {
   color: #FFFFFF !important;
-  font-size: 82px !important;
-  line-height: 94px !important;
+  font-size: 64px !important; line-height: 76px !important; max-width: 950px !important;
   font-weight: 400 !important;
   margin-bottom: 15px !important;
   font-family: inherit !important;
@@ -267,7 +266,7 @@
 
 /* Image preview card inside badge */
 .elementor-element.elementor-element-365998f {
-  background-image: url("../images/der-img2.jpg") !important;
+  background-image: url("../images/royalpaint_hero_3.jpg") !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
@@ -696,5 +695,115 @@
   }
   .luxore-nav-container {
     padding: 0 20px !important;
+  }
+}
+
+
+/* ==========================================================================
+   Option 2 Navbar Layout: Logo Left, Center Nav, Right Luxury Call Pill
+   ========================================================================== */
+.opt2-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  height: 80px !important;
+}
+
+.opt2-logo-area {
+  flex: 0 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.luxore-brand-logo-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  transition: opacity 0.3s ease, transform 0.3s ease !important;
+}
+
+.luxore-brand-logo-link:hover {
+  opacity: 0.9 !important;
+  transform: translateY(-1px) !important;
+}
+
+.royal-nav-logo {
+  height: 42px !important;
+  width: auto !important;
+  max-width: 220px !important;
+  object-fit: contain !important;
+  display: block !important;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35)) !important;
+}
+
+.opt2-nav-center {
+  flex: 1 1 auto !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.opt2-nav-center .luxore-nav-menu {
+  gap: 34px !important;
+}
+
+.opt2-nav-right {
+  flex: 0 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
+
+/* Luxury Frosted Glass Call Button */
+.luxore-call-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 9px !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  color: #FFFFFF !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1.8px !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  padding: 10px 24px !important;
+  border-radius: 50px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.luxore-call-pill:hover {
+  background: #FFFFFF !important;
+  color: #0C2F25 !important;
+  border-color: #FFFFFF !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25) !important;
+}
+
+.luxore-call-pill:hover svg {
+  stroke: #0C2F25 !important;
+}
+
+.call-pill-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.call-pill-icon svg {
+  stroke: #FFFFFF !important;
+  transition: stroke 0.3s ease !important;
+}
+
+@media (max-width: 1024px) {
+  .opt2-nav-center {
+    display: none !important;
+  }
+  .royal-nav-logo {
+    height: 36px !important;
+    max-width: 180px !important;
   }
 }

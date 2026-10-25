@@ -177,38 +177,37 @@ var simpleLikes = {"ajaxurl":"#wp-admin/admin-ajax.php","like":"Like","unlike":"
 	</div>
 					<!-- Header -->
 		
-<header id="header" class="luxore-navbar-header">
-  <div class="luxore-nav-container">
-    <!-- Left Navigation Links -->
-    <nav class="luxore-nav-left">
+
+<header id="header" class="luxore-navbar-header opt2-header">
+  <div class="luxore-nav-container opt2-container">
+    <!-- Left: Royal Auto Paints Brand Logo -->
+    <div class="opt2-logo-area">
+      <a href="index.html" class="luxore-brand-logo-link" title="Royal Auto Paints">
+        <img src="images/royal_logo_white.png" alt="Royal Auto Paints" class="royal-nav-logo" height="42">
+      </a>
+    </div>
+
+    <!-- Center: Primary Nav Links -->
+    <nav class="opt2-nav-center">
       <ul class="luxore-nav-menu">
-        <li><a href="#shop" class="luxore-nav-link">SHOP</a></li>
-        <li><a href="#collections" class="luxore-nav-link">COLLECTIONS</a></li>
-        <li><a href="#blog" class="luxore-nav-link">BLOG</a></li>
+        <li><a href="#products" class="luxore-nav-link">PRODUCTS</a></li>
+        <li><a href="#services" class="luxore-nav-link">SERVICES</a></li>
+        <li><a href="#about" class="luxore-nav-link">ABOUT</a></li>
+        <li><a href="#gallery" class="luxore-nav-link">GALLERY</a></li>
         <li><a href="#contact" class="luxore-nav-link">CONTACT</a></li>
       </ul>
     </nav>
 
-    <!-- Center Brand Logo -->
-    <div class="luxore-nav-center">
-      <a href="index.html" class="luxore-brand-logo">LUXORE</a>
-    </div>
-
-    <!-- Right Action Icons -->
-    <div class="luxore-nav-right">
-      <button class="luxore-icon-btn luxore-search-btn" aria-label="Search">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="11" r="8"></circle>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-      </button>
-      <button class="luxore-icon-btn luxore-bag-btn" aria-label="Shopping Bag">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <path d="M16 10a4 4 0 0 1-8 0"></path>
-        </svg>
-      </button>
+    <!-- Right: Search Icon + Luxury Call Button + Mobile Toggle -->
+    <div class="opt2-nav-right">
+      <a href="tel:+971501234567" class="luxore-call-pill">
+        <span class="call-pill-icon">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </span>
+        <span class="call-pill-text">CALL NOW</span>
+      </a>
       <!-- Mobile Hamburger Toggle -->
       <button class="luxore-menu-toggle" id="luxoreMenuToggle" aria-label="Toggle navigation">
         <span></span>
@@ -221,17 +220,31 @@ var simpleLikes = {"ajaxurl":"#wp-admin/admin-ajax.php","like":"Like","unlike":"
   <!-- Mobile Drawer Menu -->
   <div class="luxore-mobile-drawer" id="luxoreMobileDrawer">
     <div class="luxore-mobile-drawer-header">
-      <span class="luxore-drawer-brand">LUXORE</span>
+      <a href="index.html" class="luxore-brand-logo-link">
+        <img src="images/royal_logo_white.png" alt="Royal Auto Paints" style="height: 36px; width: auto;">
+      </a>
       <button class="luxore-drawer-close" id="luxoreDrawerClose" aria-label="Close menu">&times;</button>
     </div>
     <ul class="luxore-mobile-menu">
-      <li><a href="#shop">SHOP</a></li>
-      <li><a href="#collections">COLLECTIONS</a></li>
-      <li><a href="#blog">BLOG</a></li>
+      <li><a href="#products">PRODUCTS</a></li>
+      <li><a href="#services">SERVICES</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#gallery">GALLERY</a></li>
       <li><a href="#contact">CONTACT</a></li>
     </ul>
+    <div style="margin-top: 30px;">
+      <a href="tel:+971501234567" class="luxore-call-pill" style="display: flex; justify-content: center; width: 100%;">
+        <span class="call-pill-icon" style="margin-right: 8px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </span>
+        <span class="call-pill-text">CALL NOW</span>
+      </a>
+    </div>
   </div>
 </header>
+
 
 			
 		<div class="top-sliders-container">
@@ -254,14 +267,18 @@ var simpleLikes = {"ajaxurl":"#wp-admin/admin-ajax.php","like":"Like","unlike":"
 		<div class="elementor-element elementor-element-a35a1b9 overflow-hidden e-flex e-con-boxed tm-col-stretched-none tm-bg-color-over-image e-con e-child" data-id="a35a1b9" data-element_type="container" data-e-type="container" data-settings="{" background_background":"slideshow","background_slideshow_gallery":[{"id":6838,"url":"https:\="" \="" dev265.kodesolution.com\="" dermisio\="" wp-content\="" uploads\="" 2026\="" 08\="" der-home1.jpg"},{"id":6823,"url":"https:\="" 03\="" blog-5.jpg"}],"background_slideshow_ken_burns":"yes","background_slideshow_loop":"yes","background_slideshow_slide_duration":5000,"background_slideshow_slide_transition":"fade","background_slideshow_transition_duration":500,"background_slideshow_ken_burns_zoom_direction":"in"}"="">
 					
 <div class="elementor-background-slideshow" id="heroBannerSlideshow">
-  <div class="slide-item active" style="background-image: url('images/der-home1.jpg');"></div>
-  <div class="slide-item" style="background-image: url('images/der-project2-1536x1024.jpg');"></div>
-  <div class="slide-item" style="background-image: url('images/der-project3-1536x1024.jpg');"></div>
+  <div class="slide-item active" style="background-image: url('images/automotive_hero.png');"></div>
+  <div class="slide-item" style="background-image: url('images/royalpaint_hero_3.jpg');"></div>
+  <div class="slide-item" style="background-image: url('images/spray_booth_hero.jpg');"></div>
+  <div class="slide-item" style="background-image: url('images/marine_paint_hero.jpg');"></div>
+  <div class="slide-item" style="background-image: url('images/wood_paint_hero.jpg');"></div>
   <div class="hero-slider-controls">
     <div class="hero-slider-dots">
-      <div class="dot active" data-index="0"></div>
-      <div class="dot" data-index="1"></div>
-      <div class="dot" data-index="2"></div>
+      <div class="dot active" data-index="0" title="Automotive Refinish"></div>
+      <div class="dot" data-index="1" title="OEM Coatings"></div>
+      <div class="dot" data-index="2" title="Commercial Spray Booths"></div>
+      <div class="dot" data-index="3" title="Marine & Yacht Finishes"></div>
+      <div class="dot" data-index="4" title="Wood Architectural"></div>
     </div>
     <div class="hero-slider-arrows">
       <button class="arrow-btn" id="heroPrevBtn" aria-label="Previous Slide">
@@ -285,7 +302,7 @@ var simpleLikes = {"ajaxurl":"#wp-admin/admin-ajax.php","like":"Like","unlike":"
 					<h2 class="title ">
 
 		
-				<span class="title-part1 ">Elevate Your Skin  Health with Expert  </span>
+				<span class="title-part1">Precision Surface Coatings Engineered Across 5 Specialized Divisions</span>
 		
 							
 	</h2>
@@ -308,8 +325,7 @@ var simpleLikes = {"ajaxurl":"#wp-admin/admin-ajax.php","like":"Like","unlike":"
 			<path d="M0 8.00008L15 8.00008M18.3361 8.01939C15.2241 7.82927 9 9.16017 9 16.0048M18.3361 7.98545C15.2241 8.17558 9 6.84467 9 0" stroke="#0C2F25" stroke-width="1.5"></path>
 		</svg>
   </span>
-  <span class="theme-btn">
-		Get Appointment  </span>
+  <span class="theme-btn">EXPLORE 5 DIVISIONS</span>
   <span class="theme-btn-arrow-right">
 		<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M0 8.00008L15 8.00008M18.3361 8.01939C15.2241 7.82927 9 9.16017 9 16.0048M18.3361 7.98545C15.2241 8.17558 9 6.84467 9 0" stroke="#0C2F25" stroke-width="1.5"></path>
@@ -320,7 +336,7 @@ var simpleLikes = {"ajaxurl":"#wp-admin/admin-ajax.php","like":"Like","unlike":"
 				<div class="elementor-element elementor-element-8dad962 elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-tm-ele-text-editor" data-id="8dad962" data-element_type="widget" data-e-type="widget" data-settings="{" _animation":"fadeinup","_animation_delay":300}"="" data-widget_type="tm-ele-text-editor.default">
 				<div class="elementor-widget-container">
 							<div class="tm-text-editor">
-		<p>We are at the forefront of skin health and beauty. As a dedicated dermatology &amp; skincare clinic our mission</p>		</div>
+		<p>Qatar’s premier authorized distributor of advanced automotive refinish systems, commercial spray booth care, marine &amp; yacht coatings, luxury wood finishes, and heavy-duty industrial surface protection since 2012.</p>		</div>
 					</div>
 				</div>
 				</div>
@@ -335,7 +351,7 @@ var simpleLikes = {"ajaxurl":"#wp-admin/admin-ajax.php","like":"Like","unlike":"
   <div class="funfact-inner">
               
                   <h2 class="counter ">
-	<span class="animate-number" data-value="98" data-animation-duration="1500">98</span><span class="counter-postfix">%</span></h2>
+	<span class="animate-number" data-value="5" data-animation-duration="1500">5</span><span class="counter-postfix">+</span></h2>
       
               <div class="title-wrapper">
 
@@ -352,7 +368,7 @@ var simpleLikes = {"ajaxurl":"#wp-admin/admin-ajax.php","like":"Like","unlike":"
 				<div class="elementor-element elementor-element-5a10163 elementor-widget elementor-widget-tm-ele-text-editor" data-id="5a10163" data-element_type="widget" data-e-type="widget" data-widget_type="tm-ele-text-editor.default">
 				<div class="elementor-widget-container">
 							<div class="tm-text-editor">
-		<h5>Successful Nutrition<br>Programs</h5>		</div>
+		<h5>Specialized Coating<br>Divisions</h5>		</div>
 					</div>
 				</div>
 				</div>
@@ -2010,8 +2026,7 @@ Experience</p>
 			<path d="M0 8.00008L15 8.00008M18.3361 8.01939C15.2241 7.82927 9 9.16017 9 16.0048M18.3361 7.98545C15.2241 8.17558 9 6.84467 9 0" stroke="#0C2F25" stroke-width="1.5"></path>
 		</svg>
   </span>
-  <span class="theme-btn">
-		Get Appointment  </span>
+  <span class="theme-btn">EXPLORE 5 DIVISIONS</span>
   <span class="theme-btn-arrow-right">
 		<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M0 8.00008L15 8.00008M18.3361 8.01939C15.2241 7.82927 9 9.16017 9 16.0048M18.3361 7.98545C15.2241 8.17558 9 6.84467 9 0" stroke="#0C2F25" stroke-width="1.5"></path>
