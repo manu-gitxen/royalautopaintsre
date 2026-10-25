@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "FlaticonSetDermisio";
+    src: url("../fonts/flaticon-set-dermisio.woff2") format("woff2"),
+url("../fonts/flaticon-set-dermisio.woff") format("woff"),
+url("../fonts/flaticon-set-dermisio.eot") format("embedded-opentype"),
+url("../fonts/flaticon-set-dermisio.ttf") format("truetype"),
+url("../images/flaticon-set-dermisio.svg") format("svg")
+}
+
+i[class^="flaticon-set-"]:before, i[class*=" flaticon-set-"]:before {
+    font-family: FlaticonSetDermisio !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-set-woman:before {
+    content: "\f101";
+}
+.flaticon-set-skin-care:before {
+    content: "\f102";
+}
+.flaticon-set-clean:before {
+    content: "\f103";
+}
+.flaticon-set-all-skin-type:before {
+    content: "\f104";
+}
+.flaticon-set-treatment:before {
+    content: "\f105";
+}
+.flaticon-set-face-cream:before {
+    content: "\f106";
+}
+.flaticon-set-ingredients:before {
+    content: "\f107";
+}
+.flaticon-set-skincare:before {
+    content: "\f108";
+}
+.flaticon-set-facial-treatment:before {
+    content: "\f109";
+}
+.flaticon-set-glowing-skin:before {
+    content: "\f10a";
+}
+.flaticon-set-skincare-routine:before {
+    content: "\f10b";
+}
+.flaticon-set-skincare-1:before {
+    content: "\f10c";
+}
+.flaticon-set-skincare-2:before {
+    content: "\f10d";
+}
+.flaticon-set-natural:before {
+    content: "\f10e";
+}
+.flaticon-set-skin-check:before {
+    content: "\f10f";
+}
+.flaticon-set-beauty:before {
+    content: "\f110";
+}
+.flaticon-set-cream:before {
+    content: "\f111";
+}
+.flaticon-set-skincare-routine-1:before {
+    content: "\f112";
+}
+.flaticon-set-serum:before {
+    content: "\f113";
+}
+.flaticon-set-therapy:before {
+    content: "\f114";
+}
+.flaticon-set-doctor:before {
+    content: "\f115";
+}
+.flaticon-set-lotion:before {
+    content: "\f116";
+}
+.flaticon-set-skincare-3:before {
+    content: "\f117";
+}
+.flaticon-set-hand-sanitizer:before {
+    content: "\f118";
+}
+.flaticon-set-facial:before {
+    content: "\f119";
+}
+
