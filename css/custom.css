@@ -1811,3 +1811,16 @@ html {
 .pin-spacer--trigger-4 {
   z-index: 5 !important;
 }
+
+/* Stats section: clean normal vertical divider lines (replacing flower design) */
+.elementor-element-3cac144 .elementor-widget-tm-ele-floating-objects .each-object,
+.elementor-element-3cac144 .stat-column-divider {
+  background-image: none !important;
+  width: 1px !important;
+  height: 160px !important;
+  background-color: #0C2F251A !important;
+  top: 20px !important;
+  left: 0 !important;
+  display: block !important;
+  opacity: 1 !important;
+}
