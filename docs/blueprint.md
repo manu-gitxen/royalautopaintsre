@@ -1,197 +1,391 @@
-# Royal Auto Paints Qatar — Architectural Blueprint & Technical Specification (Luxury Redesign v3)
+# Royal Auto Paints Qatar — Architectural Blueprint & Technical Specification (Flagship Redesign v3.5)
 
-**Project Name:** Royal Auto Paints Qatar Luxury Redesign (`royalfinal`)  
-**Base Architecture:** High-Performance Modern Luxury Framework (`E:\xev\royalfinal`) / Custom Elementor Modern Core / Vanilla JS Interactive Micro-Components  
-**Active Production Path:** `E:\xev\royalfinal` (Primary Active Redesign Workspace)  
-**Mirror & Sync Paths:** `E:\xev\royalautopaints` (Original/Content Mirror) / `d:\D-Downloads\royal_paints1` (Local Workspace)  
+**Project Name:** Royal Auto Paints Qatar Website Flagship Redesign  
+**Base Architecture:** High-Performance ThemeMascot Modern Luxury Framework / Custom Responsive Core / GSAP ScrollTrigger / Swiper.js / TwentyTwenty Slider  
+**Active Workspaces:**  
+- `D:\manu\projects\royal_paints_1` (Primary Production Workspace)  
+- `D:\manu\projects\royalautopaintsre` (Staging & Live Server Workspace: `http://127.0.0.1:5500/`)  
 **Live Production Domain:** `https://www.royalautopaints.com/`  
 **Physical Headquarters:** Street 23, Wakalat St, Industrial Area, Doha, Qatar  
 **Direct Contacts:** Tel: `+974 4450 1669` | WhatsApp RFQ: `+974 5039 5741` | Email: `info@royalautopaints.com` / `royalpaints.qa@gmail.com`  
-**Current Milestone:** Phase 2 Complete (Hero 5-Division Interactive Slider & Complete SEO "Who We Are" About Section Integrated and Verified)  
+**Current Milestone:** Complete Production Flagship Integration — All 14 Homepage Sections, 5-Card GSAP ScrollTrigger Pinning, TwentyTwenty Comparison, Products Swiper Showcase & Full Multi-Page Catalog Fully Verified.
 
 ---
 
 ## 1. Executive Summary & Evolution History
 
-Royal Auto Paints Qatar is Doha's premier authorized automotive refinish distributor, technical color laboratory, and industrial coatings supplier, operating continuously in the Doha Industrial Area since 2012. 
+Established in 2012 in the Doha Industrial Area, **Royal Auto Paints** is Qatar's premier authorized distributor of world-class automotive refinish systems, commercial spray booth equipment, marine and yacht coatings, industrial protective coatings, and luxury wood finishes. The company represents global industry leaders including **HB Body, Axalta Challenger, Motolux, and Sea-Line**.
 
 ### The Redesign Evolution
-1. **v1 (Legacy Site):** High organic SEO rankings and strong local authority, but dated layout, sluggish mobile experience, and lack of visual prestige.
+1. **v1 (Legacy Site):** High organic SEO rankings and strong local authority, but dated layout, non-responsive design, and limited interactive product capability.
 2. **v2 (Zay Shop Redesign):** Clean, minimalist Bootstrap framework (`zay_royal_paint_template_stock`) with custom corporate colors and structured sections.
-3. **v3 (Current Luxury Flagship — `royalfinal`):** Upgraded to a high-end, luxury corporate experience inspired by precision Scandinavian design. Features interactive synchronized micro-sliders, refined micro-details, authentic high-resolution studio photography, modern glassmorphism badges, and brand-first Royal Oceanic Navy & Paint Splash Orange accents—while maintaining **100% SEO keyword equity and zero drop in search visibility**.
+3. **v3 (Luxury Flagship Redesign):** High-end corporate experience featuring interactive synchronized micro-sliders, authentic high-resolution studio photography, modern glassmorphism badges, and brand-first Royal Oceanic Navy & Paint Splash Warm Orange accents.
+4. **v3.5 (Current Modern Interactive Engine):**
+   - **GSAP ScrollTrigger Pinned Services Showcase:** 5 pinned division cards (Automotive Refinish, Spray Booth Engineering, Marine & Yacht Coatings, Industrial Protective Coatings, Luxury Wood Paints) with progressive stacking and seamless forward/reverse scroll pinning.
+   - **Why Clients Trust Royal Auto Paints:** Refined organic curved mask with high-resolution spray mist photography, 4 capability feature boxes, and animated wholesale quote triggers.
+   - **Stats Counter Section ("Our Experience Speaks for Itself"):** 4 high-credibility B2B automotive coating metrics with smooth scroll-animated counters and clean 1px vertical straight separators.
+   - **Before & After Real Automotive Refinish Results:** Interactive TwentyTwenty comparison slider demonstrating factory-finish paint restoration on high-res vehicle imagery.
+   - **Featured Products Showcase & Slider (`#products`):** Interactive Swiper carousel displaying 6 authentic Royal Auto Paints coatings (HB Body 691, HB Body F202, Challenger CL240, HB Body C496, HB Body C493, HB Body U951) with 5 gold stars, studio pedestal rendering, and one-tap WhatsApp RFQ triggers.
 
 ---
 
 ## 2. Core Visual Identity & Design System
 
-The visual language transitions the website from generic industrial aesthetics to modern engineering luxury:
+The visual design system merges industrial durability with automotive prestige:
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
-│                      ROYAL AUTO PAINTS COLOR PALETTE                   │
+│                      ROYAL AUTO PAINTS COLOR SYSTEM                    │
 ├───────────────────┬───────────────────┬────────────────────────────────┤
-│ Color Name        │ Hex Code          │ Application                    │
+│ Token Name        │ Hex Code          │ UI Application                 │
 ├───────────────────┼───────────────────┼────────────────────────────────┤
 │ Royal Oceanic Navy│ #0A2942 / #0A3254 │ Primary Branding, Dark Canvas, │
-│                   │                   │ Section Headings, Pill Buttons │
+│                   │                   │ Section Headings, Hero BG      │
 ├───────────────────┼───────────────────┼────────────────────────────────┤
 │ Splash Warm Orange│ #F68C50           │ Accent Highlights, Hover Glow, │
-│                   │                   │ Stat Badges, Progress Dots     │
+│                   │                   │ Rating Stars, Progress Bars    │
 ├───────────────────┼───────────────────┼────────────────────────────────┤
-│ Vivid Amber Orange│ #E66E1D           │ Gradient Endpoints, Active CTA │
+│ Vivid Amber Glow  │ #E66E1D           │ Gradient Endpoints, Active CTA │
 ├───────────────────┼───────────────────┼────────────────────────────────┤
-│ Slate Navy Body   │ #64748B / #334155 │ Body Typography, Specs, Meta   │
+│ Studio Warm Tint  │ #FAF7F2 / #FAF6F3 │ Soft Refinish Showcase Canvas, │
+│                   │                   │ Products & Testimonial Canvas  │
 ├───────────────────┼───────────────────┼────────────────────────────────┤
-│ Pure Ice / White  │ #FFFFFF / #F8FAFC │ Content Cards, Clean Canvas    │
+│ Slate Body Text   │ #64748B / #334155 │ Descriptive Paragraphs, Specs  │
+├───────────────────┼───────────────────┼────────────────────────────────┤
+│ Pure Card White   │ #FFFFFF           │ Product Cards, Capability Boxes│
+├───────────────────┼───────────────────┼────────────────────────────────┤
+│ Subtle Border Gray│ #E2E8F0 / #CBD5E1 │ Component Separators & Dividers│
 └───────────────────┴───────────────────┴────────────────────────────────┘
 ```
 
 ### Key UI Architecture Rules
-1. **Pill & Frosted Glass Elements:** High-end pill buttons (`.btn-style1`, `.btn-style2`) with circular arrow indicators that rotate `30deg` and transform from white/navy to orange/amber on hover.
-2. **Elimination of Skincare Remnants:** Removed all murky green overlays (`rgba(12, 47, 37)`), replaced cosmetic device cutouts (`pic7.png`) with clean industrial photography, and replaced dermatology icons with custom SVG vector icons (Digital Spectrophotometer, Shield of Authenticity).
-3. **Typography Standard:**
-   - Display Headings: Luxury serif / modern display typography in Brand Navy (`#0A2942`).
-   - Technical & Feature Headings: Inter / Roboto Semi-Bold (`font-weight: 600`).
-   - Body & Descriptions: Clean Slate (`#64748B`, `line-height: 1.65`).
+1. **Button Arrow-Reveal Animation (`.btn-style1`, `.btn-style2`):**
+   - High-end pill buttons featuring dual hidden/visible SVG arrows.
+   - On hover, the left arrow slides in smoothly (`transform: translateX(0); opacity: 1`), the button background shifts to Brand Orange (`#F68C50`), and the text scales with subtle spring physics.
+2. **Standardized Card Geometry:**
+   - 20px uniform rounded corners on product cards and service division containers (`border-radius: 20px`).
+   - Clean 1px border (`rgba(12, 47, 37, 0.06)`) combined with soft depth ambient elevation (`box-shadow: 0 8px 25px rgba(10, 41, 66, 0.06)`).
+   - Dynamic hover lift (`transform: translateY(-8px)`) with heightened shadow (`0 20px 42px rgba(10, 41, 66, 0.13)`).
+3. **Pill Eyebrow Subtitles:**
+   - Centered pill badges (`background-color: #FFFFFF`, padding `7px 22px`, `border-radius: 50px`, box-shadow `0 2px 12px rgba(0,0,0,0.05)`).
+   - Preceded by a circular orange accent dot (`width: 7px; height: 7px; background-color: #F68C50; border-radius: 50%`).
+4. **Gold Star Rating Standards:**
+   - Universal 5-star rating using Font Awesome 5 Free (`\f005`) in `#ffa700` with 100% fill width.
 
 ---
 
-## 3. Implemented Sections & Technical Specifications
+## 3. Information Architecture & Multi-Page Topology
+
+The website operates as a high-performance multi-page portal with 7 dedicated HTML pages synchronized with in-page anchor navigation:
 
 ```mermaid
 flowchart TD
-    S1["1. Top Utility Header\n(Doha Contact, Email, Operating Hours)"]
-    S2["2. Sticky Navigation Bar\n(Brand Logo, 5 Divisions Menu, 'CALL NOW' Pill)"]
-    S3["3. Synchronized 5-Division Hero\n(Auto-Rotating Slideshow + Interactive Mini Slider Card)"]
-    S4["4. 'Who We Are' About Section\n(3-Photo Collage, Authentic Live SEO Copy, Stat Box, Aligned CTA Badge)"]
-    S5["5. 5 Coating Divisions Grid\n(Automotive, Booths, Marine, Wood, Industrial) [IN PROGRESS]"]
-    S6["6. Authorized Brand Showroom\n(HB Body, Axalta, Motolux, Sea-Line) [PLANNED]"]
-    S7["7. Product Catalog & Live Search [PLANNED]"]
-    S8["8. Facility & Workshop Engineering [PLANNED]"]
-    S9["9. Verified Reviews & Testimonials [PLANNED]"]
-    S10["10. Doha Location & Google Maps [PLANNED]"]
-    S11["11. Corporate Footer & NAP Badges [PLANNED]"]
+    subgraph Header["Universal Sticky Navigation Header"]
+        Logo["Royal Auto Paints Brand Logo (44px)"]
+        NavLinks["Nav Links: Products | Services | About | Gallery | Contact"]
+        CallPill["Desktop & Mobile 'CALL NOW' Action Pill (+974 4450 1669)"]
+    end
 
-    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8 --> S9 --> S10 --> S11
+    subgraph Pages["Dedicated Standalone Pages"]
+        HomePg["index.html\n(14-Section Flagship Portal)"]
+        AboutPg["about.html\n(Heritage Since 2012, Pillars, Dealership)"]
+        ServicesPg["services.html\n(5 Core Refinish & Industrial Divisions)"]
+        ProductsPg["products.html\n(Full Catalog, Category Filter Pills, Live Search)"]
+        GalleryPg["gallery.html\n(Filterable Showroom & Project Showcase)"]
+        CareerPg["career.html\n(Qatar Vacancies & Application Portal)"]
+        ContactPg["contact.html\n(Wakalat St Showroom, Hours, Google Maps)"]
+    end
+
+    Header --> HomePg
+    Header --> AboutPg
+    Header --> ServicesPg
+    Header --> ProductsPg
+    Header --> GalleryPg
+    Header --> CareerPg
+    Header --> ContactPg
 ```
 
-### Section 2: Flagship Hero & Synchronized Mini-Slider
-- **Canvas & Background:** High-resolution 16:9 full-width slides with a deep Royal Oceanic Navy gradient overlay (`linear-gradient(135deg, rgba(7, 28, 48, 0.92) 0%, rgba(5, 20, 36, 0.88) 100%)`).
+### Multi-Page Route Matrix
+| URL Route | Page Title | Primary Capabilities & Content Focus |
+| :--- | :--- | :--- |
+| `index.html` | Home — Royal Auto Paints | Flagship interactive portal: 5-Slide Hero, 5-Division GSAP Pinning Showcase, Why Choose Us, Animated Stats, Before/After Slider, Products Swiper Carousel, Reviews, Brands, Location & Footer. |
+| `about.html` | About Us | Heritage in Doha Industrial Area since 2012, authorized Qatar dealership for HB Body & Challenger, technical pillars, team and facility photography. |
+| `services.html` | Specialized Services | In-depth engineering specifications for OEM color matching, spray booths, marine coatings, wood finishes, and industrial protective barriers. |
+| `products.html` | Product Catalogue | Complete 20+ item automotive catalog with 6 category filter pills (`All`, `Clears`, `Putties`, `Primers`, `Thinners`, `Marine`, `Tools`), instant client-side search, and one-tap WhatsApp RFQ triggers. |
+| `gallery.html` | Project Gallery | Visual showcase with category filter tabs for collision centers, commercial spray booths, yacht refinishing, and industrial steel coatings. |
+| `career.html` | Careers & Openings | 4 authentic Qatar job vacancies (Color Mixing Technician, B2B Sales Executive, Spray Booth Maintenance Specialist, Warehouse Logistics Coordinator) with direct CV application form. |
+| `contact.html` | Contact Us & Showroom | Street 23 Wakalat St showroom details, morning and evening operating hours, responsive Google Maps iframe, and technical inquiry dispatch form. |
+
+---
+
+## 4. Complete Homepage Section Hierarchy & Technical Specifications
+
+```mermaid
+flowchart TD
+    S1["1. Top Utility Header\n(Doha Industrial Area, Direct Phones, Email Desk)"]
+    S2["2. Main Sticky Navigation\n(Brand Logo, Anchor Links, 'CALL NOW' Pill)"]
+    S3["3. Synchronized 5-Division Hero Banner\n(Dynamic Full-Width Slider + Interactive Mini-Card Card)"]
+    S4["4. 'Who We Are' Heritage & Strength Section\n(3-Photo Collage, 2012 Doha History, Spectrophotometer Lab Copy)"]
+    S5["5. Pinned Services Showcase (GSAP ScrollTrigger)\n(5 Stacking Cards: Automotive, Booths, Marine, Industrial, Wood)"]
+    S6["6. Why Clients Trust Royal Auto Paints\n(Curved Arched Mask, 4 Capability Boxes, Wholesale Quote Button)"]
+    S7["7. Animated Experience Counters\n(500+ Workshops, 99% OEM Match, 4.9 Rating, 800+ Projects)"]
+    S8["8. Before & After Refinish Results\n(Interactive TwentyTwenty Draggable Split Slider)"]
+    S9["9. Featured Products Showcase & Slider (#products)\n(6 Editorial Studio Coatings, 5 Stars, QAR Pricing, Swiper Carousel)"]
+    S10["10. How It Works / Technical Refinish Steps\n(Consultation, Spectrophotometer Lab, Batch Formulation, Delivery)"]
+    S11["11. Customer Reviews & Reputation\n(Verified Testimonials, Star Ratings, B2B Workshop Reviews)"]
+    S12["12. Authorized Brand Partners Carousel\n(HB Body, Axalta, Challenger, Motolux, Sea-Line)"]
+    S13["13. Technical FAQ & Consultation Desk\n(Accordion FAQs, Mixing Inquiries, Technical Datasheets)"]
+    S14["14. Corporate Footer & Doha Location\n(Street 23 Headquarters, Operating Hours, Google Maps, Legal Badges)"]
+
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8 --> S9 --> S10 --> S11 --> S12 --> S13 --> S14
+```
+
+---
+
+### Detailed Section Breakdown
+
+#### Section 3: Flagship Hero & Synchronized 5-Division Mini-Slider
+- **Canvas:** Full-width responsive container with deep Royal Oceanic Navy gradient overlay (`linear-gradient(135deg, rgba(7, 28, 48, 0.92) 0%, rgba(5, 20, 36, 0.88) 100%)`).
 - **5 Synchronized Coating Divisions:**
-  1. `01/05` — **Automotive Refinish Division:** HS clearcoats, OEM color mixing, primers, and European collision repair solutions.
-  2. `02/05` — **Commercial Spray Booth Systems:** Downdraft spray booth engineering, extraction fans, intake filters, and maintenance.
-  3. `03/05` — **Marine & Yacht Finishes Division:** Sea-Line European polyurethane yacht topcoats, epoxy primers, and osmosis protection.
-  4. `04/05` — **Architectural & Wood Finishes:** High-durability PU lacquers, industrial furniture coatings, and wood stains.
-  5. `05/05` — **Industrial Protective Coatings:** Architectural structural steel primers, epoxy barriers, and extreme corrosion-resistant coatings (`Industrial_steel_I-beams_positioned.jpg`).
+  1. `01/05` — Automotive Refinish (HB Body 2K High Solids clear coats, European collision systems).
+  2. `02/05` — Commercial Spray Booth Systems (Downdraft spray booth engineering, intake filters).
+  3. `03/05` — Marine & Yacht Finishes (Sea-Line polyurethane yacht topcoats, epoxy barrier primers).
+  4. `04/05` — Industrial Protective Coatings (Structural steel epoxy primers, anti-corrosive enamels).
+  5. `05/05` — Luxury Wood Paints & Polyurethane Finishes (2K Italian polyurethane clear coats, stains).
 - **Interactive Mini-Slider Card (`.mini-division-slider`):**
   - Frosted glass floating badge (`backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.25)`).
-  - Synchronized two-way auto-rotation (every 5.5s) between the main background and mini card.
-  - Interactive navigation: Circular glass chevrons, gold counter pill (`01/05`), and active orange progress dots.
+  - Two-way synchronized auto-rotation (5.5s interval), circular glass chevrons, gold counter pill, and active orange indicator dots.
 
----
-
-### Section 3: "Who We Are" — Heritage & Technical Strengths
+#### Section 4: "Who We Are" — Heritage & Technical Strengths
 - **3-Image Precision Collage:**
-  - **Left Tall Card (`elementor-element-92a8dd0`):** `images/Automotive_paint_cans_on_marble.jpg` (European 2K clearcoats, hardeners, primers).
-  - **Top-Right Card (`elementor-element-c6cb7e5`):** `images/Spray_gun_emitting_mist.jpg` (HVLP gravity feed spray gun on stainless workbench).
-  - **Bottom-Right Card (`elementor-element-330b9e3`):** `images/Automotive_color_matching_fan_deck.jpg` (Automotive color fan deck with computerized spectrophotometer lab).
-- **SEO-Preserving Narrative Copy:**
-  - Extracted verbatim from live production site ([`E:\xev\royalautopaints\about.html`](file:///E:/xev/royalautopaints/about.html)).
-  - Target Entities: Doha Industrial Area since 2012, HB Body, Axalta Challenger, Motolux, Sea-Line, 2K clearcoats, computerized OEM color matching.
-- **Two Core Feature Pillars:**
-  1. **Computerized OEM Color Lab:** Custom spectrophotometer SVG icon; digital formulation matching 150,000+ codes with spray-out card validation.
-  2. **Authorized Brand Distributor:** Custom security shield SVG icon; direct stockist of European HS clearcoats, primers, downdraft filtration, and yacht finishes.
-- **Stat Box:**
-  - `14+` **Years of Excellence** in a warm Royal Orange gradient card (`#F68C50` to `#E66E1D`, `box-shadow: 0 10px 28px rgba(246, 140, 80, 0.35)`).
-- **CTA & Trust Row (Fixed Alignment):**
-  - **Button:** Single-line `.btn-style2` pill (`OUR HERITAGE & BRANDS →`) with white circular arrow badge and orange hover transition.
-  - **Alignment Fix:** Swapped rigid `40%`/`55%` container widths for flex auto-sizing with a generous **32px gap** and vertical centering (`align-items: center`).
-  - **Official Emblem:** Extracted high-definition vector-quality brand swirl (`images/royal_brand_swirl.png`, 332×332px) in vibrant orange-to-yellow gradient inside a circular white pill with an orange border.
-  - **Trust Text:** `AUTHORIZED DISTRIBUTOR — Royal Auto Paints — Doha, Qatar`.
+  - Left Tall Card: `images/Automotive_paint_cans_on_marble.jpg` (2K clearcoats, hardeners, primers).
+  - Top-Right Card: `images/Spray_gun_emitting_mist.jpg` (HVLP gravity feed spray gun on stainless bench).
+  - Bottom-Right Card: `images/Automotive_color_matching_fan_deck.jpg` (Color fan deck & spectrophotometer lab).
+- **SEO-Preserving Narrative:** Verbatim Doha Industrial Area heritage since 2012, authorized distributorships, and technical laboratory capabilities.
+
+#### Section 5: Pinned Services Showcase (GSAP ScrollTrigger)
+- **Container:** `.elementor-element-8ffe293` with `.gsap-pin-fixed-fullwidth`.
+- **5 Specialized Division Cards:**
+  1. `01/05` — Automotive Refinish (HB Body 2K High Solids Clearcoats, Axalta Challenger basecoats).
+  2. `02/05` — Spray Booth Engineering & Booth Care (Downdraft booths, synthetic ceiling & floor filters).
+  3. `03/05` — Marine & Yacht Coatings (Sea-Line European marine epoxy primers, antifouling paints).
+  4. `04/05` — Industrial & Protective Coatings (Heavy-duty epoxy primers, structural steel polyurethane).
+  5. `05/05` — Luxury Wood Paints & Polyurethane Finishes (2K Italian polyurethane clear coats, stains, sealers).
+- **Interactive Stacking Behavior:**
+  - Progressive z-index hierarchy (`z-index: 1` through `z-index: 5`).
+  - Active step indicators (`01/05` through `05/05`), dynamic progress bar, interactive step dots, and bidirectional scroll reversibility.
+
+#### Section 6: Why Clients Trust Royal Auto Paints (`#about`)
+- **Organic Arched Mask:** Integrated `mask3.png` cut-out displaying high-resolution spray gun mist imagery (`images/Spray_gun_emitting_mist.jpg`).
+- **Pill Eyebrow:** `• Why Royal Auto Paints` in crisp white badge.
+- **Section Heading:** `Why Clients Trust Royal Auto Paints`.
+- **4 Distinct Capability Cards:**
+  1. **Computerized Color Lab:** Spectrophotometer digital formula matching for 100% factory OEM parity.
+  2. **Local Doha Inventory:** Massive Wakalat St warehouse stock ready for immediate workshop dispatch.
+  3. **100% Genuine Imports:** Authorized factory-direct supply from HB Body, Challenger, and Axalta.
+  4. **Technical Field Support:** On-site certified paint technicians assisting with spray settings and curing.
+- **Action Button:** Solid Theme Button `Request Wholesale Quote` with interactive SVG slide-in arrows.
+
+#### Section 7: Animated Experience Counters
+- **Container:** `.elementor-element-3cac144`.
+- **Title:** Centered `Our Experience Speaks for Itself`.
+- **4 Key Industry Metrics:**
+  - `500+` Commercial Workshops & Body Shops Served Across Qatar.
+  - `99%` OEM Computerized Color Match Accuracy.
+  - `4.9` Customer Satisfaction Rating.
+  - `800+` Commercial & Industrial Projects Completed.
+- **Visual Styling:** Clean 1px vertical straight separator lines (`#0C2F251A`, height 160px) replacing decorative green floral stems. Animated counters powered by jQuery CounterUp.
+
+#### Section 8: Before & After Real Automotive Refinish Results
+- **Title:** `Before & After Real Automotive Refinish Results`.
+- **Interactive Engine:** TwentyTwenty comparison slider (`.tm-twentytwenty-slider`).
+- **High-Resolution Visuals:** `Sedan_with_damaged_paint.jpg` (scratched/oxidized clearcoat) vs `Sedan_with_repaired_paint.jpg` (gloss-restored factory refinish).
+- **Controls:** Draggable horizontal comparison handle with Before / After badges.
+
+#### Section 9: Featured Products Showcase & Slider (`#products`)
+- **Container:** `.elementor-element-257125c` with `id="products"`.
+- **Header:**
+  - Pill Subtitle: `• Featured Products` (`background: #FFFFFF`, orange accent dot).
+  - Heading: `Premium Automotive & Refinish Solutions` (`#0A2942`, 42px).
+- **Product Card Architecture (`.tm-woo-product-style1`):**
+  - White card (`#FFFFFF`, `border-radius: 20px`, padding 14px, subtle border `1px solid rgba(12,47,37,0.06)`).
+  - Studio Pedestal Render (`aspect-ratio: 1/1; object-fit: cover; border-radius: 16px; background: #f8fafc`).
+  - 5 Gold Stars (`.star-rating` in `#ffa700`, Font Awesome 5 Free).
+  - Product Title (`#0A2942`, hover `#F68C50`).
+  - Price display with original strikethrough and bold sale price (`QAR`).
+  - Direct WhatsApp RFQ trigger URL with pre-populated inquiry text.
+- **6 Featured Products:**
+  1. **HB Body 691 HS SR Clear:** Scratch-Resistant 2:1 High Solids Clear (`QAR 145.00` / was `QAR 160.00`).
+  2. **HB Body Pro F202 Zinc Plus:** Heavy-Duty Glass Fiber & Zinc Polyester Putty (`QAR 85.00`).
+  3. **Challenger CL240 2K Clear:** Axalta European High-Gloss Collision Clearcoat (`QAR 160.00`).
+  4. **HB Body C496 2K HS Clear:** Rapid Air-Drying 2K Clearcoat Aerosol (`QAR 65.00` / was `QAR 75.00`).
+  5. **HB Body Pro C493 Matt Clear:** 2K Acrylic HS Matte Finish Clearcoat (`QAR 155.00`).
+  6. **HB Body U951 Auto Flex:** Peelable Elastomeric Bodywork Spray (`QAR 55.00`).
+- **Swiper Carousel Engine:**
+  - `data-items="4"` (desktop), `data-lg-items="3"`, `data-md-items="2"`, `data-xs-items="1"`.
+  - Circular navigation buttons (`.tm-swiper-button-prev`, `.tm-swiper-button-next`) with hover scaling.
+  - Linked to header navigation `#products` anchor.
+
+#### Section 10: How It Works / Refinish Workflow
+- 4 systematic steps: Technical Consultation, Spectrophotometer Color Formulation, Paint Mixing & Batch QC, and Fast Delivery to Workshop.
+
+#### Section 11: Customer Reviews & Reputation
+- Verified B2B workshop testimonials from body shop owners, fleet managers, and luxury car customizers across Doha.
+
+#### Section 12: Authorized Brand Partners Carousel
+- Seamless scrolling brand ribbon featuring Axalta, HB Body, Challenger, Motolux, and Sea-Line.
+
+#### Section 13: Technical FAQ & Consultation Desk
+- Responsive accordion answers addressing 2K mixing ratios, spray gun pressure settings, curing times in Qatar's climate, and wholesale commercial accounts.
+
+#### Section 14: Corporate Footer & Doha Location Guide
+- Full physical NAP details: Street 23, Wakalat St, Industrial Area, Doha, Qatar.
+- Showroom operating hours: Saturday–Thursday: 7:30 AM – 12:30 PM & 3:30 PM – 7:30 PM; Friday: Closed.
+- Direct dialers, Google Maps iframe, and legal copyright badges.
 
 ---
 
-## 4. Upcoming Implementation Roadmap (Phases 3–6)
+## 5. Technical Engine & JavaScript Architecture
 
-| Phase | Section Name | Scope & Planned Capabilities | Status |
-| :--- | :--- | :--- | :--- |
-| **Phase 1** | Navbar & Hero | Brand palette overhaul, 5 divisions, synchronized interactive mini-slider | **COMPLETED** |
-| **Phase 2** | Who We Are (About) | 3-card photo collage, SEO text retention, stat box, CTA alignment | **COMPLETED** |
-| **Phase 3** | 5 Coating Divisions Grid | Replace skincare service cards with 5 interactive division showcases | **NEXT UP** |
-| **Phase 4** | Authorized Brand Ribbon | Logos for HB Body, Axalta Challenger, Motolux, Sea-Line with hover details | Planned |
-| **Phase 5** | Product Catalog & RFQ | 20+ top refinish products, technical data sheet links, one-tap WhatsApp RFQ | Planned |
-| **Phase 6** | Location & Schema | Google Maps Street 23 Wakalat St integration, Schema.org JSON-LD validation | Planned |
-
----
-
-## 5. Search Engine Optimization (SEO) & Knowledge Graph Preservation
-
-To guarantee **zero loss of organic search rank, local map pack positioning, and topical authority** from `royalautopaints.com`:
-
-### 1. High-Value Keyword Entities Maintained
-- **Local Intent:** `car paint shop doha`, `auto paint industrial area qatar`, `car paint mixing qatar`, `spray booth filters doha`, `wakalat street car paint`.
-- **Brand Authorization:** `HB Body Qatar`, `Axalta Challenger Doha`, `Motolux Clear Coat`, `Sea-Line Marine Yacht Paint Qatar`.
-- **Technical Capabilities:** `spectrophotometer computerized color matching`, `2K HS clearcoats`, `downdraft booth maintenance`.
-
-### 2. Schema.org JSON-LD Structured Data
-Implemented and validated in the document `<head>`:
-```json
-{
-  "@context": "https://schema.org",
-  "@type": ["AutoPartsStore", "AutomotiveBusiness", "LocalBusiness"],
-  "@id": "https://www.royalautopaints.com/#organization",
-  "name": "Royal Auto Paints",
-  "alternateName": ["Royal Auto Paints Qatar", "Royal Paints Qatar", "رويال لأصباغ السيارات"],
-  "url": "https://www.royalautopaints.com/",
-  "logo": "https://www.royalautopaints.com/images/royal_logo.png",
-  "image": [
-    "https://www.royalautopaints.com/images/Automotive_paint_cans_on_marble.jpg",
-    "https://www.royalautopaints.com/images/Spray_gun_emitting_mist.jpg",
-    "https://www.royalautopaints.com/images/Industrial_steel_I-beams_positioned.jpg"
-  ],
-  "description": "Established in 2012 in Doha Industrial Area, Royal Auto Paints is Qatar's leading authorized distributor of HB Body, Axalta Challenger, Motolux, and Sea-Line coatings, supplying collision centers, spray booths, and yacht shipyards with 100% genuine products and computerized color mixing.",
-  "foundingDate": "2012",
-  "telephone": ["+97450395741", "+97444501669"],
-  "email": "info@royalautopaints.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Street No. 23 (Wakalat St), Industrial Area",
-    "addressLocality": "Doha",
-    "addressRegion": "Doha",
-    "addressCountry": "QA"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 25.1843,
-    "longitude": 51.4428
-  },
-  "hasMap": "https://maps.google.com/?q=25.1843,51.4428",
-  "priceRange": "$$",
-  "currenciesAccepted": "QAR",
-  "paymentAccepted": "Cash, Credit Card, Bank Transfer",
-  "areaServed": { "@type": "Country", "name": "Qatar" },
-  "brand": [
-    {"@type": "Brand", "name": "HB Body"},
-    {"@type": "Brand", "name": "Axalta Challenger"},
-    {"@type": "Brand", "name": "Motolux"},
-    {"@type": "Brand", "name": "Sea-Line"}
-  ],
-  "sameAs": [
-    "https://www.instagram.com/royal_auto_paints/",
-    "https://www.facebook.com/profile.php?id=100057669180751",
-    "https://wa.me/97450395741"
-  ]
-}
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                        CORE JAVASCRIPT LIBRARIES                       │
+├─────────────────────┬───────────────────┬──────────────────────────────┤
+│ Library             │ File              │ Functional Role              │
+├─────────────────────┼───────────────────┼──────────────────────────────┤
+│ GSAP 3.12+          │ gsap.min.js       │ ScrollTrigger pinned service │
+│                     │ ScrollTrigger.js  │ cards & stacking animation   │
+├─────────────────────┼───────────────────┼──────────────────────────────┤
+│ Swiper.js           │ swiper.min.js     │ Products carousel & Brand    │
+│                     │                   │ logo auto-slider             │
+├─────────────────────┼───────────────────┼──────────────────────────────┤
+│ TwentyTwenty        │ jquery.event.move │ Interactive Before & After   │
+│                     │ twentytwenty.js   │ comparison image split slider│
+├─────────────────────┼───────────────────┼──────────────────────────────┤
+│ jQuery CounterUp    │ jquery.counterup  │ Scroll-triggered statistic   │
+│                     │ waypoints.min.js  │ metric counter animations    │
+├─────────────────────┼───────────────────┼──────────────────────────────┤
+│ Lenis Smooth Scroll │ lenis.min.js      │ Hardware-accelerated fluid   │
+│                     │                   │ in-page scroll physics       │
+├─────────────────────┼───────────────────┼──────────────────────────────┤
+│ Custom Master Suite │ custom_1.js       │ Main theme orchestrator,     │
+│                     │ custom.js         │ sticky header, mobile drawer │
+└─────────────────────┴───────────────────┴──────────────────────────────┘
 ```
 
 ---
 
-## 6. Verification & Automated Test Suite
+## 6. SEO Architecture, E-E-A-T & Google Search Preservation
 
-Headless Edge CDP automation scripts are maintained in `scratch/`:
-- `scratch/serve_royalfinal.js`: Background HTTP server supporting `.avif`, `.mp4`, `.webp`, `.jpg`, and `.png` assets.
-- `scratch/run_capture_alignment.js`: High-DPI headless Edge screenshot script capturing full viewport and localized bounding boxes.
-- `scratch/check_last_steps.js`: Inspects live Elementor markup, CSS specificity, and DOM state.
+To guarantee **zero loss of organic search ranking equity** from the live domain (`royalautopaints.com`), the redesign strictly preserves all Google Search signals:
+
+1. **Strict 1:1 Route & Backlink Continuity:**
+   - Every existing indexed route (`/`, `/about`, `/services`, `/products`, `/gallery`, `/career`, `/contact`) maps directly without 404s or redirect loops.
+2. **Schema.org JSON-LD Structured Entity Graph:**
+   ```json
+   {
+     "@context": "https://schema.org",
+     "@type": ["AutoPartsStore", "AutomotiveBusiness", "LocalBusiness"],
+     "@id": "https://www.royalautopaints.com/#organization",
+     "name": "Royal Auto Paints",
+     "alternateName": ["Royal Auto Paints Qatar", "Royal Paints Qatar", "رويال لأصباغ السيارات"],
+     "url": "https://www.royalautopaints.com/",
+     "logo": "https://www.royalautopaints.com/images/royal_favicon.png",
+     "image": [
+       "https://www.royalautopaints.com/images/auth.jpg",
+       "https://www.royalautopaints.com/images/Spray_gun_emitting_mist.jpg"
+     ],
+     "description": "Established in 2012, Royal Auto Paints is Qatar's premier authorized distributor of HB Body, Axalta Challenger, Motolux, and Sea-Line coatings. Complete computerized spectrophotometer color matching and collision center supplies.",
+     "foundingDate": "2012",
+     "telephone": ["+97450395741", "+97444501669"],
+     "email": "info@royalautopaints.com",
+     "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Street No. 23 (Wakalat St), Industrial Area",
+       "addressLocality": "Doha",
+       "addressRegion": "Doha",
+       "addressCountry": "QA"
+     },
+     "geo": {
+       "@type": "GeoCoordinates",
+       "latitude": 25.1843,
+       "longitude": 51.4428
+     },
+     "currenciesAccepted": "QAR",
+     "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+     "areaServed": { "@type": "Country", "name": "Qatar" },
+     "brand": [
+       {"@type": "Brand", "name": "HB Body"},
+       {"@type": "Brand", "name": "Challenger"},
+       {"@type": "Brand", "name": "Axalta"},
+       {"@type": "Brand", "name": "Sea-Line"},
+       {"@type": "Brand", "name": "Motolux"}
+     ]
+   }
+   ```
+3. **Canonical URLs & Social Graph:** Complete Open Graph (`og:type`, `og:image`, `og:title`) and Twitter Card metadata for rich social previews.
 
 ---
-*Last Updated: October 26, 2026 — Royal Auto Paints Technical Architecture Team*
+
+## 7. Responsive Engineering & Breakpoint Matrix
+
+### Responsive Viewport Rules
+- **Large Desktop (>=1400px):** 4 product cards per view, 5 brand cards per view, full GSAP card width (`100%`), 42px section headings.
+- **Desktop (1200px – 1399px):** 4 product cards, 4 brand cards, 40px section headings.
+- **Tablet (768px – 1199px):** 2 product cards per view in Swiper carousel, 2-column capability grids, 32px section headings.
+- **Mobile (<768px):** 1 product card per view with swipe gesture support, stacked capability boxes, 28px section headings, zero horizontal overflow (`0px`).
+
+---
+
+## 8. Asset Organization & Directory Structure
+
+```
+royalautopaints/
+├── css/
+│   ├── bootstrap.min.css         (Bootstrap 5 foundation)
+│   ├── custom.css                (Master styling overrides, GSAP pinning, products, stats)
+│   ├── wc-products-loader.css    (WooCommerce style 1 card architecture)
+│   ├── widget-rating.min.css     (5-Star rating typography & Font Awesome styles)
+│   ├── swiper.min.css            (Swiper slider layout)
+│   ├── twentytwenty.css          (Before & After comparison slider styles)
+│   └── style-main.css            (ThemeMascot core styling)
+├── docs/
+│   └── blueprint.md              (Master Technical Architecture & Specification)
+├── images/
+│   ├── products/
+│   │   ├── editorial_body691.png (HB Body 691 HS SR Clear Studio Shot)
+│   │   ├── editorial_f202.png    (HB Body Pro F202 Zinc Plus Filler Studio Shot)
+│   │   ├── editorial_cl240.png   (Challenger CL240 2K Clear Studio Shot)
+│   │   ├── editorial_c496.png    (HB Body C496 2K HS Clear Spray Studio Shot)
+│   │   ├── editorial_c493.png    (HB Body Pro C493 Matt Clear Studio Shot)
+│   │   └── 20230513084224.png    (HB Body U951 Auto Flex Spray Shot)
+│   ├── Sedan_with_damaged_paint.jpg  (TwentyTwenty Before vehicle image)
+│   ├── Sedan_with_repaired_paint.jpg (TwentyTwenty After vehicle image)
+│   ├── Spray_gun_emitting_mist.jpg   (Why Choose Us arched mask feature)
+│   └── mask3.png                     (Curved organic cut-out mask)
+├── js/
+│   ├── gsap.min.js               (GSAP animation core)
+│   ├── ScrollTrigger.min.js      (ScrollTrigger pinning engine)
+│   ├── swiper.min.js             (Swiper slider touch engine)
+│   ├── jquery.twentytwenty.js    (Before/After split slider)
+│   ├── custom_1.js               (Main theme orchestrator)
+│   └── custom.js                 (Interactive event handlers)
+├── index.html                    (Flagship 14-Section Interactive Homepage)
+├── about.html                    (Dedicated About Page)
+├── services.html                 (Dedicated Services Page)
+├── products.html                 (Full Dedicated Catalog & Search Page)
+├── gallery.html                  (Visual Project Portfolio)
+├── career.html                   (Careers & Application Portal)
+└── contact.html                  (Wakalat St Showroom & Inquiry Desk)
+```
+
+---
+
+## 9. Verification & Quality Assurance Protocol
+
+Automated headless Edge test scripts utilizing the Chrome DevTools Protocol (CDP) validate every release:
+1. `scratch/verify_final_anim.js`: Captures all 5 steps of the GSAP service division pinning animation across scroll positions `scrollY: 2350` to `scrollY: 3755`, verifying that each card pins and unpins seamlessly.
+2. `scratch/verify_products.js`: Validates `#products` layout, confirms 4 cards in desktop view, validates 5-star ratings, and verifies that browser console error count is 0.
+3. `scratch/verify_slide.js`: Tests Swiper arrow click navigation and touch swipe progression.
+4. `scratch/check_facility_overflow.js`: Tests horizontal viewport bounding boxes on 390px, 768px, and 1440px to guarantee 0px horizontal scroll overflow.
+5. **Console & Asset Verification:** Confirms that all images resolve with HTTP 200 and no missing asset or JavaScript runtime warnings occur.
