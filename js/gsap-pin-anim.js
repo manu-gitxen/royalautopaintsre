@@ -1,34 +1,29 @@
 (function ($) {
   "use strict";
 
+  let isInitialized = false;
+
   // Listing All Animation Functions For Frontend
   function int_all_animations() {
+    if (isInitialized) return;
+    isInitialized = true;
     gsap_fixed_elements();
   }
 
-  // Initialize All Animations - use native event listener to avoid jQuery 5 compatibility issues
-  // The error "Permission denied to access property 'apply'" occurs with jQuery 5 when using $(window).on()
-  function initOnLoad() {
-    if (document.readyState === "complete") {
-      // Page already loaded, run immediately
-      int_all_animations();
-    } else {
-      // Use native addEventListener instead of jQuery to avoid permission errors
-      if (window.addEventListener) {
-        window.addEventListener("load", int_all_animations, false);
-      } else if (window.attachEvent) {
-        // Fallback for older IE
-        window.attachEvent("onload", int_all_animations);
-      }
-    }
+  // Initialize immediately if DOM ready, or on DOMContentLoaded
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", int_all_animations);
+  } else {
+    int_all_animations();
   }
 
-  // Initialize when DOM is ready
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initOnLoad);
-  } else {
-    initOnLoad();
-  }
+  // Also refresh triggers once all images/resources load
+  window.addEventListener("load", function() {
+    int_all_animations();
+    if (typeof ScrollTrigger !== "undefined") {
+      ScrollTrigger.refresh();
+    }
+  });
 
   // Fixed Elements on Scroll
   function gsap_fixed_elements() {
@@ -72,19 +67,21 @@
             start: `top-=${startOffset + 80}`,
             end: `top-=${startOffset}`,
             onEnter: () => {
-              const idParts = `${container.id}-trigger-${index}`.split("-");
-              const lastPart = parseInt(idParts[idParts.length - 1]);
-              const previousSpacer = document.querySelector(`.pin-spacer--trigger-${lastPart - 1}`);
-              if (previousSpacer) {
-                previousSpacer.classList.add("spacer-before-active");
+              for (let k = 0; k < index; k++) {
+                const sp = elements[k].closest('.pin-spacer') || document.querySelector(`.pin-spacer--trigger-${k}`);
+                if (sp) {
+                  sp.classList.add("spacer-before-active");
+                }
               }
             },
             onLeaveBack: () => {
-              const idParts = `${container.id}-trigger-${index}`.split("-");
-              const lastPart = parseInt(idParts[idParts.length - 1]);
-              const previousSpacer = document.querySelector(`.pin-spacer--trigger-${lastPart - 1}`);
-              if (previousSpacer) {
-                previousSpacer.classList.remove("spacer-before-active");
+              for (let k = index - 1; k < elements.length; k++) {
+                if (k >= 0) {
+                  const sp = elements[k].closest('.pin-spacer') || document.querySelector(`.pin-spacer--trigger-${k}`);
+                  if (sp) {
+                    sp.classList.remove("spacer-before-active");
+                  }
+                }
               }
             },
           });

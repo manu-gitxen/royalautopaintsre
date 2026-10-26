@@ -2,24 +2,16 @@
     "use strict";
     var MASCOTSWITCHER = {};
     var $document = $(document);
-    var $document_body = $(document.body);
-    var $window = $(window);
-    var $html = $('html');
-    var $body = $('body');
 
     MASCOTSWITCHER.initialize = {
-
         init: function() {
             MASCOTSWITCHER.initialize.TM_demoSwitcher();
         },
 
-        /* ---------------------------------------------------------------------- */
-        /* ------------------------------ Demo Switcher  ------------------------ */
-        /* ---------------------------------------------------------------------- */
         TM_demoSwitcher: function() {
-            var showSwitcher = true;
+            var showSwitcher = false; // Disabled for static production site
             var $style_switcher = $('#style-switcher');
-            if( !$style_switcher.length && showSwitcher ) {
+            if( !$style_switcher.length && showSwitcher && window.MascotCoreAjaxUrl ) {
                 var ajaxData = {
                     'action': 'mascot_color_switcher_get_demo_switcher'
                 };
@@ -30,25 +22,15 @@
                     dataType: 'html'
                 });
             }
-        
-        },
+        }
     };
 
-    /* ---------------------------------------------------------------------- */
-    /* ---------- document ready, window load, scroll and resize ------------ */
-    /* ---------------------------------------------------------------------- */
-    //document ready
     MASCOTSWITCHER.documentOnReady = {
         init: function() {
             MASCOTSWITCHER.initialize.init();
         }
     };
 
-
-
-    /* ---------------------------------------------------------------------- */
-    /* ---------------------------- Call Functions -------------------------- */
-    /* ---------------------------------------------------------------------- */
     $document.ready(
         MASCOTSWITCHER.documentOnReady.init
     );
