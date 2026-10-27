@@ -132,12 +132,14 @@ flowchart TD
     S8["8. Before & After Refinish Results\n(Interactive TwentyTwenty Draggable Split Slider)"]
     S9["9. Featured Products Showcase & Slider (#products)\n(6 Editorial Studio Coatings, 5 Stars, QAR Pricing, Swiper Carousel)"]
     S10["10. How It Works / Technical Refinish Steps\n(Consultation, Spectrophotometer Lab, Batch Formulation, Delivery)"]
-    S11["11. Customer Reviews & Reputation\n(Verified Testimonials, Star Ratings, B2B Workshop Reviews)"]
-    S12["12. Authorized Brand Partners Carousel\n(HB Body, Axalta, Challenger, Motolux, Sea-Line)"]
-    S13["13. Technical FAQ & Consultation Desk\n(Accordion FAQs, Mixing Inquiries, Technical Datasheets)"]
-    S14["14. Corporate Footer & Doha Location\n(Street 23 Headquarters, Operating Hours, Google Maps, Legal Badges)"]
+    S11["11. Customer Reviews & Google Reputation\n(Verified 4.7-Star Rating, 91+ Reviews, Technician Visual)"]
+    S12["12. Technical FAQ & Consultation Desk\n(Accordion FAQs, Heat Mixing Advice, Delivery Info)"]
+    S13["13. Dealership & Authorized Brands Showcase\n(Physical Storefront, Challenger, HB BODY, Authenticity)"]
+    S14["14. Trusted By Leading Brands Carousel\n(HB Body, Axalta, Challenger, Motolux, Sea-Line)"]
+    S15["15. Corporate Consultation & RFQ Form\n(Collision Center Inquiry Desk, Phone & WhatsApp Shortcuts)"]
+    S16["16. Corporate Footer & Doha Location\n(Street 23 Headquarters, Operating Hours, Google Maps, Legal Badges)"]
 
-    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8 --> S9 --> S10 --> S11 --> S12 --> S13 --> S14
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8 --> S9 --> S10 --> S11 --> S12 --> S13 --> S14 --> S15 --> S16
 ```
 
 ---
@@ -257,10 +259,7 @@ flowchart TD
 - **Center Portrait Visual:**
   - High-resolution studio photograph (`Technician_mixing_automotive_paint.jpg`) showcasing a certified paint technician mixing paint on a micro-gram digital scale with spray-out test cards under daylight inspection lamps (`border-radius: 28px`, shadow `0 20px 48px rgba(0,0,0,0.45)`).
 
-#### Section 12: Authorized Brand Partners Carousel
-- Seamless scrolling brand ribbon featuring Axalta, HB Body, Challenger, Motolux, and Sea-Line.
-
-#### Section 13: Technical FAQ & Consultation Desk (`.elementor-element-2174d52`)
+#### Section 12: Technical FAQ & Consultation Desk (`.elementor-element-2174d52`)
 - **Template Design Integrity:** Retains 100% of the native Elementor template styling, layout, typography, decorative floating product illustration (`images/elegant.png`), and background leaf line art (`Leaf-02.png`, `Leaf-03.png`).
 - **Full-Width Seamless Transition:** Set outer container side paddings to 0 and eliminated top-edge overlap gutters (`padding: 0; margin-top: 0; border-radius: 0;`), completely removing the 20px dark blue side gutters and creating a clean, edge-to-edge boundary.
 - **Section Heading:**
@@ -281,7 +280,25 @@ flowchart TD
   - Collapsed Cards: `#F7F0F2` soft warm blush background, theme orange title text, dark navy circular button with white chevron pointing down.
   - Active Card: Deep Royal Navy `#0A3254` background, pure white title text, white circular button with navy chevron pointing up, and legible light body text.
 
-#### Section 14: Corporate Footer & Doha Location Guide
+#### Section 13: Dealership & Authorized Brands Showcase (`.elementor-element-9404d4b`)
+- **Subtitle Pill:** `• Dealership & Brands`
+- **Heading:** `Authorized Dealer of Leading Automotive Refinish Brands` in signature Marcellus serif styling.
+- **Right Narrative:** *"We are a trusted name in automobile refinishing across Qatar. As an authorized dealer of Challenger and HB BODY, we provide comprehensive automotive coatings, premium primers, and bodyshop consumables for professionals and craftsmen."*
+- **Center Hero Visual (`.elementor-element-3c68609`):**
+  - High-resolution authentic physical dealership storefront photograph (`images/storefront_dealership.jpg` / `dealership_showcase_wide.jpg`, 1600×900) capturing the Royal Auto Paints Qatar showroom exterior in the Doha Industrial Area.
+  - Prominently showcases the official yellow dealership fascia with bilingual branding (`ROYAL AUTO PAINTS` / `رويال اوتوبايتس`), official German and Greek manufacturer authorization badges (`Challenger - MADE IN GERMANY`, `APPOINTED DISTRIBUTOR`, `HB BODY - MADE IN GREECE`), official landline and mobile RFQ contact numbers (`+974 4450 1669`, `+974 5039 5741`), website URL (`www.royalautopaints.com`), and clear panoramic glass showroom windows displaying the computerized color-matching counter and retail paint inventory shelves.
+- **Floating 3-Pillar Capability Cards (`.features-block-style3`, `.elementor-element-ea7f9db`):**
+  1. **Challenger Refinish Systems (`fas fa-spray-can`):** Official Axalta European tints & computerized OEM formula matching for perfect color fidelity.
+  2. **HB BODY Automotive (`fas fa-layer-group`):** Certified European putties, high-build 2K primers, and scratch-resistant clears built for Qatar's climate.
+  3. **Guaranteed Authenticity (`fas fa-shield-alt`):** 100% genuine factory-batched coatings with verified technical data sheets and quality assurance.
+
+#### Section 14: Trusted By Leading Brands Carousel (`.elementor-element-0b9fd9e`)
+- Seamless scrolling brand ribbon featuring Axalta, HB Body, Challenger, Motolux, and Sea-Line.
+
+#### Section 15: Corporate Consultation & RFQ Form (`.elementor-element-a5e4868`)
+- High-conversion bodyshop & garage consultation booking desk with direct WhatsApp and phone shortcuts.
+
+#### Section 16: Corporate Footer & Doha Location Guide
 - Full physical NAP details: Street 23, Wakalat St, Industrial Area, Doha, Qatar.
 - Showroom operating hours: Saturday–Thursday: 7:30 AM – 12:30 PM & 3:30 PM – 7:30 PM; Friday: Closed.
 - Direct dialers, Google Maps iframe, and legal copyright badges.
@@ -395,6 +412,8 @@ royalautopaints/
 ├── docs/
 │   └── blueprint.md              (Master Technical Architecture & Specification)
 ├── images/
+│   ├── storefront_dealership.jpg (Official physical dealership exterior in Doha Industrial Area)
+│   ├── dealership_showcase_wide.jpg (High-res 1600x900 responsive hero background)
 │   ├── products/
 │   │   ├── editorial_body691.png (HB Body 691 HS SR Clear Studio Shot)
 │   │   ├── editorial_f202.png    (HB Body Pro F202 Zinc Plus Filler Studio Shot)
