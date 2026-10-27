@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228 98" width="228" height="98">
+  <rect width="228" height="98" fill="none"/>
+  <g transform="translate(14, 16)">
+    <!-- Challenger Green Rounded Badge -->
+    <rect x="0" y="2" width="200" height="62" rx="12" fill="#00843D"/>
+    <!-- Challenger script-like italic text -->
+    <text x="100" y="42" font-family="'Trebuchet MS', 'Segoe UI', Arial, sans-serif" font-weight="900" font-style="italic" font-size="30" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">Challenger<tspan font-size="14" dy="-14" font-style="normal">®</tspan></text>
+    <text x="100" y="57" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="8.5" fill="#E0FFE8" text-anchor="middle" letter-spacing="2.5">A BRAND OF AXALTA</text>
+  </g>
+</svg>

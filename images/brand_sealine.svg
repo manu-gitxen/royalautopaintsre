@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228 98" width="228" height="98">
+  <rect width="228" height="98" fill="none"/>
+  <g transform="translate(14, 16)">
+    <!-- Sea-Line Badge -->
+    <rect x="0" y="2" width="200" height="62" rx="10" fill="#0A2540"/>
+    <path d="M 24 35 Q 36 28 48 35 T 72 35" stroke="#00A3E0" stroke-width="3" fill="none"/>
+    <text x="110" y="41" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="25" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">Sea-Line<tspan font-size="12" dy="-12">®</tspan></text>
+    <text x="110" y="56" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="8.5" fill="#00A3E0" text-anchor="middle" letter-spacing="3">YACHT COATINGS</text>
+  </g>
+</svg>

@@ -297,7 +297,16 @@ flowchart TD
   - Floating 3-pillar card container .elementor-element-ea7f9db floats centered with width: calc(100% - 60px); max-width: 1200px; margin: -240px auto 0; across desktop screens.
 
 #### Section 14: Trusted By Leading Brands Carousel (`.elementor-element-0b9fd9e`)
-- Seamless scrolling brand ribbon featuring Axalta, HB Body, Challenger, Motolux, and Sea-Line.
+- Seamless scrolling continuous brand ribbon featuring 8 authentic Royal Auto Paints manufacturer & distribution brands:
+  1. **Axalta Coating Systems** (images/brand_axalta.png, official global automotive refinish leader)
+  2. **HB BODY Automotive** (images/brand_hbbody.svg, official Greek European putties, primers & clears)
+  3. **Challenger Refinish Systems** (images/brand_challenger.svg, official German Axalta refinish system)
+  4. **Imlar Paints** (images/brand_imlar.png, Axalta commercial & fleet refinish line)
+  5. **GEM Auto Paints Wholesale** (images/brand_gem_autopaints.png, regional automotive coatings distributor)
+  6. **Gemex Coatings** (images/brand_gemex.png, specialized automotive refinish coatings)
+  7. **Moto Max Refinish** (images/brand_motomax.png, automotive shine & protection finishes)
+  8. **Sea-Line Yacht Coatings** (images/brand_sealine.svg, European marine & yacht refinish finishes)
+- Styled in css/custom.css with balanced 48px height, proportional scaling, subtle grayscale hover interaction, and continuous infinite Swiper loop.
 
 #### Section 15: Corporate Consultation & RFQ Form (`.elementor-element-a5e4868`)
 - High-conversion bodyshop & garage consultation booking desk with direct WhatsApp and phone shortcuts.

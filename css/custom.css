@@ -2593,3 +2593,52 @@ html {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.10) !important;
   background-color: #FFFFFF !important;
 }
+
+/* ==========================================================================
+   Section 14: Trusted By Leading Brands Carousel Styling
+   ========================================================================== */
+.elementor-element.elementor-element-0b9fd9e {
+  padding-top: 50px !important;
+  padding-bottom: 80px !important;
+}
+
+.elementor-element.elementor-element-b2d0372 .tm-text-editor h5 {
+  font-family: "Marcellus", serif !important;
+  font-size: 24px !important;
+  color: #0A2942 !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  margin-bottom: 20px !important;
+  letter-spacing: 0.5px !important;
+}
+
+.tm-sc-clients-logo .swiper-slide {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 80px !important;
+}
+
+.tm-sc-clients-logo .each-logo {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 5px 15px !important;
+}
+
+.tm-sc-clients-logo .each-logo img.thumb {
+  max-height: 48px !important;
+  max-width: 155px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  filter: grayscale(15%) contrast(105%) opacity(0.88);
+  transition: all 0.35s ease !important;
+}
+
+.tm-sc-clients-logo .each-logo:hover img.thumb {
+  filter: grayscale(0%) contrast(110%) opacity(1) !important;
+  transform: scale(1.06) !important;
+}
