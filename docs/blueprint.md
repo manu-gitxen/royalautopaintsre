@@ -308,8 +308,19 @@ flowchart TD
   8. **Sea-Line Yacht Coatings** (images/brand_sealine.svg, European marine & yacht refinish finishes)
 - Styled in css/custom.css with balanced 48px height, proportional scaling, subtle grayscale hover interaction, and continuous infinite Swiper loop.
 
-#### Section 15: Corporate Consultation & RFQ Form (`.elementor-element-a5e4868`)
-- High-conversion bodyshop & garage consultation booking desk with direct WhatsApp and phone shortcuts.
+#### Section 15: Corporate Contact & Inquiry Desk (`.elementor-element-5b30998` / `.elementor-element-daf651a`)
+- **Visual Backdrop**: Spray booth visual (`images/royalpaint_hero_3.jpg`) with Royal Navy gradient overlay (`linear-gradient(135deg, rgba(10, 50, 84, 0.94) 0%, rgba(10, 50, 84, 0.82) 50%, rgba(7, 28, 46, 0.96) 100%)`), replacing template dermatology visuals and green hue.
+- **Left Column (Direct Inquiries & NAP)**:
+  - Subtitle pill: `• Get In Touch` matching global site pill styles (white on translucent background).
+  - Headline: `Contact Us Today` in Marcellus serif typography.
+  - Showroom & Mixing Lab: `Street 23, Wakalat St, Industrial Area, Doha, Qatar` with circular location icon.
+  - Direct Phone & WhatsApp: `+974 4450 1669` / `+974 5039 5741` with one-touch calling and WhatsApp links.
+- **Right Column (Contact Form)**:
+  - Card Header (`.elementor-element-a5e4868`): Solid brand Royal Navy (`#0A3254`) with `Send Us a Message` title and send icon.
+  - Form Layout: Perfectly contained inside the section container (`margin-right: 0`, `max-width: 490px`), eliminating legacy template negative margin overflow.
+  - Input styling: Clean, modern `#F8FAFC` fields for First Name, Last Name, Email, Phone, Company/Bodyshop, Requirement/Paint Code, and Message.
+  - Action Button: Brand navy pill button with theme orange hover elevation (`#F68C50`).
+- **Responsive Guarantee**: Flawless container containment and 0px horizontal overflow across all viewports (1440px desktop, 1200px laptop, 768px tablet, 390px mobile).
 
 #### Section 16: Corporate Footer & Doha Location Guide
 - Full physical NAP details: Street 23, Wakalat St, Industrial Area, Doha, Qatar.
