@@ -291,6 +291,10 @@ flowchart TD
   1. **Challenger Refinish Systems (`fas fa-spray-can`):** Official Axalta European tints & computerized OEM formula matching for perfect color fidelity.
   2. **HB BODY Automotive (`fas fa-layer-group`):** Certified European putties, high-build 2K primers, and scratch-resistant clears built for Qatar's climate.
   3. **Guaranteed Authenticity (`fas fa-shield-alt`):** 100% genuine factory-batched coatings with verified technical data sheets and quality assurance.
+- **Centering & Alignment Architecture (css/custom.css):**
+  - Section wrapper .elementor-element-9404d4b and .e-con-inner are explicitly centered with margin: 0 auto; max-width: 1320px; and balanced 20px lateral padding.
+  - Storefront hero visual .elementor-element-3c68609 overrides legacy fixed 1580px width with width: 100%; max-width: 100%; margin: 0 auto; border-radius: 20px;, ensuring symmetrical margins without rightward drift.
+  - Floating 3-pillar card container .elementor-element-ea7f9db floats centered with width: calc(100% - 60px); max-width: 1200px; margin: -240px auto 0; across desktop screens.
 
 #### Section 14: Trusted By Leading Brands Carousel (`.elementor-element-0b9fd9e`)
 - Seamless scrolling brand ribbon featuring Axalta, HB Body, Challenger, Motolux, and Sea-Line.

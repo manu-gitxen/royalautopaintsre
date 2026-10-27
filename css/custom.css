@@ -2501,3 +2501,95 @@ html {
   font-size: 13.5px !important;
   line-height: 1.4 !important;
 }
+
+/* ==========================================================================
+   Section 13: Dealership & Authorized Brands Showcase Horizontal Centering
+   ========================================================================== */
+.elementor-element.elementor-element-9404d4b {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  overflow-x: clip !important;
+}
+
+.elementor-element.elementor-element-9404d4b > .e-con-inner {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1320px !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.elementor-element.elementor-element-e596cd7 {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.elementor-element.elementor-element-bcbf27e {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Storefront banner centered with equal margins */
+.elementor-element.elementor-element-3c68609 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-radius: 20px !important;
+}
+
+/* Floating 3-pillar capability cards centered over banner */
+.elementor-element.elementor-element-ea7f9db {
+  width: calc(100% - 60px) !important;
+  max-width: 1200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  z-index: 2 !important;
+}
+
+@media (min-width: 1025px) {
+  .elementor-element.elementor-element-ea7f9db {
+    margin-top: -240px !important;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .elementor-element.elementor-element-ea7f9db {
+    width: calc(100% - 40px) !important;
+    margin-top: -260px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .elementor-element.elementor-element-ea7f9db {
+    width: 100% !important;
+    margin-top: 25px !important;
+  }
+}
+
+.elementor-element.elementor-element-f7c4ff0 {
+  width: 100% !important;
+}
+
+.elementor-element.elementor-element-f7c4ff0 > .elementor-widget-container {
+  padding: 35px 30px !important;
+  border-radius: 20px !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.10) !important;
+  background-color: #FFFFFF !important;
+}
