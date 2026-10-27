@@ -337,10 +337,25 @@ flowchart TD
   - "Read More" links featuring interactive circular icon arrows transitioning to brand coral on hover.
 - **Responsive Guarantee**: Zero horizontal overflow across all viewports (1440px desktop, 1200px laptop, 768px tablet 2-column wrap, and 390px mobile vertical stack).
 
-#### Section 17: Corporate Footer & Doha Location Guide
-- Full physical NAP details: Street 23, Wakalat St, Industrial Area, Doha, Qatar.
-- Showroom operating hours: Saturday–Thursday: 7:30 AM – 12:30 PM & 3:30 PM – 7:30 PM; Friday: Closed.
-- Direct dialers, Google Maps iframe, and legal copyright badges.
+#### Section 17: Corporate Footer & Doha Location Guide (`footer#footer`)
+- **Main Footer Card (`.elementor-element-ecae855`)**:
+  - Solid site primary deep navy background (`#0A3254`) with rounded `30px` top corners and generous padding.
+  - Column 1 (`About Royal Paints`): Corporate introduction highlighting Royal Auto Paints as Qatar's premier automotive refinish distributor (Kapci Coatings, 3M, Mirka, Farecla) with interactive `GET IN TOUCH` button.
+  - Column 2 (`Quick Links`): Direct jump links to About Royal Paints, Product Catalog, Color Matching Lab, Authorized Brands, and Contact & Location.
+  - Column 3 (`Refinish Solutions`): 2K Basecoats & Topcoats, High-Solid Clear Coats, Primers & Polyester Putties, Abrasives & Masking Systems, and Spray Equipment.
+  - Column 4 (`Showroom & Mixing Lab`): Complete NAP details (Street 23, Wakalat St, Industrial Area, Doha, Qatar) + Direct Phone (`+974 4450 1669`), WhatsApp (`+974 5039 5741`), and email (`info@royalautopaints.com`).
+- **Middle Interactive Bar (`.elementor-element-ee7020b`)**:
+  - Replaced legacy template green overlay with unified deep navy tint (`rgba(7, 28, 46, 0.55)`) and subtle white border dividers.
+  - Official high-resolution white Royal Auto Paints logo (`royal_logo_white.png`).
+  - Outlined circular social channels (WhatsApp, Facebook, Instagram, LinkedIn) with brand coral hover elevation (`#F68C50`).
+  - `Subscribe to Refinish Updates` newsletter subscription form with custom rounded input and coral action button.
+- **Brand Watermark Graphic (`.elementor-element-125cbdf`)**:
+  - `ROYAL AUTO PAINTS` set in Marcellus serif typography at low opacity (`rgba(255, 255, 255, 0.05)`) between subtle `1px` divider borders, replacing template "Dermisio" watermark.
+- **Copyright & Legal Bar (`.elementor-element-e0c3cbc`)**:
+  - Deepest navy grounding background (`#061726`) replacing legacy template green (`rgb(31, 76, 67)`).
+  - Text: `© Copyright 2026 Royal Auto Paints (Al-Haram Paints & Trading). All Rights Reserved.`
+  - Secondary legal links: Terms & Conditions, Privacy Policy, Bodyshop Inquiries.
+- **Responsive Guarantee**: 0px horizontal overflow across Desktop (1440px), Laptop (1200px), Tablet (768px), and Mobile (390px).
 
 ---
 

@@ -3171,3 +3171,272 @@ html {
     min-height: auto !important;
   }
 }
+
+
+/* ==========================================================================
+   Section 17: Corporate Footer & Location Guide
+   Container: footer#footer
+   ========================================================================== */
+
+/* Outer Footer Container & Invisibility Override */
+footer#footer,
+footer#footer .elementor-element {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+footer#footer .elementor-invisible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  animation: none !important;
+}
+
+/* Card Container Main Background: Site Primary Deep Navy */
+footer#footer .elementor-element.elementor-element-ecae855 {
+  background-color: #0A3254 !important;
+  border-radius: 30px !important;
+  padding: 60px 40px 30px !important;
+}
+
+/* Column Titles: Marcellus Serif, Clean White */
+footer#footer .elementor-element-ec01184 .tm-text-editor,
+footer#footer .elementor-element-c899cd0 p,
+footer#footer .elementor-element-1a24614 p,
+footer#footer .elementor-element-cbacf1c p,
+footer#footer .elementor-element-ce8b926 p {
+  font-family: 'Marcellus', serif !important;
+  font-size: 21px !important;
+  font-weight: 400 !important;
+  color: #FFFFFF !important;
+  letter-spacing: 0.3px !important;
+  margin-bottom: 16px !important;
+}
+
+/* About Paragraph & Contact Text */
+footer#footer .elementor-element-a71fe1f .tm-text-editor,
+footer#footer .elementor-element-b8ef54f .tm-text-editor p,
+footer#footer .elementor-element-4f93e26 .tm-text-editor-advanced p {
+  color: rgba(255, 255, 255, 0.72) !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14.5px !important;
+  line-height: 1.65 !important;
+}
+
+/* Navigation Links */
+footer#footer .tm-sc-simple-nav-menu ul li a {
+  color: rgba(255, 255, 255, 0.72) !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14.5px !important;
+  line-height: 2.2 !important;
+  transition: color 0.25s ease, transform 0.25s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+footer#footer .tm-sc-simple-nav-menu ul li a:hover {
+  color: #F68C50 !important;
+  transform: translateX(4px) !important;
+}
+
+footer#footer .tm-sc-simple-nav-menu ul li a .tm-nav-arrow-icon {
+  color: #F68C50 !important;
+  font-size: 10px !important;
+  margin-right: 10px !important;
+}
+
+/* Get in Touch Button */
+footer#footer .elementor-element-e5cd0f0 .btn-style1 {
+  background-color: #FFFFFF !important;
+  color: #0A3254 !important;
+  border-radius: 50px !important;
+  padding: 12px 28px !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 13.5px !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-top: 15px !important;
+  text-decoration: none !important;
+}
+
+footer#footer .elementor-element-e5cd0f0 .btn-style1:hover {
+  background-color: #F68C50 !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(246, 140, 80, 0.3) !important;
+}
+
+footer#footer .elementor-element-e5cd0f0 .btn-style1 svg path {
+  stroke: #FFFFFF !important;
+  transition: stroke 0.3s ease !important;
+}
+
+footer#footer .elementor-element-e5cd0f0 .btn-style1:hover svg path {
+  stroke: #FFFFFF !important;
+}
+
+/* Middle Bar: Harmonized Deep Tone (Replacing green rgba(12, 47, 37, 0.3)) */
+footer#footer .elementor-element.elementor-element-ee7020b {
+  background-color: rgba(7, 28, 46, 0.55) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 16px !important;
+  margin: 30px 0 20px !important;
+  padding: 22px 30px !important;
+}
+
+/* Footer Logo */
+footer#footer .elementor-element-27a8986 img {
+  max-width: 200px !important;
+  height: auto !important;
+}
+
+/* Social Links in Middle Bar */
+footer#footer .elementor-element-10a1f33 .social-link {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  transition: all 0.25s ease !important;
+}
+
+footer#footer .elementor-element-10a1f33 .social-link:hover {
+  background-color: #F68C50 !important;
+  border-color: #F68C50 !important;
+  color: #FFFFFF !important;
+  transform: translateY(-3px) !important;
+}
+
+/* Newsletter Input & Submit */
+footer#footer .elementor-element-4ee05ba h5 {
+  font-family: 'Marcellus', serif !important;
+  color: #FFFFFF !important;
+  font-size: 18px !important;
+  margin-bottom: 10px !important;
+}
+
+footer#footer .elementor-element-7d8ffa8 .mc4wp-form input[type="email"] {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #FFFFFF !important;
+  border-radius: 50px !important;
+  padding: 12px 20px !important;
+}
+
+footer#footer .elementor-element-7d8ffa8 .mc4wp-form input[type="email"]::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+footer#footer .elementor-element-7d8ffa8 .mc4wp-form button {
+  background-color: #F68C50 !important;
+  color: #FFFFFF !important;
+  border-radius: 50% !important;
+  border: none !important;
+  transition: background-color 0.25s ease, transform 0.25s ease !important;
+}
+
+footer#footer .elementor-element-7d8ffa8 .mc4wp-form button:hover {
+  background-color: #FFFFFF !important;
+  color: #0A3254 !important;
+  transform: scale(1.08) !important;
+}
+
+/* Watermark Text: Elegant, Low Opacity, Non-Intrusive */
+footer#footer .elementor-element-125cbdf p {
+  color: rgba(255, 255, 255, 0.05) !important;
+  font-family: 'Marcellus', serif !important;
+  font-size: clamp(2.8rem, 8vw, 8rem) !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: 4px !important;
+  text-align: center !important;
+  margin: 10px 0 0 !important;
+  user-select: none !important;
+  pointer-events: none !important;
+  white-space: nowrap !important;
+}
+
+/* Bottom Copyright Bar: Deep Royal Navy (Replacing old green rgb(31, 76, 67)) */
+footer#footer .elementor-element.elementor-element-e0c3cbc {
+  background-color: #061726 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 20px 0 !important;
+}
+
+footer#footer .elementor-element-6d1bdd6 .tm-text-editor {
+  color: rgba(255, 255, 255, 0.65) !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14px !important;
+}
+
+footer#footer .elementor-element-b15bd8f ul li a {
+  color: rgba(255, 255, 255, 0.65) !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14px !important;
+  transition: color 0.25s ease !important;
+}
+
+footer#footer .elementor-element-b15bd8f ul li a:hover {
+  color: #F68C50 !important;
+}
+
+footer#footer .elementor-element-b15bd8f ul li a .tm-nav-arrow-icon {
+  color: #F68C50 !important;
+  font-size: 10px !important;
+  margin-right: 6px !important;
+}
+
+/* Floating Decorative Object Constraint */
+footer#footer .elementor-element-5b0df63 {
+  pointer-events: none !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  opacity: 0.1 !important;
+}
+
+/* Responsive Overrides for Footer */
+@media (max-width: 1024px) {
+  footer#footer .elementor-element.elementor-element-ecae855 {
+    border-radius: 20px !important;
+    padding: 40px 24px 20px !important;
+  }
+  footer#footer .elementor-element.elementor-element-ee7020b {
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  footer#footer .elementor-element-125cbdf p {
+    font-size: clamp(2rem, 6vw, 5rem) !important;
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 767px) {
+  footer#footer .elementor-element.elementor-element-ecae855 {
+    border-radius: 16px !important;
+    padding: 30px 18px 15px !important;
+  }
+  footer#footer .elementor-element-125cbdf p {
+    font-size: 2.2rem !important;
+    letter-spacing: 2px !important;
+    white-space: normal !important;
+  }
+  footer#footer .elementor-element-6d1bdd6,
+  footer#footer .elementor-element-b15bd8f {
+    text-align: center !important;
+  }
+  footer#footer .elementor-element-ada6ebe {
+    flex-direction: column !important;
+    gap: 12px !important;
+    align-items: center !important;
+  }
+  footer#footer .elementor-element-b15bd8f ul {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 15px !important;
+  }
+}
