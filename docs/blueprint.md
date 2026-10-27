@@ -25,7 +25,7 @@ Established in 2012 in the Doha Industrial Area, **Royal Auto Paints** is Qatar'
    - **Why Clients Trust Royal Auto Paints:** Refined organic curved mask with high-resolution spray mist photography, 4 capability feature boxes, and animated wholesale quote triggers.
    - **Stats Counter Section ("Our Experience Speaks for Itself"):** 4 high-credibility B2B automotive coating metrics with smooth scroll-animated counters and clean 1px vertical straight separators.
    - **Before & After Real Automotive Refinish Results:** Interactive TwentyTwenty comparison slider demonstrating factory-finish paint restoration on high-res vehicle imagery.
-   - **Featured Products Showcase & Slider (`#products`):** Interactive Swiper carousel displaying 6 authentic Royal Auto Paints coatings (HB Body 691, HB Body F202, Challenger CL240, HB Body C496, HB Body C493, HB Body U951) with 5 gold stars, studio pedestal rendering, and one-tap WhatsApp RFQ triggers.
+   - **Featured Products Showcase & Slider (`#products`):** Interactive Swiper carousel displaying 6 authentic Royal Auto Paints coatings (HB Body 691, HB Body F202, Challenger CL240, HB Body C496, HB Body C493, HB Body U951) with clean minimalist studio presentation, pure title display, seamless transparent canvas matching #F7F0F2, and smooth mouse drag/touch navigation.
 
 ---
 
@@ -203,28 +203,28 @@ flowchart TD
 - **Controls:** Draggable horizontal comparison handle with Before / After badges.
 
 #### Section 9: Featured Products Showcase & Slider (`#products`)
-- **Container:** `.elementor-element-257125c` with `id="products"`.
-- **Header:**
-  - Pill Subtitle: `• Featured Products` (`background: #FFFFFF`, orange accent dot).
-  - Heading: `Premium Automotive & Refinish Solutions` (`#0A2942`, 42px).
+- **Container:** `.elementor-element-257125c` with `id="products"` and distinct crisp white background (`#FFFFFF`) providing clear alternating section differentiation between the soft `#F7F0F2` Before & After and How It Works sections.
+- **Header & Pill Badge:**
+  - Pill Subtitle: `Featured Products` in crisp white pill badge with an integrated single 8px amber accent dot (`background: #FFFFFF`, padding `8px 20px 8px 36px`, `border-radius: 50px`, box-shadow `0 2px 12px rgba(0,0,0,0.05)`).
+  - Heading: Centered `Elevating Every Finish Through<br>Advanced Refinish Systems` in brand-standard Royal Oceanic Navy (`#0A2942`) with elegant serif typography (`Marcellus`, 42px).
 - **Product Card Architecture (`.tm-woo-product-style1`):**
-  - White card (`#FFFFFF`, `border-radius: 20px`, padding 14px, subtle border `1px solid rgba(12,47,37,0.06)`).
-  - Studio Pedestal Render (`aspect-ratio: 1/1; object-fit: cover; border-radius: 16px; background: #f8fafc`).
-  - 5 Gold Stars (`.star-rating` in `#ffa700`, Font Awesome 5 Free).
-  - Product Title (`#0A2942`, hover `#F68C50`).
-  - Price display with original strikethrough and bold sale price (`QAR`).
-  - Direct WhatsApp RFQ trigger URL with pre-populated inquiry text.
+  - **Exact Reference Parity:** Tall vertical portrait card (`H/W ≈ 1.48`, `min-height: 405px`, `border-radius: 20px`, `padding: 12px 12px 20px 12px`, 1px border `rgba(10, 41, 66, 0.08)`, ambient shadow `0 10px 30px rgba(10, 41, 66, 0.06)`).
+  - **Portrait Image Container:** `height: 310px`, `border-radius: 16px`, `overflow: hidden`, `object-fit: cover`, `object-position: center`.
+  - **Centered Product Title:** `.product-title` in `Marcellus`, 18px, `#0A2942`, centered, padding `18px 12px 4px 12px`.
+  - **Minimalist Static Presentation:** Star ratings, pricing, and card-level links removed for clean reference parity. Zero artificial hover lift/scale animations (`transform: none !important`).
+  - **Template Default Action Button:** Dedicated `.btn-style2` pill button below the carousel (`VIEW ALL PRODUCTS`) featuring the template's signature dual-arrow morph animation and Royal Navy/Orange hover transitions routing to `products.html`.
 - **6 Featured Products:**
-  1. **HB Body 691 HS SR Clear:** Scratch-Resistant 2:1 High Solids Clear (`QAR 145.00` / was `QAR 160.00`).
-  2. **HB Body Pro F202 Zinc Plus:** Heavy-Duty Glass Fiber & Zinc Polyester Putty (`QAR 85.00`).
-  3. **Challenger CL240 2K Clear:** Axalta European High-Gloss Collision Clearcoat (`QAR 160.00`).
-  4. **HB Body C496 2K HS Clear:** Rapid Air-Drying 2K Clearcoat Aerosol (`QAR 65.00` / was `QAR 75.00`).
-  5. **HB Body Pro C493 Matt Clear:** 2K Acrylic HS Matte Finish Clearcoat (`QAR 155.00`).
-  6. **HB Body U951 Auto Flex:** Peelable Elastomeric Bodywork Spray (`QAR 55.00`).
+  1. **HB Body 691 HS SR Clear:** Scratch-Resistant 2:1 High Solids Clearcoat.
+  2. **HB Body Pro F202 Zinc Plus:** Heavy-Duty Glass Fiber & Zinc Polyester Putty.
+  3. **Challenger CL240 2K Clear:** Axalta European High-Gloss Collision Clearcoat.
+  4. **HB Body C496 2K HS Clear:** Rapid Air-Drying 2K Clearcoat Aerosol.
+  5. **HB Body Pro C493 Matt Clear:** 2K Acrylic HS Matte Finish Clearcoat.
+  6. **HB Body U951 Auto Flex:** Peelable Elastomeric Bodywork Spray.
 - **Swiper Carousel Engine:**
   - `data-items="4"` (desktop), `data-lg-items="3"`, `data-md-items="2"`, `data-xs-items="1"`.
-  - Circular navigation buttons (`.tm-swiper-button-prev`, `.tm-swiper-button-next`) with hover scaling.
-  - Linked to header navigation `#products` anchor.
+  - Intuitive mouse drag & touch swipe navigation enabled (`data-allowtouchmove="true"`).
+  - Floating arrow navigation buttons are hidden via CSS (`display: none !important`) while preserving internal DOM elements so Swiper event listeners and downstream sections (such as How It Works) maintain 100% stability with zero runtime errors.
+  - Seamlessly connected to header navigation `#products` anchor.
 
 #### Section 10: How It Works / Refinish Workflow
 - 4 systematic steps: Technical Consultation, Spectrophotometer Color Formulation, Paint Mixing & Batch QC, and Fast Delivery to Workshop.
