@@ -2163,3 +2163,192 @@ html {
   opacity: 0 !important;
   transform: scale(0) !important;
 }
+
+
+/* ==========================================================================
+   Section 10: How It Works / Refinish Workflow (.elementor-element-3fec5f6)
+   ========================================================================== */
+.elementor-element.elementor-element-3fec5f6 {
+  background-color: #FAF6F5 !important;
+  position: relative !important;
+}
+
+/* Subtitle Pill - How It Works */
+.elementor-element.elementor-element-f293c92 .sub-title-outer .subtitle {
+  display: inline-block !important;
+  position: relative !important;
+  background-color: #FFFFFF !important;
+  color: #0A2942 !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  border-radius: 50px !important;
+  padding: 8px 24px 8px 36px !important;
+  box-shadow: 0 2px 8px rgba(10, 41, 66, 0.05) !important;
+  border: 1px solid rgba(10, 41, 66, 0.08) !important;
+  letter-spacing: 0.3px !important;
+}
+
+.elementor-element.elementor-element-f293c92 .sub-title-outer .subtitle:before {
+  content: "" !important;
+  position: absolute !important;
+  left: 17px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 8px !important;
+  height: 8px !important;
+  background-color: #F68C50 !important;
+  border-radius: 50% !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+/* Section Title */
+.elementor-element.elementor-element-f293c92 .title {
+  color: #0A2942 !important;
+  font-family: "Marcellus", serif !important;
+  font-size: 42px !important;
+  font-weight: 400 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.5px !important;
+  margin: 16px 0 0 0 !important;
+}
+
+.elementor-element.elementor-element-f293c92 .title .title-part1 {
+  color: #0A2942 !important;
+  font-family: "Marcellus", serif !important;
+}
+
+.elementor-element.elementor-element-f293c92 .title-seperator-line {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .elementor-element.elementor-element-f293c92 .title {
+    font-size: 28px !important;
+  }
+}
+
+/* Subtitle Paragraph */
+.elementor-element.elementor-element-26d9bf3 .tm-text-editor p {
+  color: #526071 !important;
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 15.5px !important;
+  line-height: 1.7 !important;
+  margin-top: 18px !important;
+  margin-bottom: 30px !important;
+  max-width: 520px !important;
+}
+
+/* 3 Image Showcase Containers */
+.elementor-element.elementor-element-4e5e4ab {
+  gap: 16px !important;
+  align-items: flex-end !important;
+}
+
+.elementor-element.elementor-element-04dc250,
+.elementor-7010 .elementor-element.elementor-element-04dc250:not(.elementor-motion-effects-element-type-background),
+.elementor-7010 .elementor-element.elementor-element-04dc250 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  background-image: url("../images/Automotive_color_matching_fan_deck.jpg") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 28px rgba(10, 41, 66, 0.08) !important;
+  min-height: 240px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.elementor-element.elementor-element-58a7fc5,
+.elementor-7010 .elementor-element.elementor-element-58a7fc5:not(.elementor-motion-effects-element-type-background),
+.elementor-7010 .elementor-element.elementor-element-58a7fc5 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  background-image: url("../images/Automotive_paint_cans_on_marble.jpg") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 28px rgba(10, 41, 66, 0.08) !important;
+  min-height: 240px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.elementor-element.elementor-element-cffba15,
+.elementor-7010 .elementor-element.elementor-element-cffba15:not(.elementor-motion-effects-element-type-background),
+.elementor-7010 .elementor-element.elementor-element-cffba15 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  background-image: url("../images/Spray_gun_emitting_mist.jpg") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 28px rgba(10, 41, 66, 0.08) !important;
+  min-height: 240px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* 3 Step Working Cards */
+.tm-sc-working .working-block-style1 .inner-box {
+  background-color: #FFFFFF !important;
+  border-radius: 20px !important;
+  padding: 28px 32px 24px 32px !important;
+  box-shadow: 0 8px 24px rgba(10, 41, 66, 0.05), 0 2px 6px rgba(10, 41, 66, 0.02) !important;
+  border: 1px solid rgba(10, 41, 66, 0.07) !important;
+  margin-bottom: 20px !important;
+  transition: all 0.4s ease !important;
+}
+
+.tm-sc-working .working-block-style1 .inner-box .working-count {
+  font-family: "Marcellus", serif !important;
+  font-size: 48px !important;
+  line-height: 1 !important;
+  font-weight: 500 !important;
+  min-width: 75px !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-text-stroke-width: 1px !important;
+  -webkit-text-stroke-color: rgba(10, 41, 66, 0.45) !important;
+  transition: all 0.35s ease !important;
+}
+
+.tm-sc-working .working-block-style1 .inner-box .working-title {
+  font-family: "Marcellus", serif !important;
+  font-size: 21px !important;
+  font-weight: 400 !important;
+  color: #0A2942 !important;
+  line-height: 1.3 !important;
+  margin-top: 0 !important;
+  margin-bottom: 8px !important;
+  transition: color 0.35s ease !important;
+}
+
+.tm-sc-working .working-block-style1 .inner-box .working-details {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+  color: #64748B !important;
+  transition: color 0.35s ease !important;
+}
+
+/* Hover State: Deep Navy Fill with White Content */
+.tm-sc-working .working-block-style1 .inner-box:before {
+  background-color: #0A2942 !important;
+}
+
+.tm-sc-working .working-block-style1 .inner-box:hover {
+  box-shadow: 0 14px 36px rgba(10, 41, 66, 0.16) !important;
+  border-color: #0A2942 !important;
+}
+
+.tm-sc-working .working-block-style1 .inner-box:hover .working-count {
+  -webkit-text-stroke-color: #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+
+.tm-sc-working .working-block-style1 .inner-box:hover .working-title {
+  color: #FFFFFF !important;
+}
+
+.tm-sc-working .working-block-style1 .inner-box:hover .working-details {
+  color: rgba(255, 255, 255, 0.88) !important;
+}

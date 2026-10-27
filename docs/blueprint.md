@@ -226,8 +226,21 @@ flowchart TD
   - Floating arrow navigation buttons are hidden via CSS (`display: none !important`) while preserving internal DOM elements so Swiper event listeners and downstream sections (such as How It Works) maintain 100% stability with zero runtime errors.
   - Seamlessly connected to header navigation `#products` anchor.
 
-#### Section 10: How It Works / Refinish Workflow
-- 4 systematic steps: Technical Consultation, Spectrophotometer Color Formulation, Paint Mixing & Batch QC, and Fast Delivery to Workshop.
+#### Section 10: How It Works / Refinish Workflow (`.elementor-element-3fec5f6`)
+- **Visual Design:** Warm studio canvas (`#FAF6F5`), providing clean alternating section differentiation from the pure white (`#FFFFFF`) Products showcase above.
+- **Header & Pill Badge:**
+  - Pill Subtitle: `How It Works` in crisp white pill badge with an integrated single 8px amber accent dot (`#F68C50`).
+  - Heading: Centered `How We Bring Your Automotive<br>Refinish Vision to Life` in Royal Oceanic Navy (`#0A2942`, `Marcellus`, 42px).
+  - Narrative Paragraph: Outlines computerized color scanning, European formulation, and on-demand delivery for bodyshops across Qatar.
+- **3 Automotive Refinish Photography Spotlights:**
+  1. `Automotive_color_matching_fan_deck.jpg`: Multi-angle computerized color matching swatches & spectrophotometer.
+  2. `Automotive_paint_cans_on_marble.jpg`: Authentic HB Body primers, hardeners, and spray guns on marble pedestal.
+  3. `Spray_gun_emitting_mist.jpg`: Precision spray gun emitting clearcoat mist in clean workshop environment.
+- **3 Systematic Step Cards (`.working-block-style1`):**
+  - **Card 01 - Digital Color Scan & Analysis:** Multi-angle spectrophotometer analysis accounting for vehicle age, metallic flake orientation, and clearcoat depth for a 100% invisible blend.
+  - **Card 02 - Computerized Mixing & Batch QC:** Genuine HB Body & Challenger European tints mixed on micro-gram scales with test spray-out card verification under daylight illumination.
+  - **Card 03 - Ready-to-Spray Workshop Delivery:** Batched coatings sealed in cans, drums, or custom aerosols dispatched with TDS application guides directly to bodyshops across Doha.
+  - **Interactive Hover Morph:** Deep Royal Navy `#0A2942` card fill transition with crisp white typography and illuminated outline numerals.
 
 #### Section 11: Customer Reviews & Reputation
 - Verified B2B workshop testimonials from body shop owners, fleet managers, and luxury car customizers across Doha.
