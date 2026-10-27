@@ -262,6 +262,7 @@ flowchart TD
 
 #### Section 13: Technical FAQ & Consultation Desk (`.elementor-element-2174d52`)
 - **Template Design Integrity:** Retains 100% of the native Elementor template styling, layout, typography, decorative floating product illustration (`images/elegant.png`), and background leaf line art (`Leaf-02.png`, `Leaf-03.png`).
+- **Full-Width Seamless Transition:** Set outer container side paddings to 0 and eliminated top-edge overlap gutters (`padding: 0; margin-top: 0; border-radius: 0;`), completely removing the 20px dark blue side gutters and creating a clean, edge-to-edge boundary.
 - **Section Heading:**
   - Subtitle Pill: Centered `• FAQS` pill badge.
   - Heading: Centered `Your Most Important Questions`<br>`Answered Here` in theme terracotta/orange (`Marcellus`, 42px).
