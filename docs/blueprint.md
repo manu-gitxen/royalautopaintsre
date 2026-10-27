@@ -242,8 +242,20 @@ flowchart TD
   - **Card 03 - Ready-to-Spray Workshop Delivery:** Batched coatings sealed in cans, drums, or custom aerosols dispatched with TDS application guides directly to bodyshops across Doha.
   - **Interactive Hover Morph:** Deep Royal Navy `#0A2942` card fill transition with crisp white typography and illuminated outline numerals.
 
-#### Section 11: Customer Reviews & Reputation
-- Verified B2B workshop testimonials from body shop owners, fleet managers, and luxury car customizers across Doha.
+#### Section 11: Customer Reviews & Reputation (`.elementor-element-fb1b7cb`)
+- **Theme Color & Ambience:** Deep Royal Navy canvas (`#071C2E`), creating a high-contrast luxury presentation.
+- **Section Heading & Pill:**
+  - Subtitle Pill: `Testimonials` in translucent pill badge with an orange `#F68C50` dot.
+  - Heading: Centered `What Clients Say About<br>Our Refinish Quality` in pure white (`#FFFFFF`, `Marcellus`, 42px).
+- **Verified Google Business Integration (4.7 Rating · 91+ Reviews):**
+  - Live verified rating badge matching Royal Auto Paints' Google Maps profile (`4.7` score, 5-star rating visual, and `From 91+ Reviews, Verified by Google`).
+- **4 Authentic Google Reviews Carousel (`.testimonial-block-style2`):**
+  1. **Ashin Moideen (Local Guide · Garage Partner):** *"Top-notch paint shop. They always have the supplies we need, delivery is fast, and the customer service is excellent. Perfect partner for our garage."*
+  2. **Sajeer PK (Local Guide · Bodyshop Specialist):** *"Royal Auto Paint's Challenger paint color matching is perfect! Accurate shades every time. Great products and excellent service. Highly recommend! 👍"*
+  3. **Mirriam Ndanu (Client Since 2021):** *"Customer since 2021, always excellent customer service. My one-point shop for all automotive refinish and bodywork coatings in Doha."*
+  4. **Zahid Ullah (Verified Reviewer):** *"Number one car paint shop in Qatar. Top quality European clears, putties, and primers with unmatched color accuracy every single time."*
+- **Center Portrait Visual:**
+  - High-resolution studio photograph (`Technician_mixing_automotive_paint.jpg`) showcasing a certified paint technician mixing paint on a micro-gram digital scale with spray-out test cards under daylight inspection lamps (`border-radius: 28px`, shadow `0 20px 48px rgba(0,0,0,0.45)`).
 
 #### Section 12: Authorized Brand Partners Carousel
 - Seamless scrolling brand ribbon featuring Axalta, HB Body, Challenger, Motolux, and Sea-Line.

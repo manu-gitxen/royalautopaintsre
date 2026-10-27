@@ -2249,7 +2249,7 @@ html {
 .elementor-element.elementor-element-04dc250,
 .elementor-7010 .elementor-element.elementor-element-04dc250:not(.elementor-motion-effects-element-type-background),
 .elementor-7010 .elementor-element.elementor-element-04dc250 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-  background-image: url("../images/Automotive_color_matching_fan_deck.jpg") !important;
+  background-image: url("../images/Technician_scanning_car_paint_color.jpg") !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -2263,7 +2263,7 @@ html {
 .elementor-element.elementor-element-58a7fc5,
 .elementor-7010 .elementor-element.elementor-element-58a7fc5:not(.elementor-motion-effects-element-type-background),
 .elementor-7010 .elementor-element.elementor-element-58a7fc5 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-  background-image: url("../images/Automotive_paint_cans_on_marble.jpg") !important;
+  background-image: url("../images/Technician_mixing_automotive_paint.jpg") !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -2277,7 +2277,7 @@ html {
 .elementor-element.elementor-element-cffba15,
 .elementor-7010 .elementor-element.elementor-element-cffba15:not(.elementor-motion-effects-element-type-background),
 .elementor-7010 .elementor-element.elementor-element-cffba15 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-  background-image: url("../images/Spray_gun_emitting_mist.jpg") !important;
+  background-image: url("../images/Automotive_paint_products_ready.jpg") !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -2351,4 +2351,154 @@ html {
 
 .tm-sc-working .working-block-style1 .inner-box:hover .working-details {
   color: rgba(255, 255, 255, 0.88) !important;
+}
+
+
+/* ==========================================================================
+   Section 11: Customer Reviews & Testimonials (.elementor-element-fb1b7cb)
+   ========================================================================== */
+.elementor-element.elementor-element-fb1b7cb {
+  background-color: #071C2E !important;
+  position: relative !important;
+}
+
+/* Subtitle Pill - Testimonials */
+.elementor-element.elementor-element-deeb087 .sub-title-outer .subtitle {
+  display: inline-block !important;
+  position: relative !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  color: #FFFFFF !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  border-radius: 50px !important;
+  padding: 8px 24px 8px 36px !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  letter-spacing: 0.3px !important;
+}
+
+.elementor-element.elementor-element-deeb087 .sub-title-outer .subtitle:before {
+  content: "" !important;
+  position: absolute !important;
+  left: 17px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 8px !important;
+  height: 8px !important;
+  background-color: #F68C50 !important;
+  border-radius: 50% !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+/* Section Title */
+.elementor-element.elementor-element-deeb087 .title {
+  color: #FFFFFF !important;
+  font-family: "Marcellus", serif !important;
+  font-size: 42px !important;
+  font-weight: 400 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.5px !important;
+  margin: 16px 0 0 0 !important;
+}
+
+.elementor-element.elementor-element-deeb087 .title .title-part1 {
+  color: #FFFFFF !important;
+  font-family: "Marcellus", serif !important;
+}
+
+.elementor-element.elementor-element-deeb087 .title-seperator-line {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .elementor-element.elementor-element-deeb087 .title {
+    font-size: 28px !important;
+  }
+}
+
+/* Center Portrait Image Showcase (Authentic Refinish Technician) */
+.elementor-element.elementor-element-cfa0488,
+.elementor-7010 .elementor-element.elementor-element-cfa0488:not(.elementor-motion-effects-element-type-background),
+.elementor-7010 .elementor-element.elementor-element-cfa0488 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  background-image: url("../images/Technician_mixing_automotive_paint.jpg") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  border-radius: 28px !important;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.45) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Testimonial Quote Styling */
+.testimonial-block-style2 .inner-block .quote-icon img {
+  filter: brightness(0) invert(1) !important;
+  opacity: 0.9 !important;
+  width: 48px !important;
+  height: auto !important;
+}
+
+.testimonial-block-style2 .inner-block .author-text {
+  color: #E2E8F0 !important;
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 19px !important;
+  line-height: 1.7 !important;
+  font-style: italic !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+  padding-bottom: 35px !important;
+  margin-bottom: 30px !important;
+}
+
+.testimonial-block-style2 .inner-block .client-info {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+}
+
+.testimonial-block-style2 .inner-block .client-info .client-img {
+  width: 54px !important;
+  height: 54px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  border: 2px solid rgba(246, 140, 80, 0.6) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+}
+
+.testimonial-block-style2 .inner-block .client-info .client-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.testimonial-block-style2 .inner-block .client-info .info-content .testimonial-name {
+  font-family: "Marcellus", serif !important;
+  font-size: 19px !important;
+  color: #FFFFFF !important;
+  margin: 0 !important;
+}
+
+.testimonial-block-style2 .inner-block .client-info .info-content .testimonial-position {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 13.5px !important;
+  color: #F68C50 !important;
+  margin-top: 2px !important;
+}
+
+/* Rating Badge on Right */
+.elementor-element.elementor-element-63fd05e .tm-text-editor p {
+  color: #FFFFFF !important;
+  font-family: "Marcellus", serif !important;
+  font-size: 52px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+}
+
+.elementor-element.elementor-element-1d047f0 .tm-text-editor p {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.4 !important;
 }
