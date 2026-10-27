@@ -260,8 +260,25 @@ flowchart TD
 #### Section 12: Authorized Brand Partners Carousel
 - Seamless scrolling brand ribbon featuring Axalta, HB Body, Challenger, Motolux, and Sea-Line.
 
-#### Section 13: Technical FAQ & Consultation Desk
-- Responsive accordion answers addressing 2K mixing ratios, spray gun pressure settings, curing times in Qatar's climate, and wholesale commercial accounts.
+#### Section 13: Technical FAQ & Consultation Desk (`.elementor-element-2174d52`)
+- **Template Design Integrity:** Retains 100% of the native Elementor template styling, layout, typography, decorative floating product illustration (`images/elegant.png`), and background leaf line art (`Leaf-02.png`, `Leaf-03.png`).
+- **Section Heading:**
+  - Subtitle Pill: Centered `• FAQS` pill badge.
+  - Heading: Centered `Your Most Important Questions`<br>`Answered Here` in theme terracotta/orange (`Marcellus`, 42px).
+- **Interactive Bootstrap 5 Accordion (`#accordion-holder-565382`):**
+  - **Card 1 (Collapsed):** *How accurate is your computerized automotive paint color matching?*
+    - Explains multi-angle spectrophotometer scanning, physical vehicle sample calibration (fuel door/panel), and Challenger OEM formulation accuracy.
+  - **Card 2 (Default Active / Open):** *What paint mixing ratios should be used in Qatar's summer heat?*
+    - Advises on high ambient temperature procedures using Challenger Slow / Extra Slow hardeners and reducers (2:1 volume) to prevent solvent boil and orange peel.
+  - **Card 3 (Collapsed):** *Can you prepare custom automotive paint in aerosol spray cans?*
+    - Details on-site custom 400ml aerosol can charging with precision fan spray nozzles for spot repairs and motorcycle parts.
+  - **Card 4 (Collapsed):** *Do you offer on-demand delivery for bodyshops and garages in Doha?*
+    - Covers dedicated delivery fleet directly supplying bodyshops across Industrial Area, Street 23, and Greater Doha.
+  - **Card 5 (Collapsed):** *What abrasives and surface prep are recommended before painting?*
+    - Explains surface preparation, abrasives from P80 to P3000, wax/grease removers, and 2K high-build primers.
+- **Native Visual Styling:**
+  - Collapsed Cards: `#F7F0F2` soft warm blush background, theme orange title text, dark navy circular button with white chevron pointing down.
+  - Active Card: Deep Royal Navy `#0A3254` background, pure white title text, white circular button with navy chevron pointing up, and legible light body text.
 
 #### Section 14: Corporate Footer & Doha Location Guide
 - Full physical NAP details: Street 23, Wakalat St, Industrial Area, Doha, Qatar.
