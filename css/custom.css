@@ -2893,3 +2893,281 @@ html {
     font-size: 1.8rem !important;
   }
 }
+
+
+/* ==========================================================================
+   Section 16: Automotive Refinish News & Technical Insights (Blog Section)
+   Container: .elementor-element-b71ae65
+   ========================================================================== */
+
+/* Outer Section Layout & Spacing */
+.elementor-element.elementor-element-b71ae65 {
+  position: relative !important;
+  background-color: #FDFBF7 !important;
+  padding: 100px 0 110px !important;
+}
+
+/* Subtitle Pill - White background with Navy text and Coral dot */
+.elementor-element.elementor-element-d84cf59 .sub-title-outer .subtitle {
+  display: inline-block !important;
+  position: relative !important;
+  background-color: #FFFFFF !important;
+  color: #0A3254 !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  border-radius: 50px !important;
+  padding: 8px 24px 8px 36px !important;
+  box-shadow: 0 2px 8px rgba(10, 50, 84, 0.05) !important;
+  border: 1px solid rgba(10, 50, 84, 0.08) !important;
+  letter-spacing: 0.3px !important;
+}
+
+.elementor-element.elementor-element-d84cf59 .sub-title-outer .subtitle:before {
+  content: "" !important;
+  position: absolute !important;
+  left: 17px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 8px !important;
+  height: 8px !important;
+  background-color: #F68C50 !important;
+  border-radius: 50% !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+/* Section Title - Primary Deep Navy */
+.elementor-element.elementor-element-d84cf59 h2.title,
+.elementor-element.elementor-element-d84cf59 h2.title .title-part1 {
+  color: #0A3254 !important;
+  font-family: 'Marcellus', serif !important;
+  font-size: 38.4px !important;
+  line-height: 1.25 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+/* Title Separator Line */
+.elementor-element.elementor-element-d84cf59 .title-seperator-line {
+  background-color: #F68C50 !important;
+  height: 2px !important;
+  width: 60px !important;
+  margin: 15px 0 0 !important;
+}
+
+/* Blog Cards Container & Layout */
+.elementor-element.elementor-element-987bbfc {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.elementor-element-987bbfc .blog-item-current-style1 {
+  background-color: #FFFFFF !important;
+  border-radius: 20px !important;
+  border: 1px solid rgba(10, 50, 84, 0.08) !important;
+  box-shadow: 0 4px 20px rgba(10, 50, 84, 0.04) !important;
+  overflow: hidden !important;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.elementor-element-987bbfc .blog-item-current-style1:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 36px rgba(10, 50, 84, 0.12) !important;
+  border-color: rgba(246, 140, 80, 0.3) !important;
+}
+
+/* Card Thumbnail */
+.elementor-element-987bbfc .blog-item-current-style1 .thumb {
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 20px 20px 0 0 !important;
+  height: 250px !important;
+}
+
+.elementor-element-987bbfc .blog-item-current-style1 .thumb img {
+  width: 100% !important;
+  height: 250px !important;
+  object-fit: cover !important;
+  border-radius: 20px 20px 0 0 !important;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+.elementor-element-987bbfc .blog-item-current-style1:hover .thumb img {
+  transform: scale(1.06) !important;
+}
+
+/* Date Badge */
+.elementor-element-987bbfc .blog-item-current-style1 .thumb .date {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #0A3254 !important;
+  width: 58px !important;
+  height: 58px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(10, 50, 84, 0.3) !important;
+  top: 18px !important;
+  left: 18px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  z-index: 2 !important;
+}
+
+.elementor-element-987bbfc .blog-item-current-style1 .thumb .date .day {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  color: #FFFFFF !important;
+}
+
+.elementor-element-987bbfc .blog-item-current-style1 .thumb .date .month {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  color: #F68C50 !important;
+  line-height: 1 !important;
+  margin-top: 3px !important;
+}
+
+/* Card Content Area */
+.elementor-element-987bbfc .blog-item-current-style1 .content {
+  padding: 26px 26px 30px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+  justify-content: space-between !important;
+  border: none !important;
+}
+
+/* Article Title */
+.elementor-element-987bbfc .blog-item-current-style1 .entry-title {
+  margin: 0 0 12px !important;
+  line-height: 1.35 !important;
+}
+
+.elementor-element-987bbfc .blog-item-current-style1 .entry-title a {
+  color: #0A3254 !important;
+  font-family: 'Marcellus', serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 1.35 !important;
+  text-decoration: none !important;
+  transition: color 0.25s ease !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  min-height: 54px !important;
+}
+
+.elementor-element-987bbfc .blog-item-current-style1:hover .entry-title a,
+.elementor-element-987bbfc .blog-item-current-style1 .entry-title a:hover {
+  color: #F68C50 !important;
+}
+
+/* Post Excerpt */
+.elementor-element-987bbfc .blog-item-current-style1 .mascot-post-excerpt {
+  color: #5C6A79 !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14.5px !important;
+  line-height: 1.6 !important;
+  margin-bottom: 22px !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  min-height: 70px !important;
+}
+
+/* Read More Link */
+.elementor-element-987bbfc .blog-item-current-style1 .link-btn {
+  color: #0A3254 !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 600 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-top: auto !important;
+  text-decoration: none !important;
+  transition: color 0.25s ease !important;
+}
+
+.elementor-element-987bbfc .blog-item-current-style1 .link-btn i {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  background-color: rgba(10, 50, 84, 0.08) !important;
+  color: #0A3254 !important;
+  font-size: 12px !important;
+  line-height: 32px !important;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease !important;
+}
+
+.elementor-element-987bbfc .blog-item-current-style1:hover .link-btn,
+.elementor-element-987bbfc .blog-item-current-style1 .link-btn:hover {
+  color: #F68C50 !important;
+}
+
+.elementor-element-987bbfc .blog-item-current-style1:hover .link-btn i,
+.elementor-element-987bbfc .blog-item-current-style1 .link-btn:hover i {
+  background-color: #F68C50 !important;
+  color: #FFFFFF !important;
+  transform: translateX(4px) !important;
+}
+
+/* Floating Object - Constrain and prevent overflow */
+.elementor-element.elementor-element-2fa7a21 {
+  pointer-events: none !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
+
+/* Responsive Adjustments for Section 16 */
+@media (max-width: 1024px) {
+  .elementor-element.elementor-element-b71ae65 {
+    padding: 70px 0 80px !important;
+  }
+  .elementor-element-987bbfc .blog-item-current-style1 .thumb,
+  .elementor-element-987bbfc .blog-item-current-style1 .thumb img {
+    height: 220px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .elementor-element.elementor-element-b71ae65 {
+    padding: 50px 0 60px !important;
+  }
+  .elementor-element.elementor-element-d84cf59 h2.title,
+  .elementor-element.elementor-element-d84cf59 h2.title .title-part1 {
+    font-size: 1.85rem !important;
+  }
+  .elementor-element-987bbfc .blog-item-current-style1 {
+    margin-bottom: 25px !important;
+  }
+  .elementor-element-987bbfc .blog-item-current-style1 .thumb,
+  .elementor-element-987bbfc .blog-item-current-style1 .thumb img {
+    height: 210px !important;
+  }
+  .elementor-element-987bbfc .blog-item-current-style1 .content {
+    padding: 20px 18px 24px !important;
+  }
+  .elementor-element-987bbfc .blog-item-current-style1 .entry-title a {
+    min-height: auto !important;
+  }
+  .elementor-element-987bbfc .blog-item-current-style1 .mascot-post-excerpt {
+    min-height: auto !important;
+  }
+}

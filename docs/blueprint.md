@@ -322,7 +322,22 @@ flowchart TD
   - Action Button: Brand navy pill button with theme orange hover elevation (`#F68C50`).
 - **Responsive Guarantee**: Flawless container containment and 0px horizontal overflow across all viewports (1440px desktop, 1200px laptop, 768px tablet, 390px mobile).
 
-#### Section 16: Corporate Footer & Doha Location Guide
+#### Section 16: Automotive Refinish News & Technical Articles (`.elementor-element-b71ae65`)
+- **Visual Backdrop**: Clean, high-contrast light warm background (`#FDFBF7`) with generous vertical padding (100px top, 110px bottom).
+- **Header Structure**:
+  - Subtitle pill (`.elementor-element-d84cf59 .subtitle`): White pill (`#FFFFFF`) with brand primary navy text (`#0A3254`) and coral accent indicator dot (`#F68C50`), harmonized with light-background sections.
+  - Headline: `Automotive Refinish Insights & Articles` in Marcellus serif typography and brand primary navy (`#0A3254`), with accent underline separator (`#F68C50`).
+- **Article Cards (`.blog-item-current-style1`)**:
+  - Card 1 (`Technician_scanning_car_paint_color.jpg`): `Precision Color Matching: How Digital Spectrophotometers Ensure OEM Accuracy` — focusing on spectral analysis and exact factory paint formula replication for commercial bodyshops.
+  - Card 2 (`spray_booth_hero.jpg`): `Choosing High-Solid Clear Coats for Qatar's Desert Climate` — covering UV protection, thermal resistance, and high-gloss retention under extreme Gulf conditions.
+  - Card 3 (`Automotive_color_matching_fan_deck.jpg`): `Surface Preparation Standards for Commercial Bodyshops` — standardizing degreasing, grit sequence sanding, and high-build primer adhesion protocols.
+- **Card Aesthetics & Micro-interactions**:
+  - Crisp publication date badges (`24 OCT`, `18 OCT`, `05 OCT`) in brand primary navy (`#0A3254`) with coral month labels.
+  - Unified card heights with subtle 20px rounded corners, 1px navy border tint, and smooth elevation on hover (`translateY(-6px)` with soft shadow).
+  - "Read More" links featuring interactive circular icon arrows transitioning to brand coral on hover.
+- **Responsive Guarantee**: Zero horizontal overflow across all viewports (1440px desktop, 1200px laptop, 768px tablet 2-column wrap, and 390px mobile vertical stack).
+
+#### Section 17: Corporate Footer & Doha Location Guide
 - Full physical NAP details: Street 23, Wakalat St, Industrial Area, Doha, Qatar.
 - Showroom operating hours: Saturday–Thursday: 7:30 AM – 12:30 PM & 3:30 PM – 7:30 PM; Friday: Closed.
 - Direct dialers, Google Maps iframe, and legal copyright badges.
