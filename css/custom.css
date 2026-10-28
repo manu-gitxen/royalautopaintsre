@@ -3471,3 +3471,133 @@ footer#footer .elementor-element-5b0df63 {
     gap: 15px !important;
   }
 }
+
+
+/* ==========================================================================
+   Floating Action Buttons: Luxury Royal Navy Scroll-to-Top & Non-Flashing WhatsApp
+   ========================================================================== */
+.floating-quick-actions {
+  position: fixed !important;
+  bottom: 25px !important;
+  right: 25px !important;
+  display: flex !important;
+  flex-direction: column !important; /* WhatsApp at bottom, Arrow above it */
+  align-items: center !important;
+  gap: 12px !important;
+  z-index: 99999 !important;
+  pointer-events: none !important;
+}
+
+/* Floating WhatsApp Button - Static, Clean, Non-Flashing */
+.floating-whatsapp-btn {
+  pointer-events: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 50% !important;
+  background: #25D366 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.38), 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+  text-decoration: none !important;
+  transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  animation: none !important; /* NO FLASH / NO PULSE */
+  border: none !important;
+}
+
+.floating-whatsapp-btn i {
+  font-size: 28px !important;
+  color: #FFFFFF !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+}
+
+.floating-whatsapp-btn:hover {
+  background: #20BA5A !important;
+  color: #FFFFFF !important;
+  transform: translateY(-3px) scale(1.06) !important;
+  box-shadow: 0 10px 22px rgba(37, 211, 102, 0.5) !important;
+}
+
+/* Scroll-to-Top Button */
+.scroll-to-top {
+  pointer-events: auto !important;
+  position: static !important;
+  display: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.scroll-to-top a,
+.scroll-to-top a.scroll-link,
+body > .scroll-to-top a {
+  position: static !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+  background-image: none !important;
+  background: #0A3254 !important;
+  background-color: #0A3254 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 18px rgba(10, 50, 84, 0.35), 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+  opacity: 1 !important;
+  text-decoration: none !important;
+  transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+.scroll-to-top a i,
+.scroll-to-top a.scroll-link i,
+body > .scroll-to-top a i,
+.scroll-to-top i,
+.scroll-to-top .lnr-icon-arrow-up {
+  color: #FFFFFF !important;
+  font-size: 18px !important;
+  line-height: 1 !important;
+  transition: transform 0.25s ease !important;
+}
+
+.scroll-to-top a:hover,
+.scroll-to-top a.scroll-link:hover,
+body > .scroll-to-top a:hover {
+  background: #F68C50 !important;
+  background-color: #F68C50 !important;
+  border-color: #F68C50 !important;
+  transform: translateY(-3px) scale(1.06) !important;
+  box-shadow: 0 10px 22px rgba(246, 140, 80, 0.45) !important;
+}
+
+.scroll-to-top a:hover i,
+.scroll-to-top a.scroll-link:hover i {
+  transform: translateY(-2px) !important;
+  color: #FFFFFF !important;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 767.98px) {
+  .floating-quick-actions {
+    bottom: 18px !important;
+    right: 18px !important;
+    gap: 10px !important;
+  }
+  .floating-whatsapp-btn {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  .floating-whatsapp-btn i {
+    font-size: 25px !important;
+  }
+  .scroll-to-top a,
+  .scroll-to-top a.scroll-link {
+    width: 44px !important;
+    height: 44px !important;
+  }
+  .scroll-to-top a i,
+  .scroll-to-top a.scroll-link i {
+    font-size: 16px !important;
+  }
+}
