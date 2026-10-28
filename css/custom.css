@@ -3194,7 +3194,11 @@ footer#footer .elementor-invisible {
 /* Card Container Main Background: Site Primary Deep Navy */
 footer#footer .elementor-element.elementor-element-ecae855 {
   background-color: #0A3254 !important;
-  border-radius: 30px !important;
+  border-radius: 30px 30px 0 0 !important;
+  border-top-left-radius: 30px !important;
+  border-top-right-radius: 30px !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
   padding: 60px 40px 30px !important;
 }
 
@@ -3363,6 +3367,11 @@ footer#footer .elementor-element.elementor-element-e0c3cbc {
   background-color: #061726 !important;
   border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
   padding: 20px 0 !important;
+  border-radius: 0 0 30px 30px !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
 }
 
 footer#footer .elementor-element-6d1bdd6 .tm-text-editor {
@@ -3399,8 +3408,19 @@ footer#footer .elementor-element-5b0df63 {
 /* Responsive Overrides for Footer */
 @media (max-width: 1024px) {
   footer#footer .elementor-element.elementor-element-ecae855 {
-    border-radius: 20px !important;
+    border-radius: 20px 20px 0 0 !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
     padding: 40px 24px 20px !important;
+  }
+  footer#footer .elementor-element.elementor-element-e0c3cbc {
+    border-radius: 0 0 20px 20px !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
   }
   footer#footer .elementor-element.elementor-element-ee7020b {
     flex-direction: column !important;
@@ -3416,8 +3436,19 @@ footer#footer .elementor-element-5b0df63 {
 
 @media (max-width: 767px) {
   footer#footer .elementor-element.elementor-element-ecae855 {
-    border-radius: 16px !important;
+    border-radius: 16px 16px 0 0 !important;
+    border-top-left-radius: 16px !important;
+    border-top-right-radius: 16px !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
     padding: 30px 18px 15px !important;
+  }
+  footer#footer .elementor-element.elementor-element-e0c3cbc {
+    border-radius: 0 0 16px 16px !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 16px !important;
+    border-bottom-right-radius: 16px !important;
   }
   footer#footer .elementor-element-125cbdf p {
     font-size: 2.2rem !important;
