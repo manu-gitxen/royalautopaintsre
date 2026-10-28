@@ -146,6 +146,21 @@ flowchart TD
 
 ### Detailed Section Breakdown
 
+#### Section 2: Universal Luxury Navigation Header & Full-Width Glassmorphism Architecture
+- **Full-Width Glassmorphism Architecture (Restored Brand Standard):**
+  - **Top Navigation State (Seamless over Dynamic Hero):**
+    - Seamless full-width container (`max-width: 1720px`, `height: 80px`, `padding: 0 50px`).
+    - Frosted oceanic glass material: `background: rgba(8, 28, 46, 0.45)` with `backdrop-filter: blur(18px) saturate(170%)` and `-webkit-backdrop-filter: blur(18px) saturate(170%)`.
+    - Specular highlight edge: `border-bottom: 1px solid rgba(255, 255, 255, 0.16)` and inner glass reflection `inset 0 1px 0 rgba(255, 255, 255, 0.14)`.
+    - Authentic white brand logo (`royal-nav-logo-white`), crisp white `DM Sans` links with underline hover sweep, and luxury frosted glass call button (`rgba(255, 255, 255, 0.12)`, `border: 1px solid rgba(255, 255, 255, 0.3)`).
+  - **Sticky Scrolled Navigation State (`.sticky-active`):**
+    - Automatically triggered when scrolling past 75px, sliding down smoothly via `stickyNavSlideDown`.
+    - Full-width fixed porcelain glass bar (`top: 0; left: 0; right: 0; width: 100%; height: 72px; z-index: 99999`).
+    - High-clarity frosted glass material: `background: rgba(255, 255, 255, 0.78)` with `backdrop-filter: blur(20px) saturate(180%)`, `border-bottom: 1px solid rgba(255, 255, 255, 0.45)`, and ambient elevation `0 10px 35px rgba(10, 41, 66, 0.08)`.
+    - Seamlessly displays full-color dark brand logo (`royal-nav-logo-dark`), Deep Royal Navy (`#0A2942`) navigation links with warm orange (`#F68C50`) hover, and solid Royal Navy call button.
+- **Subpage Navigation Glass Parity:**
+  - Standardized across `about.html`, `products.html`, `services.html`, `gallery.html`, `career.html`, and `contact.html` with `rgba(255, 255, 255, 0.82)`, `backdrop-filter: blur(24px) saturate(190%)`, and subtle bottom border `rgba(10, 41, 66, 0.08)`.
+
 #### Section 3: Flagship Hero & Synchronized 5-Division Mini-Slider
 - **Canvas:** Full-width responsive container with deep Royal Oceanic Navy gradient overlay (`linear-gradient(135deg, rgba(7, 28, 48, 0.92) 0%, rgba(5, 20, 36, 0.88) 100%)`).
 - **5 Synchronized Coating Divisions:**
@@ -291,71 +306,69 @@ flowchart TD
   1. **Challenger Refinish Systems (`fas fa-spray-can`):** Official Axalta European tints & computerized OEM formula matching for perfect color fidelity.
   2. **HB BODY Automotive (`fas fa-layer-group`):** Certified European putties, high-build 2K primers, and scratch-resistant clears built for Qatar's climate.
   3. **Guaranteed Authenticity (`fas fa-shield-alt`):** 100% genuine factory-batched coatings with verified technical data sheets and quality assurance.
-- **Centering & Alignment Architecture (css/custom.css):**
-  - Section wrapper .elementor-element-9404d4b and .e-con-inner are explicitly centered with margin: 0 auto; max-width: 1320px; and balanced 20px lateral padding.
-  - Storefront hero visual .elementor-element-3c68609 overrides legacy fixed 1580px width with width: 100%; max-width: 100%; margin: 0 auto; border-radius: 20px;, ensuring symmetrical margins without rightward drift.
-  - Floating 3-pillar card container .elementor-element-ea7f9db floats centered with width: calc(100% - 60px); max-width: 1200px; margin: -240px auto 0; across desktop screens.
 
-#### Section 14: Trusted By Leading Brands Carousel (`.elementor-element-0b9fd9e`)
-- Seamless scrolling continuous brand ribbon featuring 8 authentic Royal Auto Paints manufacturer & distribution brands:
-  1. **Axalta Coating Systems** (images/brand_axalta.png, official global automotive refinish leader)
-  2. **HB BODY Automotive** (images/brand_hbbody.svg, official Greek European putties, primers & clears)
-  3. **Challenger Refinish Systems** (images/brand_challenger.svg, official German Axalta refinish system)
-  4. **Imlar Paints** (images/brand_imlar.png, Axalta commercial & fleet refinish line)
-  5. **GEM Auto Paints Wholesale** (images/brand_gem_autopaints.png, regional automotive coatings distributor)
-  6. **Gemex Coatings** (images/brand_gemex.png, specialized automotive refinish coatings)
-  7. **Moto Max Refinish** (images/brand_motomax.png, automotive shine & protection finishes)
-  8. **Sea-Line Yacht Coatings** (images/brand_sealine.svg, European marine & yacht refinish finishes)
-- Styled in css/custom.css with balanced 48px height, proportional scaling, subtle grayscale hover interaction, and continuous infinite Swiper loop.
+#### Section 14: Trusted By Leading Brands Carousel (.elementor-element-0b9fd9e)
+- High-definition grayscale-to-color interactive brand partner ribbon featuring authentic brand logos:
+  - **Axalta Coating Systems** (images/Axalta_Coating_Systems_logo.svg.png)
+  - **HB BODY Refinish Systems** (images/HB_Body_logo.svg.png)
+  - **Challenger Automotive Paints** (images/Challenger_logo.svg.png)
+  - **Imlar Industrial Coatings** (images/imlar_logo.png)
+  - **GEM Auto Paints** (images/gem_logo.png)
+  - **Gemex Premium Coatings** (images/gemex_logo.png)
+  - **Moto Max Automotive Accessories** (images/moto_max_logo.png)
+  - **Sea-Line Marine Systems** (images/Sea-Line_logo.png)
 
-#### Section 15: Corporate Contact & Inquiry Desk (`.elementor-element-5b30998` / `.elementor-element-daf651a`)
-- **Visual Backdrop**: Spray booth visual (`images/royalpaint_hero_3.jpg`) with Royal Navy gradient overlay (`linear-gradient(135deg, rgba(10, 50, 84, 0.94) 0%, rgba(10, 50, 84, 0.82) 50%, rgba(7, 28, 46, 0.96) 100%)`), replacing template dermatology visuals and green hue.
-- **Left Column (Direct Inquiries & NAP)**:
-  - Subtitle pill: `• Get In Touch` matching global site pill styles (white on translucent background).
-  - Headline: `Contact Us Today` in Marcellus serif typography.
-  - Showroom & Mixing Lab: `Street 23, Wakalat St, Industrial Area, Doha, Qatar` with circular location icon.
-  - Direct Phone & WhatsApp: `+974 4450 1669` / `+974 5039 5741` with one-touch calling and WhatsApp links.
-- **Right Column (Contact Form)**:
-  - Card Header (`.elementor-element-a5e4868`): Solid brand Royal Navy (`#0A3254`) with `Send Us a Message` title and send icon.
-  - Form Layout: Perfectly contained inside the section container (`margin-right: 0`, `max-width: 490px`), eliminating legacy template negative margin overflow.
-  - Input styling: Clean, modern `#F8FAFC` fields for First Name, Last Name, Email, Phone, Company/Bodyshop, Requirement/Paint Code, and Message.
-  - Action Button: Brand navy pill button with theme orange hover elevation (`#F68C50`).
-- **Responsive Guarantee**: Flawless container containment and 0px horizontal overflow across all viewports (1440px desktop, 1200px laptop, 768px tablet, 390px mobile).
+#### Section 15: Corporate Consultation & RFQ Form (.elementor-element-a5e4868)
+- High-conversion bodyshop & garage consultation booking desk with direct WhatsApp and phone shortcuts.
 
-#### Section 16: Automotive Refinish News & Technical Articles (`.elementor-element-b71ae65`)
-- **Visual Backdrop**: Clean, high-contrast light warm background (`#FDFBF7`) with generous vertical padding (100px top, 110px bottom).
-- **Header Structure**:
-  - Subtitle pill (`.elementor-element-d84cf59 .subtitle`): White pill (`#FFFFFF`) with brand primary navy text (`#0A3254`) and coral accent indicator dot (`#F68C50`), harmonized with light-background sections.
-  - Headline: `Automotive Refinish Insights & Articles` in Marcellus serif typography and brand primary navy (`#0A3254`), with accent underline separator (`#F68C50`).
-- **Article Cards (`.blog-item-current-style1`)**:
-  - Card 1 (`Technician_scanning_car_paint_color.jpg`): `Precision Color Matching: How Digital Spectrophotometers Ensure OEM Accuracy` — focusing on spectral analysis and exact factory paint formula replication for commercial bodyshops.
-  - Card 2 (`spray_booth_hero.jpg`): `Choosing High-Solid Clear Coats for Qatar's Desert Climate` — covering UV protection, thermal resistance, and high-gloss retention under extreme Gulf conditions.
-  - Card 3 (`Automotive_color_matching_fan_deck.jpg`): `Surface Preparation Standards for Commercial Bodyshops` — standardizing degreasing, grit sequence sanding, and high-build primer adhesion protocols.
-- **Card Aesthetics & Micro-interactions**:
-  - Crisp publication date badges (`24 OCT`, `18 OCT`, `05 OCT`) in brand primary navy (`#0A3254`) with coral month labels.
-  - Unified card heights with subtle 20px rounded corners, 1px navy border tint, and smooth elevation on hover (`translateY(-6px)` with soft shadow).
-  - "Read More" links featuring interactive circular icon arrows transitioning to brand coral on hover.
-- **Responsive Guarantee**: Zero horizontal overflow across all viewports (1440px desktop, 1200px laptop, 768px tablet 2-column wrap, and 390px mobile vertical stack).
+#### Section 16: Corporate Footer & Doha Location Guide (#footer, .elementor-element-00ae94a)
+- **Full-Width Seamless Architecture:**
+  - Outer container (.elementor-element-00ae94a): Engineered with width: 100% !important; max-width: 100% !important; padding: 0 !important; margin: 0 !important; background: transparent !important; to eliminate side gutters and expose zero background gaps.
+  - Upper main footer card (.elementor-element-ecae855): Deep Royal Navy (#0A3254), border-radius: 30px 30px 0 0 !important; (bottom-left and bottom-right radius removed to eliminate inward curving) — seamlessly meeting the lower copyright strip with zero notch gaps.
+  - Lower copyright strip (.elementor-element-e0c3cbc): Deep Navy (#082844), order-radius: 0 !important; width: 100% !important; max-width: 100% !important; padding: 22px 0 !important;.
+  - Prominent watermark: ROYAL AUTO PAINTS in luxury outline typography positioned at the bottom of the card.
+- **Physical Headquarters & Showroom Contact Details:**
+  - Address: Street 23, Wakalat St, Industrial Area, Doha, Qatar.
+  - Operating Hours: Saturday–Thursday: 7:30 AM – 12:30 PM & 3:30 PM – 7:30 PM; Friday: Closed.
+  - Landline: +974 4450 1669 | WhatsApp: +974 5039 5741 | Email: info@royalautopaints.com / royalpaints.qa@gmail.com.
+- **Navigation Columns:** Company Overview & Brand Story, Quick Links, Specialized Divisions (Collision Refinish, Marine Coatings, Wood Finishes, Spray Booths), and Newsletter Subscription.
+- **Responsive Parity:** Overrides verified on Desktop (1440px), Tablet (768px), and Mobile (375px) with 0px horizontal scroll overflow.
+- **Floating Quick Actions Stack (`.floating-quick-actions`):**
+  - **Floating WhatsApp RFQ Button (`.floating-whatsapp-btn`): Fixed 52px circular action in official WhatsApp green (`#25D366`) with static, non-flashing presentation (`animation: none !important`), linking directly to `https://wa.me/97450395741`.
+  - **Luxury Scroll-to-Top Arrow (`.scroll-to-top`):** 48px circular button in Deep Royal Navy (`#0A3254`) with bold white chevron (`fas fa-chevron-up`), subtle 1.5px white border, and warm orange hover (`#F68C50`). Fades in when scrolling past 350px directly above the WhatsApp button, providing smooth scroll to `scrollTop: 0` via Lenis and native smooth scroll.
 
-#### Section 17: Corporate Footer & Doha Location Guide (`footer#footer`)
-- **Main Footer Card (`.elementor-element-ecae855`)**:
-  - Solid site primary deep navy background (`#0A3254`) with rounded `30px` top corners and generous padding.
-  - Column 1 (`About Royal Paints`): Corporate introduction highlighting Royal Auto Paints as Qatar's premier automotive refinish distributor (Kapci Coatings, 3M, Mirka, Farecla) with interactive `GET IN TOUCH` button.
-  - Column 2 (`Quick Links`): Direct jump links to About Royal Paints, Product Catalog, Color Matching Lab, Authorized Brands, and Contact & Location.
-  - Column 3 (`Refinish Solutions`): 2K Basecoats & Topcoats, High-Solid Clear Coats, Primers & Polyester Putties, Abrasives & Masking Systems, and Spray Equipment.
-  - Column 4 (`Showroom & Mixing Lab`): Complete NAP details (Street 23, Wakalat St, Industrial Area, Doha, Qatar) + Direct Phone (`+974 4450 1669`), WhatsApp (`+974 5039 5741`), and email (`info@royalautopaints.com`).
-- **Middle Interactive Bar (`.elementor-element-ee7020b`)**:
-  - Replaced legacy template green overlay with unified deep navy tint (`rgba(7, 28, 46, 0.55)`) and subtle white border dividers.
-  - Official high-resolution white Royal Auto Paints logo (`royal_logo_white.png`).
-  - Outlined circular social channels (WhatsApp, Facebook, Instagram, LinkedIn) with brand coral hover elevation (`#F68C50`).
-  - `Subscribe to Refinish Updates` newsletter subscription form with custom rounded input and coral action button.
-- **Brand Watermark Graphic (`.elementor-element-125cbdf`)**:
-  - `ROYAL AUTO PAINTS` set in Marcellus serif typography at low opacity (`rgba(255, 255, 255, 0.05)`) between subtle `1px` divider borders, replacing template "Dermisio" watermark.
-- **Copyright & Legal Bar (`.elementor-element-e0c3cbc`)**:
-  - Deepest navy grounding background (`#061726`) replacing legacy template green (`rgb(31, 76, 67)`).
-  - Text: `© Copyright 2026 Royal Auto Paints (Al-Haram Paints & Trading). All Rights Reserved.`
-  - Secondary legal links: Terms & Conditions, Privacy Policy, Bodyshop Inquiries.
-- **Responsive Guarantee**: 0px horizontal overflow across Desktop (1440px), Laptop (1200px), Tablet (768px), and Mobile (390px).
+#### Brand Favicon & Web Application Icon Infrastructure
+- **Authentic Brand Source:** Extracted from the official Royal Auto Paints brand emblem (`images/royal_brand_swirl.png`, 332×332 RGBA master asset) matching the live production identity.
+- **Multi-Resolution Icon Suite:**
+  - `favicon.ico`: Embedded multi-size container (16×16, 32×32, 48×48) for universal browser tab, address bar, and Windows shortcut support.
+  - `favicon-32x32.png` & `favicon-16x16.png`: Crisp transparent RGBA PNG favicons optimized for standard and high-DPI (Retina) display tabs.
+  - `apple-touch-icon.png` (180×180): High-resolution iOS home screen icon with solid Deep Royal Navy (`#0A3254`) canvas and centered brand swirl, preventing iOS black transparency fill.
+  - Multi-size fallbacks: `apple-touch-icon-144x144.png`, `apple-touch-icon-114x114.png`, `apple-touch-icon-72x72.png`, `android-chrome-192x192.png`, and `android-chrome-512x512.png`.
+- **HTML Implementation:** Standardized across `index.html` and all subpages (`about.html`, `services.html`, `products.html`, `gallery.html`, `career.html`, `contact.html`).
+
+#### Section 16: Interactive Product Catalogue (`products.html`)
+- **Dataset Architecture (`data/products.json` & `js/products-data.js`):**
+  - Fully dynamic catalog powered by a structured JSON dataset comprising **83 genuine automotive refinish products**.
+  - Dual-loading mechanism: Async `fetch('data/products.json')` for HTTP/HTTPS web servers, with graceful fallback to `window.royalProducts` (`js/products-data.js`) for zero-latency local execution (`file://` protocol) and offline resilience.
+  - Complete metadata per item: unique ID, title, brand, primary category, category name, local image path (`images/products/*.png`), remote CDN fallback image, feature badge, and technical specification description.
+- **Categorization Structure (8 Specialized Refinish Divisions):**
+  1. *Primers & Fillers* (`fillers` - 19 products): High-build 2K polyester body fillers, fiber-reinforced putties, plastic primers, epoxy surfacers.
+  2. *Solvents & Underbody* (`solvents` - 13 products): Acrylic thinners, anti-gravel underbody coatings, silicone removers, panel wipes.
+  3. *Polishing & Detailing* (`polishing` - 11 products): Compound pastes, micro-abrasive glazes, finish polishes, orbital pads.
+  4. *Equipment & Tools* (`tools` - 11 products): Precision HVLP spray guns, digital air regulators, sanding blocks, masking dispensers.
+  5. *Clear Coats & Topcoats* (`clearcoats` - 9 products): Scratch-resistant HS clear coats, matte finishes, headlight restoration 2K clears.
+  6. *Hardeners & Activators* (`hardeners` - 9 products): Standard, fast, and slow curing isocyanate hardeners formulated for Qatar thermal profiles.
+  7. *Paint & Aerosols* (`paints` - 7 products): 1K/2K basecoats, peelable elastomeric aerosols, wheel coatings.
+  8. *Masking & Protection* (`masking` - 4 products): 110°C oven-grade masking tapes, static protective films, paper rolls.
+- **Interactive UI Components (`css/products-catalog.css` & `js/products-catalog.js`):**
+  - **Glassmorphism Top Navigation:** Unified header with brand logo, nav links (`PRODUCTS` marked active in Warm Orange `#F68C50`), Call Now pill, and mobile hamburger drawer. Smooth transition to sticky white glassmorphism upon scrolling.
+  - **Hero Banner:** Deep Royal Navy `#0A2942` canvas with ambient radial glows, official breadcrumb, glowing status badge, Marcellus headline, and 4 certified value highlight chips.
+  - **Live Search & Filter Toolbar:** Real-time keystroke matching across titles, brands, and codes; dynamic brand selector dropdown (19 brands); sorting controller (Catalogue Order, A-Z, Z-A, Brand A-Z).
+  - **Editorial Product Cards:** 4-column desktop layout (`border-radius: 18px`, soft shadow), local photography container with hover zoom, category and brand badges, Marcellus serif headings, spec pills, direct WhatsApp RFQ links (`https://wa.me/97450395741?text=...`), and quick view triggers.
+  - **Quick View Modal:** High-definition inspection modal featuring full-res photography, specifications, direct WhatsApp RFQ button, and direct showroom call link.
+  - **Bodyshop Wholesale & Mixing Support Banner:** Dedicated technical support card for OEM formula inquiries, custom mixing batches, and spray booth inquiries.
+  - **Corporate Footer & Floating Quick Actions:** Multi-page corporate footer with verified genuine address, telephone, and WhatsApp details; stacked non-flashing WhatsApp button and Deep Royal Navy `#0A3254` back-to-top button.
+
 
 ---
 
