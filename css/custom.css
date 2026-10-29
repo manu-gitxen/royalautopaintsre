@@ -791,22 +791,41 @@ html {
   stroke: #FFFFFF !important;
 }
 
-/* Mobile Hamburger Toggle */
+/* Mobile Hamburger Toggle - Premium Circular Glassmorphism Button */
 .luxore-menu-toggle {
   display: none !important;
   flex-direction: column !important;
   justify-content: center !important;
-  gap: 5px !important;
-  background: transparent !important;
-  border: none !important;
+  align-items: center !important;
+  gap: 4px !important;
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  max-width: 42px !important;
+  min-height: 42px !important;
+  max-height: 42px !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
   cursor: pointer !important;
-  padding: 4px !important;
+  padding: 0 !important;
   margin-left: 10px !important;
+  transition: all 0.3s ease !important;
+  box-sizing: border-box !important;
+}
+
+.luxore-menu-toggle:hover {
+  background: rgba(255, 255, 255, 0.22) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  transform: scale(1.05) !important;
 }
 
 .luxore-menu-toggle span {
   display: block !important;
-  width: 22px !important;
+  width: 18px !important;
   height: 2px !important;
   background-color: #FFFFFF !important;
   border-radius: 1px !important;
@@ -1238,6 +1257,13 @@ html {
   .opt2-nav-center {
     display: none !important;
   }
+  .luxore-menu-toggle {
+    display: flex !important;
+  }
+  .opt2-nav-right .luxore-call-pill,
+  .luxore-navbar-header.sticky-active .opt2-nav-right .luxore-call-pill {
+    display: none !important;
+  }
   .royal-nav-logo {
     height: 36px !important;
     max-width: 180px !important;
@@ -1353,8 +1379,13 @@ html {
 }
 
 /* Mobile Toggle in Sticky Header */
+.luxore-navbar-header.sticky-active .luxore-menu-toggle {
+  background: rgba(0, 0, 0, 0.05) !important;
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
 .luxore-navbar-header.sticky-active .luxore-menu-toggle span {
-  background-color: var(--royal-blue-primary) !important;
+  background-color: var(--royal-blue-primary, #22272F) !important;
 }
 
 @media (max-width: 767px) {
@@ -3055,30 +3086,120 @@ footer#footer .elementor-element-4ee05ba h5 {
   margin-bottom: 10px !important;
 }
 
-footer#footer .elementor-element-7d8ffa8 .mc4wp-form input[type="email"] {
+/* Newsletter Form & Standalone Round Send Button */
+footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter {
+  width: 100% !important;
+}
+
+footer#footer .elementor-element-7d8ffa8 .mc4wp-form {
+  width: 100% !important;
+}
+
+footer#footer .elementor-element-7d8ffa8 .mc4wp-form-fields {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 12px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  position: static !important;
+}
+
+footer#footer .elementor-element-7d8ffa8 .mc4wp-form input[type="email"],
+footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter input[name="EMAIL"] {
+  width: 280px !important;
+  max-width: 100% !important;
+  height: 48px !important;
   background-color: rgba(255, 255, 255, 0.1) !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
   color: #FFFFFF !important;
   border-radius: 50px !important;
-  padding: 12px 20px !important;
+  padding: 0 22px !important;
+  font-size: 14px !important;
+  line-height: 48px !important;
+  margin: 0 !important;
+  outline: none !important;
+  box-sizing: border-box !important;
+  transition: border-color 0.25s ease, background-color 0.25s ease !important;
+}
+
+footer#footer .elementor-element-7d8ffa8 .mc4wp-form input[type="email"]:focus {
+  border-color: var(--royal-yellow-accent, #FFB800) !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
 }
 
 footer#footer .elementor-element-7d8ffa8 .mc4wp-form input[type="email"]::placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
-footer#footer .elementor-element-7d8ffa8 .mc4wp-form button {
-  background-color: var(--royal-yellow-accent) !important;
-  color: #FFFFFF !important;
+/* Standalone True 1:1 Round Circular Send Button */
+footer#footer .elementor-element-7d8ffa8 .mc4wp-form button,
+footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter [type="submit"],
+footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter button[type="submit"] {
+  position: static !important;
+  transform: none !important;
+  width: 48px !important;
+  height: 48px !important;
+  min-width: 48px !important;
+  max-width: 48px !important;
+  min-height: 48px !important;
+  max-height: 48px !important;
+  flex: 0 0 48px !important;
   border-radius: 50% !important;
+  aspect-ratio: 1 / 1 !important;
+  background-color: var(--royal-yellow-accent, #FFB800) !important;
+  color: #FFFFFF !important;
   border: none !important;
-  transition: background-color 0.25s ease, transform 0.25s ease !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  font-size: 16px !important;
+  line-height: 1 !important;
+  box-sizing: border-box !important;
+  transition: background-color 0.25s ease, transform 0.25s ease, color 0.25s ease !important;
 }
 
-footer#footer .elementor-element-7d8ffa8 .mc4wp-form button:hover {
+footer#footer .elementor-element-7d8ffa8 .mc4wp-form button i,
+footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter button[type="submit"] i {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transform: translate(-1px, 1px) !important;
+}
+
+footer#footer .elementor-element-7d8ffa8 .mc4wp-form button:hover,
+footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter button[type="submit"]:hover {
   background-color: #FFFFFF !important;
-  color: var(--royal-blue-primary) !important;
+  color: var(--royal-blue-primary, #22272F) !important;
   transform: scale(1.08) !important;
+}
+
+@media (max-width: 767px) {
+  footer#footer .elementor-element-7d8ffa8 .mc4wp-form-fields {
+    flex-direction: row !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+  footer#footer .elementor-element-7d8ffa8 .mc4wp-form input[type="email"],
+  footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter input[name="EMAIL"] {
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  footer#footer .elementor-element-7d8ffa8 .mc4wp-form button,
+  footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter [type="submit"],
+  footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter button[type="submit"] {
+    flex: 0 0 48px !important;
+    width: 48px !important;
+    height: 48px !important;
+  }
 }
 
 /* Watermark Text: Elegant, Low Opacity, Non-Intrusive */
@@ -3404,11 +3525,11 @@ body > .scroll-to-top a:hover {
   color: var(--royal-yellow-contrast-text, var(--royal-gray-darkest)) !important;
 }
 .scroll-to-top {
-  background-color: var(--royal-blue-primary, var(--royal-gray-graphite)) !important;
+  
   border-color: rgba(250, 225, 100, 0.4) !important;
 }
 .scroll-to-top:hover {
-  background-color: var(--royal-yellow-accent, var(--royal-yellow-accent)) !important;
+  
   color: var(--royal-yellow-contrast-text, var(--royal-gray-darkest)) !important;
 }
 .scroll-to-top:hover i,
