@@ -3047,75 +3047,191 @@ footer#footer .elementor-element-e5cd0f0 .btn-style1:hover svg path {
   stroke: #FFFFFF !important;
 }
 
-/* Middle Bar: Harmonized Deep Tone (Replacing green rgba(12, 47, 37, 0.3)) */
-footer#footer .elementor-element.elementor-element-ee7020b {
-  background-color: rgba(7, 28, 46, 0.55) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+/* Middle Action Bar: Industrial Dark Charcoal Gray & Precision Spacing */
+footer#footer .elementor-element.elementor-element-ee7020b,
+.elementor-element.elementor-element-ee7020b {
+  background-color: var(--royal-gray-darkest, #14171C) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
   border-radius: 16px !important;
   margin: 30px 0 20px !important;
-  padding: 22px 30px !important;
+  padding: 18px 28px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
-/* Footer Logo */
+/* Col 1: Logo Container */
+footer#footer .elementor-element.elementor-element-d014617,
+.elementor-element.elementor-element-d014617 {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  max-width: none !important;
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+footer#footer .elementor-element-27a8986,
+footer#footer .elementor-element-27a8986 .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
 footer#footer .elementor-element-27a8986 img {
-  max-width: 200px !important;
+  max-width: 175px !important;
   height: auto !important;
+  display: block !important;
 }
 
-/* Social Links in Middle Bar */
+/* Col 2: Social Links + Newsletter Wrapper */
+footer#footer .elementor-element.elementor-element-0cde649,
+.elementor-element.elementor-element-0cde649 {
+  flex: 1 1 auto !important;
+  width: auto !important;
+  max-width: none !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin: 0 0 0 28px !important;
+  padding: 0 !important;
+  gap: 20px !important;
+}
+
+/* Col 2a: Social Links Container */
+footer#footer .elementor-element.elementor-element-d87b667,
+.elementor-element.elementor-element-d87b667 {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  max-width: none !important;
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+footer#footer .elementor-element-10a1f33,
+footer#footer .elementor-element-10a1f33 .elementor-widget-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+footer#footer .elementor-element-10a1f33 ul.tm-sc-social-links {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+footer#footer .elementor-element-10a1f33 ul.tm-sc-social-links li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 footer#footer .elementor-element-10a1f33 .social-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 50% !important;
   background-color: rgba(255, 255, 255, 0.08) !important;
   color: #FFFFFF !important;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
   transition: all 0.25s ease !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
 }
 
 footer#footer .elementor-element-10a1f33 .social-link:hover {
-  background-color: var(--royal-yellow-accent) !important;
-  border-color: var(--royal-yellow-accent) !important;
-  color: #FFFFFF !important;
-  transform: translateY(-3px) !important;
+  background-color: var(--royal-yellow-accent, #FFB800) !important;
+  border-color: var(--royal-yellow-accent, #FFB800) !important;
+  color: #14171C !important;
+  transform: translateY(-2px) !important;
 }
 
-/* Newsletter Input & Submit */
+/* Col 2b: Newsletter Container */
+footer#footer .elementor-element.elementor-element-00cd846,
+.elementor-element.elementor-element-00cd846 {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  max-width: none !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 16px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Newsletter Title H5: Perfectly Centered, Zero Margins */
+footer#footer .elementor-element-4ee05ba,
+footer#footer .elementor-element-4ee05ba .elementor-widget-container,
+footer#footer .elementor-element-4ee05ba .tm-text-editor {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
 footer#footer .elementor-element-4ee05ba h5 {
   font-family: 'Marcellus', serif !important;
   color: #FFFFFF !important;
-  font-size: 18px !important;
-  margin-bottom: 10px !important;
+  font-size: 16.5px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.3px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  line-height: 1 !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
-/* Newsletter Form & Standalone Round Send Button */
-footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter {
-  width: 100% !important;
-}
-
+/* Newsletter Form Container */
+footer#footer .elementor-element-7d8ffa8,
+footer#footer .elementor-element-7d8ffa8 .elementor-widget-container,
+footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter,
 footer#footer .elementor-element-7d8ffa8 .mc4wp-form {
-  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  width: auto !important;
 }
 
 footer#footer .elementor-element-7d8ffa8 .mc4wp-form-fields {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
-  gap: 12px !important;
+  gap: 10px !important;
   width: auto !important;
-  max-width: 100% !important;
   margin: 0 !important;
-  position: static !important;
+  padding: 0 !important;
 }
 
 footer#footer .elementor-element-7d8ffa8 .mc4wp-form input[type="email"],
 footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter input[name="EMAIL"] {
-  width: 280px !important;
+  width: 250px !important;
   max-width: 100% !important;
   height: 48px !important;
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
   color: #FFFFFF !important;
   border-radius: 50px !important;
-  padding: 0 22px !important;
+  padding: 0 20px !important;
   font-size: 14px !important;
   line-height: 48px !important;
   margin: 0 !important;
@@ -3126,7 +3242,7 @@ footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter input[name="EMAIL"
 
 footer#footer .elementor-element-7d8ffa8 .mc4wp-form input[type="email"]:focus {
   border-color: var(--royal-yellow-accent, #FFB800) !important;
-  background-color: rgba(255, 255, 255, 0.15) !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
 }
 
 footer#footer .elementor-element-7d8ffa8 .mc4wp-form input[type="email"]::placeholder {
@@ -3176,30 +3292,8 @@ footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter button[type="submi
 
 footer#footer .elementor-element-7d8ffa8 .mc4wp-form button:hover,
 footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter button[type="submit"]:hover {
-  background-color: #FFFFFF !important;
-  color: var(--royal-blue-primary, #22272F) !important;
-  transform: scale(1.08) !important;
-}
-
-@media (max-width: 767px) {
-  footer#footer .elementor-element-7d8ffa8 .mc4wp-form-fields {
-    flex-direction: row !important;
-    gap: 10px !important;
-    width: 100% !important;
-  }
-  footer#footer .elementor-element-7d8ffa8 .mc4wp-form input[type="email"],
-  footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter input[name="EMAIL"] {
-    flex: 1 1 auto !important;
-    width: 100% !important;
-    min-width: 0 !important;
-  }
-  footer#footer .elementor-element-7d8ffa8 .mc4wp-form button,
-  footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter [type="submit"],
-  footer#footer .elementor-element-7d8ffa8 .tm-mc4wp-newsletter button[type="submit"] {
-    flex: 0 0 48px !important;
-    width: 48px !important;
-    height: 48px !important;
-  }
+  background-color: #E5A600 !important;
+  transform: scale(1.06) !important;
 }
 
 /* Watermark Text: Elegant, Low Opacity, Non-Intrusive */
@@ -3217,9 +3311,10 @@ footer#footer .elementor-element-125cbdf p {
   white-space: nowrap !important;
 }
 
-/* Bottom Copyright Bar: Deep Royal Navy (Replacing old green rgb(31, 76, 67)) */
-footer#footer .elementor-element.elementor-element-e0c3cbc {
-  background-color: #061726 !important;
+/* Bottom Copyright Bar: Dark Gray Carbon (Replacing old navy) */
+footer#footer .elementor-element.elementor-element-e0c3cbc,
+.elementor-element.elementor-element-e0c3cbc {
+  background-color: var(--royal-gray-darkest, #14171C) !important;
   border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
   padding: 20px 0 !important;
   border-radius: 0 0 30px 30px !important;
@@ -3279,9 +3374,23 @@ footer#footer .elementor-element-5b0df63 {
   }
   footer#footer .elementor-element.elementor-element-ee7020b {
     flex-direction: column !important;
-    gap: 20px !important;
+    gap: 18px !important;
+    padding: 22px 20px !important;
     align-items: center !important;
     text-align: center !important;
+  }
+  footer#footer .elementor-element.elementor-element-0cde649 {
+    margin: 0 !important;
+    width: 100% !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 18px !important;
+  }
+  footer#footer .elementor-element.elementor-element-00cd846 {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 14px !important;
+    width: auto !important;
   }
   footer#footer .elementor-element-125cbdf p {
     font-size: clamp(2rem, 6vw, 5rem) !important;
