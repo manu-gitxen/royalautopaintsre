@@ -16,12 +16,12 @@
   --royal-gray-border:        #E2E8F0; /* Clean light dividers */
   --royal-gray-light-bg:      #F4F6F8; /* Precision light technical canvas */
 
-  /* Mapped to Theme Engine (Zero Teal Blue) */
-  --royal-blue-primary:       var(--royal-gray-charcoal);
-  --royal-blue-primary-rgb:   34, 39, 47;
-  --royal-blue-dark:          var(--royal-gray-darkest);
-  --royal-blue-dark-rgb:      20, 23, 28;
-  --royal-blue-light:         var(--royal-gray-slate);
+  /* Mapped to Theme Engine (Exact Official Logo Master Grey #58585A) */
+  --royal-blue-primary:       var(--royal-gray-graphite, #58585A);
+  --royal-blue-primary-rgb:   88, 88, 90;
+  --royal-blue-dark:          #424244;
+  --royal-blue-dark-rgb:      66, 66, 68;
+  --royal-blue-light:         #6F6F72;
   --royal-blue-surface:       var(--royal-gray-light-bg);
 
   /* High-Visibility Automotive Refinish Gold / Yellow Accent */
@@ -3393,10 +3393,10 @@ body > .scroll-to-top a:hover {
 }
 .opt2-header.sticky-active .luxore-nav-link:hover,
 .opt2-header.sticky-active .luxore-nav-link.active {
-  color: var(--royal-blue-primary, var(--royal-gray-charcoal)) !important;
+  color: var(--royal-blue-primary, var(--royal-gray-graphite)) !important;
 }
 .opt2-header.sticky-active .luxore-call-pill {
-  background: var(--royal-blue-primary, var(--royal-gray-charcoal)) !important;
+  background: var(--royal-blue-primary, var(--royal-gray-graphite)) !important;
   color: #FFFFFF !important;
 }
 .opt2-header.sticky-active .luxore-call-pill:hover {
@@ -3404,7 +3404,7 @@ body > .scroll-to-top a:hover {
   color: var(--royal-yellow-contrast-text, var(--royal-gray-darkest)) !important;
 }
 .scroll-to-top {
-  background-color: var(--royal-blue-primary, var(--royal-gray-charcoal)) !important;
+  background-color: var(--royal-blue-primary, var(--royal-gray-graphite)) !important;
   border-color: rgba(250, 225, 100, 0.4) !important;
 }
 .scroll-to-top:hover {
@@ -3430,7 +3430,7 @@ body > .scroll-to-top a:hover {
   background-color: #FFFFFF !important;
 }
 .elementor-element.elementor-element-8423ca3 .icon.icon-round i {
-  color: var(--royal-blue-primary, var(--royal-gray-charcoal)) !important;
+  color: var(--royal-blue-primary, var(--royal-gray-graphite)) !important;
 }
 
 /* --- How It Works 3-Image Showcase (Section 10) --- */

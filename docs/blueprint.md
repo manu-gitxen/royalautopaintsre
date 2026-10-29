@@ -43,19 +43,18 @@ The visual design system merges industrial durability with automotive prestige, 
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
-│     ROYAL AUTO PAINTS MASTER COLOR SYSTEM (INDUSTRIAL GRAY & GOLD)     │
+│     ROYAL AUTO PAINTS MASTER COLOR SYSTEM (EXACT LOGO GREY & GOLD)     │
 ├───────────────────┬───────────────────┬────────────────────────────────┤
 │ Token Name        │ Hex Code          │ UI Application                 │
 ├───────────────────┼───────────────────┼────────────────────────────────┤
-│ Industrial Charcoal│ #22272F          │ Dominant Dark, Section Titles, │
-│ (--royal-gray-ch) │                   │ Main Header & Primary Badges   │
+│ Logo Graphite Grey│ #58585A           │ Dominant Master Brand Color,   │
+│ (--royal-blue-prim)                   │ Section Titles, Badges, Headers│
 ├───────────────────┼───────────────────┼────────────────────────────────┤
 │ Carbon Darkest    │ #14171C           │ Deepest Hero Canvas & Footer BG│
 ├───────────────────┼───────────────────┼────────────────────────────────┤
-│ Slate Gray Dark   │ #333A45           │ Dark Card Surfaces & Borders   │
+│ Industrial Charc. │ #22272F           │ Supporting Deep Contrast Dark  │
 ├───────────────────┼───────────────────┼────────────────────────────────┤
-│ Logo Graphite Gray│ #58585A           │ Logo "AUTO PAINTS" text, specs │
-│ (--royal-gray)    │                   │ and technical metadata chips   │
+│ Slate Gray Dark   │ #333A45           │ Dark Card Surfaces & Borders   │
 ├───────────────────┼───────────────────┼────────────────────────────────┤
 │ Automotive Racing │ #FFB800           │ High-Visibility Signature Gold,│
 │ Gold/Yellow       │                   │ Active Badges, CTA Hover Glow  │
