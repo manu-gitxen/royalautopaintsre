@@ -168,7 +168,7 @@ flowchart TD
     S7["7. Animated Experience Counters\n(500+ Workshops, 99% OEM Match, 4.9 Rating, 800+ Projects)"]
     S8["8. Before & After Refinish Results\n(Interactive TwentyTwenty Draggable Split Slider)"]
     S9["9. Featured Products Showcase & Slider (#products)\n(6 Editorial Studio Coatings, 5 Stars, Swiper Carousel, Link to products.html)"]
-    S10["10. How It Works / Technical Refinish Steps\n(Consultation, Spectrophotometer Lab, Batch Formulation, Delivery)"]
+    S10["10. How It Works / Technical Refinish Steps\n(3-Photo Technician Trio: Scan, Mix, Pack; 3 Refinish Workflow Steps)"]
     S11["11. Customer Reviews & Google Reputation\n(Verified 4.7-Star Rating, 91+ Reviews, Technician Visual)"]
     S12["12. Technical FAQ & Consultation Desk\n(Accordion FAQs, Heat Mixing Advice, Delivery Info)"]
     S13["13. Dealership & Authorized Brands Showcase\n(Physical Storefront, Challenger, HB BODY, Authenticity)"]

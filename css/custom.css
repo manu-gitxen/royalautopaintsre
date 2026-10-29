@@ -3432,3 +3432,56 @@ body > .scroll-to-top a:hover {
 .elementor-element.elementor-element-8423ca3 .icon.icon-round i {
   color: var(--royal-blue-primary, var(--royal-gray-charcoal)) !important;
 }
+
+/* --- How It Works 3-Image Showcase (Section 10) --- */
+.elementor-element.elementor-element-4e5e4ab {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 16px !important;
+  align-items: stretch !important;
+  margin-top: 32px !important;
+  width: 100% !important;
+  max-width: 520px !important;
+}
+
+html body .e-con.e-parent .elementor-element.elementor-element-04dc250,
+.elementor-element.elementor-element-04dc250,
+.elementor-7010 .elementor-element.elementor-element-04dc250 {
+  background-image: url("../images/Technician_scanning_car_paint_color.jpg") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  border-radius: 18px !important;
+  min-height: 210px !important;
+  flex: 1 1 0 !important;
+  width: 33.333% !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
+html body .e-con.e-parent .elementor-element.elementor-element-58a7fc5,
+.elementor-element.elementor-element-58a7fc5,
+.elementor-7010 .elementor-element.elementor-element-58a7fc5 {
+  background-image: url("../images/Technician_mixing_automotive_paint.jpg") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  border-radius: 18px !important;
+  min-height: 210px !important;
+  flex: 1 1 0 !important;
+  width: 33.333% !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
+html body .e-con.e-parent .elementor-element.elementor-element-cffba15,
+.elementor-element.elementor-element-cffba15,
+.elementor-7010 .elementor-element.elementor-element-cffba15 {
+  background-image: url("../images/Technician_packing_automotive.jpg") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  border-radius: 18px !important;
+  min-height: 210px !important;
+  flex: 1 1 0 !important;
+  width: 33.333% !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1) !important;
+}
