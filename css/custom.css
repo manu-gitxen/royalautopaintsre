@@ -171,8 +171,8 @@ html {
   bottom: 0 !important;
   width: 100% !important;
   height: 100% !important;
-  background: radial-gradient(circle at 20% 50%, rgba(9, 38, 64, 0.45) 0%, transparent 70%),
-              linear-gradient(180deg, rgba(7, 28, 48, 0.3) 0%, rgba(8, 34, 58, 0.68) 50%, rgba(5, 20, 36, 0.94) 100%) !important;
+  background: radial-gradient(circle at 20% 50%, rgba(88, 88, 90, 0.35) 0%, transparent 70%),
+              linear-gradient(180deg, rgba(20, 23, 28, 0.3) 0%, rgba(50, 54, 60, 0.65) 50%, rgba(20, 23, 28, 0.94) 100%) !important;
   z-index: 3 !important;
   pointer-events: none !important;
   border-radius: 30px !important;
@@ -2403,7 +2403,7 @@ html {
 .elementor-7010 .elementor-element.elementor-element-daf651a > .elementor-background-slideshow::before,
 .elementor-7010 .elementor-element.elementor-element-daf651a > .e-con-inner > .elementor-background-slideshow::before,
 .elementor-7010 .elementor-element.elementor-element-daf651a > .elementor-motion-effects-container > .elementor-motion-effects-layer::before {
-  background-image: linear-gradient(135deg, rgba(10, 50, 84, 0.94) 0%, rgba(10, 50, 84, 0.82) 50%, rgba(7, 28, 46, 0.96) 100%) !important;
+  background-image: linear-gradient(135deg, rgba(88, 88, 90, 0.95) 0%, rgba(52, 58, 64, 0.94) 50%, rgba(20, 23, 28, 0.97) 100%) !important;
   opacity: 0.96 !important;
   border-radius: 20px !important;
 }
@@ -3484,4 +3484,38 @@ html body .e-con.e-parent .elementor-element.elementor-element-cffba15,
   flex: 1 1 0 !important;
   width: 33.333% !important;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ==========================================================================
+   Section: FAQ Accordion Styling - Brand Gray Palette
+   Container: .elementor-element-17bfbf5 / .elementor-element-b2ab263
+   ========================================================================== */
+
+/* FAQ Section Heading */
+.elementor-element.elementor-element-5765650 h2.title,
+.elementor-element.elementor-element-5765650 h2.title .title-part1 {
+  color: var(--royal-blue-primary, #58585A) !important;
+}
+
+/* FAQ Accordion Collapsed Question Titles - Brand Gray (Replacing Yellow) */
+.elementor-element.elementor-element-b2ab263 .tm-accordion .card .card-header .title,
+.elementor-element.elementor-element-b2ab263 .tm-accordion .card .card-header .title.collapsed,
+.elementor-element.elementor-element-b2ab263 .tm-accordion .card .card-header .title .text,
+.elementor-element.elementor-element-b2ab263 .tm-accordion .card .card-header .title.collapsed .text {
+  color: var(--royal-gray-charcoal, #22272F) !important;
+  transition: color 0.25s ease !important;
+}
+
+/* FAQ Accordion Collapsed Hover */
+.elementor-element.elementor-element-b2ab263 .tm-accordion .card .card-header .title.collapsed:hover,
+.elementor-element.elementor-element-b2ab263 .tm-accordion .card .card-header .title.collapsed:hover .text {
+  color: var(--royal-gray-graphite, #58585A) !important;
+}
+
+/* FAQ Accordion Active / Expanded Question Title - White Text on Dark Background */
+.elementor-element.elementor-element-b2ab263 .tm-accordion .card .card-header .title:not(.collapsed),
+.elementor-element.elementor-element-b2ab263 .tm-accordion .card .card-header .title:not(.collapsed) .text,
+.elementor-element.elementor-element-b2ab263 .tm-accordion .card.active .card-header .title,
+.elementor-element.elementor-element-b2ab263 .tm-accordion .card.active .card-header .title .text {
+  color: #FFFFFF !important;
 }
