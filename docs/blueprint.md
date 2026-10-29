@@ -39,32 +39,36 @@ Established in 2012 in the Doha Industrial Area, **Royal Auto Paints (Al-Haram P
 
 ## 2. Core Visual Identity & Design System
 
-The visual design system merges industrial durability with automotive prestige:
+The visual design system merges industrial durability with automotive prestige, dominated by **Industrial Charcoal & Precision Grays** (derived directly from the "AUTO PAINTS" `#58585A` branding) and energized with **High-Visibility Automotive Racing Gold/Yellow (`#FFB800` / `#F59E0B`)**, completely eliminating any teal blue tones:
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
-│                      ROYAL AUTO PAINTS COLOR SYSTEM                    │
+│     ROYAL AUTO PAINTS MASTER COLOR SYSTEM (INDUSTRIAL GRAY & GOLD)     │
 ├───────────────────┬───────────────────┬────────────────────────────────┤
 │ Token Name        │ Hex Code          │ UI Application                 │
 ├───────────────────┼───────────────────┼────────────────────────────────┤
-│ Royal Oceanic Navy│ #0A2942 / #0A3254 │ Primary Branding, Dark Canvas, │
-│                   │                   │ Section Headings, Hero BG      │
+│ Industrial Charcoal│ #22272F          │ Dominant Dark, Section Titles, │
+│ (--royal-gray-ch) │                   │ Main Header & Primary Badges   │
 ├───────────────────┼───────────────────┼────────────────────────────────┤
-│ Splash Warm Orange│ #F68C50           │ Accent Highlights, Hover Glow, │
-│                   │                   │ Active Nav Pill, Progress Bars │
+│ Carbon Darkest    │ #14171C           │ Deepest Hero Canvas & Footer BG│
 ├───────────────────┼───────────────────┼────────────────────────────────┤
-│ Vivid Amber Glow  │ #E66E1D           │ Gradient Endpoints, Active CTA │
+│ Slate Gray Dark   │ #333A45           │ Dark Card Surfaces & Borders   │
+├───────────────────┼───────────────────┼────────────────────────────────┤
+│ Logo Graphite Gray│ #58585A           │ Logo "AUTO PAINTS" text, specs │
+│ (--royal-gray)    │                   │ and technical metadata chips   │
+├───────────────────┼───────────────────┼────────────────────────────────┤
+│ Automotive Racing │ #FFB800           │ High-Visibility Signature Gold,│
+│ Gold/Yellow       │                   │ Active Badges, CTA Hover Glow  │
+├───────────────────┼───────────────────┼────────────────────────────────┤
+│ Deep Golden Amber │ #F59E0B           │ High-contrast active borders   │
+├───────────────────┼───────────────────┼────────────────────────────────┤
+│ Technical Silver  │ #F4F6F8           │ Precision Light Section Canvas │
 ├───────────────────┼───────────────────┼────────────────────────────────┤
 │ Official WhatsApp │ #25D366           │ Static WhatsApp Floating CTA   │
 ├───────────────────┼───────────────────┼────────────────────────────────┤
-│ Studio Warm Tint  │ #FAF7F2 / #FAF6F3 │ Soft Refinish Showcase Canvas, │
-│                   │                   │ Products & Testimonial Canvas  │
-├───────────────────┼───────────────────┼────────────────────────────────┤
-│ Slate Body Text   │ #64748B / #334155 │ Descriptive Paragraphs, Specs  │
-├───────────────────┼───────────────────┼────────────────────────────────┤
 │ Pure Card White   │ #FFFFFF           │ Product Cards, Capability Boxes│
 ├───────────────────┼───────────────────┼────────────────────────────────┤
-│ Subtle Border Gray│ #E2E8F0 / #CBD5E1 │ Component Separators & Dividers│
+│ Subtle Border Gray│ #E2E8F0           │ Component Separators & Dividers│
 └───────────────────┴───────────────────┴────────────────────────────────┘
 ```
 
@@ -73,9 +77,11 @@ The visual design system merges industrial durability with automotive prestige:
 - **Modern Sans Metadata & Body:** `DM Sans`, sans-serif — Used for navigation links, descriptive text, technical specifications, and filter pills.
 
 ### Key UI Architecture Rules
-1. **Button Arrow-Reveal Animation (`.btn-style1`, `.btn-style2`):**
-   - High-end pill buttons featuring dual hidden/visible SVG arrows.
-   - On hover, the left arrow slides in smoothly (`transform: translateX(0); opacity: 1`), the button background shifts to Brand Orange (`#F68C50`), and the text scales with subtle spring physics.
+1. **Button Arrow-Reveal Animation & Spacing Guard (`.btn-style1`, `.btn-style2`):**
+   - High-end pill buttons featuring dual hidden/visible SVG arrows (`height: 56px; border-radius: 50px`).
+   - Normal State: Left arrow badge hidden (`scale: 0.3; opacity: 0; left: 8px`), right arrow badge visible (`width: 40px; margin-left: 14px`), button padding `0 16px 0 32px`.
+   - Hover State: Button transitions to Racing Gold gradient (`#FFB800` to `#F59E0B`), text color shifts to Industrial Charcoal (`#14171C`), left arrow badge expands (`scale: 1; left: 8px; background: #14171C`) displaying a razor-sharp crisp white arrow (`stroke: #FFFFFF`), and right arrow badge cleanly collapses (`width: 0; scale: 0`).
+   - Padding & Spacing Guard: Padding dynamically shifts to `padding-left: 58px !important; padding-right: 32px !important;` with `transform: none !important;` on text. This preserves an exact 32px breathing room between the text and the right rounded pill edge, completely preventing text overlap or boundary collision regardless of button text length.
 2. **Standardized Card Geometry:**
    - 20px uniform rounded corners on homepage product cards and service division containers (`border-radius: 20px`).
    - 18px rounded corners on catalog product cards with soft ambient elevation (`box-shadow: 0 10px 30px rgba(10, 41, 66, 0.06)`).

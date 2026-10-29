@@ -9,23 +9,25 @@
   background: var(--theme-color1);
   gap: 10px;
   border-radius: 40px;
-  padding-right: 10px;
-  padding-left: 30px;
+  padding-right: 16px;
+  padding-left: 32px;
 }
 .btn-style1:hover {
-  padding-right: 38px;
-  padding-left: 10px !important;
+  padding-right: 32px !important;
+  padding-left: 58px !important;
   gap: 0;
 }
 .btn-style1:hover .theme-btn-arrow-left {
   scale: 1;
-  left: 10px;
+  left: 8px;
 }
 .btn-style1:hover .theme-btn-arrow-right {
   scale: 0;
+  width: 0;
+  margin: 0;
 }
 .btn-style1:hover .theme-btn {
-  transform: translateX(55px);
+  transform: none !important;
 }
 .btn-style1 .theme-btn-arrow-left,
 .btn-style1 .theme-btn-arrow-right {

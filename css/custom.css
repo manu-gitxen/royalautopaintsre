@@ -1,3 +1,42 @@
+/* ==========================================================================
+   Royal Auto Paints — Industrial Charcoal & High-Visibility Automotive Yellow
+   Dominant: Industrial Charcoal & Precision Grays (Zero Teal Blue)
+   Accent:   Vibrant Automotive Refinish Gold/Yellow (#FFB800 / #F59E0B)
+   Neutral:  Industrial Graphite Gray (#58585A) & Technical Light Gray (#F4F6F8)
+   ========================================================================== */
+:root {
+  /* Primary Dominant Grays (Replaced Teal Blue) */
+  --royal-gray-darkest:       #14171C; /* Deepest carbon / hero & footer base */
+  --royal-gray-darkest-rgb:   20, 23, 28;
+  --royal-gray-charcoal:      #22272F; /* Primary brand dark / header & titles */
+  --royal-gray-charcoal-rgb:  34, 39, 47;
+  --royal-gray-slate:         #333A45; /* Dark card surfaces & borders */
+  --royal-gray-graphite:      #58585A; /* Logo master graphite gray */
+  --royal-gray-muted:         #64748B; /* Subtitles and descriptive text */
+  --royal-gray-border:        #E2E8F0; /* Clean light dividers */
+  --royal-gray-light-bg:      #F4F6F8; /* Precision light technical canvas */
+
+  /* Mapped to Theme Engine (Zero Teal Blue) */
+  --royal-blue-primary:       var(--royal-gray-charcoal);
+  --royal-blue-primary-rgb:   34, 39, 47;
+  --royal-blue-dark:          var(--royal-gray-darkest);
+  --royal-blue-dark-rgb:      20, 23, 28;
+  --royal-blue-light:         var(--royal-gray-slate);
+  --royal-blue-surface:       var(--royal-gray-light-bg);
+
+  /* High-Visibility Automotive Refinish Gold / Yellow Accent */
+  --royal-yellow-accent:      #FFB800; /* Vibrant high-saturation racing yellow */
+  --royal-yellow-accent-rgb:  255, 184, 0;
+  --royal-yellow-gold:        #F59E0B; /* Rich golden amber for borders & active states */
+  --royal-yellow-gold-rgb:    245, 158, 11;
+  --royal-yellow-text-on-light: #9A6200; /* High-contrast text on white backgrounds */
+  --royal-yellow-contrast-text: #14171C;
+  --royal-yellow-glow:        rgba(255, 184, 0, 0.45);
+
+  /* Pure Surfaces */
+  --royal-white:              #FFFFFF;
+}
+
 /* Smooth In-Page Scrolling with Sticky Header Clearance */
 html {
   scroll-behavior: smooth !important;
@@ -205,7 +244,7 @@ html {
   height: 56px !important;
   line-height: 56px !important;
   background-color: #ffffff !important;
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   font-weight: 600 !important;
   font-size: 15px !important;
   letter-spacing: 0.5px !important;
@@ -222,7 +261,7 @@ html {
 .elementor-element.elementor-element-b79d8e7 a.btn-style1 .theme-btn-arrow-right {
   height: 40px !important;
   width: 40px !important;
-  background-color: #0A3254 !important;
+  background-color: var(--royal-blue-primary) !important;
   color: #ffffff !important;
   border-radius: 50% !important;
   display: inline-flex !important;
@@ -266,12 +305,13 @@ html {
 
 /* Button Hover State */
 .elementor-element.elementor-element-b79d8e7 a.btn-style1:hover {
-  background: linear-gradient(135deg, #F68C50 0%, #E66E1D 100%) !important;
-  color: #ffffff !important;
+  background: linear-gradient(135deg, var(--royal-yellow-accent, #FFB800) 0%, var(--royal-yellow-gold, #F59E0B) 100%) !important;
+  color: var(--royal-yellow-contrast-text, #14171C) !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 8px 25px rgba(246, 140, 80, 0.45) !important;
-  border-color: #F68C50 !important;
-  padding: 0 32px 0 10px !important;
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4) !important;
+  border-color: var(--royal-yellow-accent) !important;
+  padding-left: 58px !important;
+  padding-right: 32px !important;
 }
 
 /* On Hover: Left Arrow scales in and becomes visible on the left */
@@ -292,12 +332,12 @@ html {
 
 /* On Hover: Text smoothly slides to the right to frame the left arrow */
 .elementor-element.elementor-element-b79d8e7 a.btn-style1:hover .theme-btn {
-  transform: translateX(48px) !important;
+  transform: none !important;
 }
 
 /* On Hover: Left Arrow SVG turns brand orange */
 .elementor-element.elementor-element-b79d8e7 a.btn-style1:hover .theme-btn-arrow-left svg path {
-  stroke: #F68C50 !important;
+  stroke: #FFFFFF !important;
 }
 
 .elementor-element.elementor-element-8dad962 {
@@ -441,7 +481,7 @@ html {
   font-size: 10px !important;
   letter-spacing: 1.5px !important;
   text-transform: uppercase !important;
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
   font-weight: 700 !important;
   font-family: inherit !important;
 }
@@ -507,7 +547,7 @@ html {
 .mini-dot.active {
   width: 14px !important;
   border-radius: 4px !important;
-  background: #F68C50 !important;
+  background: var(--royal-yellow-accent) !important;
   box-shadow: 0 0 8px rgba(246, 140, 80, 0.8) !important;
 }
 
@@ -539,7 +579,7 @@ html {
 .hero-slider-dots .dot.active {
   width: 28px !important;
   border-radius: 6px !important;
-  background: #F68C50 !important;
+  background: var(--royal-yellow-accent) !important;
   box-shadow: 0 0 10px rgba(246, 140, 80, 0.7) !important;
 }
 
@@ -565,8 +605,8 @@ html {
 }
 
 .hero-slider-arrows .arrow-btn:hover {
-  background: #F68C50 !important;
-  border-color: #F68C50 !important;
+  background: var(--royal-yellow-accent) !important;
+  border-color: var(--royal-yellow-accent) !important;
   color: #FFFFFF !important;
   transform: scale(1.08) !important;
 }
@@ -1165,9 +1205,9 @@ html {
 }
 
 .luxore-call-pill:hover {
-  background: linear-gradient(135deg, #F68C50 0%, #E66E1D 100%) !important;
+  background: linear-gradient(135deg, var(--royal-yellow-accent, #FFB800) 0%, var(--royal-yellow-gold, #F59E0B) 100%) !important;
   color: #FFFFFF !important;
-  border-color: #F68C50 !important;
+  border-color: var(--royal-yellow-accent) !important;
   box-shadow: 0 6px 20px rgba(246, 140, 80, 0.35) !important;
   transform: translateY(-1px) !important;
 }
@@ -1263,18 +1303,18 @@ html {
 
 /* Dark Navigation Links with Orange Hover */
 .luxore-navbar-header.sticky-active .luxore-nav-link {
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   font-weight: 600 !important;
   opacity: 0.9 !important;
 }
 
 .luxore-navbar-header.sticky-active .luxore-nav-link:hover {
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
   opacity: 1 !important;
 }
 
 .luxore-navbar-header.sticky-active .luxore-nav-link::after {
-  background-color: #F68C50 !important;
+  background-color: var(--royal-yellow-accent) !important;
 }
 
 /* Call Button in Sticky Header (Original CALL NOW Design) */
@@ -1282,8 +1322,8 @@ html {
   display: inline-flex !important;
   align-items: center !important;
   gap: 9px !important;
-  background: #0A2942 !important;
-  border: 1px solid #0A2942 !important;
+  background: var(--royal-blue-primary) !important;
+  border: 1px solid var(--royal-blue-primary) !important;
   color: #FFFFFF !important;
   font-family: 'DM Sans', sans-serif !important;
   font-size: 12.5px !important;
@@ -1297,8 +1337,8 @@ html {
 }
 
 .luxore-navbar-header.sticky-active .luxore-call-pill:hover {
-  background: linear-gradient(135deg, #F68C50 0%, #E66E1D 100%) !important;
-  border-color: #F68C50 !important;
+  background: linear-gradient(135deg, var(--royal-yellow-accent, #FFB800) 0%, var(--royal-yellow-gold, #F59E0B) 100%) !important;
+  border-color: var(--royal-yellow-accent) !important;
   color: #FFFFFF !important;
   box-shadow: 0 6px 20px rgba(246, 140, 80, 0.35) !important;
   transform: translateY(-1px) !important;
@@ -1314,7 +1354,7 @@ html {
 
 /* Mobile Toggle in Sticky Header */
 .luxore-navbar-header.sticky-active .luxore-menu-toggle span {
-  background-color: #0A2942 !important;
+  background-color: var(--royal-blue-primary) !important;
 }
 
 @media (max-width: 767px) {
@@ -1373,7 +1413,7 @@ html {
 
 /* --- About Section Typography & Accents --- */
 .elementor-element.elementor-element-68facb6 .title-part1 {
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   font-weight: 600 !important;
   line-height: 1.25 !important;
 }
@@ -1387,7 +1427,7 @@ html {
 /* Feature Titles & Descriptions */
 .elementor-element.elementor-element-7b7ed34 .icon-box-title,
 .elementor-element.elementor-element-d5a09d2 .icon-box-title {
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   font-weight: 600 !important;
   font-size: 19px !important;
   margin-bottom: 6px !important;
@@ -1420,7 +1460,7 @@ html {
 
 /* Experience Stat Box - Royal Orange Gradient */
 .elementor-element-016b47c .tm-sc-funfact {
-  background: linear-gradient(145deg, #F68C50 0%, #E66E1D 100%) !important;
+  background: linear-gradient(135deg, var(--royal-yellow-accent, #FFB800) 0%, var(--royal-yellow-gold, #F59E0B) 100%) !important;
   border-radius: 20px !important;
   box-shadow: 0 10px 28px rgba(246, 140, 80, 0.35) !important;
   padding: 28px 24px !important;
@@ -1449,7 +1489,7 @@ html {
 
 /* About CTA Button - Royal Blue & Orange */
 .btn-style2 {
-  background: #0A2942 !important;
+  background: var(--royal-blue-primary) !important;
   color: #FFFFFF !important;
   font-weight: 600 !important;
   letter-spacing: 0.5px !important;
@@ -1471,10 +1511,12 @@ html {
 }
 
 .btn-style2:hover {
-  background: linear-gradient(135deg, #F68C50 0%, #E66E1D 100%) !important;
-  color: #FFFFFF !important;
+  background: linear-gradient(135deg, var(--royal-yellow-accent, #FFB800) 0%, var(--royal-yellow-gold, #F59E0B) 100%) !important;
+  color: var(--royal-yellow-contrast-text, #14171C) !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 8px 25px rgba(246, 140, 80, 0.45) !important;
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4) !important;
+  padding-left: 58px !important;
+  padding-right: 32px !important;
 }
 
 .btn-style2 .theme-btn-arrow-right,
@@ -1485,17 +1527,28 @@ html {
 }
 
 .btn-style2 svg path {
-  stroke: #0A2942 !important;
+  stroke: var(--royal-blue-primary) !important;
 }
 
-.btn-style2:hover .theme-btn-arrow-right,
 .btn-style2:hover .theme-btn-arrow-left {
-  background: #071C2E !important;
-  transform: rotate(30deg) scale(1.05) !important;
+  background: var(--royal-gray-darkest, #14171C) !important;
+  opacity: 1 !important;
+  scale: 1 !important;
+  left: 8px !important;
+  transform: scale(1) rotate(0deg) !important;
+}
+.btn-style2:hover .theme-btn-arrow-right {
+  opacity: 0 !important;
+  scale: 0 !important;
+  transform: scale(0) rotate(30deg) !important;
+  width: 0 !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  pointer-events: none !important;
 }
 
-.btn-style2:hover svg path {
-  stroke: #F68C50 !important;
+.btn-style2:hover .theme-btn-arrow-left svg path {
+  stroke: #FFFFFF !important;
 }
 
 /* About Section CTA & Trust Badge Alignment Fix */
@@ -1543,7 +1596,7 @@ html {
   height: 50px !important;
   min-width: 50px !important;
   border-radius: 50% !important;
-  border: 2px solid #F68C50 !important;
+  border: 2px solid var(--royal-yellow-accent) !important;
   padding: 6px !important;
   background: #FFFFFF !important;
   box-shadow: 0 4px 14px rgba(246, 140, 80, 0.22) !important;
@@ -1572,7 +1625,7 @@ html {
 .elementor-element.elementor-element-88210d3 p {
   margin: 0 !important;
   line-height: 1.3 !important;
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   font-size: 14px !important;
 }
 
@@ -1580,13 +1633,13 @@ html {
    OUR SPECIALIZED SERVICES SECTION - ROYAL AUTO PAINTS
    ============================================================ */
 .elementor-element.elementor-element-28cc4de .title-part1 {
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   font-weight: 700 !important;
   letter-spacing: -0.5px !important;
 }
 
 .elementor-element.elementor-element-28cc4de .subtitle {
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   background-color: #EDF3F8 !important;
   font-weight: 600 !important;
   letter-spacing: 0.8px !important;
@@ -1609,7 +1662,7 @@ html {
 }
 
 .service-block-style1 .content .icon i {
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
   font-size: 52px !important;
   transition: transform 0.4s ease !important;
 }
@@ -1625,7 +1678,7 @@ html {
 }
 
 .service-block-style1 .content .service-title a {
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   font-weight: 700 !important;
   font-size: 25px !important;
   line-height: 1.3 !important;
@@ -1634,7 +1687,7 @@ html {
 }
 
 .service-block-style1 .content .service-title a:hover {
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
 }
 
 .service-block-style1 .service-image {
@@ -1663,7 +1716,7 @@ html {
 }
 
 .service-block-style1 .service-image .number b {
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
 }
 
 .service-block-style1 .content-2 .service-details {
@@ -1674,7 +1727,7 @@ html {
 }
 
 .service-block-style1 .content-2 .link-btn {
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
   font-weight: 700 !important;
   font-size: 13px !important;
   letter-spacing: 0.8px !important;
@@ -1685,25 +1738,25 @@ html {
 }
 
 .service-block-style1 .content-2 .link-btn i {
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
   transition: transform 0.3s ease !important;
 }
 
 .service-block-style1 .content-2 .link-btn:hover {
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
 }
 
 .service-block-style1 .content-2 .link-btn:hover i {
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   transform: translateX(4px) !important;
 }
 
 .service-block-style1 .content-2 .link-btn::after {
-  background: #F68C50 !important;
+  background: var(--royal-yellow-accent) !important;
 }
 
 .service-block-style1:hover::after {
-  background: #F68C50 !important;
+  background: var(--royal-yellow-accent) !important;
 }
 
 /* Services Bottom Banner */
@@ -1714,25 +1767,25 @@ html {
 }
 
 .elementor-element.elementor-element-6997566 .tm-text-editor p {
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   font-size: 17px !important;
   font-weight: 600 !important;
   margin: 0 !important;
 }
 
 .elementor-element.elementor-element-6997566 .btn.btn-plain-text {
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
   font-weight: 700 !important;
   font-size: 15px !important;
-  border-bottom: 2px solid #F68C50 !important;
+  border-bottom: 2px solid var(--royal-yellow-accent) !important;
   padding-bottom: 2px !important;
   text-decoration: none !important;
   transition: all 0.3s ease !important;
 }
 
 .elementor-element.elementor-element-6997566 .btn.btn-plain-text:hover {
-  color: #0A2942 !important;
-  border-color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
+  border-color: var(--royal-blue-primary) !important;
 }
 
 /* Refined subtitle pill & support badge */
@@ -1743,7 +1796,7 @@ html {
 }
 
 .elementor-element.elementor-element-28cc4de .subtitle:before {
-  background-color: #F68C50 !important;
+  background-color: var(--royal-yellow-accent) !important;
   left: 18px !important;
   top: calc(50% - 4px) !important;
   width: 8px !important;
@@ -1753,8 +1806,8 @@ html {
 .service-support-badge {
   width: 46px;
   height: 46px;
-  background: #0A2942;
-  color: #F68C50;
+  background: var(--royal-blue-primary);
+  color: var(--royal-yellow-accent);
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -1871,7 +1924,7 @@ html {
   display: inline-block !important;
   position: relative !important;
   background-color: #F7F0F2 !important;
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   font-size: 13.5px !important;
   font-weight: 500 !important;
   line-height: 1.4 !important;
@@ -1890,14 +1943,14 @@ html {
   transform: translateY(-50%) !important;
   width: 8px !important;
   height: 8px !important;
-  background-color: #F68C50 !important;
+  background-color: var(--royal-yellow-accent) !important;
   border-radius: 50% !important;
   display: block !important;
   margin: 0 !important;
 }
 
 .elementor-element.elementor-element-6082dc3 .title {
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   font-family: "Marcellus", serif !important;
   font-size: 42px !important;
   font-weight: 400 !important;
@@ -1908,7 +1961,7 @@ html {
 }
 
 .elementor-element.elementor-element-6082dc3 .title .title-part1 {
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   font-family: "Marcellus", serif !important;
 }
 
@@ -2037,13 +2090,13 @@ html {
 }
 
 .tm-woo-product-style1 .product-inner .content-box .product-title a {
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   text-decoration: none !important;
   transition: color 0.3s ease !important;
 }
 
 .tm-woo-product-style1 .product-inner .content-box .product-title a:hover {
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
 }
 
 /* Explicitly hide any stars, price, buttons, or navigation icons */
@@ -2086,7 +2139,7 @@ html {
   justify-content: center !important;
   height: 56px !important;
   line-height: 56px !important;
-  background: #0A2942 !important;
+  background: var(--royal-blue-primary) !important;
   color: #FFFFFF !important;
   font-weight: 600 !important;
   font-size: 15px !important;
@@ -2103,7 +2156,7 @@ html {
   height: 40px !important;
   width: 40px !important;
   background-color: #FFFFFF !important;
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   border-radius: 50% !important;
   display: inline-flex !important;
   align-items: center !important;
@@ -2126,7 +2179,7 @@ html {
 
 .view-all-products-wrap .btn-style2 .theme-btn-arrow-right svg path,
 .view-all-products-wrap .btn-style2 .theme-btn-arrow-left svg path {
-  stroke: #0A2942 !important;
+  stroke: var(--royal-blue-primary) !important;
   transition: stroke 0.35s ease !important;
 }
 
@@ -2138,331 +2191,12 @@ html {
 }
 
 .view-all-products-wrap .btn-style2:hover {
-  background: linear-gradient(135deg, #F68C50 0%, #E66E1D 100%) !important;
-  color: #FFFFFF !important;
+  background: linear-gradient(135deg, var(--royal-yellow-accent, #FFB800) 0%, var(--royal-yellow-gold, #F59E0B) 100%) !important;
+  color: var(--royal-yellow-contrast-text, #14171C) !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 8px 25px rgba(246, 140, 80, 0.45) !important;
-  padding-left: 56px !important;
-  padding-right: 28px !important;
-}
-
-.view-all-products-wrap .btn-style2:hover .theme-btn-arrow-left {
-  scale: 1 !important;
-  opacity: 1 !important;
-  left: 8px !important;
-  background-color: #071C2E !important;
-  transform: rotate(30deg) !important;
-}
-
-.view-all-products-wrap .btn-style2:hover .theme-btn-arrow-left svg path {
-  stroke: #F68C50 !important;
-}
-
-.view-all-products-wrap .btn-style2:hover .theme-btn-arrow-right {
-  scale: 0 !important;
-  opacity: 0 !important;
-  transform: scale(0) !important;
-}
-
-
-/* ==========================================================================
-   Section 10: How It Works / Refinish Workflow (.elementor-element-3fec5f6)
-   ========================================================================== */
-.elementor-element.elementor-element-3fec5f6 {
-  background-color: #FAF6F5 !important;
-  position: relative !important;
-}
-
-/* Subtitle Pill - How It Works */
-.elementor-element.elementor-element-f293c92 .sub-title-outer .subtitle {
-  display: inline-block !important;
-  position: relative !important;
-  background-color: #FFFFFF !important;
-  color: #0A2942 !important;
-  font-size: 13.5px !important;
-  font-weight: 500 !important;
-  line-height: 1.4 !important;
-  border-radius: 50px !important;
-  padding: 8px 24px 8px 36px !important;
-  box-shadow: 0 2px 8px rgba(10, 41, 66, 0.05) !important;
-  border: 1px solid rgba(10, 41, 66, 0.08) !important;
-  letter-spacing: 0.3px !important;
-}
-
-.elementor-element.elementor-element-f293c92 .sub-title-outer .subtitle:before {
-  content: "" !important;
-  position: absolute !important;
-  left: 17px !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  width: 8px !important;
-  height: 8px !important;
-  background-color: #F68C50 !important;
-  border-radius: 50% !important;
-  display: block !important;
-  margin: 0 !important;
-}
-
-/* Section Title */
-.elementor-element.elementor-element-f293c92 .title {
-  color: #0A2942 !important;
-  font-family: "Marcellus", serif !important;
-  font-size: 42px !important;
-  font-weight: 400 !important;
-  line-height: 1.25 !important;
-  letter-spacing: -0.5px !important;
-  margin: 16px 0 0 0 !important;
-}
-
-.elementor-element.elementor-element-f293c92 .title .title-part1 {
-  color: #0A2942 !important;
-  font-family: "Marcellus", serif !important;
-}
-
-.elementor-element.elementor-element-f293c92 .title-seperator-line {
-  display: none !important;
-}
-
-@media (max-width: 767px) {
-  .elementor-element.elementor-element-f293c92 .title {
-    font-size: 28px !important;
-  }
-}
-
-/* Subtitle Paragraph */
-.elementor-element.elementor-element-26d9bf3 .tm-text-editor p {
-  color: #526071 !important;
-  font-family: "DM Sans", sans-serif !important;
-  font-size: 15.5px !important;
-  line-height: 1.7 !important;
-  margin-top: 18px !important;
-  margin-bottom: 30px !important;
-  max-width: 520px !important;
-}
-
-/* 3 Image Showcase Containers */
-.elementor-element.elementor-element-4e5e4ab {
-  gap: 16px !important;
-  align-items: flex-end !important;
-}
-
-.elementor-element.elementor-element-04dc250,
-.elementor-7010 .elementor-element.elementor-element-04dc250:not(.elementor-motion-effects-element-type-background),
-.elementor-7010 .elementor-element.elementor-element-04dc250 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-  background-image: url("../images/Technician_scanning_car_paint_color.jpg") !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  border-radius: 20px !important;
-  box-shadow: 0 10px 28px rgba(10, 41, 66, 0.08) !important;
-  min-height: 240px !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-.elementor-element.elementor-element-58a7fc5,
-.elementor-7010 .elementor-element.elementor-element-58a7fc5:not(.elementor-motion-effects-element-type-background),
-.elementor-7010 .elementor-element.elementor-element-58a7fc5 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-  background-image: url("../images/Technician_mixing_automotive_paint.jpg") !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  border-radius: 20px !important;
-  box-shadow: 0 10px 28px rgba(10, 41, 66, 0.08) !important;
-  min-height: 240px !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-.elementor-element.elementor-element-cffba15,
-.elementor-7010 .elementor-element.elementor-element-cffba15:not(.elementor-motion-effects-element-type-background),
-.elementor-7010 .elementor-element.elementor-element-cffba15 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-  background-image: url("../images/Automotive_paint_products_ready.jpg") !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  border-radius: 20px !important;
-  box-shadow: 0 10px 28px rgba(10, 41, 66, 0.08) !important;
-  min-height: 240px !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-/* 3 Step Working Cards */
-.tm-sc-working .working-block-style1 .inner-box {
-  background-color: #FFFFFF !important;
-  border-radius: 20px !important;
-  padding: 28px 32px 24px 32px !important;
-  box-shadow: 0 8px 24px rgba(10, 41, 66, 0.05), 0 2px 6px rgba(10, 41, 66, 0.02) !important;
-  border: 1px solid rgba(10, 41, 66, 0.07) !important;
-  margin-bottom: 20px !important;
-  transition: all 0.4s ease !important;
-}
-
-.tm-sc-working .working-block-style1 .inner-box .working-count {
-  font-family: "Marcellus", serif !important;
-  font-size: 48px !important;
-  line-height: 1 !important;
-  font-weight: 500 !important;
-  min-width: 75px !important;
-  -webkit-text-fill-color: transparent !important;
-  -webkit-text-stroke-width: 1px !important;
-  -webkit-text-stroke-color: rgba(10, 41, 66, 0.45) !important;
-  transition: all 0.35s ease !important;
-}
-
-.tm-sc-working .working-block-style1 .inner-box .working-title {
-  font-family: "Marcellus", serif !important;
-  font-size: 21px !important;
-  font-weight: 400 !important;
-  color: #0A2942 !important;
-  line-height: 1.3 !important;
-  margin-top: 0 !important;
-  margin-bottom: 8px !important;
-  transition: color 0.35s ease !important;
-}
-
-.tm-sc-working .working-block-style1 .inner-box .working-details {
-  font-family: "DM Sans", sans-serif !important;
-  font-size: 14px !important;
-  line-height: 1.65 !important;
-  color: #64748B !important;
-  transition: color 0.35s ease !important;
-}
-
-/* Hover State: Deep Navy Fill with White Content */
-.tm-sc-working .working-block-style1 .inner-box:before {
-  background-color: #0A2942 !important;
-}
-
-.tm-sc-working .working-block-style1 .inner-box:hover {
-  box-shadow: 0 14px 36px rgba(10, 41, 66, 0.16) !important;
-  border-color: #0A2942 !important;
-}
-
-.tm-sc-working .working-block-style1 .inner-box:hover .working-count {
-  -webkit-text-stroke-color: #FFFFFF !important;
-  color: #FFFFFF !important;
-}
-
-.tm-sc-working .working-block-style1 .inner-box:hover .working-title {
-  color: #FFFFFF !important;
-}
-
-.tm-sc-working .working-block-style1 .inner-box:hover .working-details {
-  color: rgba(255, 255, 255, 0.88) !important;
-}
-
-
-/* ==========================================================================
-   Section 11: Customer Reviews & Testimonials (.elementor-element-fb1b7cb)
-   ========================================================================== */
-.elementor-element.elementor-element-fb1b7cb {
-  position: relative !important;
-}
-
-/* Subtitle Pill - Testimonials */
-.elementor-element.elementor-element-deeb087 .sub-title-outer .subtitle {
-  display: inline-block !important;
-  position: relative !important;
-  background-color: rgba(255, 255, 255, 0.12) !important;
-  color: #FFFFFF !important;
-  font-size: 13.5px !important;
-  font-weight: 500 !important;
-  line-height: 1.4 !important;
-  border-radius: 50px !important;
-  padding: 8px 24px 8px 36px !important;
-  border: 1px solid rgba(255, 255, 255, 0.22) !important;
-  letter-spacing: 0.3px !important;
-}
-
-.elementor-element.elementor-element-deeb087 .sub-title-outer .subtitle:before {
-  content: "" !important;
-  position: absolute !important;
-  left: 17px !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  width: 8px !important;
-  height: 8px !important;
-  background-color: #F68C50 !important;
-  border-radius: 50% !important;
-  display: block !important;
-  margin: 0 !important;
-}
-
-/* Section Title */
-.elementor-element.elementor-element-deeb087 .title {
-  color: #FFFFFF !important;
-  font-family: "Marcellus", serif !important;
-  font-size: 42px !important;
-  font-weight: 400 !important;
-  line-height: 1.25 !important;
-  letter-spacing: -0.5px !important;
-  margin: 16px 0 0 0 !important;
-}
-
-.elementor-element.elementor-element-deeb087 .title .title-part1 {
-  color: #FFFFFF !important;
-  font-family: "Marcellus", serif !important;
-}
-
-.elementor-element.elementor-element-deeb087 .title-seperator-line {
-  display: none !important;
-}
-
-@media (max-width: 767px) {
-  .elementor-element.elementor-element-deeb087 .title {
-    font-size: 28px !important;
-  }
-}
-
-/* Center Portrait Image Showcase (Authentic Refinish Technician) */
-.elementor-element.elementor-element-cfa0488,
-.elementor-7010 .elementor-element.elementor-element-cfa0488:not(.elementor-motion-effects-element-type-background),
-.elementor-7010 .elementor-element.elementor-element-cfa0488 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-  background-image: url("../images/Technician_mixing_automotive_paint.jpg") !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  border-radius: 28px !important;
-  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.45) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-/* Testimonial Quote Styling */
-.testimonial-block-style2 .inner-block .quote-icon img {
-  filter: brightness(0) invert(1) !important;
-  opacity: 0.9 !important;
-  width: 48px !important;
-  height: auto !important;
-}
-
-.testimonial-block-style2 .inner-block .author-text {
-  color: #E2E8F0 !important;
-  font-family: "DM Sans", sans-serif !important;
-  font-size: 19px !important;
-  line-height: 1.7 !important;
-  font-style: italic !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
-  padding-bottom: 35px !important;
-  margin-bottom: 30px !important;
-}
-
-.testimonial-block-style2 .inner-block .client-info {
-  display: flex !important;
-  align-items: center !important;
-  gap: 16px !important;
-}
-
-.testimonial-block-style2 .inner-block .client-info .client-img {
-  width: 54px !important;
-  height: 54px !important;
-  border-radius: 50% !important;
-  overflow: hidden !important;
-  border: 2px solid rgba(246, 140, 80, 0.6) !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4) !important;
+  padding-left: 58px !important;
+  padding-right: 32px !important;
 }
 
 .testimonial-block-style2 .inner-block .client-info .client-img img {
@@ -2481,7 +2215,7 @@ html {
 .testimonial-block-style2 .inner-block .client-info .info-content .testimonial-position {
   font-family: "DM Sans", sans-serif !important;
   font-size: 13.5px !important;
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
   margin-top: 2px !important;
 }
 
@@ -2605,7 +2339,7 @@ html {
 .elementor-element.elementor-element-b2d0372 .tm-text-editor h5 {
   font-family: "Marcellus", serif !important;
   font-size: 24px !important;
-  color: #0A2942 !important;
+  color: var(--royal-blue-primary) !important;
   font-weight: 500 !important;
   text-align: center !important;
   margin-bottom: 20px !important;
@@ -2750,7 +2484,7 @@ html {
 
 .elementor-7010 .elementor-element.elementor-element-bda1544 .icon i,
 .elementor-7010 .elementor-element.elementor-element-b08a648 .icon i {
-  color: #0A3254 !important;
+  color: var(--royal-blue-primary) !important;
   font-size: 18px !important;
 }
 
@@ -2770,7 +2504,7 @@ html {
 }
 
 .elementor-7010 .elementor-element.elementor-element-b08a648 .content a:hover {
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
   text-decoration: underline !important;
 }
 
@@ -2792,7 +2526,7 @@ html {
 /* Form Card Header - Site Navy, Clean Typography */
 .elementor-7010 .elementor-element.elementor-element-a5e4868:not(.elementor-motion-effects-element-type-background),
 .elementor-7010 .elementor-element.elementor-element-a5e4868 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-  background: #0A3254 !important;
+  background: var(--royal-blue-primary) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
   border-radius: 20px 20px 0 0 !important;
   padding: 22px 28px !important;
@@ -2828,14 +2562,14 @@ html {
 .elementor-7010 .elementor-element.elementor-element-c6ae762 .tm-contact-form-7 .wpcf7-form-control.wpcf7-text:focus,
 .elementor-7010 .elementor-element.elementor-element-c6ae762 .tm-contact-form-7 .wpcf7-form-control.wpcf7-textarea:focus {
   background-color: #FFFFFF !important;
-  border-color: #0A3254 !important;
+  border-color: var(--royal-blue-primary) !important;
   outline: none !important;
   box-shadow: 0 0 0 3px rgba(10, 50, 84, 0.12) !important;
 }
 
 /* Submit Button - Site Brand Style */
 .elementor-7010 .elementor-element.elementor-element-c6ae762 .tm-contact-form-7 .wpcf7-form input[type="submit"] {
-  background-color: #0A3254 !important;
+  background-color: var(--royal-blue-primary) !important;
   color: #FFFFFF !important;
   font-weight: 600 !important;
   font-size: 0.95rem !important;
@@ -2848,7 +2582,7 @@ html {
 }
 
 .elementor-7010 .elementor-element.elementor-element-c6ae762 .tm-contact-form-7 .wpcf7-form input[type="submit"]:hover {
-  background-color: #F68C50 !important;
+  background-color: var(--royal-yellow-accent) !important;
   color: #FFFFFF !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 10px 22px rgba(246, 140, 80, 0.35) !important;
@@ -2912,7 +2646,7 @@ html {
   display: inline-block !important;
   position: relative !important;
   background-color: #FFFFFF !important;
-  color: #0A3254 !important;
+  color: var(--royal-blue-primary) !important;
   font-family: 'DM Sans', sans-serif !important;
   font-size: 13.5px !important;
   font-weight: 500 !important;
@@ -2932,7 +2666,7 @@ html {
   transform: translateY(-50%) !important;
   width: 8px !important;
   height: 8px !important;
-  background-color: #F68C50 !important;
+  background-color: var(--royal-yellow-accent) !important;
   border-radius: 50% !important;
   display: block !important;
   margin: 0 !important;
@@ -2941,7 +2675,7 @@ html {
 /* Section Title - Primary Deep Navy */
 .elementor-element.elementor-element-d84cf59 h2.title,
 .elementor-element.elementor-element-d84cf59 h2.title .title-part1 {
-  color: #0A3254 !important;
+  color: var(--royal-blue-primary) !important;
   font-family: 'Marcellus', serif !important;
   font-size: 38.4px !important;
   line-height: 1.25 !important;
@@ -2952,7 +2686,7 @@ html {
 
 /* Title Separator Line */
 .elementor-element.elementor-element-d84cf59 .title-seperator-line {
-  background-color: #F68C50 !important;
+  background-color: var(--royal-yellow-accent) !important;
   height: 2px !important;
   width: 60px !important;
   margin: 15px 0 0 !important;
@@ -3008,7 +2742,7 @@ html {
   flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
-  background-color: #0A3254 !important;
+  background-color: var(--royal-blue-primary) !important;
   width: 58px !important;
   height: 58px !important;
   border-radius: 12px !important;
@@ -3033,7 +2767,7 @@ html {
   font-weight: 700 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
   line-height: 1 !important;
   margin-top: 3px !important;
 }
@@ -3055,7 +2789,7 @@ html {
 }
 
 .elementor-element-987bbfc .blog-item-current-style1 .entry-title a {
-  color: #0A3254 !important;
+  color: var(--royal-blue-primary) !important;
   font-family: 'Marcellus', serif !important;
   font-size: 20px !important;
   font-weight: 400 !important;
@@ -3071,7 +2805,7 @@ html {
 
 .elementor-element-987bbfc .blog-item-current-style1:hover .entry-title a,
 .elementor-element-987bbfc .blog-item-current-style1 .entry-title a:hover {
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
 }
 
 /* Post Excerpt */
@@ -3090,7 +2824,7 @@ html {
 
 /* Read More Link */
 .elementor-element-987bbfc .blog-item-current-style1 .link-btn {
-  color: #0A3254 !important;
+  color: var(--royal-blue-primary) !important;
   font-family: 'DM Sans', sans-serif !important;
   font-size: 14.5px !important;
   font-weight: 600 !important;
@@ -3110,7 +2844,7 @@ html {
   height: 32px !important;
   border-radius: 50% !important;
   background-color: rgba(10, 50, 84, 0.08) !important;
-  color: #0A3254 !important;
+  color: var(--royal-blue-primary) !important;
   font-size: 12px !important;
   line-height: 32px !important;
   transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease !important;
@@ -3118,12 +2852,12 @@ html {
 
 .elementor-element-987bbfc .blog-item-current-style1:hover .link-btn,
 .elementor-element-987bbfc .blog-item-current-style1 .link-btn:hover {
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
 }
 
 .elementor-element-987bbfc .blog-item-current-style1:hover .link-btn i,
 .elementor-element-987bbfc .blog-item-current-style1 .link-btn:hover i {
-  background-color: #F68C50 !important;
+  background-color: var(--royal-yellow-accent) !important;
   color: #FFFFFF !important;
   transform: translateX(4px) !important;
 }
@@ -3193,7 +2927,7 @@ footer#footer .elementor-invisible {
 
 /* Card Container Main Background: Site Primary Deep Navy */
 footer#footer .elementor-element.elementor-element-ecae855 {
-  background-color: #0A3254 !important;
+  background-color: var(--royal-blue-primary) !important;
   border-radius: 30px 30px 0 0 !important;
   border-top-left-radius: 30px !important;
   border-top-right-radius: 30px !important;
@@ -3238,12 +2972,12 @@ footer#footer .tm-sc-simple-nav-menu ul li a {
 }
 
 footer#footer .tm-sc-simple-nav-menu ul li a:hover {
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
   transform: translateX(4px) !important;
 }
 
 footer#footer .tm-sc-simple-nav-menu ul li a .tm-nav-arrow-icon {
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
   font-size: 10px !important;
   margin-right: 10px !important;
 }
@@ -3251,7 +2985,7 @@ footer#footer .tm-sc-simple-nav-menu ul li a .tm-nav-arrow-icon {
 /* Get in Touch Button */
 footer#footer .elementor-element-e5cd0f0 .btn-style1 {
   background-color: #FFFFFF !important;
-  color: #0A3254 !important;
+  color: var(--royal-blue-primary) !important;
   border-radius: 50px !important;
   padding: 12px 28px !important;
   font-family: 'DM Sans', sans-serif !important;
@@ -3267,7 +3001,7 @@ footer#footer .elementor-element-e5cd0f0 .btn-style1 {
 }
 
 footer#footer .elementor-element-e5cd0f0 .btn-style1:hover {
-  background-color: #F68C50 !important;
+  background-color: var(--royal-yellow-accent) !important;
   color: #FFFFFF !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 8px 20px rgba(246, 140, 80, 0.3) !important;
@@ -3307,8 +3041,8 @@ footer#footer .elementor-element-10a1f33 .social-link {
 }
 
 footer#footer .elementor-element-10a1f33 .social-link:hover {
-  background-color: #F68C50 !important;
-  border-color: #F68C50 !important;
+  background-color: var(--royal-yellow-accent) !important;
+  border-color: var(--royal-yellow-accent) !important;
   color: #FFFFFF !important;
   transform: translateY(-3px) !important;
 }
@@ -3334,7 +3068,7 @@ footer#footer .elementor-element-7d8ffa8 .mc4wp-form input[type="email"]::placeh
 }
 
 footer#footer .elementor-element-7d8ffa8 .mc4wp-form button {
-  background-color: #F68C50 !important;
+  background-color: var(--royal-yellow-accent) !important;
   color: #FFFFFF !important;
   border-radius: 50% !important;
   border: none !important;
@@ -3343,7 +3077,7 @@ footer#footer .elementor-element-7d8ffa8 .mc4wp-form button {
 
 footer#footer .elementor-element-7d8ffa8 .mc4wp-form button:hover {
   background-color: #FFFFFF !important;
-  color: #0A3254 !important;
+  color: var(--royal-blue-primary) !important;
   transform: scale(1.08) !important;
 }
 
@@ -3388,11 +3122,11 @@ footer#footer .elementor-element-b15bd8f ul li a {
 }
 
 footer#footer .elementor-element-b15bd8f ul li a:hover {
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
 }
 
 footer#footer .elementor-element-b15bd8f ul li a .tm-nav-arrow-icon {
-  color: #F68C50 !important;
+  color: var(--royal-yellow-accent) !important;
   font-size: 10px !important;
   margin-right: 6px !important;
 }
@@ -3540,8 +3274,8 @@ body > .scroll-to-top a {
   height: 48px !important;
   border-radius: 50% !important;
   background-image: none !important;
-  background: #0A3254 !important;
-  background-color: #0A3254 !important;
+  background: var(--royal-blue-primary) !important;
+  background-color: var(--royal-blue-primary) !important;
   color: #FFFFFF !important;
   box-shadow: 0 6px 18px rgba(10, 50, 84, 0.35), 0 2px 6px rgba(0, 0, 0, 0.15) !important;
   opacity: 1 !important;
@@ -3564,9 +3298,9 @@ body > .scroll-to-top a i,
 .scroll-to-top a:hover,
 .scroll-to-top a.scroll-link:hover,
 body > .scroll-to-top a:hover {
-  background: #F68C50 !important;
-  background-color: #F68C50 !important;
-  border-color: #F68C50 !important;
+  background: var(--royal-yellow-accent) !important;
+  background-color: var(--royal-yellow-accent) !important;
+  border-color: var(--royal-yellow-accent) !important;
   transform: translateY(-3px) scale(1.06) !important;
   box-shadow: 0 10px 22px rgba(246, 140, 80, 0.45) !important;
 }
@@ -3600,4 +3334,101 @@ body > .scroll-to-top a:hover {
   .scroll-to-top a.scroll-link i {
     font-size: 16px !important;
   }
+}
+
+/* Button Hover High-Contrast Readability & Spacing Guard */
+.btn-style1:hover,
+.btn-style2:hover {
+  padding-left: 58px !important;
+  padding-right: 32px !important;
+}
+
+.btn-style1:hover .btn-title,
+.btn-style2:hover .btn-title,
+.btn-style1:hover .theme-btn,
+.btn-style2:hover .theme-btn,
+.btn-style1:hover span.theme-btn,
+.btn-style2:hover span.theme-btn {
+  color: var(--royal-yellow-contrast-text, var(--royal-gray-darkest)) !important;
+  transform: none !important;
+}
+
+/* Ensure left arrow circle has high-contrast white icon on hover */
+.btn-style1:hover .theme-btn-arrow-left,
+.btn-style2:hover .theme-btn-arrow-left {
+  background-color: var(--royal-gray-darkest, #14171C) !important;
+  opacity: 1 !important;
+  scale: 1 !important;
+  left: 8px !important;
+  transform: scale(1) rotate(0deg) !important;
+}
+
+.btn-style1:hover .theme-btn-arrow-left svg path,
+.btn-style2:hover .theme-btn-arrow-left svg path,
+.btn-style1:hover .theme-btn-arrow-left svg polyline,
+.btn-style2:hover .theme-btn-arrow-left svg polyline {
+  stroke: #FFFFFF !important;
+}
+
+/* Right arrow circle cleanly collapses on hover */
+.btn-style1:hover .theme-btn-arrow-right,
+.btn-style2:hover .theme-btn-arrow-right {
+  opacity: 0 !important;
+  scale: 0 !important;
+  transform: scale(0) rotate(30deg) !important;
+  width: 0 !important;
+  min-width: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Navigation Active and Hover Styling for Yellow Accent */
+.luxore-nav-link:hover,
+.luxore-nav-link.active {
+  color: var(--royal-yellow-gold, var(--royal-yellow-gold)) !important;
+}
+.luxore-nav-link::after {
+  background: var(--royal-yellow-accent, var(--royal-yellow-accent)) !important;
+}
+.opt2-header.sticky-active .luxore-nav-link:hover,
+.opt2-header.sticky-active .luxore-nav-link.active {
+  color: var(--royal-blue-primary, var(--royal-gray-charcoal)) !important;
+}
+.opt2-header.sticky-active .luxore-call-pill {
+  background: var(--royal-blue-primary, var(--royal-gray-charcoal)) !important;
+  color: #FFFFFF !important;
+}
+.opt2-header.sticky-active .luxore-call-pill:hover {
+  background: var(--royal-yellow-accent, var(--royal-yellow-accent)) !important;
+  color: var(--royal-yellow-contrast-text, var(--royal-gray-darkest)) !important;
+}
+.scroll-to-top {
+  background-color: var(--royal-blue-primary, var(--royal-gray-charcoal)) !important;
+  border-color: rgba(250, 225, 100, 0.4) !important;
+}
+.scroll-to-top:hover {
+  background-color: var(--royal-yellow-accent, var(--royal-yellow-accent)) !important;
+  color: var(--royal-yellow-contrast-text, var(--royal-gray-darkest)) !important;
+}
+.scroll-to-top:hover i,
+.scroll-to-top:hover span {
+  color: var(--royal-yellow-contrast-text, var(--royal-gray-darkest)) !important;
+}
+
+/* "Call to Anytime" Yellow Badge High-Contrast Contrast Fix */
+.elementor-element.elementor-element-8423ca3 {
+  background-color: var(--royal-yellow-accent, var(--royal-yellow-accent)) !important;
+}
+.elementor-element.elementor-element-8423ca3 .icon-box-title,
+.elementor-element.elementor-element-8423ca3 .content h4,
+.elementor-element.elementor-element-8423ca3 .content h4 a {
+  color: var(--royal-yellow-contrast-text, var(--royal-gray-darkest)) !important;
+  font-weight: 700 !important;
+}
+.elementor-element.elementor-element-8423ca3 .icon.icon-round {
+  background-color: #FFFFFF !important;
+}
+.elementor-element.elementor-element-8423ca3 .icon.icon-round i {
+  color: var(--royal-blue-primary, var(--royal-gray-charcoal)) !important;
 }
