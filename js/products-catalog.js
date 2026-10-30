@@ -13,7 +13,7 @@
   let currentSort = 'default';
   let searchTerm = '';
   let currentPage = 1;
-  const itemsPerPage = 16;
+  const itemsPerPage = 15;
   let isShowingAll = false;
 
   // DOM Elements
@@ -312,7 +312,7 @@
       if (prevPageBtn) prevPageBtn.style.display = 'none';
       if (nextPageBtn) nextPageBtn.style.display = 'none';
       if (toggleAllBtn) {
-        toggleAllBtn.innerHTML = '<i class="fas fa-th"></i> Paginate (16 / page)';
+        toggleAllBtn.innerHTML = '<i class="fas fa-th"></i> Paginate (15 / page)';
       }
       return;
     }

@@ -461,17 +461,11 @@
   color: var(--royal-blue-primary);
 }
 
-/* --- Product Cards Grid --- */
+/* --- Product Cards Grid (3 in a row for generous spacing & badge clearance) --- */
 .catalogue-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-}
-
-@media (max-width: 1200px) {
-  .catalogue-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 @media (max-width: 991px) {
