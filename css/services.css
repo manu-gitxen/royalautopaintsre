@@ -36,7 +36,6 @@ body,
   overflow-x: hidden;
 }
 
-#services-page h1,
 #services-page h2,
 #services-page h3,
 #services-page h4,
@@ -44,6 +43,12 @@ body,
   font-family: 'Marcellus', serif;
   font-weight: 600;
   color: var(--royal-gray-graphite, #58585A);
+  letter-spacing: -0.01em;
+}
+
+#services-page h1 {
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
   letter-spacing: -0.01em;
 }
 
@@ -129,10 +134,13 @@ body,
   box-shadow: 0 0 8px rgba(255, 184, 0, 0.6);
 }
 
-.services-hero-title {
+.services-hero-title,
+#services-page .services-hero-title,
+#services-page .services-hero-section h1 {
   font-size: clamp(2rem, 3.8vw, 3.2rem);
   line-height: 1.18;
-  color: #FFFFFF;
+  font-weight: 400 !important;
+  color: #FFFFFF !important;
   margin-bottom: 16px;
   max-width: 860px;
 }
