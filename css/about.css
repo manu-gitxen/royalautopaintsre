@@ -1,0 +1,918 @@
+/* ==========================================================================
+   ROYAL AUTO PAINTS QATAR - ABOUT PAGE STYLESHEET
+   Design Language: Luxury Automotive Industrial Minimal (Dark Gray, Light Gray, Yellow Accent)
+   Unified with index.html, services.html & products.html
+   ========================================================================== */
+
+:root {
+  --royal-yellow-accent: #FFB800;
+  --royal-yellow-gold: #F5C518;
+  --royal-yellow-hover: #E0A200;
+  --royal-gray-darkest: #14171C;
+  --royal-gray-charcoal: #22272F;
+  --royal-gray-slate: #333A45;
+  --royal-gray-graphite: #58585A; /* Logo master graphite gray - exact index.html parity */
+  --royal-gray-body: #4A5568;     /* Exact body text gray from index.html */
+  --royal-gray-muted: #64748B;
+  --royal-gray-light: #F7F0F2;
+  --royal-gray-light-bg: #F7F0F2;
+  --royal-gray-surface: #FFFFFF;
+  --royal-gray-border: rgba(255, 255, 255, 0.08);
+  --royal-gray-border-dark: rgba(0, 0, 0, 0.08);
+  --royal-text-primary: #58585A;
+  --royal-text-secondary: #4A5568;
+  --royal-text-muted: #64748B;
+  --royal-text-white: #FFFFFF;
+}
+
+/* Base resets & typography */
+body,
+#about-page {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--royal-text-primary);
+  background-color: #FFFFFF !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#about-page h2,
+#about-page h3,
+#about-page h4,
+#about-page .royal-font-marcellus {
+  font-family: 'Marcellus', serif;
+  font-weight: 600;
+  color: var(--royal-gray-graphite, #58585A);
+  letter-spacing: -0.01em;
+}
+
+#about-page h1 {
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+p,
+.about-desc,
+.about-body-text {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--royal-gray-body, #4A5568);
+  font-size: 15.5px;
+  line-height: 1.68;
+}
+
+/* ==========================================================================
+   1. HERO SECTION
+   ========================================================================== */
+.about-hero-section {
+  position: relative;
+  background: linear-gradient(135deg, rgba(20,23,28,0.88) 0%, rgba(34,39,47,0.84) 55%, rgba(51,58,69,0.80) 100%), 
+              url('../images/dealership_showcase_wide.jpg') center/cover no-repeat;
+  padding-top: 155px;
+  padding-bottom: 80px;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+.about-hero-section::before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 184, 0, 0.12) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.about-hero-inner {
+  position: relative;
+  z-index: 2;
+}
+
+/* Breadcrumb */
+.about-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #9CA3AF;
+  margin-bottom: 18px;
+}
+
+.about-breadcrumb a {
+  color: #D1D5DB;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.about-breadcrumb a:hover {
+  color: var(--royal-yellow-accent);
+}
+
+.about-breadcrumb .sep {
+  color: var(--royal-yellow-accent);
+  font-size: 11px;
+}
+
+/* Badge Pill on Dark */
+.about-hero-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #E5E7EB;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.about-hero-badge-pill .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--royal-yellow-accent);
+  display: inline-block;
+  box-shadow: 0 0 8px rgba(255, 184, 0, 0.6);
+}
+
+.about-hero-title,
+#about-page .about-hero-title,
+#about-page .about-hero-section h1 {
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  line-height: 1.18;
+  font-weight: 400 !important;
+  color: #FFFFFF !important;
+  margin-bottom: 16px;
+  max-width: 860px;
+}
+
+.about-hero-desc {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #D1D5DB;
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+/* Hero Value Chips */
+.about-hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.about-hero-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #F3F4F6;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+}
+
+.about-hero-chip:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 184, 0, 0.4);
+}
+
+.about-hero-chip i {
+  color: var(--royal-yellow-accent);
+}
+
+/* ==========================================================================
+   2. SECTION HEADERS & PILL BADGES
+   ========================================================================== */
+.about-header-center {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  margin-bottom: 35px;
+}
+
+.about-spec-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 7px 22px !important;
+  border-radius: 50px !important;
+  background: #FFFFFF !important;
+  border: 1px solid rgba(10, 50, 84, 0.08) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.5px !important;
+  color: var(--royal-gray-graphite, #58585A) !important;
+  text-transform: uppercase !important;
+  margin: 0 auto 16px auto !important;
+  text-align: center !important;
+}
+
+.about-spec-badge .dot {
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 50% !important;
+  background-color: var(--royal-yellow-accent, #FFB800) !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+}
+
+.about-main-title {
+  font-family: 'Marcellus', serif !important;
+  font-size: clamp(2rem, 3vw, 2.75rem) !important;
+  line-height: 1.22 !important;
+  color: var(--royal-gray-graphite, #58585A) !important;
+  margin-bottom: 12px !important;
+  font-weight: 600 !important;
+}
+
+.about-main-subtitle {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 15.5px !important;
+  line-height: 1.68 !important;
+  color: var(--royal-gray-body, #4A5568) !important;
+  max-width: 680px !important;
+  margin: 0 auto !important;
+}
+
+.royal-highlight-yellow {
+  color: var(--royal-yellow-accent, #FFB800) !important;
+}
+
+/* ==========================================================================
+   3. COMPANY STORY & HERITAGE SECTION (#FFFFFF)
+   ========================================================================== */
+.about-story-section {
+  padding: 90px 0;
+  background-color: #FFFFFF;
+}
+
+.about-visual-collage {
+  position: relative;
+  padding-right: 20px;
+}
+
+.about-main-img-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
+  background-color: #22272F;
+}
+
+.about-main-img-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.about-main-img-card:hover img {
+  transform: scale(1.03);
+}
+
+/* Floating 14+ Years Badge Card */
+.about-years-badge-card {
+  position: absolute;
+  bottom: -25px;
+  right: 0px;
+  background: linear-gradient(135deg, #FFB800 0%, #E0A200 100%);
+  color: #FFFFFF;
+  padding: 22px 28px;
+  border-radius: 16px;
+  box-shadow: 0 14px 35px rgba(255, 184, 0, 0.4);
+  text-align: center;
+  z-index: 3;
+}
+
+.about-years-badge-card .num {
+  font-family: 'Marcellus', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.about-years-badge-card .txt {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.2;
+}
+
+/* Floating Contact Us Card on Left Collage Top-Left (Exact index.html parity) */
+.about-contact-card {
+  position: absolute;
+  top: 25px;
+  left: -18px;
+  background: linear-gradient(135deg, #FFB800 0%, #E0A200 100%);
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(255, 184, 0, 0.35);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 3;
+}
+
+.about-contact-card .contact-card-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: #E0A200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.about-contact-card .contact-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-contact-card .contact-card-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+
+.about-contact-card .contact-card-phone {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none !important;
+  line-height: 1.2;
+}
+
+/* Action Row at Bottom of Story: Button + Authorized Distributor Emblem (Exact index.html parity) */
+.about-action-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-top: 28px;
+  padding-top: 15px;
+}
+
+.btn-royal-action-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #333A45;
+  color: #FFFFFF !important;
+  padding: 12px 22px;
+  border-radius: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+}
+
+.btn-royal-action-pill:hover {
+  background-color: var(--royal-yellow-accent, #FFB800);
+  color: #14171C !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 184, 0, 0.3);
+}
+
+.about-auth-brand-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.about-auth-brand-badge .royal-trust-emblem {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.about-auth-brand-badge .auth-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-auth-brand-badge .auth-tag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10.5px;
+  letter-spacing: 0.8px;
+  color: var(--royal-yellow-accent, #FFB800);
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+
+.about-auth-brand-badge .auth-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: var(--royal-gray-graphite, #58585A);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+/* Right Column Content */
+.about-story-content {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-story-content .about-spec-badge {
+  margin: 0 0 16px 0 !important;
+  align-self: flex-start !important;
+}
+
+.about-story-lead {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--royal-gray-graphite);
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+.about-story-quote-box {
+  background: #FDFBF7;
+  border-left: 3px solid var(--royal-yellow-accent);
+  border-radius: 0 12px 12px 0;
+  padding: 18px 22px;
+  margin: 25px 0;
+  font-style: italic;
+  color: #333A45;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Quick Stat Counters */
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(10, 50, 84, 0.08);
+}
+
+.about-stat-item {
+  text-align: center;
+}
+
+.about-stat-item .stat-num {
+  font-family: 'Marcellus', serif;
+  font-size: 1.95rem;
+  font-weight: 600;
+  color: var(--royal-gray-graphite);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.about-stat-item .stat-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--royal-gray-muted);
+}
+
+/* ==========================================================================
+   4. SLIDER FOR BRANCHES, BUSINESS ENTITIES & TRUSTED BRANDS (#F7F0F2)
+   Exact parity with user reference image media_1793359919028_4016c71f.png
+   ========================================================================== */
+.about-brands-slider-section {
+  padding: 70px 0 80px 0;
+  background-color: #F7F0F2;
+  overflow: hidden;
+  position: relative;
+}
+
+.about-brands-divider-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(10, 50, 84, 0.08);
+  margin-bottom: 35px;
+}
+
+.about-brands-slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+
+.about-brands-track {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: max-content;
+  animation: royalBrandsMarquee 35s linear infinite;
+  padding: 10px 0;
+}
+
+.about-brands-slider-container:hover .about-brands-track {
+  animation-play-state: paused;
+}
+
+@keyframes royalBrandsMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.about-brand-card {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px 28px;
+  min-width: 180px;
+  height: 84px;
+  border: 1px solid rgba(10, 50, 84, 0.07);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.about-brand-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 184, 0, 0.5);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+}
+
+.about-brand-card img {
+  max-height: 48px;
+  max-width: 135px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* ==========================================================================
+   5. HOW WE ARE DIFFERENT & FACTORY-DIRECT ADVANTAGE (#FDFBF7)
+   ========================================================================== */
+.about-advantage-section {
+  padding: 90px 0;
+  background-color: #FDFBF7;
+}
+
+.about-adv-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 38px 30px;
+  border: 1px solid rgba(10, 50, 84, 0.08);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.about-adv-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 184, 0, 0.45);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.07);
+}
+
+.about-adv-icon-box {
+  width: 58px;
+  height: 58px;
+  border-radius: 14px;
+  background: rgba(255, 184, 0, 0.12);
+  border: 1px solid rgba(255, 184, 0, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--royal-yellow-accent);
+  margin-bottom: 24px;
+}
+
+.about-adv-title {
+  font-family: 'Marcellus', serif;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  color: var(--royal-gray-graphite, #58585A) !important;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.about-adv-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--royal-gray-body, #4A5568);
+  margin-bottom: 22px;
+  flex-grow: 1;
+}
+
+.about-adv-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #14171C;
+  color: var(--royal-yellow-accent, #FFB800);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* ==========================================================================
+   6. OPERATIONAL INFRASTRUCTURE & FACILITIES (#FFFFFF)
+   Exact parity with Laboratory Standards cards from services.html
+   ========================================================================== */
+.about-facilities-section {
+  padding: 90px 0;
+  background-color: #FFFFFF;
+}
+
+.fac-clean-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid rgba(10, 50, 84, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fac-clean-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 184, 0, 0.45);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.07);
+}
+
+.fac-card-img-box {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 195px;
+  margin-bottom: 20px;
+  background-color: #22272F;
+}
+
+.fac-card-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.fac-clean-card:hover .fac-card-img-box img {
+  transform: scale(1.05);
+}
+
+.fac-card-icon-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #FFF9E6;
+  border: 1px solid #FFE58F;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #D48806;
+  font-size: 15px;
+}
+
+.fac-card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0 6px 6px 6px;
+}
+
+.fac-card-title {
+  font-family: 'Marcellus', serif;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: var(--royal-gray-graphite, #58585A) !important;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.fac-card-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  line-height: 1.68;
+  color: var(--royal-gray-body, #4A5568) !important;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.fac-card-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: #14171C;
+  color: var(--royal-yellow-accent, #FFB800);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* ==========================================================================
+   7. DIRECT CONSULTATION & RFQ ACTION STRIP
+   Exact background gradient from products & services page
+   ========================================================================== */
+.about-cta-section {
+  padding: 10px 0 70px 0;
+  background-color: #FDFBF7;
+  color: #FFFFFF;
+}
+
+.about-cta-box {
+  background: linear-gradient(135deg, var(--royal-blue-primary, #58585A) 0%, #071C2E 100%) !important;
+  border-radius: 20px !important;
+  padding: 45px 45px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 16px 40px rgba(10, 41, 66, 0.12) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.about-cta-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background: radial-gradient(circle at 80% 50%, rgba(255, 184, 0, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.about-cta-title {
+  font-family: 'Marcellus', serif;
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+  font-weight: 600;
+  line-height: 1.25;
+  color: #FFFFFF !important;
+  margin-bottom: 12px;
+}
+
+.about-cta-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #E2E8F0;
+  margin-bottom: 0;
+  max-width: 580px;
+}
+
+.about-cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-royal-primary-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #25D366; /* WhatsApp Green */
+  color: #FFFFFF !important;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none !important;
+  box-shadow: 0 4px 18px rgba(37, 211, 102, 0.35);
+  transition: all 0.25s ease;
+}
+
+.btn-royal-primary-cta:hover {
+  background-color: #20BA5A;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+}
+
+.btn-royal-secondary-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 13px 26px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none !important;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+}
+
+.btn-royal-secondary-cta:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.45);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   8. RESPONSIVE QUERIES
+   ========================================================================== */
+@media (max-width: 991px) {
+  .about-story-content {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+  .about-visual-collage {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  .about-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .about-cta-actions {
+    justify-content: flex-start;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-hero-section {
+    padding-top: 130px;
+    padding-bottom: 60px;
+  }
+  .about-brand-card {
+    min-width: 150px;
+    height: 72px;
+    padding: 12px 20px;
+  }
+  .about-brand-card img {
+    max-height: 38px;
+    max-width: 110px;
+  }
+  .about-cta-box {
+    padding: 30px 24px !important;
+  }
+}
