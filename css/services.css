@@ -825,6 +825,11 @@
   z-index: 4 !important;
 }
 
+.gsap-pin-fixed-fullwidth > .service-pin-row:nth-child(5),
+.pin-spacer--trigger-4 {
+  z-index: 5 !important;
+}
+
 /* Tag Header */
 .service-row-tag {
   display: flex;
