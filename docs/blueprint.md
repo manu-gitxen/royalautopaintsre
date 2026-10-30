@@ -408,6 +408,24 @@ flowchart TD
 └─────────────────────┴───────────────────┴──────────────────────────────┘
 ```
 
+
+### 6.1 SplitText Typography Reveal Engine (`js/section-title-split-text.js` & `js/subpage-split-text.js`)
+A unified, high-performance typography animation architecture replicating the original `index.html` split-text character animation across all 7 pages without altering `index.html`'s core design or script bindings:
+- **Original `index.html` Engine (`js/section-title-split-text.js`):** Remains 100% preserved in its original state. Handles `.tm-split-text` within Elementor section titles (`frontend/element_ready/tm-ele-section-title.default`), splitting into lines, words, and characters with 3D perspective (`perspective: 400`).
+- **Subpage Implementation (`js/subpage-split-text.js`):** A standalone, zero-dependency GSAP 3 + ScrollTrigger + SplitText runner created specifically for subpages (`about.html`, `services.html`, `products.html`, `gallery.html`, `career.html`, `contact.html`). It detects `.tm-split-text` elements on DOM ready and triggers the identical animation parameters.
+- **Animation Mechanics (`split-in-right`):**
+  - **Initial State:** `opacity: 0`, `x: 50`, `ease: "Back.easeOut"`, `perspective: 400`
+  - **Trigger Point:** `start: "top 90%"`, with `toggleActions: "restart pause resume reverse"`
+  - **Revealed State:** `x: 0`, `y: 0`, `rotateX: 0`, `scale: 1`, `opacity: 1`, `duration: 0.8`, `stagger: 0.02`
+- **Cross-Page Consistency:**
+  - `index.html`: `h2.title.tm-split-text.split-in-right` ("Qatar's Premier Automotive Refinish & Coating Specialists")
+  - `about.html`: `h2.about-main-title.tm-split-text.split-in-right` ("Welcome to Royal Auto Paints")
+  - `services.html`: `h2.services-main-title.tm-split-text.split-in-right` ("Our Specialized Coating Solutions")
+  - `products.html`: `h2.banner-title.tm-split-text.split-in-right` ("Authorized HB Body & Challenger Refinishing Catalog")
+  - `gallery.html`: `h2.gallery-main-title.tm-split-text.split-in-right`
+  - `career.html`: `h2.career-main-title.tm-split-text.split-in-right`
+  - `contact.html`: `h2.contact-main-title.tm-split-text.split-in-right`
+
 ---
 
 ## 7. SEO Architecture, E-E-A-T & Google Search Preservation
