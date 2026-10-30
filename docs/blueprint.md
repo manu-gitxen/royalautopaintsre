@@ -19,7 +19,7 @@ Established in 2012 in the Doha Industrial Area, **Royal Auto Paints (Al-Haram P
 2. **v2 (Zay Shop Redesign):** Clean, minimalist Bootstrap framework (`zay_royal_paint_template_stock`) with custom corporate colors and structured sections.
 3. **v3 (Luxury Flagship Redesign):** High-end corporate experience featuring interactive synchronized micro-sliders, authentic high-resolution studio photography, modern glassmorphism badges, and brand-first Royal Oceanic Navy & Paint Splash Warm Orange accents.
 4. **v3.5 (Modern Interactive Engine):**
-   - **GSAP ScrollTrigger Pinned Services Showcase:** 5 pinned division cards (Automotive Refinish, Spray Booth Engineering, Marine & Yacht Coatings, Industrial Protective Coatings, Luxury Wood Paints) with progressive stacking and seamless forward/reverse scroll pinning.
+   - **GSAP ScrollTrigger Pinned Services Showcase:** 5 pinned division cards (1. Automotive Paints & Refinishing Products, 2. Industrial Paints & Surface Coatings, 3. Marine Paints & Coatings, 4. Wood Coatings & Finishes, 5. Spray Painting Booths & Air Filtration) with progressive stacking and seamless forward/reverse scroll pinning.
    - **Why Clients Trust Royal Auto Paints:** Refined organic curved mask with high-resolution spray mist photography, 4 capability feature boxes, and animated wholesale quote triggers.
    - **Stats Counter Section ("Our Experience Speaks for Itself"):** 4 high-credibility B2B automotive coating metrics with smooth scroll-animated counters and clean 1px vertical straight separators.
    - **Before & After Real Automotive Refinish Results:** Interactive TwentyTwenty comparison slider demonstrating factory-finish paint restoration on high-res vehicle imagery.
@@ -192,7 +192,7 @@ flowchart TD
     S4["4. 'Who We Are' Heritage & Strength Section
 (3-Photo Collage, 2012 Doha History, Spectrophotometer Lab Copy)"]
     S5["5. Pinned Services Showcase (GSAP ScrollTrigger)
-(5 Stacking Cards: Automotive, Booths, Marine, Industrial, Wood)"]
+(5 Stacking Cards: 1. Automotive, 2. Industrial, 3. Marine, 4. Wood, 5. Spray Booths)"]
     S6["6. Why Clients Trust Royal Auto Paints
 (Curved Arched Mask, 4 Capability Boxes, Wholesale Quote Button)"]
     S7["7. Animated Experience Counters
