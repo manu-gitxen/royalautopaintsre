@@ -71,20 +71,34 @@
                     ease: "circ.out",
                 });
             }
-            el.anim = gsap.to(el.split.chars, {
-                scrollTrigger: {
-                    trigger: el,
-                    toggleActions: "restart pause resume reverse",
-                    start: "top 90%",
-                },
-                x: "0",
-                y: "0",
-                rotateX: "0",
-                scale: 1,
-                opacity: 1,
-                duration: 0.8, 
-                stagger: 0.02,
-            });
+            if (el.classList.contains('split-on-load')) {
+                el.anim = gsap.to(el.split.chars, {
+                    delay: 0.35,
+                    x: "0",
+                    y: "0",
+                    rotateX: "0",
+                    scale: 1,
+                    opacity: 1,
+                    duration: 0.8, 
+                    stagger: 0.02,
+                    ease: "power2.out"
+                });
+            } else {
+                el.anim = gsap.to(el.split.chars, {
+                    scrollTrigger: {
+                        trigger: el,
+                        toggleActions: "restart pause resume reverse",
+                        start: "top 90%",
+                    },
+                    x: "0",
+                    y: "0",
+                    rotateX: "0",
+                    scale: 1,
+                    opacity: 1,
+                    duration: 0.8, 
+                    stagger: 0.02,
+                });
+            }
         });
     }
 

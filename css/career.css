@@ -1,0 +1,618 @@
+/* ==========================================================================
+   ROYAL AUTO PAINTS QATAR - CAREER PAGE STYLESHEET
+   Design Language: Luxore Automotive Industrial Minimal
+   Unified with index.html, about.html, services.html & gallery.html
+   ========================================================================== */
+
+:root {
+  --royal-yellow-accent: #FFB800;
+  --royal-yellow-gold: #F59E0B;
+  --royal-yellow-hover: #D97706;
+  --royal-gray-darkest: #14171C;
+  --royal-gray-charcoal: #22272F;
+  --royal-gray-slate: #333A45;
+  --royal-gray-graphite: #58585A;
+  --royal-gray-body: #4A5568;
+  --royal-gray-muted: #64748B;
+  --royal-gray-light: #F7F0F2;
+  --royal-gray-light-bg: #F7F0F2;
+  --royal-card-dark: #1c2533;
+}
+
+body#career-page {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--royal-gray-body);
+  background-color: #F7F0F2 !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#career-page h1,
+#career-page h2,
+#career-page h3,
+#career-page h4 {
+  font-family: 'Marcellus', serif;
+  font-weight: 600;
+  color: var(--royal-gray-graphite);
+  letter-spacing: -0.01em;
+}
+
+.royal-highlight-yellow {
+  color: var(--royal-yellow-accent) !important;
+}
+
+/* ==========================================================================
+   1. HERO BANNER SECTION
+   ========================================================================== */
+.career-hero-section {
+  position: relative;
+  background: linear-gradient(135deg, rgba(20,23,28,0.88) 0%, rgba(34,39,47,0.82) 55%, rgba(51,58,69,0.78) 100%), 
+              url('../images/Technician_scanning_car_paint_color.jpg') center/cover no-repeat;
+  padding-top: 155px;
+  padding-bottom: 75px;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+.career-hero-section::before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 184, 0, 0.12) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.career-hero-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.career-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #9CA3AF;
+  margin-bottom: 18px;
+}
+
+.career-breadcrumb a {
+  color: #D1D5DB;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.career-breadcrumb a:hover {
+  color: var(--royal-yellow-accent);
+}
+
+.career-breadcrumb .separator {
+  color: #6B7280;
+}
+
+.career-breadcrumb .current {
+  color: var(--royal-yellow-accent);
+  font-weight: 600;
+}
+
+.career-spec-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.career-spec-badge .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--royal-yellow-accent);
+  box-shadow: 0 0 10px var(--royal-yellow-accent);
+}
+
+.career-hero-title {
+  font-family: 'Marcellus', serif !important;
+  font-size: clamp(2.4rem, 4.2vw, 3.8rem) !important;
+  font-weight: 400 !important;
+  line-height: 1.16 !important;
+  color: #FFFFFF !important;
+  margin-bottom: 16px !important;
+}
+
+.career-hero-lead {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: #D1D5DB;
+  max-width: 720px;
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   2. WHY JOIN US — PILLARS SECTION
+   ========================================================================== */
+.career-pillars-section {
+  padding: 85px 0 75px 0;
+  background-color: #FFFFFF;
+}
+
+.career-header-center {
+  max-width: 680px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+.career-main-title {
+  font-family: 'Marcellus', serif !important;
+  font-size: clamp(2rem, 3.2vw, 2.75rem) !important;
+  color: var(--royal-gray-graphite) !important;
+  margin-bottom: 14px !important;
+  line-height: 1.22 !important;
+}
+
+.career-main-subtitle {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 15.5px !important;
+  line-height: 1.68 !important;
+  color: var(--royal-gray-body) !important;
+  margin: 0 auto !important;
+}
+
+.career-pillar-card {
+  background: #FDFBF7;
+  border-radius: 16px;
+  padding: 34px 26px;
+  border: 1px solid rgba(10, 50, 84, 0.07);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.career-pillar-card:hover {
+  transform: translateY(-6px);
+  background: #FFFFFF;
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.07);
+}
+
+.career-pillar-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.12);
+  color: var(--royal-yellow-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.career-pillar-card:hover .career-pillar-icon {
+  background: var(--royal-yellow-gold);
+  color: #14171C;
+  transform: scale(1.08);
+}
+
+.career-pillar-title {
+  font-family: 'Marcellus', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--royal-gray-graphite);
+  margin-bottom: 10px;
+}
+
+.career-pillar-desc {
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--royal-gray-body);
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   3. OPEN POSITIONS SECTION
+   ========================================================================== */
+.career-jobs-section {
+  padding: 85px 0 95px 0;
+  background-color: #F7F0F2;
+}
+
+.career-job-card {
+  background: #FFFFFF;
+  border-radius: 18px;
+  padding: 34px 32px;
+  border: 1px solid rgba(10, 50, 84, 0.07);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.04);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.career-job-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+}
+
+.career-job-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background: var(--royal-yellow-gold);
+  transition: height 0.35s ease;
+}
+
+.career-job-card:hover::before {
+  height: 100%;
+}
+
+.career-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.career-job-badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.career-job-badge-ft {
+  background: rgba(37, 211, 102, 0.12);
+  color: #128C7E;
+  border: 1px solid rgba(37, 211, 102, 0.25);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 4px 12px;
+  border-radius: 30px;
+}
+
+.career-job-badge-dept {
+  background: #1c2533;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 4px 12px;
+  border-radius: 30px;
+}
+
+.career-job-title {
+  font-family: 'Marcellus', serif;
+  font-size: 1.45rem;
+  color: var(--royal-gray-graphite);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.career-job-location {
+  font-size: 13px;
+  color: var(--royal-gray-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.career-job-location i {
+  color: var(--royal-yellow-gold);
+}
+
+.career-job-divider {
+  height: 1px;
+  background: rgba(10, 50, 84, 0.07);
+  margin: 18px 0;
+}
+
+.career-job-subhead {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--royal-gray-slate);
+  margin-bottom: 8px;
+}
+
+.career-job-list {
+  padding-left: 18px;
+  font-size: 13.5px;
+  color: var(--royal-gray-body);
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+.career-job-list li {
+  margin-bottom: 6px;
+}
+
+.career-job-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 14px;
+}
+
+.btn-job-apply-whatsapp {
+  background: #25D366;
+  color: #FFFFFF;
+  border-radius: 50px;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex: 1;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+}
+
+.btn-job-apply-whatsapp:hover {
+  background: #1EBE5D;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.35);
+}
+
+.btn-job-apply-email {
+  background: #1c2533;
+  color: #FFFFFF;
+  border-radius: 50px;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex: 1;
+  transition: all 0.25s ease;
+}
+
+.btn-job-apply-email:hover {
+  background: var(--royal-yellow-gold);
+  color: #14171C;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   4. DIRECT APPLICATION SECTION
+   ========================================================================== */
+.career-apply-section {
+  padding: 90px 0;
+  background-color: #FFFFFF;
+}
+
+.career-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.career-contact-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(245, 158, 11, 0.12);
+  color: var(--royal-yellow-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.career-contact-title {
+  font-weight: 700;
+  color: var(--royal-gray-slate);
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.career-contact-link {
+  color: var(--royal-gray-body);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.career-contact-link:hover {
+  color: var(--royal-yellow-gold);
+}
+
+.career-contact-note {
+  font-size: 12.5px;
+  color: var(--royal-gray-muted);
+  display: block;
+  margin-top: 2px;
+}
+
+/* Application Form Card */
+.career-form-card {
+  background: #FDFBF7;
+  border-radius: 20px;
+  padding: 38px 36px;
+  border: 1px solid rgba(10, 50, 84, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.career-form-title {
+  font-family: 'Marcellus', serif;
+  font-size: 1.65rem;
+  color: var(--royal-gray-graphite);
+  margin-bottom: 8px;
+}
+
+.career-form-subtitle {
+  font-size: 14px;
+  color: var(--royal-gray-muted);
+  margin-bottom: 24px;
+}
+
+.career-form-card .form-label {
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--royal-gray-slate);
+  margin-bottom: 6px;
+}
+
+.career-form-card .form-control,
+.career-form-card .form-select {
+  border-radius: 10px;
+  border: 1px solid rgba(10, 50, 84, 0.12);
+  padding: 11px 16px;
+  font-size: 14px;
+  color: var(--royal-gray-graphite);
+  background-color: #FFFFFF;
+  transition: all 0.2s ease;
+}
+
+.career-form-card .form-control:focus,
+.career-form-card .form-select:focus {
+  border-color: var(--royal-yellow-gold);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.18);
+  outline: none;
+}
+
+.btn-career-submit {
+  background: var(--royal-yellow-gold);
+  color: #14171C;
+  border: none;
+  padding: 13px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.28);
+  transition: all 0.25s ease;
+  width: 100%;
+}
+
+.btn-career-submit:hover {
+  background: #E0A200;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(245, 158, 11, 0.38);
+}
+
+/* ==========================================================================
+   5. COMMERCIAL BRANCHES MARQUEE (Parity with about.html)
+   ========================================================================== */
+.about-brands-slider-section {
+  padding: 70px 0 80px 0;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  position: relative;
+  border-top: 1px solid rgba(10, 50, 84, 0.06);
+}
+
+.about-brands-divider-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(10, 50, 84, 0.08);
+  margin-bottom: 35px;
+}
+
+.about-brands-slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+
+.about-brands-track {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: max-content;
+  animation: royalBrandsMarquee 35s linear infinite;
+  padding: 10px 0;
+}
+
+.about-brands-slider-container:hover .about-brands-track {
+  animation-play-state: paused;
+}
+
+@keyframes royalBrandsMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.about-brand-card {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1c2533;
+  border-radius: 14px;
+  padding: 14px 26px;
+  min-width: 200px;
+  height: 88px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.about-brand-card:hover {
+  transform: translateY(-4px);
+  border-color: #F59E0B;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.about-brand-card img {
+  max-height: 52px;
+  max-width: 155px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.about-brand-card:hover img {
+  transform: scale(1.05);
+}
