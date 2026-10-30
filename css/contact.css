@@ -1,0 +1,750 @@
+/* ==========================================================================
+   ROYAL AUTO PAINTS QATAR - CONTACT PAGE STYLESHEET
+   Design Language: Luxore Automotive Industrial Minimal
+   Unified with index.html, about.html, services.html, gallery.html & career.html
+   ========================================================================== */
+
+:root {
+  --royal-yellow-accent: #FFB800;
+  --royal-yellow-gold: #F59E0B;
+  --royal-yellow-hover: #D97706;
+  --royal-gray-darkest: #14171C;
+  --royal-gray-charcoal: #22272F;
+  --royal-gray-slate: #333A45;
+  --royal-gray-graphite: #58585A;
+  --royal-gray-body: #4A5568;
+  --royal-gray-muted: #64748B;
+  --royal-gray-light: #F7F0F2;
+  --royal-gray-light-bg: #F7F0F2;
+  --royal-card-dark: #1c2533;
+}
+
+body#contact-page {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--royal-gray-body);
+  background-color: #F7F0F2 !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#contact-page h1,
+#contact-page h2,
+#contact-page h3,
+#contact-page h4 {
+  font-family: 'Marcellus', serif;
+  font-weight: 600;
+  color: var(--royal-gray-graphite);
+  letter-spacing: -0.01em;
+}
+
+.royal-highlight-yellow {
+  color: var(--royal-yellow-accent) !important;
+}
+
+.luxore-nav-link.active {
+  color: var(--royal-yellow-gold) !important;
+}
+
+.luxore-nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--royal-yellow-gold);
+}
+
+/* ==========================================================================
+   HEADER & BRAND LOGO CONSTRAINTS
+   ========================================================================== */
+.luxore-navbar-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxore-navbar-header.sticky-active {
+  position: fixed;
+  background: rgba(20, 23, 28, 0.94);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.opt2-logo-area img,
+.luxore-brand-logo-link img,
+.royal-nav-logo {
+  height: 42px !important;
+  max-height: 42px !important;
+  width: auto !important;
+  max-width: 220px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.royal-nav-logo-dark {
+  display: none !important;
+}
+
+.sticky-active .royal-nav-logo-white {
+  display: block !important;
+}
+
+.sticky-active .royal-nav-logo-dark {
+  display: none !important;
+}
+
+/* ==========================================================================
+   1. HERO BANNER SECTION
+   ========================================================================== */
+.contact-hero-section {
+  position: relative;
+  background: linear-gradient(135deg, rgba(20,23,28,0.88) 0%, rgba(34,39,47,0.82) 55%, rgba(51,58,69,0.78) 100%), 
+              url('../images/Automotive_paint_products_ready.jpg') center/cover no-repeat;
+  padding-top: 155px;
+  padding-bottom: 75px;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+.contact-hero-section::before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 184, 0, 0.12) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.contact-hero-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #9CA3AF;
+  margin-bottom: 18px;
+}
+
+.contact-breadcrumb a {
+  color: #D1D5DB;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-breadcrumb a:hover {
+  color: var(--royal-yellow-accent);
+}
+
+.contact-breadcrumb .separator {
+  color: #6B7280;
+}
+
+.contact-breadcrumb .current {
+  color: var(--royal-yellow-accent);
+  font-weight: 600;
+}
+
+.contact-spec-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.contact-spec-badge .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--royal-yellow-accent);
+  box-shadow: 0 0 10px var(--royal-yellow-accent);
+}
+
+.contact-hero-title {
+  font-family: 'Marcellus', serif !important;
+  font-size: clamp(2.4rem, 4.2vw, 3.8rem) !important;
+  font-weight: 400 !important;
+  line-height: 1.16 !important;
+  color: #FFFFFF !important;
+  margin-bottom: 16px !important;
+}
+
+.contact-hero-lead {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: #D1D5DB;
+  max-width: 720px;
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   2. CONTACT INFORMATION CARDS & OPERATING HOURS
+   ========================================================================== */
+.contact-cards-section {
+  padding: 85px 0 60px 0;
+  background-color: #F7F0F2;
+}
+
+.contact-header-center {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 50px auto;
+}
+
+.contact-main-title {
+  font-family: 'Marcellus', serif !important;
+  font-size: clamp(2rem, 3.2vw, 2.75rem) !important;
+  color: var(--royal-gray-graphite) !important;
+  margin-bottom: 12px !important;
+}
+
+.contact-main-subtitle {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: #555E6D;
+  margin-bottom: 0;
+}
+
+.contact-info-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 38px 30px;
+  border: 1px solid rgba(10, 50, 84, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.12);
+  color: var(--royal-yellow-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin: 0 auto 22px auto;
+  transition: all 0.3s ease;
+}
+
+.contact-info-card:hover .contact-info-icon {
+  background: var(--royal-yellow-gold);
+  color: #14171C;
+  transform: scale(1.08);
+}
+
+.contact-info-title {
+  font-family: 'Marcellus', serif;
+  font-size: 1.35rem;
+  color: var(--royal-gray-graphite);
+  margin-bottom: 14px;
+}
+
+.contact-info-primary {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--royal-gray-slate);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.contact-info-secondary {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--royal-gray-muted);
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.btn-contact-action-primary {
+  background: var(--royal-yellow-gold);
+  color: #14171C;
+  font-weight: 700;
+  font-size: 13.5px;
+  padding: 11px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+  width: 100%;
+}
+
+.btn-contact-action-primary:hover {
+  background: #E0A200;
+  color: #14171C;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3);
+}
+
+.btn-contact-action-whatsapp {
+  background: #25D366;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 13.5px;
+  padding: 11px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+  width: 100%;
+}
+
+.btn-contact-action-whatsapp:hover {
+  background: #1EBE5D;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+.btn-contact-action-outline {
+  background: transparent;
+  color: var(--royal-gray-slate);
+  font-weight: 600;
+  font-size: 13.5px;
+  padding: 10px 22px;
+  border-radius: 50px;
+  border: 1px solid rgba(10, 50, 84, 0.18);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+  width: 100%;
+}
+
+.btn-contact-action-outline:hover {
+  border-color: var(--royal-yellow-gold);
+  color: var(--royal-yellow-gold);
+  background: rgba(245, 158, 11, 0.05);
+}
+
+/* Showroom Operating Schedule Bar */
+.contact-schedule-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 32px 36px;
+  border: 1px solid rgba(10, 50, 84, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  margin-top: 35px;
+}
+
+.schedule-header-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.schedule-header-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(245, 158, 11, 0.12);
+  color: var(--royal-yellow-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.schedule-title {
+  font-family: 'Marcellus', serif;
+  font-size: 1.35rem;
+  color: var(--royal-gray-graphite);
+  margin-bottom: 3px;
+}
+
+.schedule-subtitle {
+  font-size: 13px;
+  color: var(--royal-gray-muted);
+}
+
+.schedule-slot-card {
+  background: #FDFBF7;
+  border-radius: 12px;
+  padding: 14px 18px;
+  border: 1px solid rgba(10, 50, 84, 0.06);
+}
+
+.schedule-slot-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--royal-gray-slate);
+  margin-bottom: 4px;
+}
+
+.schedule-slot-time {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #14171C;
+}
+
+.schedule-slot-closed {
+  color: #DC2626;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   3. COMMERCIAL CAPABILITIES & INQUIRY FORM SECTION
+   ========================================================================== */
+.contact-form-section {
+  padding: 90px 0;
+  background-color: #FFFFFF;
+}
+
+.contact-inquiry-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.contact-inquiry-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(245, 158, 11, 0.12);
+  color: var(--royal-yellow-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.contact-inquiry-title {
+  font-weight: 700;
+  color: var(--royal-gray-slate);
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.contact-inquiry-text {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--royal-gray-muted);
+}
+
+/* Form Card */
+.contact-form-card {
+  background: #FDFBF7;
+  border-radius: 20px;
+  padding: 40px 36px;
+  border: 1px solid rgba(10, 50, 84, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.contact-form-title {
+  font-family: 'Marcellus', serif;
+  font-size: 1.65rem;
+  color: var(--royal-gray-graphite);
+  margin-bottom: 8px;
+}
+
+.contact-form-subtitle {
+  font-size: 14px;
+  color: var(--royal-gray-muted);
+  margin-bottom: 24px;
+}
+
+.contact-form-card .form-label {
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--royal-gray-slate);
+  margin-bottom: 6px;
+}
+
+.contact-form-card .form-control,
+.contact-form-card .form-select {
+  border-radius: 10px;
+  border: 1px solid rgba(10, 50, 84, 0.12);
+  padding: 11px 16px;
+  font-size: 14px;
+  color: var(--royal-gray-graphite);
+  background-color: #FFFFFF;
+  transition: all 0.2s ease;
+}
+
+.contact-form-card .form-control:focus,
+.contact-form-card .form-select:focus {
+  border-color: var(--royal-yellow-gold);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.18);
+  outline: none;
+}
+
+.btn-form-whatsapp {
+  background: #25D366;
+  color: #FFFFFF;
+  border: none;
+  padding: 13px 28px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.28);
+  transition: all 0.25s ease;
+  flex: 1;
+}
+
+.btn-form-whatsapp:hover {
+  background: #1EBE5D;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.38);
+}
+
+.btn-form-email {
+  background: transparent;
+  color: var(--royal-gray-slate);
+  border: 1px solid rgba(10, 50, 84, 0.22);
+  padding: 13px 26px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  flex: 1;
+}
+
+.btn-form-email:hover {
+  border-color: var(--royal-yellow-gold);
+  color: var(--royal-yellow-gold);
+  background: rgba(245, 158, 11, 0.05);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   4. GOOGLE MAP SECTION
+   ========================================================================== */
+.contact-map-section {
+  position: relative;
+  background-color: #0b1119;
+}
+
+.contact-map-container {
+  width: 100%;
+  height: 480px;
+  filter: grayscale(15%) contrast(105%);
+}
+
+.contact-map-overlay-badge {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: #1c2533;
+  color: #FFFFFF;
+  padding: 16px 24px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  max-width: 380px;
+}
+
+.contact-map-badge-title {
+  font-family: 'Marcellus', serif;
+  font-size: 1.15rem;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.contact-map-badge-text {
+  font-size: 12.5px;
+  color: #94A3B8;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.contact-map-badge-link {
+  font-size: 12.5px;
+  color: var(--royal-yellow-accent);
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact-map-badge-link:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   5. COMMERCIAL BRANCHES MARQUEE (Parity with about.html)
+   ========================================================================== */
+.about-brands-slider-section {
+  padding: 70px 0 80px 0;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  position: relative;
+  border-top: 1px solid rgba(10, 50, 84, 0.06);
+}
+
+.about-brands-divider-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(10, 50, 84, 0.08);
+  margin-bottom: 35px;
+}
+
+.about-brands-slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+
+.about-brands-track {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: max-content;
+  animation: royalBrandsMarquee 35s linear infinite;
+  padding: 10px 0;
+}
+
+.about-brands-slider-container:hover .about-brands-track {
+  animation-play-state: paused;
+}
+
+@keyframes royalBrandsMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.about-brand-card {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1c2533;
+  border-radius: 14px;
+  padding: 14px 26px;
+  min-width: 200px;
+  height: 88px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.about-brand-card:hover {
+  transform: translateY(-4px);
+  border-color: #F59E0B;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.about-brand-card img {
+  max-height: 52px;
+  max-width: 155px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.about-brand-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   6. FLOATING ACTIONS
+   ========================================================================== */
+.floating-whatsapp-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+  z-index: 999;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.floating-whatsapp-btn:hover {
+  background: #1EBE5D;
+  color: #FFFFFF;
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .contact-hero-section {
+    padding-top: 130px;
+    padding-bottom: 60px;
+  }
+  .contact-map-overlay-badge {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 16px;
+    max-width: none;
+  }
+  .contact-map-container {
+    height: 380px;
+  }
+}
