@@ -11,14 +11,17 @@
   --royal-gray-darkest: #14171C;
   --royal-gray-charcoal: #22272F;
   --royal-gray-slate: #333A45;
+  --royal-gray-graphite: #58585A; /* Logo master graphite gray - exact index.html parity */
+  --royal-gray-body: #4A5568;     /* Exact body text gray from index.html */
+  --royal-gray-muted: #64748B;
   --royal-gray-light: #F7F0F2;
   --royal-gray-light-bg: #F7F0F2;
   --royal-gray-surface: #FFFFFF;
   --royal-gray-border: rgba(255, 255, 255, 0.08);
   --royal-gray-border-dark: rgba(0, 0, 0, 0.08);
-  --royal-text-primary: #14171C;
-  --royal-text-secondary: #4B5563;
-  --royal-text-muted: #9CA3AF;
+  --royal-text-primary: #58585A;
+  --royal-text-secondary: #4A5568;
+  --royal-text-muted: #64748B;
   --royal-text-white: #FFFFFF;
 }
 
@@ -39,7 +42,8 @@ body,
 #services-page h4,
 #services-page .royal-font-marcellus {
   font-family: 'Marcellus', serif;
-  font-weight: 400;
+  font-weight: 600;
+  color: var(--royal-gray-graphite, #58585A);
   letter-spacing: -0.01em;
 }
 
@@ -179,16 +183,19 @@ body,
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 5px 14px;
-  border-radius: 9999px;
-  background: rgba(255, 184, 0, 0.1);
-  border: 1px solid rgba(255, 184, 0, 0.25);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  color: #B38100;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+  padding: 8px 24px 8px 36px;
+  position: relative;
+  border-radius: 50px;
+  background: #FFFFFF;
+  border: 1px solid rgba(10, 50, 84, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: var(--royal-gray-graphite, #58585A);
+  text-transform: capitalize;
+  margin-bottom: 16px;
 }
 
 .section-tag-pill.on-dark {
@@ -546,8 +553,8 @@ body,
 .lab-card-title {
   font-family: 'Marcellus', serif;
   font-size: 1.25rem;
-  font-weight: 500;
-  color: #14171C;
+  font-weight: 600;
+  color: var(--royal-gray-graphite, #58585A);
   line-height: 1.3;
   margin-bottom: 12px;
 }
@@ -555,8 +562,8 @@ body,
 .lab-card-desc {
   font-family: 'DM Sans', sans-serif;
   font-size: 13.5px;
-  line-height: 1.6;
-  color: #4B5563;
+  line-height: 1.68;
+  color: var(--royal-gray-body, #4A5568);
   margin-bottom: 24px;
   flex-grow: 1;
 }
@@ -583,8 +590,8 @@ body,
    6. DIRECT CONSULTATION & RFQ ACTION STRIP
    ========================================================================== */
 .services-cta-section {
-  padding: 70px 0;
-  background-color: #171A21;
+  padding: 10px 0 70px 0;
+  background-color: #FDFBF7;
   border: none !important;
   border-top: none !important;
   border-bottom: none !important;
@@ -592,11 +599,12 @@ body,
 }
 
 .services-cta-box {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #14171C !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  padding: 45px 40px;
+  padding: 45px 45px;
   align-items: center;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
 }
 
 .services-cta-title {
@@ -793,43 +801,50 @@ body,
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 5px 16px;
+  padding: 8px 24px 8px 36px;
+  position: relative;
   border-radius: 50px;
-  background: rgba(255, 184, 0, 0.08);
-  border: 1px solid rgba(255, 184, 0, 0.35);
+  background: #FFFFFF;
+  border: 1px solid rgba(10, 50, 84, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   font-family: 'DM Sans', sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  color: #B38100;
-  text-transform: uppercase;
-  margin-bottom: 14px;
+  font-size: 13.5px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: var(--royal-gray-graphite, #58585A);
+  text-transform: capitalize;
+  margin-bottom: 16px;
 }
 
 .services-spec-badge .dot {
-  width: 6px;
-  height: 6px;
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
-  background-color: #FFB800;
-  display: inline-block;
+  background-color: var(--royal-yellow-accent, #FFB800);
+  display: block;
 }
 
 .services-main-title {
   font-family: 'Marcellus', serif;
   font-size: clamp(2rem, 3.2vw, 2.75rem);
-  font-weight: 400;
-  color: #14171C;
+  font-weight: 600;
+  color: var(--royal-gray-graphite, #58585A);
   line-height: 1.25;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .services-main-subtitle {
   font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  line-height: 1.65;
-  color: #64748B;
-  max-width: 700px;
-  margin: 0 auto 30px auto;
+  font-size: 15px;
+  line-height: 1.68;
+  font-weight: 400;
+  color: var(--royal-gray-body, #4A5568);
+  max-width: 720px;
+  margin: 0 auto 32px auto;
 }
 
 /* Individual Pinned Stacking Rows */
@@ -902,17 +917,18 @@ body,
 .service-exact-title {
   font-family: 'Marcellus', serif;
   font-size: clamp(1.6rem, 2.2vw, 2.1rem);
-  font-weight: 400;
-  color: #14171C;
+  font-weight: 600;
+  color: var(--royal-gray-graphite, #58585A);
   line-height: 1.25;
   margin-bottom: 14px;
 }
 
 .service-exact-desc {
   font-family: 'DM Sans', sans-serif;
-  font-size: 13.5px;
+  font-size: 14px;
   line-height: 1.68;
-  color: #64748B;
+  font-weight: 400;
+  color: var(--royal-gray-body, #4A5568);
   margin-bottom: 22px;
   max-width: 540px;
 }
@@ -931,13 +947,13 @@ body,
   gap: 7px;
   padding: 6px 14px;
   border-radius: 50px;
-  background: #F7F0F2;
+  background: #FFFFFF;
   border: 1px solid #E2E8F0;
   font-family: 'DM Sans', sans-serif;
   font-size: 12px;
-  font-weight: 600;
-  color: #333A45;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  font-weight: 500;
+  color: var(--royal-gray-graphite, #58585A);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
   transition: all 0.2s ease;
 }
 
@@ -962,11 +978,11 @@ body,
   padding: 9px 24px;
   border-radius: 50px;
   background: #FFFFFF;
-  border: 1.5px solid #14171C;
-  color: #14171C;
+  border: 1.5px solid var(--royal-gray-graphite, #58585A);
+  color: var(--royal-gray-graphite, #58585A);
   font-family: 'DM Sans', sans-serif;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.6px;
   text-transform: uppercase;
   text-decoration: none;
@@ -980,7 +996,8 @@ body,
 }
 
 .service-exact-btn:hover {
-  background: #14171C;
+  background: var(--royal-gray-graphite, #58585A);
+  border-color: var(--royal-gray-graphite, #58585A);
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -1063,6 +1080,37 @@ body,
   justify-content: center !important;
   margin: 0 auto 16px auto !important;
   text-align: center !important;
+  background: #FFFFFF !important;
+  color: var(--royal-gray-graphite, #58585A) !important;
+  border: 1px solid rgba(10, 50, 84, 0.08) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.3px !important;
+  text-transform: capitalize !important;
+  padding: 8px 24px 8px 36px !important;
+}
+
+.services-header-center .services-main-title,
+.services-main-title {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  display: block !important;
+  font-weight: 600 !important;
+  color: var(--royal-gray-graphite, #58585A) !important;
+}
+
+.services-header-center .services-main-subtitle,
+.services-main-subtitle {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  color: var(--royal-gray-body, #4A5568) !important;
+  font-size: 15px !important;
 }
 
 .services-header-center .services-main-title,
@@ -1191,15 +1239,15 @@ body,
   font-family: 'Marcellus', serif;
   font-size: 1.25rem;
   line-height: 1.3;
-  color: var(--royal-gray-darkest, #14171C) !important;
+  color: var(--royal-gray-graphite, #58585A) !important;
   margin-bottom: 12px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .workflow-card-text {
   font-family: 'DM Sans', sans-serif;
-  font-size: 13px;
+  font-size: 13.5px;
   line-height: 1.68;
-  color: var(--royal-text-secondary, #4B5563) !important;
+  color: var(--royal-gray-body, #4A5568) !important;
   margin-bottom: 0;
 }
