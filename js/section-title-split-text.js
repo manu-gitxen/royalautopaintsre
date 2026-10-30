@@ -63,20 +63,34 @@
                         ease: "circ.out",
                     });
                 }
-                el.anim = gsap.to(el.split.chars, {
-                    scrollTrigger: {
-                        trigger: el,
-                        toggleActions: "restart pause resume reverse",
-                        start: "top 90%",
-                    },
-                    x: "0",
-                    y: "0",
-                    rotateX: "0",
-                    scale: 1,
-                    opacity: 1,
-                    duration: 0.8, 
-                    stagger: 0.02,
-                });
+                if( $(el).hasClass('split-on-load') || $(el).closest('.elementor-element-c914c01').length > 0 ){
+                    el.anim = gsap.to(el.split.chars, {
+                        delay: 0.35,
+                        x: "0",
+                        y: "0",
+                        rotateX: "0",
+                        scale: 1,
+                        opacity: 1,
+                        duration: 0.8, 
+                        stagger: 0.02,
+                        ease: "power2.out"
+                    });
+                } else {
+                    el.anim = gsap.to(el.split.chars, {
+                        scrollTrigger: {
+                            trigger: el,
+                            toggleActions: "restart pause resume reverse",
+                            start: "top 90%",
+                        },
+                        x: "0",
+                        y: "0",
+                        rotateX: "0",
+                        scale: 1,
+                        opacity: 1,
+                        duration: 0.8, 
+                        stagger: 0.02,
+                    });
+                }
             });
         }, 200);
     };
@@ -87,5 +101,13 @@
             "frontend/element_ready/tm-ele-section-title.default",
             WidgetSectionTitleAnimationHandler
         );
+    });
+
+    // Hero on-load fallback trigger for immediate execution without waiting for scroll
+    $(document).ready(function() {
+        var heroEl = $(".elementor-element-c914c01");
+        if(heroEl.length) {
+            WidgetSectionTitleAnimationHandler(heroEl);
+        }
     });
 })(jQuery);
