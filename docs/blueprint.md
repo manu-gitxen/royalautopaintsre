@@ -236,7 +236,8 @@ flowchart TD
     - Full-width fixed porcelain glass bar (`top: 0; left: 0; right: 0; width: 100%; height: 72px; z-index: 99999`).
     - Frosted white glass material: `background: rgba(255, 255, 255, 0.78)` with `backdrop-filter: blur(20px) saturate(180%)`, `border-bottom: 1px solid rgba(255, 255, 255, 0.45)`, and ambient elevation `0 10px 35px rgba(10, 41, 66, 0.08)`.
     - Active Logo: **Master Graphite Gray** logo (`images/royal_logo_gray.png`, `.royal-nav-logo-dark`, `display: block`, `#58585A`). White logo is hidden (`display: none`).
-    - Typography: Deep charcoal/gray navigation links with warm orange (`#F68C50`) hover, and solid charcoal call button.
+    - Typography: Deep charcoal/gray navigation links (`#58585A`, font-weight 600) with warm amber-gold hover (`#F59E0B`), and solid charcoal call button.
+    - Active Nav Indicator in Sticky State (`.luxore-nav-link.active`): High-contrast warm amber-gold (`#F59E0B`, font-weight 700, opacity 1) paired with a solid accent underline bar (`height: 2.5px; background: #F59E0B; bottom: 0; border-radius: 2px`), ensuring clear active page recognition across all pages.
   - **Universal Standardized 7-Page Sequence:**
     Strictly deployed across desktop (`.luxore-nav-menu`) and mobile (`.luxore-mobile-menu`):
     1. `<a href="index.html">HOME</a>`

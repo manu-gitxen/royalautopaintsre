@@ -1327,20 +1327,41 @@ html {
   filter: none !important;
 }
 
-/* Dark Navigation Links with Orange Hover */
-.luxore-navbar-header.sticky-active .luxore-nav-link {
-  color: var(--royal-blue-primary) !important;
+/* Dark Navigation Links with Gold Hover & Active in Sticky Header */
+.luxore-navbar-header.sticky-active .luxore-nav-link,
+.opt2-header.sticky-active .luxore-nav-link {
+  color: var(--royal-blue-primary, #58585A) !important;
   font-weight: 600 !important;
   opacity: 0.9 !important;
 }
 
-.luxore-navbar-header.sticky-active .luxore-nav-link:hover {
-  color: var(--royal-yellow-accent) !important;
+.luxore-navbar-header.sticky-active .luxore-nav-link:hover,
+.opt2-header.sticky-active .luxore-nav-link:hover {
+  color: var(--royal-yellow-gold, #F59E0B) !important;
   opacity: 1 !important;
 }
 
-.luxore-navbar-header.sticky-active .luxore-nav-link::after {
-  background-color: var(--royal-yellow-accent) !important;
+.luxore-navbar-header.sticky-active .luxore-nav-link::after,
+.opt2-header.sticky-active .luxore-nav-link::after {
+  background-color: var(--royal-yellow-gold, #F59E0B) !important;
+}
+
+/* Sticky Header Active Nav Link - Distinct Gold/Amber Accent + Visible Underline */
+.luxore-navbar-header.sticky-active .luxore-nav-link.active,
+.opt2-header.sticky-active .luxore-nav-link.active {
+  color: var(--royal-yellow-gold, #F59E0B) !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
+.luxore-navbar-header.sticky-active .luxore-nav-link.active::after,
+.opt2-header.sticky-active .luxore-nav-link.active::after {
+  width: 100% !important;
+  height: 2.5px !important;
+  background-color: var(--royal-yellow-gold, #F59E0B) !important;
+  bottom: 0 !important;
+  opacity: 1 !important;
+  border-radius: 2px !important;
 }
 
 /* Call Button in Sticky Header (Original CALL NOW Design) */
@@ -3614,16 +3635,59 @@ body > .scroll-to-top a:hover {
 }
 
 /* Navigation Active and Hover Styling for Yellow Accent */
-.luxore-nav-link:hover,
+.luxore-nav-link:hover {
+  color: var(--royal-yellow-gold, #F59E0B) !important;
+  opacity: 1 !important;
+}
+.luxore-nav-link:hover::after {
+  width: 100% !important;
+  background: var(--royal-yellow-accent, #FFB800) !important;
+}
+
+/* Top Header (Hero Overlay) Active State */
 .luxore-nav-link.active {
-  color: var(--royal-yellow-gold, var(--royal-yellow-gold)) !important;
+  color: var(--royal-yellow-gold, #F59E0B) !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
 }
-.luxore-nav-link::after {
-  background: var(--royal-yellow-accent, var(--royal-yellow-accent)) !important;
+.luxore-nav-link.active::after {
+  width: 100% !important;
+  height: 2.5px !important;
+  background: var(--royal-yellow-accent, #FFB800) !important;
+  bottom: 0 !important;
+  opacity: 1 !important;
+  border-radius: 2px !important;
 }
-.opt2-header.sticky-active .luxore-nav-link:hover,
+
+/* Sticky Header Active & Hover Specificity */
+.opt2-header.sticky-active .luxore-nav-link:hover {
+  color: var(--royal-yellow-gold, #F59E0B) !important;
+  opacity: 1 !important;
+}
+.opt2-header.sticky-active .luxore-nav-link:hover::after {
+  width: 100% !important;
+  height: 2.5px !important;
+  background-color: var(--royal-yellow-gold, #F59E0B) !important;
+}
 .opt2-header.sticky-active .luxore-nav-link.active {
-  color: var(--royal-blue-primary, var(--royal-gray-graphite)) !important;
+  color: var(--royal-yellow-gold, #F59E0B) !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+.opt2-header.sticky-active .luxore-nav-link.active::after {
+  width: 100% !important;
+  height: 2.5px !important;
+  background-color: var(--royal-yellow-gold, #F59E0B) !important;
+  bottom: 0 !important;
+  opacity: 1 !important;
+  border-radius: 2px !important;
+}
+
+/* Standard Nav Link Active on Subpages (gallery, career, contact) */
+.navbar .nav-link.active,
+.navbar-nav .nav-link.active {
+  color: var(--royal-yellow-gold, #F59E0B) !important;
+  font-weight: 700 !important;
 }
 .opt2-header.sticky-active .luxore-call-pill {
   background: var(--royal-blue-primary, var(--royal-gray-graphite)) !important;
