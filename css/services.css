@@ -994,3 +994,41 @@
     height: 240px;
   }
 }
+
+
+/* Explicit Perfect Centering for Services Section Header */
+.services-header-center {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  margin: 0 auto 20px auto !important;
+  width: 100% !important;
+}
+
+.services-header-center .services-spec-badge,
+.services-spec-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 auto 16px auto !important;
+  text-align: center !important;
+}
+
+.services-header-center .services-main-title,
+.services-main-title {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+.services-header-center .services-main-subtitle,
+.services-main-subtitle {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+}
