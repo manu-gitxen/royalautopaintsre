@@ -46,7 +46,7 @@
 /* --- Catalogue Hero Banner --- */
 .catalogue-hero-section {
   position: relative;
-  background: linear-gradient(135deg, #14171C 0%, #22272F 55%, #333A45 100%);
+  background: linear-gradient(135deg, rgba(20,23,28,0.82) 0%, rgba(34,39,47,0.78) 55%, rgba(51,58,69,0.72) 100%), url('../images/ProductShowcase.png') center/cover no-repeat;
   padding-top: 140px;
   padding-bottom: 60px;
   color: #FFFFFF;
