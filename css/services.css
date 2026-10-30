@@ -472,78 +472,111 @@ body,
 }
 
 /* ==========================================================================
-   5. TECHNICAL CAPABILITIES & WORKSHOP EQUIPMENT (Clean High-Accuracy Light Strip)
+   5. TECHNICAL CAPABILITIES & LABORATORY STANDARDS (Exact Reference Match)
    ========================================================================== */
 .services-specs-section {
-  padding: 85px 0;
+  padding: 85px 0 95px 0;
   background-color: #FDFBF7;
+  position: relative;
   border: none !important;
   border-top: none !important;
   border-bottom: none !important;
-  position: relative;
   overflow: hidden;
 }
 
-.spec-clean-card {
+.lab-clean-card {
   background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  border-radius: 16px;
-  padding: 32px 24px;
+  border: 1px solid #EAECEF;
+  border-radius: 18px;
+  padding: 14px 14px 22px 14px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
 }
 
-.spec-clean-card:hover {
+.lab-clean-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(255, 184, 0, 0.5);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  border-color: rgba(255, 184, 0, 0.45);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.07);
 }
 
-.spec-clean-icon {
-  width: 52px;
-  height: 52px;
+.lab-card-img-box {
+  position: relative;
+  width: 100%;
   border-radius: 12px;
-  background: rgba(255, 184, 0, 0.12);
-  border: 1px solid rgba(255, 184, 0, 0.25);
+  margin-bottom: 0;
+}
+
+.lab-card-img-box img {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Floating Overlapping Icon Badge */
+.lab-card-icon-badge {
+  position: absolute;
+  bottom: -18px;
+  left: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: #FFF8EA;
+  border: 1.5px solid #FDE68A;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
-  color: var(--royal-yellow-accent, #FFB800);
-  margin-bottom: 20px;
+  color: #D97706;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(255, 184, 0, 0.18);
+  z-index: 3;
 }
 
-.spec-clean-title {
-  font-family: 'Marcellus', serif;
-  font-size: 1.25rem;
-  line-height: 1.3;
-  color: var(--royal-gray-darkest, #14171C);
-  margin-bottom: 12px;
-}
-
-.spec-clean-desc {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.92rem;
-  line-height: 1.65;
-  color: var(--royal-text-secondary, #4B5563);
-  margin-bottom: 20px;
+.lab-card-body {
+  padding: 28px 6px 0 6px;
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }
 
-.spec-clean-metric {
-  align-self: flex-start;
+.lab-card-title {
+  font-family: 'Marcellus', serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #14171C;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.lab-card-desc {
   font-family: 'DM Sans', sans-serif;
-  font-size: 11.5px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #4B5563;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+/* Full-Width Dark Pill Badge with High-Visibility Yellow Text */
+.lab-card-pill {
+  width: 100%;
+  background-color: #14171C;
+  color: #FFB800;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
   font-weight: 800;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
-  background: var(--royal-gray-darkest, #14171C);
-  color: var(--royal-yellow-accent, #FFB800);
-  padding: 5px 12px;
-  border-radius: 6px;
+  text-align: center;
+  margin-top: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: block;
 }
 
 /* ==========================================================================
