@@ -3891,3 +3891,45 @@ nav[class*="breadcrumb"] span#bdHeroBreadcrumb,
   color: #FFFFFF !important;
   font-weight: 500 !important;
 }
+
+
+/* ==========================================================================
+   Commercial Branches & Authorized Network Header Centering Parity
+   ========================================================================== */
+.about-brands-slider-section .about-header-center,
+.about-brands-slider-section .career-header-center,
+.about-brands-slider-section .gallery-header-center,
+.about-brands-slider-section .contact-header-center {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  margin-bottom: 35px !important;
+}
+
+.about-brands-slider-section .about-spec-badge,
+.about-brands-slider-section .career-spec-badge,
+.about-brands-slider-section .gallery-spec-badge,
+.about-brands-slider-section .contact-spec-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 16px !important;
+}
+
+.about-brands-slider-section h2,
+.about-brands-slider-section .career-main-title,
+.about-brands-slider-section .about-main-title,
+.about-brands-slider-section .gallery-cta-title,
+.about-brands-slider-section .contact-main-title {
+  text-align: center !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
