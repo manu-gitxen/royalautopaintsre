@@ -5,7 +5,7 @@
 **Active Workspaces:** `E:\xev\royalfinal` (Primary Serving Workspace: `http://localhost:3000/`) & `E:\xev\royalautopaints` (Staging Workspace: `http://127.0.0.1:5500/`)  
 **Live Production Domain:** `https://www.royalautopaints.com/`  
 **Physical Headquarters:** Street 23, Wakalat St, Industrial Area, Doha, Qatar  
-**Direct Contacts:** Tel: `+974 4450 1669` | WhatsApp RFQ: `+974 5039 5741` | Email: `info@royalautopaints.com` / `royalpaints.qa@gmail.com`  
+**Direct Contacts:** Tel: `+974 4450 1669` | WhatsApp RFQ: `+974 5039 5741` | Email: `royalpaints.qa@gmail.com`  
 **Current Milestone:** Complete Enterprise Production Architecture v6.0 — Full 7-Page Design System Parity across `index.html`, `about.html`, `products.html`, `services.html`, `gallery.html`, `career.html`, and `contact.html`; Unified Luxore Sticky Navigation with Gold `#F59E0B` Active Indicators; Split-Text Character Typography Animation Engine with Immediate On-Load Hero Execution; Official 5-Branch Commercial Logos Marquee on Luxury `#1c2533` Navy Slate Cards; Ground-Up Redesign of Gallery, Career, and Contact Pages; and 100% Elementor Corporate Footer Parity.
 
 ---
@@ -216,7 +216,7 @@ royal_logo_gray.png (42px)"]
 - **3 Contact & Hotlines Information Cards:**
   1. *Central Showroom & Warehouse:* Wakalat St (Street 23), Industrial Area, Doha. Features direct link to Google Maps.
   2. *Direct Hotlines & WhatsApp:* Landline `+974 4450 1669` and WhatsApp RFQ `+974 5039 5741`.
-  3. *Corporate Email & Tenders:* Official `info@royalautopaints.com` and `royalpaints.qa@gmail.com`.
+  3. *Corporate Email & Tenders:* Official `royalpaints.qa@gmail.com`.
 - **Showroom Operating Schedule Bar:**
   - Saturday – Thursday Morning: `07:00 AM – 01:00 PM`
   - Saturday – Thursday Evening: `03:30 PM – 08:00 PM`
@@ -405,8 +405,8 @@ Replaced all makeshift stacked footers on `gallery.html`, `career.html`, and `co
 - **Column 1 (About Royal Paints):** Corporate profile summary and luxury pill action button (`GET IN TOUCH →`).
 - **Column 2 (Quick Links):** Standardized cross-page navigation links (`about.html`, `products.html`, `services.html`, `about.html#branches-network`, `contact.html`).
 - **Column 3 (Refinish Solutions):** 5 core technical product solutions (2K Basecoats & Topcoats, High-Solid Clear Coats, Primers & Polyester Putties, Abrasives & Masking Systems, Spray Guns & Bodyshop Tools).
-- **Column 4 (Showroom & Mixing Lab + Direct Inquiries):** Street 23 Wakalat St location, Landline (`+974 4450 1669`), WhatsApp Hotline (`+974 5039 5741`), and official email (`info@royalautopaints.com`).
-- **Brand Sub-Bar:** White Royal Auto Paints logo emblem, social media community links (WhatsApp, Facebook, Instagram, LinkedIn), and "Subscribe to Refinish Updates" interactive email subscription bar with circular amber send button.
+- **Column 4 (Showroom & Mixing Lab + Direct Inquiries):** Street 23 Wakalat St location, Landline (`+974 4450 1669`), WhatsApp Hotline (`+974 5039 5741`), and official email (`royalpaints.qa@gmail.com`).
+- **Brand Sub-Bar:** White Royal Auto Paints logo emblem, authentic social media links (WhatsApp Hotline, Facebook, Instagram), and "Subscribe to Refinish Updates" interactive email subscription bar with circular amber send button.
 - **Watermark Layer:** Subtle background ghost text `ROYAL AUTO PAINTS` with high-definition brand emblem (`images/OBJECTS-1.png`).
 - **Copyright Bar:** Official copyright attribution, Terms & Conditions, Privacy Policy, and Bodyshop Inquiries links.
 - **Floating Quick Actions:** Integrated dual `.floating-quick-actions` container featuring smooth back-to-top chevron and high-visibility WhatsApp quick RFQ button.
