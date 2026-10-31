@@ -16,7 +16,7 @@
   --royal-gray-muted: #64748B;
   --royal-gray-light: #F7F0F2;
   --royal-gray-light-bg: #F7F0F2;
-  --royal-card-dark: #1c2533;
+  --royal-card-dark: #22272F;
 }
 
 body#gallery-page {
@@ -186,10 +186,10 @@ body#gallery-page {
 }
 
 .gallery-filter-btn.active {
-  background: #1c2533;
+  background: #22272F;
   color: #FFFFFF;
-  border-color: #1c2533;
-  box-shadow: 0 6px 20px rgba(28, 37, 51, 0.25);
+  border-color: #22272F;
+  box-shadow: 0 6px 20px rgba(34, 39, 47, 0.25);
 }
 
 .gallery-filter-btn.active .filter-count {
@@ -247,7 +247,7 @@ body#gallery-page {
   width: 100%;
   height: 250px;
   overflow: hidden;
-  background-color: #1e2530;
+  background-color: #22272F;
 }
 
 .gallery-card-img-wrap img {
@@ -374,20 +374,21 @@ body#gallery-page {
 }
 
 /* ==========================================================================
-   4. LIGHTBOX MODAL
+   4. LIGHTBOX MODAL (White, Light Gray & Gold Theme)
    ========================================================================== */
 .gallery-modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(15, 23, 42, 0.92);
-  backdrop-filter: blur(12px);
+  background: rgba(20, 23, 28, 0.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: 99999;
   display: none;
   align-items: center;
   justify-content: center;
   padding: 20px;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .gallery-modal-overlay.open {
@@ -396,20 +397,20 @@ body#gallery-page {
 }
 
 .gallery-modal-content {
-  background: #1c2533;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
-  max-width: 900px;
+  background: #FFFFFF !important;
+  border-radius: 20px !important;
+  border: 1px solid #E5E7EB !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.22), 0 4px 16px rgba(0, 0, 0, 0.06) !important;
+  max-width: 880px;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   position: relative;
-  transform: scale(0.94);
+  transform: scale(0.95);
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  color: #FFFFFF;
+  color: var(--royal-gray-graphite, #58585A) !important;
 }
 
 .gallery-modal-overlay.open .gallery-modal-content {
@@ -423,73 +424,80 @@ body#gallery-page {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  color: #FFFFFF;
-  border: none;
+  background: #FFFFFF !important;
+  color: #58585A !important;
+  border: 1px solid #E5E7EB !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12) !important;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 16px;
-  transition: all 0.2s ease;
+  font-size: 22px;
+  line-height: 1;
+  transition: all 0.22s ease;
   z-index: 10;
 }
 
 .gallery-modal-close:hover {
-  background: var(--royal-yellow-accent);
-  color: #14171C;
-  transform: rotate(90deg);
+  background: var(--royal-yellow-accent, #FFB800) !important;
+  color: #14171C !important;
+  border-color: var(--royal-yellow-accent, #FFB800) !important;
+  transform: rotate(90deg) scale(1.05);
+  box-shadow: 0 4px 14px rgba(255, 184, 0, 0.35) !important;
 }
 
 .gallery-modal-img-wrap {
   width: 100%;
-  max-height: 520px;
-  background-color: #111827;
+  max-height: 500px;
+  background-color: #F7F0F2 !important;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px 20px 0 0;
   overflow: hidden;
+  border-bottom: 1px solid #E5E7EB;
 }
 
 .gallery-modal-img-wrap img {
   width: 100%;
-  max-height: 520px;
+  max-height: 500px;
   object-fit: cover;
   display: block;
 }
 
 .gallery-modal-body {
-  padding: 28px 32px 32px 32px;
+  padding: 30px 34px 34px 34px;
+  background: #FFFFFF !important;
 }
 
 .gallery-modal-tag {
   display: inline-block;
-  background: rgba(255, 184, 0, 0.15);
-  border: 1px solid rgba(255, 184, 0, 0.3);
-  color: var(--royal-yellow-accent);
+  background: rgba(255, 184, 0, 0.12) !important;
+  border: 1px solid rgba(255, 184, 0, 0.35) !important;
+  color: #B45309 !important;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  padding: 4px 14px;
+  padding: 5px 14px;
   border-radius: 30px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .gallery-modal-title {
   font-family: 'Marcellus', serif !important;
-  font-size: 1.8rem !important;
-  color: #FFFFFF !important;
+  font-size: 1.85rem !important;
+  font-weight: 600 !important;
+  color: #14171C !important;
   margin-bottom: 12px !important;
   line-height: 1.25 !important;
 }
 
 .gallery-modal-desc {
   font-size: 15px;
-  color: #CBD5E1;
+  color: #4A5568 !important;
   line-height: 1.65;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 .gallery-modal-actions {
@@ -509,6 +517,7 @@ body#gallery-page {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.28);
   transition: all 0.25s ease;
 }
 
@@ -516,13 +525,13 @@ body#gallery-page {
   background: #1EBE5D;
   color: #FFFFFF;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.38);
 }
 
 .btn-modal-call {
-  background: rgba(255, 255, 255, 0.1);
-  color: #FFFFFF;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #58585A !important;
+  color: #FFFFFF !important;
+  border: 1px solid #58585A !important;
   padding: 12px 24px;
   border-radius: 50px;
   font-size: 13.5px;
@@ -531,14 +540,16 @@ body#gallery-page {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  box-shadow: 0 4px 12px rgba(88, 88, 90, 0.18);
   transition: all 0.25s ease;
 }
 
 .btn-modal-call:hover {
-  background: var(--royal-yellow-accent);
-  color: #14171C;
-  border-color: var(--royal-yellow-accent);
+  background: var(--royal-yellow-accent, #FFB800) !important;
+  color: #14171C !important;
+  border-color: var(--royal-yellow-accent, #FFB800) !important;
   transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 184, 0, 0.35) !important;
 }
 
 /* ==========================================================================
@@ -549,7 +560,7 @@ body#gallery-page {
 }
 
 .gallery-cta-card {
-  background: linear-gradient(135deg, #1c2533 0%, #141b25 100%);
+  background: linear-gradient(135deg, #58585A 0%, #22272F 100%) !important;
   border-radius: 20px;
   padding: 48px 42px;
   color: #FFFFFF;
@@ -577,7 +588,7 @@ body#gallery-page {
 
 .gallery-cta-subtitle {
   font-size: 15px;
-  color: #94A3B8;
+  color: #D1D5DB;
   line-height: 1.6;
   margin-bottom: 0;
 }
@@ -681,7 +692,7 @@ body#gallery-page {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1c2533;
+  background: #22272F;
   border-radius: 14px;
   padding: 14px 26px;
   min-width: 200px;
