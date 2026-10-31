@@ -62,47 +62,44 @@
                 </ul>
             </nav>
 
-            <!-- Right: Direct Phone CTA & Mobile Hamburger -->
-            <div class="opt2-action-area">
-                <a href="tel:+97444501669" class="btn-royal-call-pill d-none d-md-inline-flex" title="Call Showroom: +974 4450 1669">
-                    <i class="fa fa-phone"></i>
-                    <span>+974 4450 1669</span>
+            <!-- Right: Direct Call Button & Mobile Hamburger Toggle -->
+            <div class="opt2-nav-right">
+                <a href="tel:+97450395741" class="luxore-call-pill" title="Call Royal Auto Paints Qatar">
+                    <span class="call-pill-icon">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </span>
+                    <span class="call-pill-text">CALL NOW</span>
                 </a>
-                <button type="button" class="luxore-hamburger-btn d-lg-none" id="luxoreMenuToggle" aria-label="Toggle navigation menu">
+                <!-- Mobile Toggle Button -->
+                <button class="luxore-menu-toggle" id="luxoreMenuToggle" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
             </div>
         </div>
-    </header>
 
-    <!-- Mobile Navigation Off-Canvas Drawer -->
-    <div class="luxore-mobile-drawer" id="luxoreMobileDrawer" aria-hidden="true">
-        <div class="drawer-header">
-            <img src="images/royal_logo_white.png" alt="Royal Auto Paints" height="36">
-            <button class="drawer-close-btn" id="luxoreDrawerClose" aria-label="Close menu">&times;</button>
-        </div>
-        <div class="drawer-content">
-            <ul class="drawer-nav-menu">
+        <!-- Mobile Drawer Navigation -->
+        <div class="luxore-mobile-drawer" id="luxoreMobileDrawer">
+            <div class="luxore-mobile-drawer-header">
+                <a href="index.html" class="luxore-brand-logo-link">
+                    <img src="images/royal_logo_white.png" alt="Royal Auto Paints" style="height: 36px; width: auto;">
+                </a>
+                <button class="luxore-drawer-close" id="luxoreDrawerClose" aria-label="Close menu">&times;</button>
+            </div>
+            <ul class="luxore-mobile-menu">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="products.html">PRODUCTS</a></li>
                 <li><a href="services.html">SERVICES</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
                 <li><a href="career.html">CAREER</a></li>
-                <li><a href="contact.html" class="active">CONTACT</a></li>
+                <li><a href="contact.html" class="active" style="color: var(--royal-yellow-gold, #F5C518);">CONTACT</a></li>
             </ul>
-            <div class="drawer-cta-wrap mt-4">
-                <a href="tel:+97444501669" class="btn-royal-call-pill w-100 justify-content-center mb-2">
-                    <i class="fa fa-phone me-2"></i> +974 4450 1669
-                </a>
-                <a href="https://wa.me/97450395741?text=Hello%20Royal%20Auto%20Paints%2C%20I%20would%20like%20to%20request%20an%20RFQ" class="btn-contact-action-whatsapp w-100 justify-content-center" target="_blank">
-                    <i class="fab fa-whatsapp me-2"></i> WhatsApp RFQ
-                </a>
-            </div>
         </div>
-    </div>
+    </header>
 
     <!-- ========================================================================
          2. Contact Hero Banner Section
@@ -252,88 +249,159 @@
     </section>
 
     <!-- ========================================================================
-         4. Commercial Inquiries & Interactive RFQ Form Section
+         4. Integrated Quotation / RFQ & Interactive Showroom Map Showcase
          ======================================================================== -->
-    <section class="contact-form-section" id="inquiry-form">
+    <section class="contact-rfq-showcase-section" id="inquiry-form">
         <div class="container">
-            <div class="row g-4 g-lg-5 align-items-center">
-                <!-- Left: Commercial Assurances -->
-                <div class="col-lg-5">
-                    <div class="contact-spec-badge" style="background: rgba(10,50,84,0.06); border-color: rgba(10,50,84,0.12); color: #58585A;">
-                        <span class="dot"></span>
-                        Commercial Supply Services
-                    </div>
-                    <h2 class="contact-main-title tm-split-text split-in-right" style="text-align: left !important;">
-                        Get in Touch with our Technical Specialists
-                    </h2>
-                    <p class="contact-main-subtitle" style="text-align: left !important; margin: 0 0 30px 0 !important;">
-                        Whether you need a computerized body shop paint mixing installation, trade pricing on HB Body 2K clears, or spray booth maintenance in Qatar, our team is ready to assist.
-                    </p>
+            <div class="rfq-unified-card">
+                <!-- Left Column: Interactive Map & Dark Contact Information Bar -->
+                <div class="rfq-left-col">
+                    <div class="rfq-map-box" id="mapSection">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14436.568472481744!2d51.4428076!3d25.1764722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45da7ea0e93235%3A0xe54e605d39360824!2sStreet%2023%2C%20Doha%2C%20Qatar!5e0!3m2!1sen!2sqa!4v1700000000000!5m2!1sen!2sqa" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Royal Auto Paints Showroom Location - Wakalat Street 23, Industrial Area, Doha, Qatar">
+                        </iframe>
 
-                    <div class="contact-inquiry-item">
-                        <div class="contact-inquiry-icon">
-                            <i class="fas fa-truck"></i>
+                        <!-- Stylized Floating Pin Matching Mockup -->
+                        <div class="rfq-map-pin-badge">
+                            <div class="rfq-pin-marker">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="rfq-pin-text">
+                                <strong>Doha</strong>
+                                <span>الدوحة</span>
+                            </div>
                         </div>
-                        <div>
-                            <div class="contact-inquiry-title">Qatar-Wide Daily Fleet Dispatch</div>
-                            <div class="contact-inquiry-text">Scheduled deliveries across Industrial Area, Doha, Lusail, Al Wakrah, and Al Khor. Urgent same-day workshop dispatches available.</div>
-                        </div>
-                    </div>
 
-                    <div class="contact-inquiry-item">
-                        <div class="contact-inquiry-icon">
-                            <i class="fas fa-flask"></i>
-                        </div>
-                        <div>
-                            <div class="contact-inquiry-title">Same-Day OEM Color Formulation</div>
-                            <div class="contact-inquiry-text">Bring sample panels, fuel flaps, or manufacturer color codes to our Wakalat showroom for on-the-spot spectrophotometer matching.</div>
-                        </div>
-                    </div>
-
-                    <div class="contact-inquiry-item">
-                        <div class="contact-inquiry-icon">
-                            <i class="fas fa-file-invoice-dollar"></i>
-                        </div>
-                        <div>
-                            <div class="contact-inquiry-title">Formal Stamped Quotations (RFQ)</div>
-                            <div class="contact-inquiry-text">Official stamped tax-compliant quotations provided for corporate body shops, fleet contracts, and government tenders within 24 hours.</div>
-                        </div>
+                        <!-- Target / Crosshair Locate Floating Button Matching Mockup -->
+                        <a href="https://maps.google.com/?q=Street+23,+Industrial+Area,+Doha,+Qatar" target="_blank" class="rfq-map-locate-btn" title="View Full Map in Google Maps" aria-label="Open in Google Maps App">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="7"></circle>
+                                <line x1="12" y1="1" x2="12" y2="5"></line>
+                                <line x1="12" y1="19" x2="12" y2="23"></line>
+                                <line x1="1" y1="12" x2="5" y2="12"></line>
+                                <line x1="19" y1="12" x2="23" y2="12"></line>
+                                <circle cx="12" cy="12" r="2" fill="#1E293B"></circle>
+                            </svg>
+                        </a>
                     </div>
 
-                    <div class="contact-inquiry-item">
-                        <div class="contact-inquiry-icon">
-                            <i class="fas fa-spray-can"></i>
+                    <!-- Bottom Dark Contact Information Strip -->
+                    <div class="rfq-contact-bar">
+                        <div class="rfq-bar-item">
+                            <div class="rfq-bar-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="#FFB800" stroke="#FFB800" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3" fill="#46484c"></circle>
+                                </svg>
+                            </div>
+                            <div class="rfq-bar-content">
+                                <div class="rfq-bar-label">Our Location</div>
+                                <div class="rfq-bar-value">Street 23, Wakalat St, Industrial Area, Doha, Qatar</div>
+                            </div>
                         </div>
-                        <div>
-                            <div class="contact-inquiry-title">Custom Aerosol Spray Paint Filling</div>
-                            <div class="contact-inquiry-text">Custom-mixed 1K and 2K aerosol cans filled on-site with exact vehicle color codes for spot repairs and mobile touch-ups.</div>
+
+                        <div class="rfq-bar-divider"></div>
+
+                        <div class="rfq-bar-item">
+                            <div class="rfq-bar-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFB800" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="rfq-bar-content">
+                                <div class="rfq-bar-label">Call Us</div>
+                                <a href="tel:+97450395741" class="rfq-bar-value rfq-bar-link">+974 5039 5741</a>
+                            </div>
+                        </div>
+
+                        <div class="rfq-bar-divider"></div>
+
+                        <div class="rfq-bar-item">
+                            <div class="rfq-bar-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFB800" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="rfq-bar-content">
+                                <div class="rfq-bar-label">Email Us</div>
+                                <a href="mailto:info@royalautopaints.com" class="rfq-bar-value rfq-bar-link">info@royalautopaints.com</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right: Interactive RFQ Form Card -->
-                <div class="col-lg-7">
-                    <div class="contact-form-card">
-                        <h3 class="contact-form-title">Request a Quotation / Send Inquiry</h3>
-                        <p class="contact-form-subtitle">Fill in your specifications below. Our sales desk will review your request and reply promptly.</p>
+                <!-- Right Column: Interactive Quotation Form -->
+                <div class="rfq-right-col">
+                    <div class="rfq-eyebrow-badge">
+                        <span class="rfq-dot"></span>
+                        GET IN TOUCH
+                    </div>
 
-                        <form id="contactForm" onsubmit="event.preventDefault(); submitContactForm();">
-                            <div class="row g-3">
-                                <div class="col-12 col-md-6">
-                                    <label for="contactName" class="form-label">Full Name / Company *</label>
-                                    <input type="text" class="form-control" id="contactName" required placeholder="e.g. Salim Al-Kuwari / Apex Auto">
+                    <h2 class="rfq-form-title tm-split-text split-in-right">
+                        Request a <span class="rfq-highlight-gold">Quotation</span> / Send Inquiry
+                    </h2>
+
+                    <p class="rfq-form-subtitle">
+                        Fill in your specifications below. Our sales desk will review your request and reply promptly.
+                    </p>
+
+                    <form id="contactForm" onsubmit="event.preventDefault(); submitContactForm();">
+                        <div class="row g-3">
+                            <!-- Row 1: Name and Phone -->
+                            <div class="col-12 col-md-6">
+                                <label for="contactName" class="rfq-field-label">FULL NAME / COMPANY *</label>
+                                <div class="rfq-input-wrap">
+                                    <svg class="rfq-input-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                    <input type="text" class="rfq-input-control" id="contactName" required placeholder="e.g. Salim Al-Kuwari / Apex Auto">
                                 </div>
-                                <div class="col-12 col-md-6">
-                                    <label for="contactPhone" class="form-label">Phone / WhatsApp *</label>
-                                    <input type="tel" class="form-control" id="contactPhone" required placeholder="e.g. +974 5555 1234">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="contactPhone" class="rfq-field-label">PHONE / WHATSAPP *</label>
+                                <div class="rfq-input-wrap">
+                                    <svg class="rfq-input-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                    <input type="tel" class="rfq-input-control" id="contactPhone" required placeholder="e.g. +974 5555 1234">
                                 </div>
-                                <div class="col-12 col-md-6">
-                                    <label for="contactEmail" class="form-label">Email Address</label>
-                                    <input type="email" class="form-control" id="contactEmail" placeholder="e.g. contact@domain.qa">
+                            </div>
+
+                            <!-- Row 2: Email and Division -->
+                            <div class="col-12 col-md-6">
+                                <label for="contactEmail" class="rfq-field-label">EMAIL ADDRESS</label>
+                                <div class="rfq-input-wrap">
+                                    <svg class="rfq-input-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    <input type="email" class="rfq-input-control" id="contactEmail" placeholder="e.g. contact@domain.qa">
                                 </div>
-                                <div class="col-12 col-md-6">
-                                    <label for="contactDivision" class="form-label">Division / Interest *</label>
-                                    <select class="form-select" id="contactDivision" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="contactDivision" class="rfq-field-label">DIVISION / INTEREST *</label>
+                                <div class="rfq-input-wrap">
+                                    <svg class="rfq-input-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                                    </svg>
+                                    <select class="rfq-select-control" id="contactDivision" required>
                                         <option value="" selected disabled>Select division...</option>
                                         <option value="Automotive Refinish & Clear Coats">Automotive Refinish &amp; Clear Coats</option>
                                         <option value="Commercial Spray Booth Engineering">Commercial Spray Booth Engineering</option>
@@ -344,60 +412,56 @@
                                         <option value="General Trade / Bulk Supply">General Trade / Bulk Supply</option>
                                     </select>
                                 </div>
-                                <div class="col-12">
-                                    <label for="contactSubject" class="form-label">Subject / Product Code *</label>
-                                    <input type="text" class="form-control" id="contactSubject" required placeholder="e.g. RFQ for HB Body 496 Clear Coat 5L (20 kits)">
-                                </div>
-                                <div class="col-12">
-                                    <label for="contactMessage" class="form-label">Inquiry Details / Quantities *</label>
-                                    <textarea class="form-control" id="contactMessage" rows="4" required placeholder="Please provide quantities, color codes, delivery location, or technical specifications..."></textarea>
-                                </div>
-                                <div class="col-12 mt-4">
-                                    <div class="d-flex flex-wrap gap-3">
-                                        <button type="submit" class="btn-form-whatsapp" id="btnSubmitContactWhatsApp">
-                                            <i class="fab fa-whatsapp"></i> Send via WhatsApp
-                                        </button>
-                                        <button type="button" onclick="submitContactViaEmail();" class="btn-form-email" id="btnSubmitContactEmail">
-                                            <i class="fa fa-envelope"></i> Send via Email
-                                        </button>
-                                    </div>
-                                    <span class="d-block small text-muted mt-2">
-                                        <i class="fas fa-lock me-1"></i> Your information is kept strictly confidential. Urgent inquiries answered immediately via WhatsApp hotline.
-                                    </span>
+                            </div>
+
+                            <!-- Row 3: Subject / Product Code -->
+                            <div class="col-12">
+                                <label for="contactSubject" class="rfq-field-label">SUBJECT / PRODUCT CODE *</label>
+                                <div class="rfq-input-wrap">
+                                    <svg class="rfq-input-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                    <input type="text" class="rfq-input-control" id="contactSubject" required placeholder="e.g. RFQ for HB Body 496 Clear Coat 5L (20 kits)">
                                 </div>
                             </div>
-                        </form>
-                    </div>
+
+                            <!-- Row 4: Inquiry Details / Quantities -->
+                            <div class="col-12">
+                                <label for="contactMessage" class="rfq-field-label">INQUIRY DETAILS / QUANTITIES *</label>
+                                <div class="rfq-input-wrap rfq-textarea-wrap">
+                                    <svg class="rfq-input-icon rfq-textarea-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                    <textarea class="rfq-textarea-control" id="contactMessage" rows="3" required placeholder="Please provide quantities, color codes, delivery location, or technical specifications..."></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Row 5: Full Width Dark Submit Button -->
+                            <div class="col-12 mt-3">
+                                <button type="submit" class="rfq-submit-btn" id="btnSubmitContact">
+                                    <span>SUBMIT</span>
+                                    <span class="rfq-submit-arrow">→</span>
+                                </button>
+                            </div>
+
+                            <!-- Row 6: Security Note -->
+                            <div class="col-12 mt-2">
+                                <div class="rfq-privacy-note">
+                                    <svg class="rfq-lock-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                    <span>Your information is kept strictly confidential. Urgent inquiries answered immediately via WhatsApp hotline.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ========================================================================
-         5. Interactive Google Maps Location Section
-         ======================================================================== -->
-    <section class="contact-map-section" id="mapSection">
-        <div class="contact-map-overlay-badge d-none d-md-block">
-            <div class="contact-map-badge-title">Royal Auto Paints Showroom</div>
-            <div class="contact-map-badge-text">
-                Street 23, Wakalat St, Doha Industrial Area, State of Qatar.<br>
-                Open Sat–Thu: 07:00 AM – 01:00 PM &amp; 03:30 PM – 08:00 PM
-            </div>
-            <a href="https://maps.google.com/?q=Street+23,+Industrial+Area,+Doha,+Qatar" target="_blank" class="contact-map-badge-link">
-                <i class="fas fa-location-arrow"></i> Open in Google Maps App
-            </a>
-        </div>
-        <div class="contact-map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14436.568472481744!2d51.4428076!3d25.1764722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45da7ea0e93235%3A0xe54e605d39360824!2sStreet%2023%2C%20Doha%2C%20Qatar!5e0!3m2!1sen!2sqa!4v1700000000000!5m2!1sen!2sqa" 
-                width="100%" 
-                height="100%" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"
-                title="Royal Auto Paints Showroom Location - Wakalat Street 23, Industrial Area, Doha, Qatar">
-            </iframe>
         </div>
     </section>
 
