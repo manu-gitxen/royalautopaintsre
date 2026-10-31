@@ -182,10 +182,10 @@ body#blog-page {
 
 /* Active Filter Pill — Light Gray & Racing Gold */
 .blog-filter-btn.active {
-  background: #E5E7EB !important;
-  color: #14171C !important;
-  border: 1.5px solid var(--royal-yellow-accent, #FFB800) !important;
-  box-shadow: 0 4px 14px rgba(255, 184, 0, 0.22) !important;
+  background: #58585A !important;
+  color: #FFFFFF !important;
+  border: 1px solid #58585A !important;
+  box-shadow: 0 4px 16px rgba(88, 88, 90, 0.28) !important;
 }
 
 .blog-filter-btn.active .filter-count {

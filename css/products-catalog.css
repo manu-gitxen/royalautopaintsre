@@ -376,14 +376,14 @@
 }
 
 .cat-pill-btn.active {
-  background: #E5E7EB !important;
-  border: 1.5px solid var(--royal-yellow-accent, #FFB800) !important;
-  color: #14171C !important;
-  box-shadow: 0 4px 14px rgba(255, 184, 0, 0.22) !important;
+  background: #58585A !important;
+  border: 1px solid #58585A !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 16px rgba(88, 88, 90, 0.28) !important;
 }
 
 .cat-pill-btn.active i {
-  color: #14171C !important;
+  color: var(--royal-yellow-accent, #FFB800) !important;
 }
 
 .cat-pill-btn.active .cat-pill-count {
