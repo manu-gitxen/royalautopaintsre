@@ -126,6 +126,8 @@
 
     // Update document title
     document.title = article.title + ' — Technical Insights | Royal Auto Paints Qatar';
+    const ht = document.getElementById("bdHeroTitle"); if (ht) ht.textContent = article.title;
+    const hb = document.getElementById("bdHeroBreadcrumb"); if (hb) hb.textContent = article.title;
 
     // Breadcrumb title
     var bcTitle = document.getElementById('bdBreadcrumbTitle');

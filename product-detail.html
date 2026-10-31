@@ -123,20 +123,36 @@
     </header>
 
 
-        <!-- Breadcrumb Bar -->
-        <section class="pd-breadcrumb-section">
-            <div class="container">
-                <ul class="pd-breadcrumb">
-                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li class="separator"><i class="fas fa-chevron-right"></i></li>
-                    <li><a href="products.html">Products Catalogue</a></li>
-                    <li class="separator"><i class="fas fa-chevron-right"></i></li>
-                    <li id="pdBreadcrumbCat">Automotive Refinish</li>
-                    <li class="separator"><i class="fas fa-chevron-right"></i></li>
-                    <li class="active" id="pdBreadcrumbTitle">Product Details</li>
-                </ul>
+        
+    <!-- ========================================================================
+         2. Product Detail Hero Banner Section
+         ======================================================================== -->
+    <section class="catalogue-hero-section" id="product-detail-hero" style="position: relative; background: linear-gradient(135deg, rgba(20,23,28,0.88) 0%, rgba(34,39,47,0.84) 55%, rgba(51,58,69,0.78) 100%), url('images/products_page_hero.jpg') center/cover no-repeat; padding-top: 150px; padding-bottom: 75px; color: #FFFFFF;">
+        <div class="container catalogue-hero-inner" style="position: relative; z-index: 2;">
+            <nav class="catalogue-breadcrumb" aria-label="breadcrumb" style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #9CA3AF; margin-bottom: 18px;">
+                <a href="index.html" style="color: #D1D5DB; text-decoration: none;">Home</a>
+                <span class="sep" style="color: #6B7280; font-size: 11px;">/</span>
+                <a href="products.html" style="color: #D1D5DB; text-decoration: none;">Products</a>
+                <span class="sep" style="color: #6B7280; font-size: 11px;">/</span>
+                <span id="pdHeroBreadcrumb" style="color: var(--royal-yellow-gold, #F5C518); font-weight: 500;">HB Body C496 2K HS Clear</span>
+            </nav>
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <div class="catalogue-spec-badge" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.16); padding: 6px 16px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #F3F4F6; margin-bottom: 18px;">
+                        <span class="dot" style="width: 8px; height: 8px; border-radius: 50%; background: var(--royal-yellow-accent, #FFB800); box-shadow: 0 0 10px rgba(255, 184, 0, 0.8);"></span>
+                        Technical Specifications &amp; Mixing Ratio
+                    </div>
+                    <h1 class="catalogue-hero-title tm-split-text split-in-right split-on-load" id="pdHeroTitle" style="font-family: 'Marcellus', serif; font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1.18; font-weight: 400; color: #FFFFFF; margin-bottom: 16px;">
+                        HB Body C496 2K HS Clear Coat 2:1
+                    </h1>
+                    <p class="catalogue-hero-desc" id="pdHeroLead" style="font-size: 1.08rem; line-height: 1.65; color: #D1D5DB; max-width: 800px; margin: 0;">
+                        High solids crystal-clear 2K varnish delivering long-term gloss retention, UV filter protection, and rapid booth bake cycles in Qatar.
+                    </p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
+
 
         <!-- Main Product Section -->
         <section class="pd-main-section">

@@ -5,7 +5,7 @@
 
 /* Breadcrumb Bar */
 .pd-breadcrumb-section {
-  background: #0f172a;
+  background: #58585A;
   padding: 18px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -40,13 +40,13 @@
 
 /* Product Main Section */
 .pd-main-section {
-  background: #f8fafc;
+  background: #F7F0F2;
   padding: 60px 0 80px;
 }
 
 /* Product Gallery Box */
 .pd-gallery-card {
-  background: #ffffff;
+  background: #FFFFFF;
   border-radius: 16px;
   border: 1px solid #e2e8f0;
   padding: 30px;
@@ -65,7 +65,7 @@
   z-index: 2;
 }
 .pd-badge-brand {
-  background: #0f172a;
+  background: #58585A;
   color: #f59e0b;
   font-size: 11px;
   font-weight: 700;
@@ -169,7 +169,7 @@
   font-family: 'Marcellus', Georgia, serif;
   font-size: 32px;
   font-weight: 400;
-  color: #0f172a;
+  color: #58585A;
   line-height: 1.25;
   margin-bottom: 14px;
 }
@@ -230,7 +230,7 @@
 .pd-hl-val {
   font-size: 14px;
   font-weight: 600;
-  color: #0f172a;
+  color: #58585A;
 }
 
 /* Actions Box */
@@ -269,7 +269,7 @@
   box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
 }
 .btn-pd-call {
-  background: #0f172a;
+  background: #58585A;
   color: #ffffff !important;
   font-size: 15px;
   font-weight: 600;
@@ -329,7 +329,7 @@
   margin-bottom: -2px;
 }
 .pd-nav-tabs .nav-link.active, .pd-nav-tabs .nav-link:hover {
-  color: #0f172a;
+  color: #58585A;
   border-bottom-color: #f59e0b;
 }
 .pd-tab-content {
@@ -353,7 +353,7 @@
 .pd-specs-table td {
   padding: 14px 16px;
   font-size: 14px;
-  color: #0f172a;
+  color: #58585A;
   font-weight: 600;
 }
 
@@ -377,7 +377,7 @@
 .pd-related-title {
   font-family: 'Marcellus', Georgia, serif;
   font-size: 28px;
-  color: #0f172a;
+  color: #58585A;
   margin-top: 8px;
 }
 

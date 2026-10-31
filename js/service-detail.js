@@ -1,5 +1,7 @@
 /**
  * Royal Auto Paints Qatar - Dynamic Service Detail Controller
+ * Handles query parameter switching (?service=automotive|industrial|marine|wood|spraybooth|color-mixing)
+ * Synchronizes Hero Title, Lead, Breadcrumbs, Content Card, 4-Step Protocol, Equipment & WhatsApp RFQs
  */
 
 (function () {
@@ -11,7 +13,7 @@
       badge: 'Automotive Refinish Division',
       heroImg: 'images/automotive_hero.png',
       breadcrumb: 'Automotive Refinishing',
-      lead: 'Official authorized Qatar distributor of Axalta Challenger and HB Body European refinish systems. We supply Doha’s leading automotive collision repair centers and bodyshops with computerized OEM spectrophotometer color formulation, high-solids clear coats, 2K isocyanate hardeners, and polyester fillers.',
+      lead: 'Official authorized Qatar distributor of Axalta Challenger and HB Body European refinish systems. We supply Doha\'s leading automotive collision repair centers and bodyshops with computerized OEM spectrophotometer color formulation, high-solids clear coats, 2K isocyanate hardeners, and polyester fillers.',
       steps: [
         { num: 'STEP 01', title: 'Substrate Inspection & Cleaning', desc: 'Thorough chemical degreasing using HB Body 770 Antisil to remove silicone, oil, and road contaminants.' },
         { num: 'STEP 02', title: 'Multi-Angle Digital Color Scan', desc: 'Precision scanning with calibrated digital spectrophotometer against global OEM manufacturer color libraries.' },
@@ -25,15 +27,14 @@
         'Scratch-resistant ceramic nano-particle clearcoat systems',
         'Custom aerosol spray paint can pressurized filling',
         'Daily morning and afternoon dispatch across Doha Industrial Area'
-      ],
-      relatedCategory: 'clears'
+      ]
     },
     'industrial': {
       title: 'Industrial Paints & Anti-Corrosion Surface Coatings',
-      badge: 'Heavy Industrial & Marine Protection',
+      badge: 'Heavy Industrial & Steel Protection',
       heroImg: 'images/Industrial_steel_I-beams_positioned.jpg',
       breadcrumb: 'Industrial Coatings',
-      lead: 'Heavy-duty industrial coating solutions engineered to withstand Qatar’s extreme ambient heat, intense UV radiation, salinity, and sand abrasion. Specially formulated for structural steelwork, petrochemical storage tanks, commercial fleet chassis, and coastal installations.',
+      lead: 'Heavy-duty industrial coating solutions engineered to withstand Qatar\'s extreme ambient heat, intense UV radiation, salinity, and sand abrasion. Specially formulated for structural steelwork, petrochemical storage tanks, commercial fleet chassis, and coastal installations.',
       steps: [
         { num: 'STEP 01', title: 'Surface Profile Assessment', desc: 'Evaluating blast cleaning standard (Sa 2.5 / SSPC-SP 10) and steel surface salt contamination levels.' },
         { num: 'STEP 02', title: 'Zinc-Rich Primer Application', desc: 'Applying high-solids zinc phosphate and epoxy primers for cathodic corrosion barrier protection.' },
@@ -47,152 +48,154 @@
         'Fast-curing shop primers for pre-fabrication structural steel processing',
         'Corrosion protection certified for harsh coastal and marine environments',
         'Bulk drum packaging and on-site technical inspection service'
-      ],
-      relatedCategory: 'primers'
+      ]
     },
     'marine': {
       title: 'Marine Paints & Luxury Yacht Protection',
       badge: 'Marine & Offshore Coatings',
-      heroImg: 'images/Shipyard_worker_applying_protective_coating.jpg',
+      heroImg: 'images/marine_paint_hero.jpg',
       breadcrumb: 'Marine Coatings',
       lead: 'Specialized marine coating systems engineered for Arabian Gulf marine conditions. From luxury yacht hull fairing and high-gloss polyurethane superstructures to commercial vessel antifouling and cathodic hull preservation.',
       steps: [
         { num: 'STEP 01', title: 'Hull Substrate Decontamination', desc: 'High-pressure freshwater wash down and chemical degreasing to remove marine bio-fouling and salts.' },
-        { num: 'STEP 02', title: 'Epoxy Barrier Priming', desc: 'Application of impervious high-build epoxy barrier coats to eliminate fiberglass osmosis risks.' },
-        { num: 'STEP 03', title: 'Self-Polishing Antifouling', desc: 'Application of cuprous oxide biocidal antifouling matrix preventing barnacle and algae growth in Gulf waters.' },
-        { num: 'STEP 04', title: 'Mirror Superstructure Finish', desc: 'High-solids marine polyurethane finish offering supreme gloss, chemical resistance, and non-yellowing durability.' }
+        { num: 'STEP 02', title: 'Epoxy Barrier Priming', desc: 'Applying multi-coat high-build impermeable epoxy barrier coats to prevent fiberglass osmotic blistering.' },
+        { num: 'STEP 03', title: 'High-Gloss Topcoat / Antifouling', desc: 'Application of self-polishing copper-free antifouling for underwater hulls or premium mirror polyurethane.' },
+        { num: 'STEP 04', title: 'Inspection & Film Thickness Testing', desc: 'Wet and dry film thickness (WFT/DFT) measurement and gloss level inspection before vessel re-launch.' }
       ],
       capabilities: [
-        'Self-polishing copolymer (SPC) antifouling paints for warm, high-salinity sea water',
-        'Gelcoat and fiberglass fairing compounds with zero shrinkage',
-        'High-gloss marine polyurethane finishes for luxury yachts and speedboats',
-        'Aluminium boat primers formulated to prevent galvanic corrosion',
-        'Nonskid deck coatings for commercial barges, workboats, and fishing dhows',
-        'On-site technical inspection at Qatar shipyards and marinas'
-      ],
-      relatedCategory: 'undercoats'
+        'Sea-Line European marine high-build epoxy fillers and primers',
+        'Self-polishing antifouling coatings for harsh warm-water Gulf marine environments',
+        'Ultra-high gloss acrylic polyurethane yacht topcoats resistant to saltwater etching',
+        'Osmosis prevention and structural fiberglass repair formulations',
+        'Teak wood sealers, UV-blocking varnishes, and deck preservation systems',
+        'Direct delivery to Doha, Al Wakra, and Lusail marinas'
+      ]
     },
     'wood': {
-      title: 'Luxury Architectural & Furniture Wood Coatings',
-      badge: 'Architectural & Carpentry Finishes',
-      heroImg: 'images/close-up-of-carpenter-using-spray-gun-applying-varnish-or-primer-to-wood-door-2023-11-27-05-18-09-utc.jpg',
+      title: 'Architectural & Luxury Wood Coatings',
+      badge: 'Fine Joinery & Wood Finishes',
+      heroImg: 'images/wood_paint_hero.jpg',
       breadcrumb: 'Wood Coatings',
-      lead: 'Premium wood coatings, stains, sealers, and protective lacquers formulated for luxury interior joinery, architectural villa fitouts, bespoke cabinetry, and hospitality woodwork in Qatar.',
+      lead: 'Premium Italian and European wood finishing systems for luxury interior millwork, palatial cabinetry, commercial fit-outs, and exterior hardwoods exposed to high Qatar temperatures.',
       steps: [
-        { num: 'STEP 01', title: 'Timber Sanding & Grain Fill', desc: 'Calibrated progressive sanding and grain filling to achieve flawless flatness across hardwood substrates.' },
-        { num: 'STEP 02', title: 'Penetrating Wood Staining', desc: 'Application of UV-fast solvent or oil stains highlighting natural grain patterns (walnut, oak, teak).' },
-        { num: 'STEP 03', title: 'High-Build Sanding Sealer', desc: 'Spraying high-solids polyurethane or NC sealers with fast dry times and effortless sandability.' },
-        { num: 'STEP 04', title: 'Polyurethane Topcoat (Gloss/Matte)', desc: 'Applying non-yellowing polyurethane finish ranging from dead matte (5% sheen) to piano high gloss (95%).' }
+        { num: 'STEP 01', title: 'Timber Moisture & Grain Prep', desc: 'Substrate moisture level verification and precision DA orbital sanding with progressive grits.' },
+        { num: 'STEP 02', title: 'Wood Grain Staining / Toning', desc: 'Application of lightfast solvent-borne or water-based pigment stains highlighting natural wood grain.' },
+        { num: 'STEP 03', title: 'Polyurethane Insulating Sealer', desc: 'High-solids clear or white PU sealer application to block natural timber tannins and grain raising.' },
+        { num: 'STEP 04', title: 'Topcoat Sheen Application', desc: 'Finishing with Dead Flat (5%), Satin (30%), or High-Gloss (100% Mirror) non-yellowing acrylic clearcoat.' }
       ],
       capabilities: [
-        'Non-yellowing acrylic-polyurethane clears for light natural woods (white oak, maple)',
-        'Deep piano gloss black and luxury pigmented lacquer formulations',
-        'Stain resistant finishes certified for kitchen cabinets and luxury vanity units',
-        'Fast-curing nitrocellulose (NC) lacquers for quick-turnaround carpentry fitouts',
-        'Comprehensive wood stain color matching lab in Street 23',
-        'Water-based eco-friendly interior wood finishes with low VOC emissions'
-      ],
-      relatedCategory: 'clears'
+        '2K Polyurethane and Acrylic non-yellowing clear coats for interior joinery',
+        'High-gloss 100% wet-look polyester coatings for luxury furniture',
+        'Water-based exterior wood stains and decking oils resistant to solar bleaching',
+        'White and customized RAL/NCS color pigmented lacquers in any gloss level',
+        'Special effect metallic, pearlescent, and textured architectural finishes',
+        'Technical application guidance on spray viscosity and pot-life management'
+      ]
     },
     'spraybooth': {
-      title: 'Spray Painting Booth Media & Air Filtration Systems',
-      badge: 'Bodyshop Equipment & Filtration',
-      heroImg: 'images/automotive-paint-technician-applying-clear-coat-in-spray-booth.jpg',
-      breadcrumb: 'Spray Booth Media',
-      lead: 'Complete spray painting booth consumable supply and filtration media. Essential for ensuring clean, dust-free paint finishes, controlled air laminar flow, and environmental compliance across Qatar collision workshops.',
+      title: 'Commercial Spray Booth Media, Filters & Maintenance',
+      badge: 'Spray Booth Engineering',
+      heroImg: 'images/Paint_Booth_Hero.png',
+      breadcrumb: 'Spray Booth Solutions',
+      lead: 'Complete filtration media, air handling solutions, burner service, and certified maintenance for commercial automotive downdraft spray booths across Qatar.',
       steps: [
-        { num: 'STEP 01', title: 'Airflow & Pressure Differential Audit', desc: 'Diagnosing intake static pressure, airflow CFM, and filter saturation to prevent paint overspray defects.' },
-        { num: 'STEP 02', title: 'Pre-Filter & Ceiling Media Installation', desc: 'Fitting progressive-density fiberglass pre-filters and thermally bonded ceiling diffusion media.' },
-        { num: 'STEP 03', title: 'Paint Arrestor Floor Media Setup', desc: 'Installing glass fiber paint stop floor media designed to capture heavy paint overspray particles.' },
-        { num: 'STEP 04', title: 'Air Cleanliness & Particle Testing', desc: 'Laser particle counter verification ensuring Class M5 / F5 filtration standards inside the spray cabin.' }
+        { num: 'STEP 01', title: 'Booth Differential Pressure Audit', desc: 'Measuring airflow velocity (m/s) and static pressure differential to identify filter saturation.' },
+        { num: 'STEP 02', title: 'Intake Ceiling Media Replacement', desc: 'Installing EU5/F5 certified thermally-bonded ceiling diffusion media for 99% airborne dust filtration.' },
+        { num: 'STEP 03', title: 'Floor Paint-Stop Filter Overhaul', desc: 'Replacing saturated glass fiber paint-arrestor floor rolls to maintain clean exhaust draft.' },
+        { num: 'STEP 04', title: 'Burner & Temperature Calibration', desc: 'Calibrating diesel/gas heat exchangers to ensure steady 60°C bake cycle temperature control.' }
       ],
       capabilities: [
-        'Ceiling fine filtration media (EN 779 Class F5 / ISO 16890 ePM10)',
-        'Floor paint arrestor exhaust rolls (green/white fiberglass media)',
-        'Intake pocket and panel pre-filters for extreme desert dust environments',
-        'Activated carbon exhaust filters for solvent odor reduction',
-        'High-temperature oven baking filtration media (up to 200°C)',
-        'Custom roll slitting and full roll deliveries to Qatar collision centers'
-      ],
-      relatedCategory: 'masking-materials'
+        'EU5 / F5 fine ceiling diffusion media rolls with woven mesh scrim',
+        'Glass fiber Paint-Stop exhaust floor filters (2-inch and 4-inch thickness)',
+        'Pocket filters and pre-filtration intake rolls for high-dust desert conditions',
+        'High-temperature booth ceiling lights and protective peelable booth coatings',
+        'Exhaust fan duct cleaning and impeller balancing service',
+        'Scheduled preventative maintenance contracts for commercial collision centers'
+      ]
     },
     'color-mixing': {
-      title: 'Computerized Spectrophotometer Color Formulation Lab',
-      badge: 'Precision Colorimetry Division',
+      title: 'Computerized Spectrophotometer Color Lab',
+      badge: 'Laboratory Formulation Division',
       heroImg: 'images/Technician_scanning_car_paint_color.jpg',
-      breadcrumb: 'Color Mixing Lab',
-      lead: 'State-of-the-art computerized paint formulation laboratory located on Street 23, Industrial Area, Doha. Combining multi-angle spectrophotometers with automated micro-dispensing scales to deliver perfect OEM color matches on demand.',
+      breadcrumb: 'Color Formulation Lab',
+      lead: 'State-of-the-art computerized spectrophotometer color matching laboratory in our Doha Street 23 facility. Instant formulation of OEM automotive colors, custom color matching from physical samples, and pressurized spray can filling.',
       steps: [
-        { num: 'STEP 01', title: 'Digital Surface Colorimeter Scan', desc: 'Multi-angle spectral reading directly from the vehicle fuel flap or reference sample.' },
-        { num: 'STEP 02', title: 'Formula Retrieval & Variance Correction', desc: 'Accessing Axalta Challenger and HB Body global databases with automated aging/fading adjustment.' },
-        { num: 'STEP 03', title: 'Precision Micro-Gram Dispensing', desc: 'Computerized digital scales ensure exact droplet precision for micro-toners, pearls, and metallic flakes.' },
-        { num: 'STEP 04', title: 'Spray-Out Test & Card Archive', desc: 'Physical spray-out card inspected under multi-daylight D65 lamps and archived with customer record.' }
+        { num: 'STEP 01', title: 'Sample Cleaning & Polishing', desc: 'Polishing sample surface to remove micro-scratches and restore true original pigment reflectance.' },
+        { num: 'STEP 02', title: '5-Angle Optical Spectro Measurement', desc: 'Multi-angle optical sensor reads pearl, metallic, and solid pigment distribution against global databases.' },
+        { num: 'STEP 03', title: 'Digital Recipe Formulation', desc: 'Software retrieves optimal formula and calculates micro-tint additions for aged paint compensation.' },
+        { num: 'STEP 04', title: 'Precision Dispensing & Test Card Spray', desc: 'Computerized dispensing to 0.01g followed by test card spray-out and D65 daylight lamp verification.' }
       ],
       capabilities: [
-        'Over 150,000 global OEM automotive formulas updated continuously via cloud',
-        'Accurate formulation for pearl, xiralic, candy, tri-coat, and matte satin colors',
-        'Aerosol spray can pressurized filling with custom mixed paints in under 5 minutes',
-        'Small touch-up bottles with precision brush caps for minor scratch repair',
-        'Industrial RAL and British Standard (BS) color matching for commercial clients',
-        'Same-day collection at Street 23 showroom or direct delivery across Qatar'
-      ],
-      relatedCategory: 'custom-color'
+        'Over 250,000 global OEM automotive, motorcycle, and commercial vehicle formulations',
+        'Digital spectrophotometer on-site vehicle body scanning across Doha',
+        'Custom aerosol spray paint filling (1K and 2K button-activated spray cans)',
+        'Micro-tinting for sun-aged and weathered Gulf vehicles',
+        'RAL, NCS, and Pantone color formulation in automotive and industrial resins',
+        'Immediate collection at Street 23 showroom or same-day workshop delivery'
+      ]
     }
   };
 
-  function initServiceDetail() {
-    const params = new URLSearchParams(window.location.search);
-    let key = (params.get('service') || '').toLowerCase();
+  function getQueryParam(param) {
+    const search = window.location.search.substring(1);
+    const vars = search.split('&');
+    for (let i = 0; i < vars.length; i++) {
+      const pair = vars[i].split('=');
+      if (decodeURIComponent(pair[0]) === param) {
+        return decodeURIComponent(pair[1]);
+      }
+    }
+    return null;
+  }
 
-    // Map common aliases
-    if (key.includes('auto') || key.includes('refinish') || key.includes('car')) key = 'automotive';
-    else if (key.includes('indust')) key = 'industrial';
-    else if (key.includes('marin') || key.includes('yacht')) key = 'marine';
-    else if (key.includes('wood') || key.includes('furn')) key = 'wood';
-    else if (key.includes('booth') || key.includes('filter')) key = 'spraybooth';
-    else if (key.includes('mix') || key.includes('color') || key.includes('spectro')) key = 'color-mixing';
-    else if (!servicesData[key]) key = 'automotive';
+  function initServiceDetail() {
+    let key = getQueryParam('service') || 'automotive';
+    if (!servicesData[key]) key = 'automotive';
 
     const data = servicesData[key];
 
     // Document Title
-    document.title = `${data.title} — Royal Auto Paints Qatar | Technical Service Specifications`;
+    document.title = `${data.title} — Royal Auto Paints Qatar`;
 
-    // DOM Updates
+    // 1. Hero Elements
+    const heroTitle = document.getElementById('sdHeroTitle');
+    if (heroTitle) heroTitle.textContent = data.title;
+
+    const heroLead = document.getElementById('sdHeroLead');
+    if (heroLead) heroLead.textContent = data.lead;
+
+    const heroBreadcrumb = document.getElementById('sdHeroBreadcrumb');
+    if (heroBreadcrumb) heroBreadcrumb.textContent = data.breadcrumb;
+
+    // 2. Content Card Elements
     const titleEl = document.getElementById('sdTitle');
-    const badgeEl = document.getElementById('sdBadge');
-    const imgEl = document.getElementById('sdImg');
-    const leadEl = document.getElementById('sdLead');
-    const bcTitle = document.getElementById('sdBreadcrumbTitle');
-    const waHotlineBtn = document.getElementById('sdWaHotlineBtn');
-
     if (titleEl) titleEl.textContent = data.title;
+
+    const badgeEl = document.getElementById('sdBadge');
     if (badgeEl) badgeEl.textContent = data.badge;
+
+    const imgEl = document.getElementById('sdImg');
     if (imgEl) {
       imgEl.src = data.heroImg;
       imgEl.alt = data.title;
     }
+
+    const leadEl = document.getElementById('sdLead');
     if (leadEl) leadEl.textContent = data.lead;
-    if (bcTitle) bcTitle.textContent = data.breadcrumb;
 
-    if (waHotlineBtn) {
-      const msg = encodeURIComponent(`Hello Royal Auto Paints Qatar, I would like to inquire about your ${data.title} service.`);
-      waHotlineBtn.href = `https://wa.me/97450395741?text=${msg}`;
-    }
-
-    // Process Steps
+    // 3. Process Steps Grid
     const stepsGrid = document.getElementById('sdStepsGrid');
     if (stepsGrid) {
       stepsGrid.innerHTML = data.steps.map(s => `
         <div class="sd-step-box">
           <div class="sd-step-num">${s.num}</div>
-          <h4 class="sd-step-heading">${s.title}</h4>
+          <div class="sd-step-heading">${s.title}</div>
           <p class="sd-step-desc">${s.desc}</p>
         </div>
       `).join('');
     }
 
-    // Capabilities
+    // 4. Equipment & Capabilities List
     const capsList = document.getElementById('sdCapabilitiesList');
     if (capsList) {
       capsList.innerHTML = data.capabilities.map(c => `
@@ -203,7 +206,7 @@
       `).join('');
     }
 
-    // Active Sidebar Link
+    // 5. Sidebar Menu Active State
     document.querySelectorAll('.sd-services-menu a').forEach(a => {
       const href = a.getAttribute('href') || '';
       if (href.includes(`service=${key}`)) {
@@ -212,7 +215,18 @@
         a.classList.remove('active');
       }
     });
+
+    // 6. WhatsApp Hotline Button Pre-filled Message
+    const waHotlineBtn = document.getElementById('sdWaHotlineBtn');
+    if (waHotlineBtn) {
+      const text = encodeURIComponent(`Hello Royal Auto Paints Qatar, I am inquiring about your ${data.title} (${data.badge}) services.`);
+      waHotlineBtn.href = `https://wa.me/97450395741?text=${text}`;
+    }
   }
 
-  document.addEventListener('DOMContentLoaded', initServiceDetail);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initServiceDetail);
+  } else {
+    initServiceDetail();
+  }
 })();
