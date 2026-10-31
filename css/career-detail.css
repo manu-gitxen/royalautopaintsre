@@ -1,0 +1,314 @@
+/* ==========================================================================
+   Royal Auto Paints Qatar - Luxury Career Detail Page Styling
+   ========================================================================== */
+
+/* Breadcrumb Bar */
+.cd-breadcrumb-section {
+  background: #0f172a;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.cd-breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  color: #94a3b8;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cd-breadcrumb a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.cd-breadcrumb a:hover {
+  color: #f59e0b;
+}
+.cd-breadcrumb .separator {
+  color: #64748b;
+  font-size: 11px;
+}
+.cd-breadcrumb .active {
+  color: #f59e0b;
+  font-weight: 500;
+}
+
+/* Main Section */
+.cd-main-section {
+  background: #f8fafc;
+  padding: 60px 0 90px;
+}
+
+/* Job Hero Header Card */
+.cd-hero-card {
+  background: #0f172a;
+  border-radius: 18px;
+  padding: 40px;
+  color: #ffffff;
+  margin-bottom: 35px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 35px -10px rgba(15, 23, 42, 0.25);
+}
+.cd-hero-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+.cd-job-kicker {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #f59e0b;
+  margin-bottom: 10px;
+}
+.cd-job-title {
+  font-family: 'Marcellus', Georgia, serif;
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.25;
+}
+.cd-meta-pills-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.cd-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+}
+.cd-pill i {
+  color: #f59e0b;
+}
+
+/* Detail Content Card */
+.cd-content-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  padding: 40px;
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.05);
+  margin-bottom: 35px;
+}
+.cd-section-title {
+  font-family: 'Marcellus', Georgia, serif;
+  font-size: 22px;
+  color: #0f172a;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f1f5f9;
+}
+.cd-lead-p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 30px;
+}
+.cd-bullets-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 35px;
+}
+.cd-bullets-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+.cd-bullets-list li::before {
+  content: '\f00c';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: #10b981;
+  font-size: 12px;
+}
+
+/* Benefits Grid */
+.cd-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 35px;
+}
+.cd-benefit-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.cd-benefit-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(245, 158, 11, 0.15);
+  color: #d97706;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.cd-benefit-text h6 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 2px;
+}
+.cd-benefit-text p {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Application Form */
+.cd-form-box {
+  background: #fafaf9;
+  border: 1px solid #e7e5e4;
+  border-radius: 16px;
+  padding: 35px;
+  margin-top: 35px;
+}
+.cd-form-title {
+  font-family: 'Marcellus', Georgia, serif;
+  font-size: 24px;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+.cd-form-subtitle {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 25px;
+}
+.cd-form-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  display: block;
+}
+.cd-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  font-size: 14px;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.2s ease;
+}
+.cd-input:focus {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+}
+.btn-cd-submit {
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn-cd-submit:hover {
+  background: #1e293b;
+  transform: translateY(-2px);
+}
+
+/* Sidebar Styling */
+.cd-sidebar {
+  position: sticky;
+  top: 100px;
+}
+.cd-widget {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 28px;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+  margin-bottom: 25px;
+}
+.cd-widget-title {
+  font-family: 'Marcellus', Georgia, serif;
+  font-size: 18px;
+  color: #0f172a;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f1f5f9;
+}
+.cd-summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f8fafc;
+  font-size: 13px;
+}
+.cd-summary-label {
+  color: #64748b;
+}
+.cd-summary-val {
+  font-weight: 600;
+  color: #0f172a;
+}
+.btn-cd-whatsapp {
+  background: #25d366;
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 20px;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  text-decoration: none !important;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  transition: all 0.25s ease;
+  margin-top: 20px;
+}
+.btn-cd-whatsapp:hover {
+  background: #1eb857;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+  .cd-job-title {
+    font-size: 26px;
+  }
+  .cd-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}

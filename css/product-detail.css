@@ -1,0 +1,395 @@
+/* ==========================================================================
+   Royal Auto Paints Qatar - Luxury Product Detail Page Styling
+   Author: Google Deepmind / Advanced Agentic Coding
+   ========================================================================== */
+
+/* Breadcrumb Bar */
+.pd-breadcrumb-section {
+  background: #0f172a;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.pd-breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  color: #94a3b8;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pd-breadcrumb a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.pd-breadcrumb a:hover {
+  color: #f59e0b;
+}
+.pd-breadcrumb .separator {
+  color: #64748b;
+  font-size: 11px;
+}
+.pd-breadcrumb .active {
+  color: #f59e0b;
+  font-weight: 500;
+}
+
+/* Product Main Section */
+.pd-main-section {
+  background: #f8fafc;
+  padding: 60px 0 80px;
+}
+
+/* Product Gallery Box */
+.pd-gallery-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 30px;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+  position: relative;
+  text-align: center;
+}
+.pd-badges-wrap {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.pd-badge-brand {
+  background: #0f172a;
+  color: #f59e0b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.pd-badge-spec {
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  border: 1px solid #cbd5e1;
+}
+.pd-main-image-container {
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 20px;
+  overflow: hidden;
+}
+.pd-main-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.pd-gallery-card:hover .pd-main-image {
+  transform: scale(1.04);
+}
+.pd-gallery-thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+.pd-thumb-btn {
+  width: 64px;
+  height: 64px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+.pd-thumb-btn.active, .pd-thumb-btn:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+}
+.pd-thumb-btn img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.pd-trust-pill-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #f1f5f9;
+  font-size: 12px;
+  color: #64748b;
+}
+.pd-trust-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.pd-trust-pill i {
+  color: #10b981;
+}
+
+/* Product Info Box */
+.pd-info-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 35px;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+}
+.pd-brand-kicker {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #d97706;
+  margin-bottom: 8px;
+}
+.pd-product-title {
+  font-family: 'Marcellus', Georgia, serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #0f172a;
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+.pd-meta-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #f1f5f9;
+}
+.pd-sku-badge {
+  font-size: 12px;
+  color: #64748b;
+  font-family: monospace;
+}
+.pd-origin-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #0369a1;
+  background: #e0f2fe;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.pd-desc-lead {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 24px;
+}
+
+/* Highlights Grid */
+.pd-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.pd-highlight-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.pd-hl-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 2px;
+}
+.pd-hl-val {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Actions Box */
+.pd-actions-wrap {
+  background: #fafaf9;
+  border: 1px solid #e7e5e4;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+.pd-action-btns-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.btn-pd-rfq {
+  flex: 1;
+  min-width: 220px;
+  background: #25d366;
+  color: #ffffff !important;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 22px;
+  border-radius: 10px;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+  transition: all 0.25s ease;
+}
+.btn-pd-rfq:hover {
+  background: #1eb857;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
+}
+.btn-pd-call {
+  background: #0f172a;
+  color: #ffffff !important;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 22px;
+  border-radius: 10px;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+}
+.btn-pd-call:hover {
+  background: #1e293b;
+  transform: translateY(-2px);
+}
+.pd-warehouse-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #059669;
+  font-weight: 500;
+  margin-top: 14px;
+}
+.pd-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  animation: pdPulse 2s infinite;
+}
+@keyframes pdPulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+/* Tabs Section */
+.pd-specs-tabs-section {
+  padding: 40px 0 80px;
+  background: #ffffff;
+}
+.pd-nav-tabs {
+  border-bottom: 2px solid #e2e8f0;
+  gap: 10px;
+}
+.pd-nav-tabs .nav-link {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #64748b;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 12px 20px;
+  background: transparent;
+  margin-bottom: -2px;
+}
+.pd-nav-tabs .nav-link.active, .pd-nav-tabs .nav-link:hover {
+  color: #0f172a;
+  border-bottom-color: #f59e0b;
+}
+.pd-tab-content {
+  padding: 35px 0 0;
+}
+.pd-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.pd-specs-table tr {
+  border-bottom: 1px solid #f1f5f9;
+}
+.pd-specs-table th {
+  width: 30%;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
+  background: #f8fafc;
+}
+.pd-specs-table td {
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* Related Products Section */
+.pd-related-section {
+  background: #f8fafc;
+  padding: 70px 0 90px;
+  border-top: 1px solid #e2e8f0;
+}
+.pd-related-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.pd-related-kicker {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #d97706;
+  text-transform: uppercase;
+}
+.pd-related-title {
+  font-family: 'Marcellus', Georgia, serif;
+  font-size: 28px;
+  color: #0f172a;
+  margin-top: 8px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 991px) {
+  .pd-main-image-container {
+    height: 320px;
+  }
+  .pd-product-title {
+    font-size: 26px;
+  }
+  .pd-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+}

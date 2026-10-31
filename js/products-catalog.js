@@ -44,6 +44,7 @@
   const modalBadge = document.getElementById('modalProductBadge');
   const modalDesc = document.getElementById('modalProductDesc');
   const modalWaBtn = document.getElementById('modalWaBtn');
+  const modalDetailBtn = document.getElementById('modalDetailBtn');
   let bsQuickViewModal = null;
 
   /**
@@ -260,25 +261,32 @@
           <div class="card-img-box">
             <span class="card-badge-category">${escapedCat}</span>
             <span class="card-badge-brand">${escapedBrand}</span>
-            <img src="${localImg}" alt="${escapedTitle}" loading="lazy" onerror="this.onerror=null; this.src='${remoteImg}';">
+            <a href="product-detail.html?id=${prod.id}">
+              <img src="${localImg}" alt="${escapedTitle}" loading="lazy" onerror="this.onerror=null; this.src='${remoteImg}';">
+            </a>
             <div class="card-quickview-overlay">
               <button type="button" class="btn-card-quickview" data-quickview-id="${prod.id}">
                 <i class="fas fa-eye"></i> Quick View
               </button>
+              <a href="product-detail.html?id=${prod.id}" class="btn-card-quickview" style="margin-left: 6px; background: rgba(15, 23, 42, 0.85); color: #fff;">
+                <i class="fas fa-external-link-alt"></i> Details
+              </a>
             </div>
           </div>
           <div class="card-content">
             <div class="card-brand-kicker">${escapedBrand}</div>
-            <h3 class="card-title" title="${escapedTitle}">${escapedTitle}</h3>
+            <h3 class="card-title" title="${escapedTitle}">
+              <a href="product-detail.html?id=${prod.id}" style="color: inherit; text-decoration: none;">${escapedTitle}</a>
+            </h3>
             <span class="card-badge-spec">${escapedBadge}</span>
             <p class="card-desc">${escapedDesc}</p>
             <div class="card-actions">
               <a href="${waLink}" target="_blank" class="btn-card-rfq" title="Instant WhatsApp RFQ">
                 <i class="fab fa-whatsapp"></i> Request RFQ
               </a>
-              <button type="button" class="btn-card-inspect" data-quickview-id="${prod.id}" title="Product Details">
-                <i class="fas fa-search-plus"></i>
-              </button>
+              <a href="product-detail.html?id=${prod.id}" class="btn-card-inspect" title="Full Product Specifications">
+                <i class="fas fa-arrow-right"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -450,6 +458,9 @@
     if (modalBadge) modalBadge.textContent = prod.badge || 'Automotive Grade';
     if (modalDesc) modalDesc.textContent = prod.desc || 'Premium refinish system formulation.';
 
+    if (modalDetailBtn) {
+      modalDetailBtn.href = `product-detail.html?id=${prod.id}`;
+    }
     if (modalWaBtn) {
       const msg = encodeURIComponent(
         `Hello Royal Auto Paints, I am interested in ${prod.title} (Brand: ${prod.brand}). Please provide technical specs and pricing.`

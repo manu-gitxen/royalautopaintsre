@@ -1,0 +1,346 @@
+/* ==========================================================================
+   Royal Auto Paints - Technical Article / Blog Detail Styling (v1.0)
+   Precision Refinishing Articles, Laboratory Insights, Gulf Climate Coating Guides
+   ========================================================================== */
+
+:root {
+  --royal-blue-primary: #0A3254;
+  --royal-blue-dark: #072239;
+  --royal-yellow-gold: #F5C518;
+  --royal-yellow-accent: #E5A910;
+  --royal-grey-dark: #58585A;
+  --royal-grey-light: #F4F6F8;
+  --royal-border-color: #E2E8F0;
+}
+
+.blog-detail-section {
+  padding: 50px 0 90px;
+  background: #FFFFFF;
+}
+
+/* Breadcrumbs */
+.bd-breadcrumbs {
+  margin-bottom: 28px;
+  font-size: 0.9rem;
+  color: #718096;
+}
+.bd-breadcrumbs a {
+  color: var(--royal-blue-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.bd-breadcrumbs a:hover {
+  color: var(--royal-yellow-gold);
+}
+.bd-breadcrumbs .separator {
+  margin: 0 8px;
+  color: #CBD5E0;
+}
+.bd-breadcrumbs .current {
+  color: #4A5568;
+}
+
+/* Article Hero Header */
+.bd-header {
+  margin-bottom: 35px;
+}
+
+.bd-meta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.bd-category-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(10, 50, 84, 0.08);
+  color: var(--royal-blue-primary);
+  border: 1px solid rgba(10, 50, 84, 0.15);
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.bd-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #718096;
+  font-size: 0.88rem;
+}
+.bd-meta-item i {
+  color: var(--royal-yellow-accent);
+}
+
+.bd-title {
+  font-family: 'Marcellus', serif;
+  font-size: clamp(2rem, 3.5vw, 2.9rem);
+  line-height: 1.22;
+  color: var(--royal-blue-primary);
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+
+.bd-lead {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: #4A5568;
+  border-left: 4px solid var(--royal-yellow-gold);
+  padding-left: 18px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Featured Image */
+.bd-featured-image-wrap {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(10, 50, 84, 0.08);
+  margin-bottom: 40px;
+  background: #1A202C;
+}
+
+.bd-featured-img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  display: block;
+}
+
+.bd-img-caption {
+  padding: 10px 18px;
+  background: #F7FAFC;
+  border-bottom: 1px solid #EDF2F7;
+  color: #718096;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* Article Body Typography */
+.bd-article-body {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #2D3748;
+}
+
+.bd-article-body h2 {
+  font-family: 'Marcellus', serif;
+  color: var(--royal-blue-primary);
+  font-size: 1.75rem;
+  margin: 40px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #EDF2F7;
+}
+
+.bd-article-body h3 {
+  font-family: 'Marcellus', serif;
+  color: var(--royal-blue-primary);
+  font-size: 1.35rem;
+  margin: 28px 0 12px;
+}
+
+.bd-article-body p {
+  margin-bottom: 20px;
+}
+
+.bd-article-body ul, .bd-article-body ol {
+  margin: 0 0 24px 24px;
+  padding: 0;
+}
+
+.bd-article-body li {
+  margin-bottom: 10px;
+}
+
+/* Technical Callout Box */
+.bd-callout-box {
+  background: #F8FAFC;
+  border-left: 4px solid var(--royal-blue-primary);
+  border-radius: 0 10px 10px 0;
+  padding: 24px 28px;
+  margin: 32px 0;
+}
+
+.bd-callout-box h4 {
+  font-family: 'Marcellus', serif;
+  color: var(--royal-blue-primary);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bd-callout-box h4 i {
+  color: var(--royal-yellow-accent);
+}
+
+.bd-callout-box p {
+  margin-bottom: 0;
+  font-size: 0.98rem;
+  color: #4A5568;
+}
+
+/* Author Info Card */
+.bd-author-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #F8FAFC;
+  border: 1px solid var(--royal-border-color);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 45px 0 35px;
+}
+
+.bd-author-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--royal-blue-primary);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.bd-author-name {
+  font-family: 'Marcellus', serif;
+  font-size: 1.25rem;
+  color: var(--royal-blue-primary);
+  margin-bottom: 4px;
+}
+
+.bd-author-role {
+  font-size: 0.88rem;
+  color: var(--royal-grey-dark);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.bd-author-bio {
+  font-size: 0.92rem;
+  color: #718096;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* Sidebar Widgets */
+.bd-sidebar-widget {
+  background: #FFFFFF;
+  border: 1px solid var(--royal-border-color);
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+}
+
+.bd-widget-title {
+  font-family: 'Marcellus', serif;
+  font-size: 1.28rem;
+  color: var(--royal-blue-primary);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--royal-grey-light);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bd-widget-title i {
+  color: var(--royal-yellow-accent);
+}
+
+.bd-recent-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bd-recent-item {
+  padding: 14px 0;
+  border-bottom: 1px solid #EDF2F7;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.bd-recent-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.bd-recent-link {
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: var(--royal-blue-primary);
+  text-decoration: none;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+.bd-recent-link:hover {
+  color: var(--royal-yellow-accent);
+}
+
+.bd-recent-date {
+  font-size: 0.8rem;
+  color: #A0AEC0;
+}
+
+/* Sidebar CTA */
+.bd-sidebar-cta {
+  background: linear-gradient(135deg, var(--royal-blue-primary) 0%, var(--royal-blue-dark) 100%);
+  color: #FFFFFF;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+}
+
+.bd-sidebar-cta h3 {
+  font-family: 'Marcellus', serif;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #FFFFFF;
+}
+
+.bd-sidebar-cta p {
+  font-size: 0.92rem;
+  color: #E2E8F0;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.btn-sidebar-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 13px 20px;
+  background: #25D366;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+.btn-sidebar-whatsapp:hover {
+  background: #1EBE5B;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+}
+
+@media (max-width: 991px) {
+  .bd-featured-img {
+    height: 300px;
+  }
+}
