@@ -17,15 +17,20 @@
   }
 
   async function initProductDetail() {
-    let products = [];
-    try {
-      const res = await fetch('data/products.json', { cache: 'no-cache' });
-      if (res.ok) {
-        products = await res.json();
+    let products = (window.royalProducts && Array.isArray(window.royalProducts) && window.royalProducts.length > 0)
+      ? window.royalProducts
+      : [];
+
+    if (products.length === 0) {
+      try {
+        const res = await fetch('data/products.json', { cache: 'no-cache' });
+        if (res.ok) {
+          products = await res.json();
+        }
+      } catch (e) {
+        console.warn('Could not fetch data/products.json:', e);
+        if (window.royalProducts) products = window.royalProducts;
       }
-    } catch (e) {
-      console.warn('Could not fetch data/products.json:', e);
-      if (window.royalProducts) products = window.royalProducts;
     }
 
     if (!products || products.length === 0) {

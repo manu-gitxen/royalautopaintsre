@@ -64,19 +64,23 @@
    * Fetch Products JSON with window.royalProducts Fallback
    */
   async function loadProductsData() {
-    try {
-      const response = await fetch('data/products.json', { cache: 'no-cache' });
-      if (!response.ok) {
-        throw new Error('HTTP ' + response.status + ' loading products.json');
-      }
-      allProducts = await response.json();
-    } catch (err) {
-      console.warn('Direct fetch of data/products.json failed, checking window.royalProducts:', err);
-      if (window.royalProducts && Array.isArray(window.royalProducts)) {
-        allProducts = window.royalProducts;
-      } else {
-        console.error('No fallback products data found!');
-        allProducts = [];
+    if (window.royalProducts && Array.isArray(window.royalProducts) && window.royalProducts.length > 0) {
+      allProducts = window.royalProducts;
+    } else {
+      try {
+        const response = await fetch('data/products.json', { cache: 'no-cache' });
+        if (!response.ok) {
+          throw new Error('HTTP ' + response.status + ' loading products.json');
+        }
+        allProducts = await response.json();
+      } catch (err) {
+        console.warn('Direct fetch of data/products.json failed, checking window.royalProducts:', err);
+        if (window.royalProducts && Array.isArray(window.royalProducts)) {
+          allProducts = window.royalProducts;
+        } else {
+          console.error('No fallback products data found!');
+          allProducts = [];
+        }
       }
     }
 
