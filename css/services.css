@@ -195,7 +195,7 @@ body,
   position: relative;
   border-radius: 50px;
   background: #FFFFFF;
-  border: 1px solid rgba(10, 50, 84, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   font-family: 'DM Sans', sans-serif;
   font-size: 13.5px;
@@ -837,7 +837,7 @@ body,
   position: relative !important;
   border-radius: 50px !important;
   background: #FFFFFF !important;
-  border: 1px solid rgba(10, 50, 84, 0.08) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
   font-family: 'DM Sans', sans-serif !important;
   font-size: 13.5px !important;
@@ -1120,7 +1120,7 @@ body,
   text-align: center !important;
   background: #FFFFFF !important;
   color: var(--royal-gray-graphite, #58585A) !important;
-  border: 1px solid rgba(10, 50, 84, 0.08) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
   font-family: 'DM Sans', sans-serif !important;
   font-size: 13.5px !important;

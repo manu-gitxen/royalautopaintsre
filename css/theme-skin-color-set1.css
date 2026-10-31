@@ -446,11 +446,11 @@ input[type=submit].btn-theme-colored4:hover, input[type=submit].btn-theme-colore
 */
 .scroll-to-top a {
   background-image: none !important;
-  background-color: #0A3254 !important;
+  background-color: #58585A !important;
 }
 .scroll-to-top a:hover {
   background-image: none !important;
-  background-color: #F68C50 !important;
-  box-shadow: 0 10px 20px rgba(246, 140, 80, 0.45) !important;
+  background-color: #FFB800 !important;
+  box-shadow: 0 10px 20px rgba(255, 184, 0, 0.45) !important;
   background-position: right center;
 }
