@@ -12,7 +12,7 @@
   --royal-gray-charcoal-rgb:  34, 39, 47;
   --royal-gray-slate:         #333A45; /* Dark card surfaces & borders */
   --royal-gray-graphite:      #58585A; /* Logo master graphite gray */
-  --royal-gray-muted:         #64748B; /* Subtitles and descriptive text */
+  --royal-gray-muted: #58585A; /* Subtitles and descriptive text */
   --royal-gray-border:        #E2E8F0; /* Clean light dividers */
   --royal-gray-light-bg:      #F4F6F8; /* Precision light technical canvas */
 
@@ -405,7 +405,7 @@
 .catalogue-count-text {
   font-family: 'DM Sans', sans-serif;
   font-size: 14.5px;
-  color: #5C6F84;
+  color: #58585A;
 }
 
 .catalogue-count-text strong {
@@ -710,7 +710,7 @@
   font-family: 'DM Sans', sans-serif;
   font-size: 13px;
   line-height: 1.55;
-  color: #5C6F84;
+  color: #58585A;
   margin-bottom: 18px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
