@@ -105,13 +105,16 @@ body#contact-page {
   color: var(--royal-yellow-accent);
 }
 
+.contact-breadcrumb .sep,
 .contact-breadcrumb .separator {
-  color: #6B7280;
+  color: var(--royal-yellow-accent, #FFB800);
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .contact-breadcrumb .current {
-  color: var(--royal-yellow-accent);
-  font-weight: 600;
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 .contact-spec-badge {

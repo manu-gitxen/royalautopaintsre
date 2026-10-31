@@ -91,13 +91,16 @@ body#gallery-page {
   color: var(--royal-yellow-accent);
 }
 
+.gallery-breadcrumb .sep,
 .gallery-breadcrumb .separator {
-  color: #6B7280;
+  color: var(--royal-yellow-accent, #FFB800);
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .gallery-breadcrumb .current {
-  color: var(--royal-yellow-accent);
-  font-weight: 600;
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 .gallery-spec-badge {

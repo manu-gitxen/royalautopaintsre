@@ -3813,3 +3813,81 @@ html body .e-con.e-parent .elementor-element.elementor-element-cffba15,
 .elementor-element.elementor-element-b2ab263 .tm-accordion .card.active .card-header .title .text {
   color: #FFFFFF !important;
 }
+
+
+/* ==========================================================================
+   Universal Breadcrumb Styling (Brand Signature Parity Across All Pages)
+   - Link: Light Gray (#D1D5DB), turns Gold on hover (#FFB800 / #F5C518)
+   - Separator (/): High-Visibility Racing Gold / Amber (#FFB800)
+   - Current Page: Crisp Pure White (#FFFFFF)
+   ========================================================================== */
+nav[class*="breadcrumb"],
+.about-breadcrumb,
+.catalogue-breadcrumb,
+.services-breadcrumb,
+.gallery-breadcrumb,
+.career-breadcrumb,
+.contact-breadcrumb {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 13px !important;
+  color: #9CA3AF !important;
+  margin-bottom: 18px !important;
+}
+
+nav[class*="breadcrumb"] a,
+.about-breadcrumb a,
+.catalogue-breadcrumb a,
+.services-breadcrumb a,
+.gallery-breadcrumb a,
+.career-breadcrumb a,
+.contact-breadcrumb a {
+  color: #D1D5DB !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+  font-weight: 400 !important;
+}
+
+nav[class*="breadcrumb"] a:hover,
+.about-breadcrumb a:hover,
+.catalogue-breadcrumb a:hover,
+.services-breadcrumb a:hover,
+.gallery-breadcrumb a:hover,
+.career-breadcrumb a:hover,
+.contact-breadcrumb a:hover {
+  color: var(--royal-yellow-accent, #FFB800) !important;
+}
+
+nav[class*="breadcrumb"] .sep,
+nav[class*="breadcrumb"] .separator,
+nav[class*="breadcrumb"] .bc-sep,
+.about-breadcrumb .sep,
+.catalogue-breadcrumb .sep,
+.services-breadcrumb .sep,
+.gallery-breadcrumb .sep,
+.career-breadcrumb .sep,
+.contact-breadcrumb .sep {
+  color: var(--royal-yellow-accent, #FFB800) !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+}
+
+nav[class*="breadcrumb"] span.current,
+nav[class*="breadcrumb"] span.current-page,
+nav[class*="breadcrumb"] span.bc-current,
+nav[class*="breadcrumb"] span#sdHeroBreadcrumb,
+nav[class*="breadcrumb"] span#pdHeroBreadcrumb,
+nav[class*="breadcrumb"] span#cdHeroBreadcrumb,
+nav[class*="breadcrumb"] span#bdHeroBreadcrumb,
+.about-breadcrumb span.current,
+.catalogue-breadcrumb span.current,
+.services-breadcrumb span.current,
+.gallery-breadcrumb span.current,
+.career-breadcrumb span.current,
+.contact-breadcrumb span.current {
+  color: #FFFFFF !important;
+  font-weight: 500 !important;
+}

@@ -79,13 +79,16 @@ body, #services-detail-page {
   color: var(--royal-yellow-gold, #F5C518);
 }
 
-.services-breadcrumb .sep {
-  color: #6B7280;
-  font-size: 11px;
+.services-breadcrumb .sep,
+.services-breadcrumb .separator {
+  color: var(--royal-yellow-accent, #FFB800);
+  font-size: 12px;
+  font-weight: 700;
 }
 
+.services-breadcrumb span.current,
 .services-breadcrumb span.current-page {
-  color: var(--royal-yellow-gold, #F5C518);
+  color: #FFFFFF;
   font-weight: 500;
 }
 

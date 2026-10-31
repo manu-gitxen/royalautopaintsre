@@ -91,13 +91,16 @@ body#career-page {
   color: var(--royal-yellow-accent);
 }
 
+.career-breadcrumb .sep,
 .career-breadcrumb .separator {
-  color: #6B7280;
+  color: var(--royal-yellow-accent, #FFB800);
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .career-breadcrumb .current {
-  color: var(--royal-yellow-accent);
-  font-weight: 600;
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 .career-spec-badge {
