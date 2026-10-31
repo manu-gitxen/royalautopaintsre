@@ -12,8 +12,8 @@
   --royal-gray-charcoal: #22272F;
   --royal-gray-slate: #333A45;
   --royal-gray-graphite: #58585A; /* Primary brand graphite gray */
-  --royal-gray-body: #4A5568;
-  --royal-gray-muted: #64748B;
+  --royal-gray-body: #58585A;
+  --royal-gray-muted: #58585A;
   --royal-gray-light: #F7F0F2;     /* Primary light gray canvas */
   --royal-gray-border: #E2E8F0;
   --royal-text-primary: #58585A;
@@ -196,7 +196,7 @@ body, #services-detail-page {
 .sd-lead-p {
   font-size: 16px;
   line-height: 1.8;
-  color: var(--royal-gray-body, #4A5568);
+  color: var(--royal-gray-body, #58585A);
   margin-bottom: 35px;
 }
 
@@ -257,7 +257,7 @@ body, #services-detail-page {
 
 .sd-step-desc {
   font-size: 13.5px;
-  color: var(--royal-gray-body, #4A5568);
+  color: var(--royal-gray-body, #58585A);
   line-height: 1.6;
   margin: 0;
 }
@@ -302,7 +302,7 @@ body, #services-detail-page {
   align-items: flex-start;
   gap: 12px;
   font-size: 14px;
-  color: var(--royal-gray-body, #4A5568);
+  color: var(--royal-gray-body, #58585A);
   line-height: 1.5;
 }
 
@@ -371,7 +371,7 @@ body, #services-detail-page {
 
 .sd-services-menu a i {
   font-size: 12px;
-  color: #94A3B8;
+  color: #9CA3AF;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 

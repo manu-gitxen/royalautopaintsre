@@ -16,21 +16,28 @@
   gap: 10px;
   font-size: 13px;
   font-family: 'DM Sans', sans-serif;
-  color: #94a3b8;
+  color: #9CA3AF;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .pd-breadcrumb a {
-  color: #cbd5e1;
+  color: #D1D5DB;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 .pd-breadcrumb a:hover {
   color: #f59e0b;
 }
+
+.pd-back-link {
+  transition: all 0.2s ease;
+}
+.pd-back-link:hover {
+  color: #FFB800 !important;
+}
 .pd-breadcrumb .separator {
-  color: #64748b;
+  color: #58585A;
   font-size: 11px;
 }
 .pd-breadcrumb .active {
@@ -50,7 +57,7 @@
   border-radius: 16px;
   border: 1px solid #e2e8f0;
   padding: 30px;
-  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+  box-shadow: 0 10px 25px -5px rgba(34, 39, 47, 0.05);
   position: relative;
   text-align: center;
 }
@@ -77,12 +84,12 @@
 }
 .pd-badge-spec {
   background: #f1f5f9;
-  color: #475569;
+  color: #4B5563;
   font-size: 11px;
   font-weight: 600;
   padding: 6px 12px;
   border-radius: 9999px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #D1D5DB;
 }
 .pd-main-image-container {
   height: 420px;
@@ -138,7 +145,7 @@
   padding-top: 20px;
   border-top: 1px solid #f1f5f9;
   font-size: 12px;
-  color: #64748b;
+  color: #58585A;
 }
 .pd-trust-pill {
   display: flex;
@@ -155,7 +162,7 @@
   border-radius: 16px;
   border: 1px solid #e2e8f0;
   padding: 35px;
-  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+  box-shadow: 0 10px 25px -5px rgba(34, 39, 47, 0.05);
 }
 .pd-brand-kicker {
   font-size: 12px;
@@ -184,7 +191,7 @@
 }
 .pd-sku-badge {
   font-size: 12px;
-  color: #64748b;
+  color: #58585A;
   font-family: monospace;
 }
 .pd-origin-badge {
@@ -192,16 +199,17 @@
   align-items: center;
   gap: 5px;
   font-size: 12px;
-  color: #0369a1;
-  background: #e0f2fe;
+  color: #58585A;
+  background: #F7F0F2;
+  border: 1px solid #E2E8F0;
   padding: 4px 10px;
   border-radius: 6px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .pd-desc-lead {
   font-size: 15px;
   line-height: 1.7;
-  color: #475569;
+  color: #4B5563;
   margin-bottom: 24px;
 }
 
@@ -221,7 +229,7 @@
 .pd-hl-label {
   font-size: 11px;
   font-weight: 600;
-  color: #64748b;
+  color: #58585A;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   display: block;
@@ -283,8 +291,10 @@
   transition: all 0.25s ease;
 }
 .btn-pd-call:hover {
-  background: #1e293b;
+  background: #FFB800;
+  color: #14171C !important;
   transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(245, 197, 24, 0.35);
 }
 .pd-warehouse-status {
   display: flex;
@@ -321,7 +331,7 @@
   font-family: 'DM Sans', sans-serif;
   font-size: 15px;
   font-weight: 600;
-  color: #64748b;
+  color: #58585A;
   border: none;
   border-bottom: 3px solid transparent;
   padding: 12px 20px;
@@ -346,7 +356,7 @@
   width: 30%;
   padding: 14px 16px;
   font-size: 14px;
-  color: #64748b;
+  color: #58585A;
   font-weight: 500;
   background: #f8fafc;
 }
@@ -359,9 +369,9 @@
 
 /* Related Products Section */
 .pd-related-section {
-  background: #f8fafc;
+  background: #F7F0F2;
   padding: 70px 0 90px;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid #E5E7EB;
 }
 .pd-related-header {
   text-align: center;
@@ -371,7 +381,7 @@
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.5px;
-  color: #d97706;
+  color: #FFB800;
   text-transform: uppercase;
 }
 .pd-related-title {
@@ -379,6 +389,13 @@
   font-size: 28px;
   color: #58585A;
   margin-top: 8px;
+}
+
+.btn-pd-related-details:hover,
+.btn-pd-consultation:hover {
+  background: #FFB800 !important;
+  color: #14171C !important;
+  transition: all 0.2s ease !important;
 }
 
 /* Mobile Responsiveness */

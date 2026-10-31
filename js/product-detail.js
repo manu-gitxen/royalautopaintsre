@@ -145,16 +145,16 @@
 
       return `
         <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="background: #ffffff; border: 1px solid #e2e8f0 !important;">
-            <div style="height: 180px; padding: 20px; display: flex; align-items: center; justify-content: center; background: #f8fafc;">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden" style="background: #ffffff; border: 1px solid #E5E7EB !important;">
+            <div style="height: 180px; padding: 20px; display: flex; align-items: center; justify-content: center; background: #F7F0F2;">
               <img src="${img}" alt="${escapeHtml(prod.title)}" style="max-height: 100%; max-width: 100%; object-fit: contain;">
             </div>
             <div class="card-body p-3 d-flex flex-column">
-              <span class="badge mb-2 text-uppercase" style="background: #e2e8f0; color: #475569; width: fit-content; font-size: 10px;">${escapeHtml(brand)}</span>
-              <h5 class="card-title text-truncate" style="font-size: 15px; font-weight: 600; color: #0f172a;" title="${escapeHtml(prod.title)}">${escapeHtml(prod.title)}</h5>
-              <p class="card-text text-muted small text-truncate" style="font-size: 12px;">${escapeHtml(prod.desc || 'Premium automotive refinish.')}</p>
+              <span class="badge mb-2 text-uppercase" style="background: #E5E7EB; color: #58585A; width: fit-content; font-size: 10px;">${escapeHtml(brand)}</span>
+              <h5 class="card-title text-truncate" style="font-size: 15px; font-weight: 600; color: #58585A;" title="${escapeHtml(prod.title)}">${escapeHtml(prod.title)}</h5>
+              <p class="card-text text-muted small text-truncate" style="font-size: 12px; color: #58585A !important;">${escapeHtml(prod.desc || 'Premium automotive refinish.')}</p>
               <div class="mt-auto pt-2 d-flex gap-2">
-                <a href="${link}" class="btn btn-sm flex-grow-1" style="background: #0f172a; color: #ffffff; font-size: 12px; font-weight: 600; border-radius: 8px;">View Details</a>
+                <a href="${link}" class="btn btn-sm flex-grow-1 btn-pd-related-details" style="background: #58585A; color: #ffffff; font-size: 12px; font-weight: 600; border-radius: 8px;">View Details</a>
                 <a href="https://wa.me/97450395741?text=${waMsg}" target="_blank" class="btn btn-sm" style="background: #25d366; color: #ffffff; border-radius: 8px;" title="WhatsApp RFQ"><i class="fab fa-whatsapp"></i></a>
               </div>
             </div>

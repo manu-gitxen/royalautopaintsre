@@ -13,8 +13,8 @@
   --royal-gray-charcoal: #22272F;
   --royal-gray-slate: #333A45;
   --royal-gray-graphite: #58585A; /* Official Master Brand Graphite Gray */
-  --royal-gray-body: #4A5568;
-  --royal-gray-muted: #64748B;
+  --royal-gray-body: #58585A;
+  --royal-gray-muted: #58585A;
   --royal-gray-light: #F7F0F2;     /* Primary light gray canvas */
   --royal-gray-border: #E2E8F0;
   --royal-text-primary: #58585A;
@@ -79,7 +79,7 @@ body#blog-detail-page,
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: var(--royal-gray-muted, #64748B);
+  color: var(--royal-gray-muted, #58585A);
   font-size: 0.88rem;
 }
 
@@ -100,7 +100,7 @@ body#blog-detail-page,
 .bd-lead {
   font-size: 1.12rem;
   line-height: 1.7;
-  color: var(--royal-gray-body, #4A5568);
+  color: var(--royal-gray-body, #58585A);
   border-left: 4px solid var(--royal-yellow-gold, #F5C518);
   padding-left: 20px;
   margin-bottom: 30px;
@@ -132,7 +132,7 @@ body#blog-detail-page,
   padding: 12px 20px;
   background: #F8FAFC;
   border-top: 1px solid var(--royal-gray-border, #E2E8F0);
-  color: var(--royal-gray-muted, #64748B);
+  color: var(--royal-gray-muted, #58585A);
   font-size: 0.85rem;
   font-style: italic;
 }
@@ -141,7 +141,7 @@ body#blog-detail-page,
 .bd-article-body {
   font-size: 1.05rem;
   line-height: 1.85;
-  color: #334155;
+  color: #374151;
 }
 
 .bd-article-body h2 {
@@ -204,7 +204,7 @@ body#blog-detail-page,
 .bd-callout-box p {
   margin-bottom: 0;
   font-size: 0.98rem;
-  color: var(--royal-gray-body, #4A5568);
+  color: var(--royal-gray-body, #58585A);
   line-height: 1.65;
 }
 
@@ -250,7 +250,7 @@ body#blog-detail-page,
 
 .bd-author-bio {
   font-size: 0.92rem;
-  color: var(--royal-gray-muted, #64748B);
+  color: var(--royal-gray-muted, #58585A);
   margin-bottom: 0;
   line-height: 1.55;
 }
@@ -315,7 +315,7 @@ body#blog-detail-page,
 
 .bd-recent-date {
   font-size: 0.8rem;
-  color: #94A3B8;
+  color: #9CA3AF;
 }
 
 /* Sidebar CTA Card (Master Charcoal/Graphite Gradient with Glowing Yellow) */
