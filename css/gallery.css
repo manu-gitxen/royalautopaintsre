@@ -186,10 +186,10 @@ body#gallery-page {
 }
 
 .gallery-filter-btn.active {
-  background: #22272F;
-  color: #FFFFFF;
-  border-color: #22272F;
-  box-shadow: 0 6px 20px rgba(34, 39, 47, 0.25);
+  background: #E5E7EB !important;
+  color: #14171C !important;
+  border: 1.5px solid var(--royal-yellow-accent, #FFB800) !important;
+  box-shadow: 0 4px 14px rgba(255, 184, 0, 0.22) !important;
 }
 
 .gallery-filter-btn.active .filter-count {
