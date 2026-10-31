@@ -379,3 +379,34 @@ Automated headless Edge test scripts utilizing the Chrome DevTools Protocol (CDP
 7. `scratch/verify_branch_logos.js`: Validates that all 5 official branch logos in `images/branch_logos/` load with HTTP 200, render inside `#1c2533` cards, and maintain seamless infinite marquee loop animation.
 8. **Codebase Synchronization:** Verifies that all HTML, CSS, JS, and asset modifications are mirrored synchronously between `E:\xev\royalfinal` and `E:\xev\royalautopaints`.
 9. **Strict Git Commit Rule:** No git commits are executed without explicit prior user authorization.
+
+
+---
+
+## 8. Universal Header & Corporate Footer Architecture (v6.1 Parity)
+
+### 8.1 Universal Navigation Specification
+All 7 website pages (`index.html`, `about.html`, `products.html`, `services.html`, `gallery.html`, `career.html`, `contact.html`) strictly enforce identical header structures:
+- **Scroll Position `scrollY = 0` (Hero Overlay):**
+  - Brand Logo: Pure white vector wordmark (`images/royal_logo_white.png`, constrained to `height: 42px`, `width: auto`).
+  - Dark logo explicitly suppressed: `.royal-nav-logo-dark { display: none !important; }`.
+  - Navigation Links: Pure crisp white (`#FFFFFF`, opacity `0.92`, `font-family: 'DM Sans'`, `font-size: 13.5px`, `font-weight: 500`, `letter-spacing: 2px`).
+  - Active Page Indicator: Warm amber-gold (`#F59E0B`, `font-weight: 700`, `opacity: 1`) with solid 2.5px bottom indicator underline (`background: #FFB800`).
+  - CTA Pill: Standardized dark glassmorphic `CALL NOW` pill with telephone icon linking to `tel:+97450395741`.
+- **Sticky State (`scrollY > 60px`):**
+  - Header gains `.sticky-active` class.
+  - White logo suppressed; master Graphite Gray logo displayed (`images/royal_logo_gray.png`, `#58585A`).
+  - Navigation links transition to deep charcoal (`#58585A`) with gold hover and active state persistence.
+- **Mobile Drawer:**
+  - Standardized `.luxore-mobile-drawer` with brand logo header, close button, full navigation menu with active gold highlight, and direct call action.
+
+### 8.2 Universal Elementor Corporate Footer Specification
+Replaced all makeshift stacked footers on `gallery.html`, `career.html`, and `contact.html` with the flagship Elementor 4-column corporate footer (`footer#footer.footer`):
+- **Column 1 (About Royal Paints):** Corporate profile summary and luxury pill action button (`GET IN TOUCH →`).
+- **Column 2 (Quick Links):** Standardized cross-page navigation links (`about.html`, `products.html`, `services.html`, `about.html#branches-network`, `contact.html`).
+- **Column 3 (Refinish Solutions):** 5 core technical product solutions (2K Basecoats & Topcoats, High-Solid Clear Coats, Primers & Polyester Putties, Abrasives & Masking Systems, Spray Guns & Bodyshop Tools).
+- **Column 4 (Showroom & Mixing Lab + Direct Inquiries):** Street 23 Wakalat St location, Landline (`+974 4450 1669`), WhatsApp Hotline (`+974 5039 5741`), and official email (`info@royalautopaints.com`).
+- **Brand Sub-Bar:** White Royal Auto Paints logo emblem, social media community links (WhatsApp, Facebook, Instagram, LinkedIn), and "Subscribe to Refinish Updates" interactive email subscription bar with circular amber send button.
+- **Watermark Layer:** Subtle background ghost text `ROYAL AUTO PAINTS` with high-definition brand emblem (`images/OBJECTS-1.png`).
+- **Copyright Bar:** Official copyright attribution, Terms & Conditions, Privacy Policy, and Bodyshop Inquiries links.
+- **Floating Quick Actions:** Integrated dual `.floating-quick-actions` container featuring smooth back-to-top chevron and high-visibility WhatsApp quick RFQ button.
