@@ -455,14 +455,15 @@ body#blog-page {
 .blog-card-meta {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   font-size: 12.5px;
   color: #6B7280;
   margin-bottom: 10px;
 }
 
-.blog-card-meta i {
-  color: var(--royal-yellow-accent);
+.blog-meta-dot {
+  color: #9CA3AF;
+  font-size: 14px;
 }
 
 .blog-card-title {
@@ -513,20 +514,12 @@ body#blog-page {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   transition: all 0.2s ease;
-}
-
-.blog-card-read-link i {
-  font-size: 11px;
-  transition: transform 0.2s ease;
 }
 
 .blog-card:hover .blog-card-read-link {
   color: var(--royal-yellow-gold);
-}
-
-.blog-card:hover .blog-card-read-link i {
   transform: translateX(3px);
 }
 
