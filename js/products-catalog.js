@@ -265,11 +265,11 @@
               <img src="${localImg}" alt="${escapedTitle}" loading="lazy" onerror="this.onerror=null; this.src='${remoteImg}';">
             </a>
             <div class="card-quickview-overlay">
-              <button type="button" class="btn-card-quickview" data-quickview-id="${prod.id}">
+              <button type="button" class="btn-card-quickview" data-quickview-id="${prod.id}" title="Quick Preview">
                 <i class="fas fa-eye"></i> Quick View
               </button>
-              <a href="product-detail.html?id=${prod.id}" class="btn-card-quickview" style="margin-left: 6px; background: rgba(15, 23, 42, 0.85); color: #fff;">
-                <i class="fas fa-external-link-alt"></i> Details
+              <a href="product-detail.html?id=${prod.id}" class="btn-card-details" title="View Full Specifications">
+                <i class="fas fa-file-alt"></i> View Details
               </a>
             </div>
           </div>

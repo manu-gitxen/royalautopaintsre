@@ -558,45 +558,106 @@
   box-shadow: 0 2px 8px rgba(246, 140, 80, 0.3);
 }
 
-/* Quick View Hover Trigger */
+/* Quick View & View Details Hover Trigger (Perfect Centered Dual Pills) */
 .card-quickview-overlay {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%) translateY(20px);
+  bottom: 16px;
+  left: 0;
+  width: 100%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 0 12px !important;
+  box-sizing: border-box !important;
+  transform: translateY(12px);
   opacity: 0;
   visibility: hidden;
-  transition: all 0.25s ease;
-  z-index: 3;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 10;
+  pointer-events: none;
 }
 
 .catalogue-card:hover .card-quickview-overlay {
-  transform: translateX(-50%) translateY(0);
+  transform: translateY(0);
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
+/* 1. Quick View Pill (Clean Glassmorphic White) */
 .btn-card-quickview {
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(10, 50, 84, 0.15);
-  color: var(--royal-blue-primary);
-  font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 6px 14px;
-  border-radius: 20px;
-  backdrop-filter: blur(4px);
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.96) !important;
+  border: 1px solid rgba(88, 88, 90, 0.22) !important;
+  color: var(--royal-gray-graphite, #58585A) !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  height: 34px !important;
+  padding: 0 14px !important;
+  border-radius: 999px !important;
+  backdrop-filter: blur(6px) !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12) !important;
+  white-space: nowrap !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-card-quickview i {
+  color: var(--royal-yellow-gold, #F5C518) !important;
+  font-size: 12px !important;
 }
 
 .btn-card-quickview:hover {
-  background: var(--royal-blue-primary);
-  color: #FFFFFF;
+  background: var(--royal-gray-charcoal, #22272F) !important;
+  color: #FFFFFF !important;
+  border-color: var(--royal-gray-charcoal, #22272F) !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2) !important;
+  transform: translateY(-1px) !important;
+}
+
+.btn-card-quickview:hover i {
+  color: #FFFFFF !important;
+}
+
+/* 2. View Details Pill (Vibrant Racing Gold / Automotive Yellow) */
+.btn-card-details {
+  background: var(--royal-yellow-gold, #F5C518) !important;
+  border: 1px solid var(--royal-yellow-gold, #F5C518) !important;
+  color: #14171C !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 11.5px !important;
+  font-weight: 700 !important;
+  height: 34px !important;
+  padding: 0 14px !important;
+  border-radius: 999px !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  box-shadow: 0 4px 14px rgba(245, 197, 24, 0.3) !important;
+  white-space: nowrap !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-card-details i {
+  color: #14171C !important;
+  font-size: 11px !important;
+}
+
+.btn-card-details:hover {
+  background: var(--royal-yellow-accent, #FFB800) !important;
+  border-color: var(--royal-yellow-accent, #FFB800) !important;
+  color: #14171C !important;
+  box-shadow: 0 6px 18px rgba(245, 197, 24, 0.45) !important;
+  transform: translateY(-1px) !important;
 }
 
 /* Card Body Content */
