@@ -49,6 +49,7 @@ royalautopaintsre/
 ├── products.html            # Searchable & Filterable Catalog with Quick View & Details
 ├── product-detail.html      # Dynamic Product Detail & Technical Specifications
 ├── gallery.html             # Project Portfolio with White/Gold Lightbox Modal
+├── blog.html                # Technical Insights & Bodyshop Knowledge Hub
 ├── career.html              # Careers, Culture, Values, & Qatar Branches
 ├── career-detail.html       # Role Responsibilities & Application Modal
 ├── blog-detail.html         # Technical Insights: Spectrophotometer Color Matching
