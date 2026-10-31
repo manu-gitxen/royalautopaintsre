@@ -3455,6 +3455,28 @@ footer#footer .elementor-element-5b0df63 {
     justify-content: center !important;
     gap: 15px !important;
   }
+  footer#footer .elementor-element.elementor-element-00cd846,
+  .elementor-element.elementor-element-00cd846 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    flex: 1 1 100% !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 12px !important;
+  }
+  footer#footer .elementor-element.elementor-element-00cd846 .tm-mc4wp-newsletter,
+  footer#footer .elementor-element.elementor-element-00cd846 .mc4wp-form {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 0 auto !important;
+  }
+  footer#footer .elementor-element.elementor-element-00cd846 input[type="email"],
+  footer#footer .elementor-element.elementor-element-00cd846 input[type="text"] {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
 }
 
 
@@ -3955,4 +3977,47 @@ nav[class*="breadcrumb"] span#bdHeroBreadcrumb,
   width: 100% !important;
   height: auto !important;
   display: block !important;
+}
+
+/* ==========================================================================
+   Global Mobile Responsive Overflow Fixes (max-width: 767px)
+   ========================================================================== */
+@media (max-width: 767px) {
+  /* Prevent footer newsletter container from exceeding viewport width */
+  .elementor-element.elementor-element-00cd846,
+  .elementor-1693 .elementor-element.elementor-element-00cd846 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+  .elementor-element-00cd846 .tm-mc4wp-newsletter,
+  .elementor-element-00cd846 .mc4wp-form {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .elementor-element-00cd846 input[type="email"],
+  .elementor-element-00cd846 input[type="text"] {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+
+
+/* ==========================================================================
+   Global Mobile Viewport & Grid Safety
+   Prevents off-screen transforms and wide gutters from creating horizontal scroll
+   ========================================================================== */
+html, body {
+  overflow-x: clip !important;
+  max-width: 100% !important;
+}
+
+@media (max-width: 767px) {
+  .row.g-5 {
+    --bs-gutter-x: 1.25rem !important;
+  }
+  .tm-split-text {
+    overflow-x: clip !important;
+  }
 }
