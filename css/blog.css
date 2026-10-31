@@ -546,7 +546,7 @@ body#blog-page {
   background: linear-gradient(135deg, #58585A 0%, #22272F 100%) !important;
   border-radius: 20px;
   padding: 48px 42px;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
   display: flex;
@@ -560,20 +560,25 @@ body#blog-page {
   max-width: 650px;
 }
 
+#blog-page .blog-cta-title,
+.blog-cta-card h3,
 .blog-cta-title {
-  font-family: 'Marcellus', serif;
-  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
-  font-weight: 500;
-  color: #FFFFFF;
-  margin-bottom: 12px;
-  line-height: 1.25;
+  font-family: 'Marcellus', serif !important;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem) !important;
+  font-weight: 500 !important;
+  color: #FFFFFF !important;
+  margin-bottom: 12px !important;
+  line-height: 1.25 !important;
 }
 
+#blog-page .blog-cta-subtitle,
+.blog-cta-card p,
 .blog-cta-subtitle {
-  font-size: 15px;
-  color: #D1D5DB;
-  line-height: 1.6;
-  margin-bottom: 0;
+  font-size: 15px !important;
+  color: #FFFFFF !important;
+  line-height: 1.6 !important;
+  margin-bottom: 0 !important;
+  opacity: 0.95 !important;
 }
 
 .blog-cta-form-wrap {
